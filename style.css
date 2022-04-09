@@ -13,13 +13,20 @@ body,html {
 section {
     position: relative;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
+    justify-content: center;
+  	align-items: center;
+    margin: 200px 0;
+}
+
+section p {
+    font-size: 25px;
 }
 
 section h1 {
     text-align: center;
-    margin-bottom: 100px;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 200px;
 }
 
 
@@ -104,8 +111,51 @@ section h1 {
 
 #aboutUs {
     color: #fff;
-    padding: 50px 0;
-    height: 50vh;
+}
+
+#aboutUs img {
+    width: 400px;
+}
+
+#aboutUs .text {
+    margin-top: 10px;
 }
 
 /* Section About End */
+
+/* Section team */
+
+#team .info {
+    text-align: center;
+}
+
+/* Section team end */
+
+/* Section use cases */
+
+#useCase img {
+    width: 400px;
+    margin-top: 30px;
+}
+
+/* Sectoin use cases end */
+
+#team img {
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.neon-blue {
+    color: #19c7ea;
+    text-shadow:
+    0 0 20px #19c7ea;
+}
+
+.neon-white {
+    color: #fff;
+    text-shadow: 0 0 20px #fff;
+}
