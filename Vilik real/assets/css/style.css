@@ -16,6 +16,7 @@ section {
     justify-content: center;
   	align-items: center;
     margin: 200px 0;
+   
 }
 
 section p {
@@ -51,7 +52,7 @@ section h1 {
 }
 
 #navbarNav ul li a:hover {
-    color: black;
+    color: white;
     text-shadow: 0 0 5px rgb(112, 88, 88),
     0 0 10px #fff,
     0 0 15px #ff0080,
@@ -68,11 +69,7 @@ section h1 {
 /* Navbar Section End */
 
 /* Banner Start */
-.banner {
-    /* position: absolute;
-    top: 0;
-    width: 100%; */
-}
+
 
 .banner .banner-content {
     position: absolute;
@@ -142,7 +139,7 @@ section h1 {
 /* Sectoin use cases end */
 
 #feature img {
-    width: 100px;
+    width: 60px;
     margin-right: 30px;
 }
 
@@ -152,7 +149,7 @@ section h1 {
 }
 
 #useCase  .logo{
-    width: 100px;
+    width: 60px;
     margin-right: 30px;
     margin-bottom: 25px;
 }
