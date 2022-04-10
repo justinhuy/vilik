@@ -8,6 +8,7 @@ body,html {
     font-family: 'Titillium Web', sans-serif;
     background-color: #35144F;
     color: #fff;
+    overflow-x: hidden;
 }
 
 section {
@@ -16,7 +17,8 @@ section {
     justify-content: center;
   	align-items: center;
     margin: 200px 0;
-   
+   background: url(/Image/backgroundSection.svg) no-repeat center;
+   background-size: 50em;
 }
 
 section p {
@@ -119,15 +121,50 @@ section h1 {
     margin-top: 10px;
 }
 
+#aboutUs .stand-decord {
+    height: 200px;
+    position: absolute;
+    right: -40px;
+    top: -100px;
+    z-index: 1;
+}
+
+.pause-button {
+    position: absolute;
+    width: 200px;
+    left: -130px;
+    top: 80%;
+}
+
 /* Section About End */
 
 /* Section team */
+
+#team {
+    background: none;
+}
 
 #team .info {
     text-align: center;
 }
 
+#team .right-decord {
+    position: absolute;
+    right: 90px;
+}
+
 /* Section team end */
+
+#feature {
+    background: none;
+}
+
+#feature .play-button {
+    width: 350px;
+    position: absolute;
+    bottom: -20%;
+    right: 13%;
+}
 
 /* Section use cases */
 
@@ -154,6 +191,26 @@ section h1 {
     margin-bottom: 25px;
 }
 
+#useCase .left-decord {
+    width: 200px;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+}
+
+#tokenomic .tokenomic {
+    width: 700px;
+    margin-top: 30px;
+}
+
+#tokenomic .box-color {
+    width: 20px;
+}
+
+#tokenomic .text-details .col-3 {
+    width: 200px;
+}
+
 #roadmap h3 {
     font-size: 40px;
     font-weight: 600;
@@ -164,6 +221,26 @@ section h1 {
     text-align: center;
 }
 
+#roadmap .stand-decord {
+    height: 150px;
+    position: absolute;
+    left: 5%;
+    top: -10%;
+}
+
+#roadmap .play-button {
+    width: 400px;
+    position: absolute;
+    right: 10%;
+    bottom: -25%;
+}
+
+#roadmap .left-decord {
+    width: 200px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
 
 
 
