@@ -26,7 +26,7 @@ section h1 {
     text-align: center;
     font-size: 50px;
     font-weight: 600;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 
@@ -38,20 +38,15 @@ section h1 {
     z-index: 1;
 }
 
-#navbarNav ul li {
-    font-size: 25px;
-}
-
 #navbarNav ul li a {
-    font-size: 25px;
+    font-size: 18px;
+    font-weight: 600;
     padding: 10px 0;
     text-transform: uppercase;
-    color: #fff;
-    text-shadow: 0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 15px #ff0080,
-    0 0 20px #ff0080,
-    0 0 30px #ff0080;
+    color: #ea19e0;
+    text-shadow:
+    0 0 20px #ea19e0;
+
 
 }
 
@@ -106,8 +101,10 @@ section h1 {
     background: none;
 }
 
-.banner .banner-svg {
-    
+.banner-content h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
 }
 /* Banner End */
 
@@ -144,9 +141,30 @@ section h1 {
 
 /* Sectoin use cases end */
 
+#feature img {
+    width: 100px;
+    margin-right: 30px;
+}
+
 #team img {
     width: 200px;
     margin-bottom: 50px;
+}
+
+#useCase  .logo{
+    width: 100px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+}
+
+#roadmap h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#roadmap .text {
+    text-align: center;
 }
 
 
@@ -162,4 +180,10 @@ section h1 {
 .neon-white {
     color: #fff;
     text-shadow: 0 0 20px #fff;
+}
+
+.neon-pink {
+    color: #ea19e0;
+    text-shadow:
+    0 0 20px #ea19e0;
 }

@@ -1,0 +1,184 @@
+
+
+
+
+#features {
+	background: #06001C;
+}
+
+
+
+
+#use-cases {
+	background: #06001C;
+}
+
+#use-cases .case {
+	text-align: center;
+	padding: 30px 50px;
+}
+
+
+
+
+
+#join-us {
+	background: #06001C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page-home h2 {
+	font-weight: bold;
+}
+
+#page-home main ul li, 
+#page-home main p {
+	opacity: .5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+svg {
+	display: block;
+	width: 100%;
+	height: 100%;	
+}
+*/
+
+.static-layers {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+.dynamic-layers {
+	z-index: 100;
+}
+
+
+#about {
+	background: #06001C;
+}
+
+
+#about .column {
+	display: flex;
+}
+
+.content {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.content p {
+	opacity: .5;
+}
+
+
+
+
+#tree.waved {
+	animation: treeWaved 4s linear infinite;
+	-webkit-animation: treeWaved 4s linear infinite;
+	-moz-animation: treeWaved 4s linear infinite;
+}
+
+
+
+#tree.waved .leaf {
+	animation: leafWaved 5s linear;
+	-webkit-animation: leafWaved 5s linear;
+	-moz-animation: leafWaved 5s linear;
+}
+
+#tree .leaf {
+	transform-origin: 50% 50%;
+	transform-origin: bottom center; 
+    transform-box: fill-box;	
+}
+
+#tree {	
+	transform-origin: 50% 50%;
+	transform-origin: bottom center; 
+    transform-box: fill-box;	
+}
+
+
+
+
+@-webkit-keyframes treeWaved {
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(5deg); }
+	50% { transform: rotate(0deg); }
+	75% { transform: rotate(7.5deg); }
+	100% { transform: rotate(0deg); }
+}
+@keyframes treeWaved {
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(5deg); }
+	50% { transform: rotate(0deg); }
+	75% { transform: rotate(7.5deg) ; }
+	100% { transform: rotate(0deg); }
+}
+
+
+
+
+@-webkit-keyframes leafWaved {
+	0% { transform: scaleX(1); }
+	25% { transform: scaleX(0.5); }
+	50% { transform: scaleX(1); }
+	75% { transform: scaleX(0.5); }
+	100% { transform: scaleX(1); }
+}
+@keyframes leafWaved{
+	0% { transform: scaleX(1); }
+	25% { transform: scaleX(0.5); }
+	50% { transform: scaleX(1); }
+	75% { transform: scaleX(0.5); }
+	100% { transform: scaleX(1); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

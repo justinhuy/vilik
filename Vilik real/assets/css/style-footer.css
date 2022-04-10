@@ -1,0 +1,15 @@
+
+
+
+footer p {
+	opacity: .6;
+}
+
+footer {
+	border-top: 1px solid rgba(255,255,255,.1);
+	background: #06001C;
+}
+
+footer .default-container {
+	padding: 40px 0;
+}

@@ -1,0 +1,31 @@
+
+
+
+
+#about {
+	position: relative;
+}
+
+#about .svg-background {
+	position: absolute;
+	height: auto;
+	width: 100%;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#about .default-container {
+	z-index: 100;
+}
+
+
+
+#about .svg-artwork {
+	max-width: 500px;
+}
+
+@media (min-width: 992px) {
+	#about .artwork {
+		padding-right: 10%;
+	}
+}
