@@ -1,8 +1,8 @@
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import Countdown from "react-countdown";
 
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
@@ -251,7 +251,7 @@ const renderer = ({ days, hours, minutes, seconds, completed }) => {
 
 export default function ComingSoon() {
   return (
-    <div className="flex min-h-screen items-center justify-center text-center relative">
+    <div className="relative flex items-center justify-center min-h-screen text-center">
       <Head>
         <title>Coming Soon</title>
         <meta name="description" content="Coming Soon" />
@@ -270,13 +270,14 @@ export default function ComingSoon() {
         muted
         loop
         id="video"
-        className="fixed top-0 lef-0 w-screen h-screen object-cover"
+        className="fixed top-0 object-cover w-screen h-screen transform rotate-180 lef-0"
       >
-        <source src="/video-min.mov" type="video/mp4" />
+        <source src="/loop.webm" type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
+      <div className="fixed inset-0 z-10 bg-gray-900 bg-opacity-10"></div>
 
-      <div className="container relative z-10">
+      <div className="container relative z-20">
         <Link href="/" passHref={true}>
           <a className="inline-block cursor-pointer mb-[24px]">
             <svg
