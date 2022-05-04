@@ -275,7 +275,7 @@ export default function ComingSoon() {
         <source src="/loop.webm" type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
-      <div className="fixed inset-0 z-10 bg-gray-900 bg-opacity-10"></div>
+      <div className="fixed inset-0 z-10 bg-gray-900 bg-opacity-30"></div>
 
       <div className="container relative z-20">
         <Link href="/" passHref={true}>
