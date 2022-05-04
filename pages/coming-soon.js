@@ -272,7 +272,7 @@ export default function ComingSoon() {
         id="video"
         className="fixed top-0 lef-0 w-screen h-screen object-cover"
       >
-        <source src="/video.mov" type="video/mp4" />
+        <source src="/video-min.mov" type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
 
