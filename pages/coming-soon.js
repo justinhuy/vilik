@@ -257,13 +257,24 @@ export default function ComingSoon() {
         <meta name="description" content="Coming Soon" />
       </Head>
 
-      <Image
+      {/* <Image
         src="/bg-gradient.jpg"
         layout="fill"
         objectFit="cover"
         quality={100}
         alt="Coming Soon"
-      />
+      /> */}
+
+      <video
+        autoPlay
+        muted
+        loop
+        id="video"
+        className="fixed top-0 lef-0 w-screen h-screen object-cover"
+      >
+        <source src="/video.mov" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
 
       <div className="container relative z-10">
         <Link href="/" passHref={true}>
@@ -313,7 +324,7 @@ export default function ComingSoon() {
         <p className="text-gradient text-[24px] leading-[29px] font-semibold mb-[20px] mt-[120px]">
           COMING SOON
         </p>
-        <Countdown date="05/05/2022" renderer={renderer} />
+        <Countdown date="05/09/2022" renderer={renderer} />
       </div>
     </div>
   );
