@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -110,6 +110,16 @@ a {
   -moz-border-image: -moz-linear-gradient(134.12deg, #1E1822 0.44%, #EAC2FF 46.04%, #1945D9 75.81%, #1E1822 99%);
   -webkit-border-image: -webkit-linear-gradient(134.12deg, #1E1822 0.44%, #EAC2FF 46.04%, #1945D9 75.81%, #1E1822 99%);
   border-image: linear-gradient(134.12deg, #1E1822 0.44%, #EAC2FF 46.04%, #1945D9 75.81%, #1E1822 99%);
+  -webkit-border-image-slice: 2;
+  border-image-slice: 2;
+}
+
+.line-linear {
+  border-top-width: 3px;
+  border-style: solid;
+  -moz-border-image: -moz-linear-gradient(90deg, #301B50 0%, #EAC2FF 92.4%, #1E1822 98.32%);
+  -webkit-border-image: -webkit-linear-gradient(90deg, #301B50 0%, #EAC2FF 92.4%, #1E1822 98.32%);
+  border-image: linear-gradient(90deg, #301B50 0%, #EAC2FF 92.4%, #1E1822 98.32%);
   -webkit-border-image-slice: 2;
   border-image-slice: 2;
 }

@@ -3,6 +3,17 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 export default function Home() {
   const [active, setActive] = useState("problem");
 
@@ -1090,6 +1101,336 @@ export default function Home() {
                 <div className="w-[156px] py-[15px] text-center"></div>
                 <div className="flex-1 py-[15px] text-center"></div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-[96px]">
+          <div className="container mx-auto">
+            <div className="grid grid-cols-12">
+              <div className="col-span-4">
+                <div className="flex h-full items-center">
+                  <div className="w-full grid grid-cols-2 gap-y-[20px]">
+                    <div className="flex items-center space-x-[16px]">
+                      <span className="inline-block w-[20px] h-[20px] bg-linear-1"></span>
+                      <span>28% Reward Pool</span>
+                    </div>
+                    <div className="flex items-center space-x-[16px]">
+                      <span className="inline-block w-[20px] h-[20px] bg-linear-2"></span>
+                      <span>3% Public Round</span>
+                    </div>
+                    <div className="flex items-center space-x-[16px]">
+                      <span className="inline-block w-[20px] h-[20px] bg-linear-3"></span>
+                      <span>10% Staking Pool</span>
+                    </div>
+                    <div className="flex items-center space-x-[16px]">
+                      <span className="inline-block w-[20px] h-[20px] bg-linear-4"></span>
+                      <span>5% Core Team</span>
+                    </div>
+                    <div className="flex items-center space-x-[16px]">
+                      <span className="inline-block w-[20px] h-[20px] bg-linear-5"></span>
+                      <span>12% Reserve</span>
+                    </div>
+                    <div className="flex items-center space-x-[16px]">
+                      <span className="inline-block w-[20px] h-[20px] bg-linear-6"></span>
+                      <span>3% Public Round</span>
+                    </div>
+                    <div className="flex items-center space-x-[16px]">
+                      <span className="inline-block w-[20px] h-[20px] bg-linear-7"></span>
+                      <span>10% Seed Round</span>
+                    </div>
+                    <div className="flex items-center space-x-[16px]">
+                      <span className="inline-block w-[20px] h-[20px] bg-linear-8"></span>
+                      <span>9% Liquidity</span>
+                    </div>
+                    <div className="flex items-center space-x-[16px]">
+                      <span className="inline-block w-[20px] h-[20px] bg-linear-9"></span>
+                      <span>6% Private Round</span>
+                    </div>
+                    <div className="flex items-center space-x-[16px]">
+                      <span className="inline-block w-[20px] h-[20px] bg-linear-10"></span>
+                      <span>10% Marketing</span>
+                    </div>
+                    <div className="flex items-center space-x-[16px]">
+                      <span className="inline-block w-[20px] h-[20px] bg-linear-11"></span>
+                      <span>4% Partnership</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-span-8">
+                <div className="text-right">
+                  <img
+                    className="inline-block w-full max-w-[682px] h-auto"
+                    src="/chart.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-[96px]">
+          <div className="container max-container">
+            <h5 className="text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
+              Roadmap
+            </h5>
+
+            <div className="max-w-[1095px] mx-auto relative">
+              <div className="line-linear absolute top-[52px] w-full left-2/4 -translate-x-2/4"></div>
+              <Swiper
+                modules={[Navigation]}
+                spaceBetween={50}
+                slidesPerView={4}
+                navigation
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log("slide change")}
+              >
+                <SwiperSlide>
+                  <div className="flex flex-wrap justify-center items-center group relative">
+                    <div className="w-[94px] h-[94px] mb-[16px] relative">
+                      <img
+                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10"
+                        src="/earth.png"
+                      />
+                      <img
+                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 opacity-0"
+                        src="/earth-active.png"
+                      />
+                    </div>
+                    <p className="w-full text-zinc-500 text-[28px] leading-[34px] mb-[16px] font-bold text-center">
+                      Q1 - 2022
+                    </p>
+                    <ul className="text-[14px] leading-[21px] text-[#DCDCDC] font-light">
+                      <li>VIK Streaming Web Platform</li>
+                      <li>Development Begins VIK Community</li>
+                      <li>Channel Begins</li>
+                    </ul>
+
+                    <svg
+                      width="30"
+                      height="28"
+                      viewBox="0 0 30 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute top-[40px] right-0"
+                    >
+                      <path
+                        d="M2 1.90039L14 13.9004L2 25.9004"
+                        stroke="url(#paint0_linear_19_1499)"
+                        stroke-width="4"
+                      />
+                      <path
+                        d="M14.8 1.90039L26.8 13.9004L14.8 25.9004"
+                        stroke="url(#paint1_linear_19_1499)"
+                        stroke-width="4"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_19_1499"
+                          x1="8"
+                          y1="1.90039"
+                          x2="8"
+                          y2="25.9004"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#7F6499" />
+                          <stop offset="1" stop-color="#5B4273" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_19_1499"
+                          x1="20.8"
+                          y1="1.90039"
+                          x2="20.8"
+                          y2="25.9004"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#7F6499" />
+                          <stop offset="1" stop-color="#5B4273" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex flex-wrap justify-center items-center group relative">
+                    <div className="w-[94px] h-[94px] mb-[16px] relative">
+                      <img
+                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10"
+                        src="/earth.png"
+                      />
+                      <img
+                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 opacity-0"
+                        src="/earth-active.png"
+                      />
+                    </div>
+                    <p className="w-full text-zinc-500 text-[28px] leading-[34px] mb-[16px] font-bold text-center">
+                      Q2 - 2022
+                    </p>
+                    <ul className="text-[14px] leading-[21px] text-[#DCDCDC] font-light">
+                      <li>IDO</li>
+                      <li>Token Launch</li>
+                    </ul>
+
+                    <svg
+                      width="30"
+                      height="28"
+                      viewBox="0 0 30 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute top-[40px] right-0"
+                    >
+                      <path
+                        d="M2 1.90039L14 13.9004L2 25.9004"
+                        stroke="url(#paint0_linear_19_1490)"
+                        stroke-width="4"
+                      />
+                      <path
+                        d="M14.7998 1.90039L26.7998 13.9004L14.7998 25.9004"
+                        stroke="url(#paint1_linear_19_1490)"
+                        stroke-width="4"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_19_1490"
+                          x1="8"
+                          y1="1.90039"
+                          x2="8"
+                          y2="25.9004"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#E7BFFB" />
+                          <stop offset="1" stop-color="#5B4273" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_19_1490"
+                          x1="20.7998"
+                          y1="1.90039"
+                          x2="20.7998"
+                          y2="25.9004"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#E7BFFB" />
+                          <stop offset="1" stop-color="#5B4273" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex flex-wrap justify-center items-center group relative">
+                    <div className="w-[94px] h-[94px] mb-[16px] relative">
+                      <img
+                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10"
+                        src="/earth.png"
+                      />
+                      <img
+                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 opacity-0"
+                        src="/earth-active.png"
+                      />
+                    </div>
+                    <p className="w-full text-zinc-500 text-[28px] leading-[34px] mb-[16px] font-bold text-center">
+                      Q3 - 2022
+                    </p>
+                    <ul className="text-[14px] leading-[21px] text-[#DCDCDC] font-light">
+                      <li>VIK Streaming Web Platform</li>
+                      <li>Version 1.0 Released</li>
+                    </ul>
+
+                    <svg
+                      width="30"
+                      height="28"
+                      viewBox="0 0 30 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute top-[40px] right-0"
+                    >
+                      <path
+                        d="M2 1.90039L14 13.9004L2 25.9004"
+                        stroke="url(#paint0_linear_19_1493)"
+                        stroke-width="4"
+                      />
+                      <path
+                        d="M14.7998 1.90039L26.7998 13.9004L14.7998 25.9004"
+                        stroke="url(#paint1_linear_19_1493)"
+                        stroke-width="4"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_19_1493"
+                          x1="8"
+                          y1="1.90039"
+                          x2="8"
+                          y2="25.9004"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#E7BFFB" />
+                          <stop offset="1" stop-color="#5B4273" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_19_1493"
+                          x1="20.7998"
+                          y1="1.90039"
+                          x2="20.7998"
+                          y2="25.9004"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#E7BFFB" />
+                          <stop offset="1" stop-color="#5B4273" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="flex flex-wrap justify-center items-center group relative">
+                    <div className="w-[94px] h-[94px] mb-[16px] relative">
+                      <img
+                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10"
+                        src="/earth.png"
+                      />
+                      <img
+                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 opacity-0"
+                        src="/earth-active.png"
+                      />
+                    </div>
+                    <p className="w-full text-zinc-500 text-[28px] leading-[34px] mb-[16px] font-bold text-center">
+                      Q4 - 2022
+                    </p>
+                    <ul className="text-[14px] leading-[21px] text-[#DCDCDC] font-light">
+                      <li>VIK Streaming Web Platform</li>
+                      <li>Version 2.0 Released</li>
+                      <li>VIK Peer-to-Peer Network</li>
+                      <li>Video Sharing Development</li>
+                      <li>Begins</li>
+                      <li>VIK Streaming Web Platform</li>
+                      <li>Version 3.0 Release</li>
+                      <li>Basic Peer-to-Peer</li>
+                      <li>Sharing Video Network Testnet</li>
+                    </ul>
+
+                    <svg
+                      width="30"
+                      height="28"
+                      viewBox="0 0 30 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute top-[40px] right-0"
+                    >
+                      <path
+                        d="M2 1.90039L14 13.9004L2 25.9004"
+                        stroke="#E8C1FE"
+                        stroke-width="4"
+                      />
+                      <path
+                        d="M14.7998 1.90039L26.7998 13.9004L14.7998 25.9004"
+                        stroke="#E8C1FE"
+                        stroke-width="4"
+                      />
+                    </svg>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </section>
