@@ -28,7 +28,7 @@ const FadeIn = ({ duration, delay, ease, callback }) => {
 
   return (
     <svg
-      class="mask"
+      className="mask"
       viewBox="0 0 100 100"
       preserveAspectRatio="none"
       ref={el}
@@ -45,7 +45,7 @@ const FadeIn = ({ duration, delay, ease, callback }) => {
     >
       <path
         ref={path}
-        vector-effect="non-scaling-stroke"
+        vectorEffect="non-scaling-stroke"
         d="M 0 100 V 30 Q 30 0 100 30 V 100 z"
       />
     </svg>

@@ -39,6 +39,18 @@ module.exports = {
         "linear-11":
           "linear-gradient(85.6deg, #1E1822 -60.11%, #EAC2FF 133.11%, #1945D9 259.27%, #1E1822 357.51%)",
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
+    },
+    container: {
+      screens: {
+        sm: "600px",
+        md: "728px",
+        lg: "984px",
+        xl: "1224px",
+        "2xl": "1224px",
+      },
     },
   },
   plugins: [],

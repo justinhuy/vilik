@@ -44,7 +44,8 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-.text-gradient-blue-01 {
+.text-gradient-blue-01,
+.text-menu:hover {
   background: linear-gradient(214.09deg, #C4D2FF 52.1%, #5179FF 94.34%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -54,19 +55,20 @@ a {
 
 .text-menu:after {
   content: "";
-  width: 100%;
+  width: 0;
   height: 1px;
   background: linear-gradient(214.09deg, #C4D2FF 52.1%, #5179FF 94.34%);
   position: absolute;
-  bottom: -7px;
+  bottom: -3px;
   left: 0;
   opacity: 0;
-  transition: bottom .35s ease, opacity .35s ease;
+  transition: opacity .35s ease, width .35s ease;
 }
 
+.text-menu:hover:after,
 .text-menu.active:after {
-  bottom: -3px;
   opacity: 1;
+  width: 100%;
 }
 
 .box-gradient {

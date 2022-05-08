@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation } from "swiper";
 
 import FadeIn from "../animation/FadeIn";
 import FadeZoomIn from "../animation/FadeZoomIn";
@@ -459,7 +459,7 @@ export default function Home() {
       >
         <section className="text-center pt-[57px] relative">
           <FadeZoomIn delay={0.7} y={100} duration={2}>
-            <div className="relative">
+            <div className="relative max-w-[1425px] mx-auto">
               {/* Icons */}
               <div className="absolute h-auto w-[125px] left-[192px] top-[256px]">
                 <Moving yFrom={10} yTo={-10} duration={5}>
@@ -549,7 +549,7 @@ export default function Home() {
               {/* End of Icons */}
               <img
                 src="/hero-banner/earth-grid.png"
-                className="w-[1425px] h-auto max-w-[1425px] max-auto"
+                className="w-full h-auto max-auto"
               />
             </div>
           </FadeZoomIn>
@@ -605,12 +605,53 @@ export default function Home() {
               </div>
 
               <div className="box w-6/12">
-                <Image
-                  src="/about-us.png"
-                  alt="About us"
-                  width={598}
-                  height={444}
-                />
+                <div className="relative">
+                  <img src="/about-us.png" alt="About us" className="" />
+                  <div className="absolute h-auto w-[105px] left-[177px] top-[61px]">
+                    <Moving
+                      xFrom={0}
+                      xTo={-30}
+                      yFrom={20}
+                      yTo={-30}
+                      duration={7}
+                    >
+                      <img
+                        src="/about-us/icon-1.png"
+                        className="h-auto w-full"
+                      />
+                    </Moving>
+                  </div>
+                  <div className="absolute h-auto w-[85px] left-[110px] bottom-[28px]">
+                    <Moving yFrom={10} yTo={-10} duration={5}>
+                      <img
+                        src="/about-us/icon-2.png"
+                        className="h-auto w-full"
+                      />
+                    </Moving>
+                  </div>
+                  <div className="absolute h-auto w-[70px] right-[75px] bottom-[85px]">
+                    <Moving
+                      yFrom={20}
+                      yTo={-20}
+                      xFrom={0}
+                      xTo={20}
+                      duration={5}
+                    >
+                      <img
+                        src="/about-us/icon-4.png"
+                        className="h-auto w-full"
+                      />
+                    </Moving>
+                  </div>
+                  <div className="absolute h-auto w-[85px] right-[70px] top-[78px]">
+                    <Moving yFrom={-10} yTo={10} duration={7}>
+                      <img
+                        src="/about-us/icon-3.png"
+                        className="h-auto w-full"
+                      />
+                    </Moving>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -764,14 +805,14 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid grid-cols-3">
+            <div className="box grid grid-cols-3">
               <div className="h-auto bg-white-blur p-[32px] mb-[16px] border-r-blur">
                 <div className="w-[64px] h-[64px] mb-[24px] flex items-center justify-center relative">
                   <svg
                     viewBox="0 0 68 68"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-full h-auto absolute top-0 left-0"
+                    className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
                   >
                     <path
                       d="M2 34C2 16.3269 16.3269 2 34 2V2C51.6731 2 66 16.3269 66 34V34C66 51.6731 51.6731 66 34 66V66C16.3269 66 2 51.6731 2 34V34Z"
@@ -822,7 +863,7 @@ export default function Home() {
                     viewBox="0 0 68 68"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-full h-auto absolute top-0 left-0"
+                    className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
                   >
                     <path
                       d="M2 34C2 16.3269 16.3269 2 34 2V2C51.6731 2 66 16.3269 66 34V34C66 51.6731 51.6731 66 34 66V66C16.3269 66 2 51.6731 2 34V34Z"
@@ -873,7 +914,7 @@ export default function Home() {
                     viewBox="0 0 68 68"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-full h-auto absolute top-0 left-0"
+                    className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
                   >
                     <path
                       d="M2 34C2 16.3269 16.3269 2 34 2V2C51.6731 2 66 16.3269 66 34V34C66 51.6731 51.6731 66 34 66V66C16.3269 66 2 51.6731 2 34V34Z"
@@ -923,7 +964,7 @@ export default function Home() {
                     viewBox="0 0 68 68"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-full h-auto absolute top-0 left-0"
+                    className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
                   >
                     <path
                       d="M2 34C2 16.3269 16.3269 2 34 2V2C51.6731 2 66 16.3269 66 34V34C66 51.6731 51.6731 66 34 66V66C16.3269 66 2 51.6731 2 34V34Z"
@@ -975,7 +1016,7 @@ export default function Home() {
                     viewBox="0 0 68 68"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-full h-auto absolute top-0 left-0"
+                    className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
                   >
                     <path
                       d="M2 34C2 16.3269 16.3269 2 34 2V2C51.6731 2 66 16.3269 66 34V34C66 51.6731 51.6731 66 34 66V66C16.3269 66 2 51.6731 2 34V34Z"
@@ -1026,7 +1067,7 @@ export default function Home() {
                     viewBox="0 0 68 68"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-full h-auto absolute top-0 left-0"
+                    className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
                   >
                     <path
                       d="M2 34C2 16.3269 16.3269 2 34 2V2C51.6731 2 66 16.3269 66 34V34C66 51.6731 51.6731 66 34 66V66C16.3269 66 2 51.6731 2 34V34Z"
@@ -1087,181 +1128,183 @@ export default function Home() {
               </h4>
             </div>
 
-            <div className="flex space-x-[40px] p-[8px] bg-white-blur-007 rounded-[30px] mb-[24px] max-w-[1002px] mx-auto">
-              <button
-                type="button"
-                onClick={() => setActive("problem")}
-                className={`w-6/12 h-[43px] rounded-[22px] flex items-center justify-center ${
-                  active === "problem"
-                    ? "text-shadow-white-51 bg-white-012"
-                    : ""
-                }`}
-              >
-                Problem
-              </button>
-              <button
-                type="button"
-                onClick={() => setActive("solution")}
-                className={`w-6/12 h-[43px] rounded-[22px] flex items-center justify-center ${
-                  active === "solution"
-                    ? "text-shadow-white-51 bg-white-012"
-                    : ""
-                }`}
-              >
-                Solution
-              </button>
+            <div className="box">
+              <div className="flex space-x-[40px] p-[8px] bg-white-blur-007 rounded-[30px] mb-[24px] max-w-[1002px] mx-auto">
+                <button
+                  type="button"
+                  onClick={() => setActive("problem")}
+                  className={`w-6/12 h-[43px] rounded-[22px] flex items-center justify-center ${
+                    active === "problem"
+                      ? "text-shadow-white-51 bg-white-012"
+                      : ""
+                  }`}
+                >
+                  Problem
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setActive("solution")}
+                  className={`w-6/12 h-[43px] rounded-[22px] flex items-center justify-center ${
+                    active === "solution"
+                      ? "text-shadow-white-51 bg-white-012"
+                      : ""
+                  }`}
+                >
+                  Solution
+                </button>
+              </div>
+
+              {active === "problem" ? (
+                <>
+                  <h5 className="text-center text-gradient-blue text-[24px] mb-[24px] leading-[38px]">
+                    THE PROLEM OF LIVEVIDEO STREAMING TODAY
+                  </h5>
+
+                  <img
+                    src="/value.png"
+                    alt="THE PROLEM OF LIVEVIDEO STREAMING TODAY"
+                    className="mx-auto w-full max-w-[797px] mb-[24px]"
+                  />
+
+                  <div className="grid grid-cols-3 gap-x-[1px]">
+                    <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
+                      <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
+                        <img
+                          src="/quality.png"
+                          alt="Poor quality video"
+                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[29px] h-auto"
+                        />
+                      </div>
+                      <div className="pl-[24px] flex-1">
+                        <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
+                          Poor quality video
+                        </h6>
+                        <p className="text-[#DCDCDC]">
+                          Due to inconvenience in CDN which causes re-buffering
+                          video and high load times, users cannot enjoy perfect
+                          quality in case of increasing demand for online video.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
+                      <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
+                        <img
+                          src="/data.png"
+                          alt="Skyrocketing data needs"
+                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[23px] h-auto"
+                        />
+                      </div>
+                      <div className="pl-[24px] flex-1">
+                        <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
+                          Skyrocketing data needs
+                        </h6>
+                        <p className="text-[#DCDCDC]">
+                          The demand for online media and entertainment has
+                          rapidly increased, which means data needs are
+                          skyrocketing with 4k, 8k and higher quality streams
+                          creating an infrastructure bottleneck.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
+                      <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
+                        <img
+                          src="/system.png"
+                          alt="Skyrocketing data needs"
+                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[44px] h-auto"
+                        />
+                      </div>
+                      <div className="pl-[24px] flex-1">
+                        <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
+                          A centralized and inefficient system
+                        </h6>
+                        <p className="text-[#DCDCDC]">
+                          The centralized nature means less revenue flows back
+                          to content creators and platforms.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              ) : null}
+
+              {active === "solution" ? (
+                <>
+                  <h5 className="text-center text-gradient-blue text-[24px] mb-[24px] leading-[38px]">
+                    VILIK&apos;S SOLUTION
+                  </h5>
+
+                  <img
+                    src="/solution.png"
+                    alt="VILIK'S SOLUTION"
+                    className="mx-auto w-full max-w-[787px] mb-[24px]"
+                  />
+
+                  <div className="grid grid-cols-3 gap-x-[1px]">
+                    <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
+                      <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
+                        <img
+                          src="/data.png"
+                          alt="Viewers earn rewards as VIK token"
+                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[29px] h-auto"
+                        />
+                      </div>
+                      <div className="pl-[24px] flex-1">
+                        <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
+                          Viewers earn rewards as VIK token
+                        </h6>
+                        <p className="text-[#DCDCDC]">
+                          Viewers are now rewarded to participate in the
+                          network. This is a new way of monetizing excess
+                          network resources, such as bandwidth and storage.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
+                      <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
+                        <img
+                          src="/viewer.png"
+                          alt="High quality, smoother video streaming"
+                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[29px] h-auto"
+                        />
+                      </div>
+                      <div className="pl-[24px] flex-1">
+                        <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
+                          High quality, smoother video streaming
+                        </h6>
+                        <p className="text-[#DCDCDC]">
+                          Our decentralised network allows everyone to globally
+                          earn streaming revenues. Herein, artists, producers,
+                          streamers, and viewers jointly enjoy the most
+                          immersive experiences.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
+                      <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
+                        <img
+                          src="/stream.png"
+                          alt="Reduced cost of delivering video streams"
+                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[29px] h-auto"
+                        />
+                      </div>
+                      <div className="pl-[24px] flex-1">
+                        <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
+                          Reduced cost of delivering video streams
+                        </h6>
+                        <p className="text-[#DCDCDC]">
+                          Fewer servers, less bandwidth and no more expensive
+                          hosting mean more capital to invest in developing new
+                          apps and improving the experience for users.c
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              ) : null}
             </div>
-
-            {active === "problem" ? (
-              <>
-                <h5 className="text-center text-gradient-blue text-[24px] mb-[24px] leading-[38px]">
-                  THE PROLEM OF LIVEVIDEO STREAMING TODAY
-                </h5>
-
-                <img
-                  src="/value.png"
-                  alt="THE PROLEM OF LIVEVIDEO STREAMING TODAY"
-                  className="mx-auto w-full max-w-[797px] mb-[24px]"
-                />
-
-                <div className="grid grid-cols-3 gap-x-[1px]">
-                  <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
-                    <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
-                      <img
-                        src="/quality.png"
-                        alt="Poor quality video"
-                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[29px] h-auto"
-                      />
-                    </div>
-                    <div className="pl-[24px] flex-1">
-                      <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
-                        Poor quality video
-                      </h6>
-                      <p className="text-[#DCDCDC]">
-                        Due to inconvenience in CDN which causes re-buffering
-                        video and high load times, users cannot enjoy perfect
-                        quality in case of increasing demand for online video.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
-                    <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
-                      <img
-                        src="/data.png"
-                        alt="Skyrocketing data needs"
-                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[23px] h-auto"
-                      />
-                    </div>
-                    <div className="pl-[24px] flex-1">
-                      <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
-                        Skyrocketing data needs
-                      </h6>
-                      <p className="text-[#DCDCDC]">
-                        The demand for online media and entertainment has
-                        rapidly increased, which means data needs are
-                        skyrocketing with 4k, 8k and higher quality streams
-                        creating an infrastructure bottleneck.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
-                    <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
-                      <img
-                        src="/system.png"
-                        alt="Skyrocketing data needs"
-                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[44px] h-auto"
-                      />
-                    </div>
-                    <div className="pl-[24px] flex-1">
-                      <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
-                        A centralized and inefficient system
-                      </h6>
-                      <p className="text-[#DCDCDC]">
-                        The centralized nature means less revenue flows back to
-                        content creators and platforms.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </>
-            ) : null}
-
-            {active === "solution" ? (
-              <>
-                <h5 className="text-center text-gradient-blue text-[24px] mb-[24px] leading-[38px]">
-                  VILIK&apos;S SOLUTION
-                </h5>
-
-                <img
-                  src="/solution.png"
-                  alt="VILIK'S SOLUTION"
-                  className="mx-auto w-full max-w-[787px] mb-[24px]"
-                />
-
-                <div className="grid grid-cols-3 gap-x-[1px]">
-                  <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
-                    <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
-                      <img
-                        src="/data.png"
-                        alt="Viewers earn rewards as VIK token"
-                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[29px] h-auto"
-                      />
-                    </div>
-                    <div className="pl-[24px] flex-1">
-                      <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
-                        Viewers earn rewards as VIK token
-                      </h6>
-                      <p className="text-[#DCDCDC]">
-                        Viewers are now rewarded to participate in the network.
-                        This is a new way of monetizing excess network
-                        resources, such as bandwidth and storage.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
-                    <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
-                      <img
-                        src="/viewer.png"
-                        alt="High quality, smoother video streaming"
-                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[29px] h-auto"
-                      />
-                    </div>
-                    <div className="pl-[24px] flex-1">
-                      <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
-                        High quality, smoother video streaming
-                      </h6>
-                      <p className="text-[#DCDCDC]">
-                        Our decentralised network allows everyone to globally
-                        earn streaming revenues. Herein, artists, producers,
-                        streamers, and viewers jointly enjoy the most immersive
-                        experiences.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
-                    <div className="w-[64px] h-[64px] bg-zinc-900 box-shadow-black rounded-full border border-[#27272A] flex items-center justify-center relative">
-                      <img
-                        src="/stream.png"
-                        alt="Reduced cost of delivering video streams"
-                        className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10 inline-block w-[29px] h-auto"
-                      />
-                    </div>
-                    <div className="pl-[24px] flex-1">
-                      <h6 className="text-gradient-blue text-[20px] leading-[24px] mb-[16px] font-semibold">
-                        Reduced cost of delivering video streams
-                      </h6>
-                      <p className="text-[#DCDCDC]">
-                        Fewer servers, less bandwidth and no more expensive
-                        hosting mean more capital to invest in developing new
-                        apps and improving the experience for users.c
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </>
-            ) : null}
           </div>
         </section>
 
@@ -1370,7 +1413,12 @@ export default function Home() {
             animatedTokenomics ? "in-view" : ""
           }`}
         >
-          <div className="container mx-auto relative">
+          <div className="absolute w-[459px] left-[-218px] top-[-332px]">
+            <Moving yFrom={0} yTo={50} duration={10}>
+              <img src="/earth-layer-1.png" className="w-full h-auto" />
+            </Moving>
+          </div>
+          <div className="container mx-auto relative z-10">
             <h5 className="text-animate text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
               Tokenomics
             </h5>
@@ -1435,6 +1483,11 @@ export default function Home() {
                 <div className="flex-1 py-[15px] text-center"></div>
               </div>
             </div>
+          </div>
+          <div className="absolute w-[265px] right-[-117px] bottom-[-135px]">
+            <Moving xFrom={0} xTo={-20} yFrom={0} yTo={50} duration={7}>
+              <img src="/earth-layer-2.png" className="w-full h-auto" />
+            </Moving>
           </div>
         </section>
 
@@ -1510,7 +1563,7 @@ export default function Home() {
           id="roadmap"
           className={`mb-[96px] relative ${animatedRoadmap ? "in-view" : ""}`}
         >
-          <div className="container max-container">
+          <div className="container mx-auto">
             <h5 className="text-animate text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
               Roadmap
             </h5>
@@ -1541,9 +1594,15 @@ export default function Home() {
                       Q1 - 2022
                     </p>
                     <ul className="text-[14px] leading-[21px] text-[#DCDCDC] font-light">
-                      <li>VIK Streaming Web Platform</li>
-                      <li>Development Begins VIK Community</li>
-                      <li>Channel Begins</li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        VIK Streaming Web Platform
+                      </li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        Development Begins VIK Community
+                      </li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        Channel Begins
+                      </li>
                     </ul>
 
                     <svg
@@ -1672,8 +1731,12 @@ export default function Home() {
                       Q3 - 2022
                     </p>
                     <ul className="text-[14px] leading-[21px] text-[#DCDCDC] font-light">
-                      <li>VIK Streaming Web Platform</li>
-                      <li>Version 1.0 Released</li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        VIK Streaming Web Platform
+                      </li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        Version 1.0 Released
+                      </li>
                     </ul>
 
                     <svg
@@ -1737,15 +1800,33 @@ export default function Home() {
                       Q4 - 2022
                     </p>
                     <ul className="text-[14px] leading-[21px] text-[#DCDCDC] font-light">
-                      <li>VIK Streaming Web Platform</li>
-                      <li>Version 2.0 Released</li>
-                      <li>VIK Peer-to-Peer Network</li>
-                      <li>Video Sharing Development</li>
-                      <li>Begins</li>
-                      <li>VIK Streaming Web Platform</li>
-                      <li>Version 3.0 Release</li>
-                      <li>Basic Peer-to-Peer</li>
-                      <li>Sharing Video Network Testnet</li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        VIK Streaming Web Platform
+                      </li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        Version 2.0 Released
+                      </li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        VIK Peer-to-Peer Network
+                      </li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        Video Sharing Development
+                      </li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        Begins
+                      </li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        VIK Streaming Web Platform
+                      </li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        Version 3.0 Release
+                      </li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        Basic Peer-to-Peer
+                      </li>
+                      <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
+                        Sharing Video Network Testnet
+                      </li>
                     </ul>
 
                     <svg
