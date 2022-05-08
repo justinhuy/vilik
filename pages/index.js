@@ -457,7 +457,49 @@ export default function Home() {
           backgroundImage: "url(/bg-dot.png)",
         }}
       >
-        <section className="text-center pt-[57px] relative">
+        <svg
+          width="831"
+          height="831"
+          viewBox="0 0 831 831"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute left-[-138px] top-[-126px]"
+        >
+          <g filter="url(#filter0_f_12_5732)">
+            <circle
+              cx="415.5"
+              cy="415.5"
+              r="252.5"
+              fill="#742A9A"
+              fillOpacity="0.51"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_12_5732"
+              x="0.0967712"
+              y="0.0967712"
+              width="830.806"
+              height="830.806"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="81.4516"
+                result="effect1_foregroundBlur_12_5732"
+              />
+            </filter>
+          </defs>
+        </svg>
+
+        <section className="text-center pt-[57px] relative z-10">
           <FadeZoomIn delay={0.7} y={100} duration={2}>
             <div className="relative max-w-[1425px] mx-auto">
               {/* Icons */}
@@ -586,7 +628,7 @@ export default function Home() {
         >
           <div className="container relative z-10 mx-auto">
             <div className="flex items-center gap-[32px] h-[777px]">
-              <div className="w-6/12">
+              <div className="w-6/12 relative z-10">
                 <h4 className="btn-animate rounded-[38px] h-[35px] inline-flex items-center justify-center px-[18px] mb-[8px]">
                   <span className="circle"></span>
                   <span className="layer"></span>
@@ -604,8 +646,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="box w-6/12">
-                <div className="relative">
+              <div className="box w-6/12 relative">
+                <div className="relative z-10">
                   <img src="/about-us.png" alt="About us" className="" />
                   <div className="absolute h-auto w-[105px] left-[177px] top-[61px]">
                     <Moving
@@ -652,58 +694,177 @@ export default function Home() {
                     </Moving>
                   </div>
                 </div>
+
+                <svg
+                  width="1466"
+                  height="1427"
+                  viewBox="0 0 1466 1427"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute left-2/4 -translate-x-2/4"
+                  style={{
+                    top: "-110%",
+                  }}
+                >
+                  <g opacity="0.66">
+                    <path
+                      d="M345.576 467.075C290.065 674.245 413.038 887.088 620.243 942.473C827.448 997.857 1040.42 874.811 1095.93 667.64C1151.44 460.47 1028.47 247.627 821.267 192.243C614.061 136.858 401.088 259.904 345.576 467.075Z"
+                      fill="url(#paint0_radial_27_9958)"
+                    />
+                    <g filter="url(#filter0_f_27_9958)">
+                      <ellipse
+                        rx="312.271"
+                        ry="430.067"
+                        transform="matrix(-0.260847 0.96538 -0.96546 -0.26055 611.512 657.892)"
+                        fill="#041128"
+                      />
+                    </g>
+                    <g filter="url(#filter1_f_27_9958)">
+                      <ellipse
+                        rx="312.271"
+                        ry="205.551"
+                        transform="matrix(-0.260847 0.96538 -0.96546 -0.26055 870.894 494.959)"
+                        fill="#041128"
+                      />
+                    </g>
+                  </g>
+                  <g filter="url(#filter2_f_27_9958)">
+                    <ellipse
+                      cx="799.967"
+                      cy="731.984"
+                      rx="361.43"
+                      ry="397.752"
+                      transform="rotate(18.527 799.967 731.984)"
+                      fill="#320A70"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_f_27_9958"
+                      x="0.452606"
+                      y="148.34"
+                      width="1222.12"
+                      height="1019.1"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feGaussianBlur
+                        stdDeviation="93.9263"
+                        result="effect1_foregroundBlur_27_9958"
+                      />
+                    </filter>
+                    <filter
+                      id="filter1_f_27_9958"
+                      x="468.468"
+                      y="0.873993"
+                      width="804.853"
+                      height="988.17"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feGaussianBlur
+                        stdDeviation="93.9263"
+                        result="effect1_foregroundBlur_27_9958"
+                      />
+                    </filter>
+                    <filter
+                      id="filter2_f_27_9958"
+                      x="134.606"
+                      y="37.6426"
+                      width="1330.72"
+                      height="1388.68"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feGaussianBlur
+                        stdDeviation="150"
+                        result="effect1_foregroundBlur_27_9958"
+                      />
+                    </filter>
+                    <radialGradient
+                      id="paint0_radial_27_9958"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(211.659 348.035) rotate(24.5354) scale(932.183 932.364)"
+                    >
+                      <stop
+                        offset="0.0755871"
+                        stopColor="#C82DF4"
+                        stopOpacity="0.71"
+                      />
+                      <stop offset="0.500996" stopColor="#1F1298" />
+                      <stop offset="1" stopColor="#621EA2" />
+                    </radialGradient>
+                  </defs>
+                </svg>
               </div>
             </div>
           </div>
 
-          {/* <svg
-            width="1065"
-            height="1168"
-            viewBox="0 0 1065 1168"
+          <svg
+            width="1589"
+            height="1806"
+            viewBox="0 0 1589 1806"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            style={{
-              position: "absolute",
-              height: "auto",
-              width: "1065px",
-              right: 0,
-              top: " 50%",
-              transform: "translateY(-50%)",
-            }}
+            className="absolute bottom-0 left-[-275px]"
           >
-            <g opacity="0.66">
-              <path
-                d="M345.576 467.075C290.065 674.246 413.038 887.088 620.243 942.473C827.448 997.858 1040.42 874.811 1095.93 667.641C1151.44 460.471 1028.47 247.628 821.267 192.243C614.061 136.858 401.088 259.905 345.576 467.075Z"
-                fill="url(#paint0_radial_19_649)"
+            <g filter="url(#filter0_f_26_9954)">
+              <ellipse
+                cx="857.423"
+                cy="1237.26"
+                rx="447.524"
+                ry="239.473"
+                transform="rotate(18.527 857.423 1237.26)"
+                fill="#E84DFC"
+                fillOpacity="0.2"
               />
-              <g filter="url(#filter0_f_19_649)">
-                <ellipse
-                  rx="312.271"
-                  ry="430.067"
-                  transform="matrix(-0.260847 0.96538 -0.96546 -0.26055 611.512 657.892)"
-                  fill="#041128"
-                />
-              </g>
-              <g filter="url(#filter1_f_19_649)">
-                <ellipse
-                  rx="312.271"
-                  ry="205.551"
-                  transform="matrix(-0.260847 0.96538 -0.96546 -0.26055 870.895 494.959)"
-                  fill="#041128"
-                />
-              </g>
+            </g>
+            <g filter="url(#filter1_f_26_9954)">
+              <ellipse
+                cx="752.326"
+                cy="736.02"
+                rx="353.148"
+                ry="333.735"
+                transform="rotate(18.3691 752.326 736.02)"
+                fill="#3D17E3"
+                fillOpacity="0.41"
+              />
             </g>
             <defs>
               <filter
-                id="filter0_f_19_649"
-                x="0.452484"
-                y="148.34"
-                width="1222.12"
-                height="1019.1"
+                id="filter0_f_26_9954"
+                x="126.25"
+                y="669.313"
+                width="1462.35"
+                height="1135.9"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -711,20 +872,20 @@ export default function Home() {
                   result="shape"
                 />
                 <feGaussianBlur
-                  stdDeviation="93.9263"
-                  result="effect1_foregroundBlur_19_649"
+                  stdDeviation="150"
+                  result="effect1_foregroundBlur_26_9954"
                 />
               </filter>
               <filter
-                id="filter1_f_19_649"
-                x="468.468"
-                y="0.873993"
-                width="804.853"
-                height="988.17"
+                id="filter1_f_26_9954"
+                x="0.963867"
+                y="0.214844"
+                width="1502.72"
+                height="1471.61"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -732,28 +893,12 @@ export default function Home() {
                   result="shape"
                 />
                 <feGaussianBlur
-                  stdDeviation="93.9263"
-                  result="effect1_foregroundBlur_19_649"
+                  stdDeviation="200"
+                  result="effect1_foregroundBlur_26_9954"
                 />
               </filter>
-              <radialGradient
-                id="paint0_radial_19_649"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(211.659 348.035) rotate(24.5354) scale(932.183 932.364)"
-              >
-                <stop
-                  offset="0.0755871"
-                  stopColor="#C82DF4"
-                  stop-opacity="0.71"
-                />
-                <stop offset="0.500996" stopColor="#1F1298" />
-                <stop offset="1" stopColor="#621EA2" />
-              </radialGradient>
             </defs>
-          </svg> */}
+          </svg>
         </section>
 
         <section
@@ -781,7 +926,7 @@ export default function Home() {
                   <path
                     d="M32 1L2.98023e-08 0.999997"
                     stroke="url(#paint0_linear_12_6084)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -793,8 +938,8 @@ export default function Home() {
                       y2="-0.107241"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -810,7 +955,7 @@ export default function Home() {
                   <path
                     d="M53 1H-5.96046e-07"
                     stroke="url(#paint0_linear_12_6037)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -822,8 +967,8 @@ export default function Home() {
                       y2="-0.107441"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -839,7 +984,7 @@ export default function Home() {
                   <path
                     d="M55.9897 1L0.989743 1"
                     stroke="url(#paint0_linear_12_6044)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -851,8 +996,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -868,7 +1013,7 @@ export default function Home() {
                   <path
                     d="M55.9897 1L0.989743 1"
                     stroke="url(#paint0_linear_12_6044)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -880,8 +1025,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -897,7 +1042,7 @@ export default function Home() {
                   <path
                     d="M55.9897 1L0.989743 1"
                     stroke="url(#paint0_linear_12_6044)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -909,8 +1054,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -926,7 +1071,7 @@ export default function Home() {
                   <path
                     d="M55.9897 1L0.989743 1"
                     stroke="url(#paint0_linear_12_6044)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -938,8 +1083,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -955,7 +1100,7 @@ export default function Home() {
                   <path
                     d="M55.9897 1L0.989743 1"
                     stroke="url(#paint0_linear_12_6044)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -967,8 +1112,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -984,7 +1129,7 @@ export default function Home() {
                   <path
                     d="M55.9897 1L0.989743 1"
                     stroke="url(#paint0_linear_12_6044)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -996,8 +1141,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1013,7 +1158,7 @@ export default function Home() {
                   <path
                     d="M55.9897 1L0.989743 1"
                     stroke="url(#paint0_linear_12_6044)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -1025,8 +1170,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1042,7 +1187,7 @@ export default function Home() {
                   <path
                     d="M55.9897 1L0.989743 1"
                     stroke="url(#paint0_linear_12_6044)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -1054,8 +1199,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1075,7 +1220,7 @@ export default function Home() {
                     height="306.495"
                     rx="9.35394"
                     stroke="url(#paint0_linear_12_5787)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -1087,8 +1232,8 @@ export default function Home() {
                       y2="169.926"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1107,7 +1252,7 @@ export default function Home() {
                     height="306.15"
                     rx="9.35394"
                     stroke="url(#paint0_linear_12_5811)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -1119,8 +1264,8 @@ export default function Home() {
                       y2="159.629"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1139,7 +1284,7 @@ export default function Home() {
                     height="239.564"
                     rx="9.35394"
                     stroke="url(#paint0_linear_12_5867)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -1151,8 +1296,8 @@ export default function Home() {
                       y2="132.441"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1172,7 +1317,7 @@ export default function Home() {
                     height="239.564"
                     rx="9.35394"
                     stroke="url(#paint0_linear_12_5874)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     className="path"
                   />
                   <defs>
@@ -1184,8 +1329,8 @@ export default function Home() {
                       y2="131.453"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1215,7 +1360,7 @@ export default function Home() {
                 ry="143.295"
                 transform="matrix(0.999758 -0.0219991 0.0515146 0.998672 485.467 594.221)"
                 fill="#00F0FF"
-                fill-opacity="0.44"
+                fillOpacity="0.44"
               />
             </g>
             <g filter="url(#filter2_f_25_9951)">
@@ -1224,7 +1369,7 @@ export default function Home() {
                 ry="145.935"
                 transform="matrix(0.919621 0.392806 -0.707569 0.706644 1550.68 633.249)"
                 fill="#842A9A"
-                fill-opacity="0.53"
+                fillOpacity="0.53"
               />
             </g>
             <g filter="url(#filter3_f_25_9951)">
@@ -1233,7 +1378,7 @@ export default function Home() {
                 ry="195.318"
                 transform="matrix(0.919621 0.392807 -0.707569 0.706644 1834.05 541.401)"
                 fill="#68268A"
-                fill-opacity="0.51"
+                fillOpacity="0.51"
               />
             </g>
             <g filter="url(#filter4_f_25_9951)">
@@ -1242,7 +1387,7 @@ export default function Home() {
                 ry="185.166"
                 transform="matrix(0.928486 0.371368 -0.283306 0.95903 1704.25 607.962)"
                 fill="#00F0FF"
-                fill-opacity="0.1"
+                fillOpacity="0.1"
               />
             </g>
             <g opacity="0.4" filter="url(#filter5_f_25_9951)">
@@ -1261,9 +1406,9 @@ export default function Home() {
                 width="1346.16"
                 height="1005.79"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -1282,9 +1427,9 @@ export default function Home() {
                 width="970.336"
                 height="586.597"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -1303,9 +1448,9 @@ export default function Home() {
                 width="703.167"
                 height="572.273"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -1324,9 +1469,9 @@ export default function Home() {
                 width="830.864"
                 height="655.676"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -1345,9 +1490,9 @@ export default function Home() {
                 width="778.539"
                 height="701.325"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -1366,9 +1511,9 @@ export default function Home() {
                 width="1162.87"
                 height="1055.66"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -1741,7 +1886,7 @@ export default function Home() {
                   ry="188.659"
                   transform="rotate(33.1841 352.151 352.15)"
                   fill="#842A9A"
-                  fill-opacity="0.53"
+                  fillOpacity="0.53"
                 />
               </g>
               <g filter="url(#filter1_f_25_9952)">
@@ -1752,7 +1897,7 @@ export default function Home() {
                   ry="252.5"
                   transform="rotate(33.1841 635.523 426.522)"
                   fill="#68268A"
-                  fill-opacity="0.51"
+                  fillOpacity="0.51"
                 />
               </g>
               <defs>
@@ -1763,9 +1908,9 @@ export default function Home() {
                   width="703.167"
                   height="703.167"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1784,9 +1929,9 @@ export default function Home() {
                   width="830.864"
                   height="830.864"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1807,7 +1952,7 @@ export default function Home() {
           id="values"
           className={`mb-[96px] relative ${animatedValues ? "in-view" : ""}`}
         >
-          <div className="container mx-auto">
+          <div className="container mx-auto relative z-10">
             <div className="text-center">
               <h4 className="btn-animate rounded-[38px] h-[35px] inline-flex items-center justify-center px-[18px] mb-[24px]">
                 <span className="circle"></span>
@@ -1940,7 +2085,7 @@ export default function Home() {
                       <path
                         d="M0.345703 1.82715L65.9934 1.82715"
                         stroke="url(#paint0_linear_12_8563)"
-                        stroke-width="1.00996"
+                        strokeWidth="1.00996"
                         className="path path-1"
                       />
                       <defs>
@@ -1952,8 +2097,8 @@ export default function Home() {
                           y2="2.87605"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#F07AFF" />
-                          <stop offset="1" stop-color="#1945D9" />
+                          <stop stopColor="#F07AFF" />
+                          <stop offset="1" stopColor="#1945D9" />
                         </linearGradient>
                       </defs>
                     </svg>
@@ -1969,7 +2114,7 @@ export default function Home() {
                       <path
                         d="M0.345703 1.82715L65.9934 1.82715"
                         stroke="url(#paint0_linear_12_8563)"
-                        stroke-width="1.00996"
+                        strokeWidth="1.00996"
                         className="path path-1"
                       />
                       <defs>
@@ -1981,8 +2126,8 @@ export default function Home() {
                           y2="2.87605"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#F07AFF" />
-                          <stop offset="1" stop-color="#1945D9" />
+                          <stop stopColor="#F07AFF" />
+                          <stop offset="1" stopColor="#1945D9" />
                         </linearGradient>
                       </defs>
                     </svg>
@@ -2003,7 +2148,7 @@ export default function Home() {
                         rx="12.6363"
                         transform="rotate(90 534.637 0.504982)"
                         stroke="url(#paint0_linear_12_8558)"
-                        stroke-width="1.00996"
+                        strokeWidth="1.00996"
                         className="path path-1"
                       />
                       <defs>
@@ -2015,8 +2160,8 @@ export default function Home() {
                           y2="427.951"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stop-color="#EAC2FF" />
-                          <stop offset="1" stop-color="#1945D9" />
+                          <stop stopColor="#EAC2FF" />
+                          <stop offset="1" stopColor="#1945D9" />
                         </linearGradient>
                       </defs>
                     </svg>
@@ -2088,13 +2233,235 @@ export default function Home() {
               ) : null}
             </div>
           </div>
+
+          <svg
+            width="2502"
+            height="1553"
+            viewBox="0 0 2502 1553"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute top-2/4 left-2/4 -translate-x-2/4	-translate-y-2/4"
+          >
+            <g opacity="0.5">
+              <g opacity="0.67" filter="url(#filter0_f_27_9955)">
+                <ellipse
+                  rx="484.226"
+                  ry="338.644"
+                  transform="matrix(0.932793 0.360413 -0.274415 0.961611 1728.39 682.165)"
+                  fill="#3D17E3"
+                />
+              </g>
+              <g filter="url(#filter1_f_27_9955)">
+                <ellipse
+                  rx="349.087"
+                  ry="257.146"
+                  transform="matrix(0.928486 0.371368 -0.283305 0.95903 1542.97 846.251)"
+                  fill="#00F0FF"
+                  fillOpacity="0.44"
+                />
+              </g>
+            </g>
+            <g opacity="0.5" filter="url(#filter2_f_27_9955)">
+              <ellipse
+                rx="360.864"
+                ry="224.527"
+                transform="matrix(0.985766 -0.168125 0.279332 0.960195 844.12 807.397)"
+                fill="#3D17E3"
+              />
+            </g>
+            <g opacity="0.5" filter="url(#filter3_f_27_9955)">
+              <ellipse
+                rx="335.197"
+                ry="167.928"
+                transform="matrix(0.999668 -0.0257878 0.0439582 0.999033 485.467 913.574)"
+                fill="#00F0FF"
+                fillOpacity="0.44"
+              />
+            </g>
+            <g filter="url(#filter4_f_27_9955)">
+              <ellipse
+                rx="176.581"
+                ry="158.991"
+                transform="matrix(0.89416 0.447747 -0.649466 0.760391 1550.68 959.328)"
+                fill="#842A9A"
+                fillOpacity="0.53"
+              />
+            </g>
+            <g filter="url(#filter5_f_27_9955)">
+              <ellipse
+                rx="236.335"
+                ry="212.792"
+                transform="matrix(0.89416 0.447747 -0.649466 0.760391 1834.05 851.652)"
+                fill="#68268A"
+                fillOpacity="0.51"
+              />
+            </g>
+            <g opacity="0.5" filter="url(#filter6_f_27_9955)">
+              <ellipse
+                rx="751.828"
+                ry="135.234"
+                transform="matrix(0.999428 -0.0338165 0.0576179 0.998339 1189.19 1103.57)"
+                fill="#3D17E3"
+                fillOpacity="0.49"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_27_9955"
+                x="955.347"
+                y="0.825531"
+                width="1546.08"
+                height="1362.68"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="155.903"
+                  result="effect1_foregroundBlur_27_9955"
+                />
+              </filter>
+              <filter
+                id="filter1_f_27_9955"
+                x="1060.69"
+                y="417.584"
+                width="964.562"
+                height="857.333"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="75"
+                  result="effect1_foregroundBlur_27_9955"
+                />
+              </filter>
+              <filter
+                id="filter2_f_27_9955"
+                x="171.039"
+                y="271.569"
+                width="1346.16"
+                height="1071.65"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="155.903"
+                  result="effect1_foregroundBlur_27_9955"
+                />
+              </filter>
+              <filter
+                id="filter3_f_27_9955"
+                x="0.298828"
+                y="595.582"
+                width="970.336"
+                height="635.985"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="75"
+                  result="effect1_foregroundBlur_27_9955"
+                />
+              </filter>
+              <filter
+                id="filter4_f_27_9955"
+                x="1199.1"
+                y="651.956"
+                width="703.167"
+                height="614.745"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="81.4516"
+                  result="effect1_foregroundBlur_27_9955"
+                />
+              </filter>
+              <filter
+                id="filter5_f_27_9955"
+                x="1418.62"
+                y="495.391"
+                width="830.864"
+                height="712.521"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="81.4516"
+                  result="effect1_foregroundBlur_27_9955"
+                />
+              </filter>
+              <filter
+                id="filter6_f_27_9955"
+                x="125.944"
+                y="654.354"
+                width="2126.49"
+                height="898.427"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="155.903"
+                  result="effect1_foregroundBlur_27_9955"
+                />
+              </filter>
+            </defs>
+          </svg>
         </section>
 
         <section
           id="eco"
           className={`mb-[56px] relative ${animatedEco ? "in-view" : ""}`}
         >
-          <div className="container mx-auto relative">
+          <div className="container mx-auto relative z-10">
             <div className="text-center">
               <h4 className="btn-animate large rounded-[38px] h-[35px] inline-flex items-center justify-center px-[18px] mb-[8px] relative z-10">
                 <span className="circle"></span>
@@ -2115,57 +2482,142 @@ export default function Home() {
                 className="inline-block max-w-[1050px]"
               />
             </div>
-
-            {/* <div
-              className="absolute"
-              style={{
-                width: "725.79px",
-                height: "621.04px",
-                left: "-192px",
-                top: "-98px",
-                background: "rgba(105, 0, 238, 0.5)",
-                filter: "blur(144.149px)",
-              }}
-            ></div>
-
-            <div
-              className="absolute"
-              style={{
-                width: "724.45px",
-                height: "842.97px",
-                left: "119.2px",
-                top: "10px",
-                background: "rgba(114, 54, 220, 0.44)",
-                filter: "blur(200px)",
-              }}
-            ></div>
-
-            <div
-              className="absolute"
-              style={{
-                width: "968.45px",
-                height: "677.29px",
-                right: "-437px",
-                top: "-100px",
-                background: "#3D17E3",
-                opacity: "0.67",
-                filter: "blur(311.806px)",
-                transform: "matrix(0.96, 0.37, -0.27, 0.94, 0, 0)",
-              }}
-            ></div>
-            <div
-              className="absolute"
-              style={{
-                width: "698.17px",
-                height: "514.29px",
-                right: "-90px",
-                bottom: "-100px",
-                background: "rgba(0, 240, 255, 0.44)",
-                filter: "blur(150px)",
-                transform: "matrix(0.96, 0.38, -0.28, 0.93, 0, 0)",
-              }}
-            ></div> */}
           </div>
+
+          <svg
+            width="2212"
+            height="1491"
+            viewBox="0 0 2212 1491"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute top-2/4 left-2/4 -translate-x-2/4	-translate-y-2/4"
+          >
+            <g opacity="0.7">
+              <g filter="url(#filter0_f_12_6199)">
+                <ellipse
+                  cx="507.893"
+                  cy="637.351"
+                  rx="362.893"
+                  ry="310.52"
+                  fill="#6900EE"
+                  fillOpacity="0.5"
+                />
+              </g>
+              <g filter="url(#filter1_f_12_6199)">
+                <ellipse
+                  cx="709.425"
+                  cy="869.517"
+                  rx="362.223"
+                  ry="421.483"
+                  fill="#7236DC"
+                  fillOpacity="0.44"
+                />
+              </g>
+              <g opacity="0.67" filter="url(#filter2_f_12_6199)">
+                <ellipse
+                  rx="484.226"
+                  ry="338.644"
+                  transform="matrix(0.932793 0.360412 -0.274415 0.961611 1438.39 682.165)"
+                  fill="#3D17E3"
+                />
+              </g>
+              <g filter="url(#filter3_f_12_6199)">
+                <ellipse
+                  rx="349.087"
+                  ry="257.146"
+                  transform="matrix(0.928486 0.371368 -0.283305 0.95903 1252.97 846.251)"
+                  fill="#00F0FF"
+                  fillOpacity="0.44"
+                />
+              </g>
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_12_6199"
+                x="0.851059"
+                y="182.682"
+                width="1014.08"
+                height="909.337"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="72.0745"
+                  result="effect1_foregroundBlur_12_6199"
+                />
+              </filter>
+              <filter
+                id="filter1_f_12_6199"
+                x="147.202"
+                y="248.035"
+                width="1124.45"
+                height="1242.97"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="100"
+                  result="effect1_foregroundBlur_12_6199"
+                />
+              </filter>
+              <filter
+                id="filter2_f_12_6199"
+                x="665.347"
+                y="0.825531"
+                width="1546.08"
+                height="1362.68"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="155.903"
+                  result="effect1_foregroundBlur_12_6199"
+                />
+              </filter>
+              <filter
+                id="filter3_f_12_6199"
+                x="770.693"
+                y="417.584"
+                width="964.562"
+                height="857.333"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="75"
+                  result="effect1_foregroundBlur_12_6199"
+                />
+              </filter>
+            </defs>
+          </svg>
         </section>
 
         <section
@@ -2174,7 +2626,7 @@ export default function Home() {
             animatedMonetaryFlow ? "in-view" : ""
           }`}
         >
-          <div className="container mx-auto relative">
+          <div className="container mx-auto relative z-10">
             <h5 className="text-animate text-center text-gradient-blue text-[40px] mb-[48px] leading-[48px] relative z-10">
               Monetary flow
             </h5>
@@ -2187,6 +2639,167 @@ export default function Home() {
               />
             </div>
           </div>
+
+          <svg
+            width="2253"
+            height="1186"
+            viewBox="0 0 2253 1186"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute top-2/4 left-2/4 -translate-x-2/4	-translate-y-2/4"
+          >
+            <g opacity="0.5" filter="url(#filter0_f_12_6219)">
+              <ellipse
+                rx="359.472"
+                ry="194.3"
+                transform="matrix(0.989582 -0.143967 0.322788 0.946471 844.12 503.651)"
+                fill="#3D17E3"
+              />
+            </g>
+            <g opacity="0.5" filter="url(#filter1_f_12_6219)">
+              <ellipse
+                rx="335.166"
+                ry="143.295"
+                transform="matrix(0.999758 -0.0219991 0.0515146 0.998672 485.467 594.221)"
+                fill="#00F0FF"
+                fillOpacity="0.44"
+              />
+            </g>
+            <g filter="url(#filter2_f_12_6219)">
+              <ellipse
+                rx="171.692"
+                ry="145.935"
+                transform="matrix(0.919621 0.392807 -0.707568 0.706645 1550.68 633.249)"
+                fill="#842A9A"
+                fillOpacity="0.53"
+              />
+            </g>
+            <g filter="url(#filter3_f_12_6219)">
+              <ellipse
+                rx="229.792"
+                ry="195.318"
+                transform="matrix(0.919621 0.392806 -0.707569 0.706644 1834.05 541.401)"
+                fill="#68268A"
+                fillOpacity="0.51"
+              />
+            </g>
+            <g opacity="0.5" filter="url(#filter4_f_12_6219)">
+              <ellipse
+                rx="751.711"
+                ry="115.427"
+                transform="matrix(0.999584 -0.0288502 0.0675048 0.997719 1189.19 756.286)"
+                fill="#3D17E3"
+                fillOpacity="0.49"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_12_6219"
+                x="171.039"
+                y="0.753754"
+                width="1346.16"
+                height="1005.79"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="155.903"
+                  result="effect1_foregroundBlur_12_6219"
+                />
+              </filter>
+              <filter
+                id="filter1_f_12_6219"
+                x="0.298828"
+                y="300.923"
+                width="970.336"
+                height="586.597"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="75"
+                  result="effect1_foregroundBlur_12_6219"
+                />
+              </filter>
+              <filter
+                id="filter2_f_12_6219"
+                x="1199.1"
+                y="347.113"
+                width="703.167"
+                height="572.273"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="81.4516"
+                  result="effect1_foregroundBlur_12_6219"
+                />
+              </filter>
+              <filter
+                id="filter3_f_12_6219"
+                x="1418.62"
+                y="213.563"
+                width="830.865"
+                height="655.676"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="81.4516"
+                  result="effect1_foregroundBlur_12_6219"
+                />
+              </filter>
+              <filter
+                id="filter4_f_12_6219"
+                x="125.945"
+                y="327.271"
+                width="2126.49"
+                height="858.03"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="155.903"
+                  result="effect1_foregroundBlur_12_6219"
+                />
+              </filter>
+            </defs>
+          </svg>
         </section>
 
         <section
@@ -2271,6 +2884,167 @@ export default function Home() {
               <img src="/earth-layer-2.png" className="w-full h-auto" />
             </Moving>
           </div>
+
+          <svg
+            width="2253"
+            height="1186"
+            viewBox="0 0 2253 1186"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute top-[-94px] left-2/4 -translate-x-2/4	w-[2040px] h-auto"
+          >
+            <g opacity="0.5" filter="url(#filter0_f_12_6213)">
+              <ellipse
+                rx="359.472"
+                ry="194.3"
+                transform="matrix(0.989582 -0.143967 0.322788 0.946471 844.12 503.651)"
+                fill="#3D17E3"
+              />
+            </g>
+            <g opacity="0.5" filter="url(#filter1_f_12_6213)">
+              <ellipse
+                rx="335.166"
+                ry="143.295"
+                transform="matrix(0.999758 -0.0219991 0.0515146 0.998672 485.467 594.221)"
+                fill="#00F0FF"
+                fillOpacity="0.44"
+              />
+            </g>
+            <g filter="url(#filter2_f_12_6213)">
+              <ellipse
+                rx="171.692"
+                ry="145.935"
+                transform="matrix(0.919621 0.392807 -0.707568 0.706645 1550.68 633.249)"
+                fill="#842A9A"
+                fillOpacity="0.53"
+              />
+            </g>
+            <g filter="url(#filter3_f_12_6213)">
+              <ellipse
+                rx="229.792"
+                ry="195.318"
+                transform="matrix(0.919621 0.392806 -0.707569 0.706644 1834.05 541.401)"
+                fill="#68268A"
+                fillOpacity="0.51"
+              />
+            </g>
+            <g opacity="0.5" filter="url(#filter4_f_12_6213)">
+              <ellipse
+                rx="751.711"
+                ry="115.427"
+                transform="matrix(0.999584 -0.0288502 0.0675048 0.997719 1189.19 756.286)"
+                fill="#3D17E3"
+                fillOpacity="0.49"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_12_6213"
+                x="171.039"
+                y="0.753754"
+                width="1346.16"
+                height="1005.79"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="155.903"
+                  result="effect1_foregroundBlur_12_6213"
+                />
+              </filter>
+              <filter
+                id="filter1_f_12_6213"
+                x="0.298828"
+                y="300.923"
+                width="970.336"
+                height="586.597"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="75"
+                  result="effect1_foregroundBlur_12_6213"
+                />
+              </filter>
+              <filter
+                id="filter2_f_12_6213"
+                x="1199.1"
+                y="347.113"
+                width="703.167"
+                height="572.273"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="81.4516"
+                  result="effect1_foregroundBlur_12_6213"
+                />
+              </filter>
+              <filter
+                id="filter3_f_12_6213"
+                x="1418.62"
+                y="213.563"
+                width="830.865"
+                height="655.676"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="81.4516"
+                  result="effect1_foregroundBlur_12_6213"
+                />
+              </filter>
+              <filter
+                id="filter4_f_12_6213"
+                x="125.945"
+                y="327.271"
+                width="2126.49"
+                height="858.03"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="155.903"
+                  result="effect1_foregroundBlur_12_6213"
+                />
+              </filter>
+            </defs>
+          </svg>
         </section>
 
         <section
@@ -2345,7 +3119,11 @@ export default function Home() {
           id="roadmap"
           className={`mb-[96px] relative ${animatedRoadmap ? "in-view" : ""}`}
         >
-          <div className="container mx-auto">
+          <img
+            src="/network-line.png"
+            className="absolute left-0 top-2/4 -translate-y-2/4"
+          />
+          <div className="container mx-auto relative z-10">
             <h5 className="text-animate text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
               Roadmap
             </h5>
@@ -2635,6 +3413,311 @@ export default function Home() {
               </Swiper>
             </div>
           </div>
+
+          <svg
+            width="1278"
+            height="1457"
+            viewBox="0 0 1278 1457"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute left-[-632px] top-2/4 -translate-y-2/4"
+          >
+            <g opacity="0.83">
+              <g filter="url(#filter0_f_12_6385)">
+                <ellipse
+                  cx="589.181"
+                  cy="409.648"
+                  rx="194.665"
+                  ry="187.73"
+                  transform="rotate(66.7216 589.181 409.648)"
+                  fill="#6900EE"
+                  fillOpacity="0.5"
+                />
+              </g>
+              <g opacity="0.67" filter="url(#filter1_f_12_6385)">
+                <ellipse
+                  rx="264.27"
+                  ry="203.087"
+                  transform="matrix(-0.00441348 0.99999 -0.987498 0.157631 761.554 878.863)"
+                  fill="#3D17E3"
+                />
+              </g>
+              <g filter="url(#filter2_f_12_6385)">
+                <ellipse
+                  rx="254.691"
+                  ry="112.476"
+                  transform="matrix(-0.00441348 0.99999 -0.987498 0.157631 411.267 857.427)"
+                  fill="#420A8D"
+                />
+              </g>
+              <g filter="url(#filter3_f_12_6385)">
+                <ellipse
+                  rx="190.716"
+                  ry="154.129"
+                  transform="matrix(-0.0172168 0.999852 -0.98878 0.149378 647.491 819.194)"
+                  fill="#00F0FF"
+                  fillOpacity="0.44"
+                />
+              </g>
+              <g opacity="0.7">
+                <g filter="url(#filter4_f_12_6385)">
+                  <ellipse
+                    cx="668.066"
+                    cy="619.879"
+                    rx="154.446"
+                    ry="173.323"
+                    transform="rotate(66.7216 668.066 619.879)"
+                    fill="#E84DFC"
+                    fillOpacity="0.71"
+                  />
+                </g>
+                <g filter="url(#filter5_f_12_6385)">
+                  <ellipse
+                    rx="374.893"
+                    ry="221.129"
+                    transform="matrix(0.652511 0.757779 -0.783038 0.621973 678.085 615.943)"
+                    fill="#E84DFC"
+                    fillOpacity="0.2"
+                  />
+                </g>
+                <g filter="url(#filter6_f_12_6385)">
+                  <ellipse
+                    cx="668.388"
+                    cy="620.292"
+                    rx="71.9061"
+                    ry="94.2984"
+                    transform="rotate(66.7216 668.388 620.292)"
+                    fill="#FDE2FC"
+                    fillOpacity="0.71"
+                  />
+                </g>
+              </g>
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_12_6385"
+                x="256.155"
+                y="71.8503"
+                width="666.051"
+                height="675.595"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="72.0745"
+                  result="effect1_foregroundBlur_12_6385"
+                />
+              </filter>
+              <filter
+                id="filter1_f_12_6385"
+                x="249.196"
+                y="300.831"
+                width="1024.71"
+                height="1156.07"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="155.903"
+                  result="effect1_foregroundBlur_12_6385"
+                />
+              </filter>
+              <filter
+                id="filter2_f_12_6385"
+                x="0.191406"
+                y="302.112"
+                width="822.151"
+                height="1110.63"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="150"
+                  result="effect1_foregroundBlur_12_6385"
+                />
+              </filter>
+              <filter
+                id="filter3_f_12_6385"
+                x="345.056"
+                y="477.102"
+                width="604.872"
+                height="684.184"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="75"
+                  result="effect1_foregroundBlur_12_6385"
+                />
+              </filter>
+              <filter
+                id="filter4_f_12_6385"
+                x="397.508"
+                y="362.299"
+                width="541.117"
+                height="515.159"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="50"
+                  result="effect1_foregroundBlur_12_6385"
+                />
+              </filter>
+              <filter
+                id="filter5_f_12_6385"
+                x="78.3579"
+                y="0.243164"
+                width="1199.45"
+                height="1231.4"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="150"
+                  result="effect1_foregroundBlur_12_6385"
+                />
+              </filter>
+              <filter
+                id="filter6_f_12_6385"
+                x="497.199"
+                y="464.438"
+                width="342.378"
+                height="311.708"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="40"
+                  result="effect1_foregroundBlur_12_6385"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          <svg
+            width="1051"
+            height="908"
+            viewBox="0 0 1051 908"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute bottom-[-349px] right-[-314px]"
+          >
+            <g filter="url(#filter0_f_12_6395)">
+              <circle
+                cx="352.15"
+                cy="556.15"
+                r="188.659"
+                transform="rotate(33.1841 352.15 556.15)"
+                fill="#842A9A"
+                fillOpacity="0.53"
+              />
+            </g>
+            <g filter="url(#filter1_f_12_6395)">
+              <ellipse
+                cx="635.523"
+                cy="415.522"
+                rx="252.5"
+                ry="252.5"
+                transform="rotate(33.1841 635.523 415.522)"
+                fill="#68268A"
+                fillOpacity="0.51"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_12_6395"
+                x="0.566742"
+                y="204.566"
+                width="703.167"
+                height="703.167"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="81.4516"
+                  result="effect1_foregroundBlur_12_6395"
+                />
+              </filter>
+              <filter
+                id="filter1_f_12_6395"
+                x="220.091"
+                y="0.0904236"
+                width="830.864"
+                height="830.864"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="81.4516"
+                  result="effect1_foregroundBlur_12_6395"
+                />
+              </filter>
+            </defs>
+          </svg>
         </section>
 
         <section
@@ -3012,9 +4095,9 @@ export default function Home() {
                 width="1487.02"
                 height="948.786"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -3033,9 +4116,9 @@ export default function Home() {
                 width="1374.83"
                 height="817.007"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
