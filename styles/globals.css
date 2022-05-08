@@ -88,6 +88,11 @@ a {
   backdrop-filter: blur(20px);
 }
 
+.bg-white-blur-008 {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(30px);
+}
+
 .bg-white-blur-003 {
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0px 4px 200px rgba(0, 0, 0, 0.3);
@@ -275,5 +280,39 @@ a {
   to {
     opacity: 1;
     transform: scale(1) translateY(-50%) translateX(-50%)
+  }
+}
+
+.line-gradient {
+  border: 1px solid;
+  border-image-source: linear-gradient(106.71deg, #1E1822 7.98%, #EAC2FF 45.82%, #1945D9 70.53%, #1E1822 89.76%);
+}
+
+.border-top-linear {
+  border-width: 1px;
+  border-style: solid;
+  -moz-border-image: -moz-linear-gradient(106.71deg, #1E1822 7.98%, #EAC2FF 45.82%, #1945D9 70.53%, #1E1822 89.76%);
+  -webkit-border-image: -webkit-linear-gradient(106.71deg, #1E1822 7.98%, #EAC2FF 45.82%, #1945D9 70.53%, #1E1822 89.76%);
+  border-image: linear-gradient(106.71deg, #1E1822 7.98%, #EAC2FF 45.82%, #1945D9 70.53%, #1E1822 89.76%);
+  -webkit-border-image-slice: 2;
+  border-image-slice: 2;
+}
+
+/* .path {
+  stroke-dasharray: 3.23 3.23;
+} */
+
+.path {
+  stroke-dasharray: 3.23 3.23;
+  animation: dash 50s linear infinite;
+}
+
+.path.path-1 {
+  stroke-dasharray: 6.06 6.06;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
   }
 }

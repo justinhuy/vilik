@@ -766,8 +766,430 @@ export default function Home() {
             <h5 className="text-animate text-gradient-blue text-[40px] mb-[32px] leading-[48px]">
               What is Vilik&apos;s network
             </h5>
-            <div className="bg-white-blur-003  p-[20px]">
-              <img src="/network-flow.png" />
+            <div className="box bg-white-blur-003  p-[20px]">
+              <div className="relative">
+                <img src="/network-flow.png" />
+
+                <svg
+                  width="32"
+                  height="2"
+                  viewBox="0 0 32 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[227px] left-[597px] w-[32px]"
+                >
+                  <path
+                    d="M32 1L2.98023e-08 0.999997"
+                    stroke="url(#paint0_linear_12_6084)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_6084"
+                      x1="22.4255"
+                      y1="0.600659"
+                      x2="22.4404"
+                      y2="-0.107241"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="53"
+                  height="2"
+                  viewBox="0 0 53 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[231px] left-[743px] w-[53px]"
+                >
+                  <path
+                    d="M53 1H-5.96046e-07"
+                    stroke="url(#paint0_linear_12_6037)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_6037"
+                      x1="37.1422"
+                      y1="0.60066"
+                      x2="37.1512"
+                      y2="-0.107441"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="56"
+                  height="2"
+                  viewBox="0 0 56 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[102px] left-[886px] w-[56px]"
+                >
+                  <path
+                    d="M55.9897 1L0.989743 1"
+                    stroke="url(#paint0_linear_12_6044)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_6044"
+                      x1="39.5335"
+                      y1="0.600662"
+                      x2="39.5422"
+                      y2="-0.107448"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="56"
+                  height="2"
+                  viewBox="0 0 56 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[156px] left-[886px] w-[56px]"
+                >
+                  <path
+                    d="M55.9897 1L0.989743 1"
+                    stroke="url(#paint0_linear_12_6044)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_6044"
+                      x1="39.5335"
+                      y1="0.600662"
+                      x2="39.5422"
+                      y2="-0.107448"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="56"
+                  height="2"
+                  viewBox="0 0 56 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[209px] left-[886px] w-[56px]"
+                >
+                  <path
+                    d="M55.9897 1L0.989743 1"
+                    stroke="url(#paint0_linear_12_6044)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_6044"
+                      x1="39.5335"
+                      y1="0.600662"
+                      x2="39.5422"
+                      y2="-0.107448"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="56"
+                  height="2"
+                  viewBox="0 0 56 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[259px] left-[886px] w-[56px]"
+                >
+                  <path
+                    d="M55.9897 1L0.989743 1"
+                    stroke="url(#paint0_linear_12_6044)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_6044"
+                      x1="39.5335"
+                      y1="0.600662"
+                      x2="39.5422"
+                      y2="-0.107448"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="56"
+                  height="2"
+                  viewBox="0 0 56 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[102px] left-[1023px] w-[56px]"
+                >
+                  <path
+                    d="M55.9897 1L0.989743 1"
+                    stroke="url(#paint0_linear_12_6044)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_6044"
+                      x1="39.5335"
+                      y1="0.600662"
+                      x2="39.5422"
+                      y2="-0.107448"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="56"
+                  height="2"
+                  viewBox="0 0 56 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[152px] left-[1023px] w-[56px]"
+                >
+                  <path
+                    d="M55.9897 1L0.989743 1"
+                    stroke="url(#paint0_linear_12_6044)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_6044"
+                      x1="39.5335"
+                      y1="0.600662"
+                      x2="39.5422"
+                      y2="-0.107448"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="56"
+                  height="2"
+                  viewBox="0 0 56 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[202px] left-[1023px] w-[56px]"
+                >
+                  <path
+                    d="M55.9897 1L0.989743 1"
+                    stroke="url(#paint0_linear_12_6044)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_6044"
+                      x1="39.5335"
+                      y1="0.600662"
+                      x2="39.5422"
+                      y2="-0.107448"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="56"
+                  height="2"
+                  viewBox="0 0 56 2"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[252px] left-[1023px] w-[56px]"
+                >
+                  <path
+                    d="M55.9897 1L0.989743 1"
+                    stroke="url(#paint0_linear_12_6044)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_6044"
+                      x1="39.5335"
+                      y1="0.600662"
+                      x2="39.5422"
+                      y2="-0.107448"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="109"
+                  height="308"
+                  viewBox="0 0 109 308"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[66px] left-[633px] w-[109px]"
+                >
+                  <rect
+                    x="0.734171"
+                    y="0.957315"
+                    width="107.932"
+                    height="306.495"
+                    rx="9.35394"
+                    stroke="url(#paint0_linear_12_5787)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_5787"
+                      x1="32.8985"
+                      y1="123.288"
+                      x2="-56.3747"
+                      y2="169.926"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <svg
+                  width="94"
+                  height="308"
+                  viewBox="0 0 94 308"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[66px] left-[794px] w-[94px]"
+                >
+                  <rect
+                    x="0.595987"
+                    y="0.970011"
+                    width="92.5858"
+                    height="306.15"
+                    rx="9.35394"
+                    stroke="url(#paint0_linear_12_5811)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_5811"
+                      x1="28.1686"
+                      y1="123.163"
+                      x2="-53.0315"
+                      y2="159.629"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <svg
+                  width="85"
+                  height="241"
+                  viewBox="0 0 85 241"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[66px] left-[940px] w-[86px]"
+                >
+                  <rect
+                    x="0.742472"
+                    y="0.957315"
+                    width="83.3908"
+                    height="239.564"
+                    rx="9.35394"
+                    stroke="url(#paint0_linear_12_5867)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_5867"
+                      x1="25.5638"
+                      y1="96.5596"
+                      x2="-43.8382"
+                      y2="132.441"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="84"
+                  height="241"
+                  viewBox="0 0 84 241"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-[66px] left-[1077px] w-[84px]"
+                >
+                  <rect
+                    x="1.20439"
+                    y="0.970011"
+                    width="81.9034"
+                    height="239.564"
+                    rx="9.35394"
+                    stroke="url(#paint0_linear_12_5874)"
+                    stroke-width="0.645099"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_12_5874"
+                      x1="25.5807"
+                      y1="96.5723"
+                      x2="-43.1012"
+                      y2="131.453"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#C4D2FF" />
+                      <stop offset="1" stop-color="#5179FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
             </div>
           </div>
         </section>
@@ -1234,11 +1656,105 @@ export default function Home() {
                     VILIK&apos;S SOLUTION
                   </h5>
 
-                  <img
-                    src="/solution.png"
-                    alt="VILIK'S SOLUTION"
-                    className="mx-auto w-full max-w-[787px] mb-[24px]"
-                  />
+                  <div className="relative mt-[54px]">
+                    <img
+                      src="/solution.png"
+                      alt="VILIK'S SOLUTION"
+                      className="mx-auto w-full max-w-[787px] mb-[24px]"
+                    />
+
+                    <svg
+                      width="66"
+                      height="3"
+                      viewBox="0 0 66 3"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute top-[52px] left-[370px] w-[66px]"
+                    >
+                      <path
+                        d="M0.345703 1.82715L65.9934 1.82715"
+                        stroke="url(#paint0_linear_12_8563)"
+                        stroke-width="1.00996"
+                        className="path path-1"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_12_8563"
+                          x1="19.9878"
+                          y1="2.22649"
+                          x2="19.9902"
+                          y2="2.87605"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#F07AFF" />
+                          <stop offset="1" stop-color="#1945D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+
+                    <svg
+                      width="66"
+                      height="3"
+                      viewBox="0 0 66 3"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute top-[52px] left-[542px] w-[66px]"
+                    >
+                      <path
+                        d="M0.345703 1.82715L65.9934 1.82715"
+                        stroke="url(#paint0_linear_12_8563)"
+                        stroke-width="1.00996"
+                        className="path path-1"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_12_8563"
+                          x1="19.9878"
+                          y1="2.22649"
+                          x2="19.9902"
+                          y2="2.87605"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#F07AFF" />
+                          <stop offset="1" stop-color="#1945D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+
+                    <svg
+                      width="536"
+                      height="166"
+                      viewBox="0 0 536 166"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute top-[-27px] left-[217px] w-[536px]"
+                    >
+                      <rect
+                        x="534.637"
+                        y="0.504982"
+                        width="164.624"
+                        height="533.261"
+                        rx="12.6363"
+                        transform="rotate(90 534.637 0.504982)"
+                        stroke="url(#paint0_linear_12_8558)"
+                        stroke-width="1.00996"
+                        className="path path-1"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_12_8558"
+                          x1="584.701"
+                          y1="213.356"
+                          x2="753.291"
+                          y2="427.951"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#EAC2FF" />
+                          <stop offset="1" stop-color="#1945D9" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
 
                   <div className="grid grid-cols-3 gap-x-[1px]">
                     <div className="flex h-auto p-[32px] mb-[16px] bg-white-blur">
@@ -2181,11 +2697,11 @@ export default function Home() {
 
         <section
           id="whitepaper"
-          className={`text-center min-h-[455px] relative flex items-center justify-center overflow-hidden ${
+          className={`text-center min-h-[455px] relative flex items-center justify-center ${
             animatedWhitepaper ? "in-view" : ""
           }`}
         >
-          <div className="container mx-auto">
+          <div className="container mx-auto relative z-10">
             <h3 className="text-animate text-[40px] mb-[15px] leading-[48px] font-medium text-shadow-white-51">
               Learn more about VILIK World
             </h3>
@@ -2198,22 +2714,92 @@ export default function Home() {
             </button>
           </div>
 
-          <div
-            className="absolute"
-            style={{
-              width: "1010px",
-              height: "425px",
-              left: "-505px",
-              bottom: "-163px",
-              background: "rgba(240, 63, 255, 0.37)",
-              filter: "blur(200px)",
-            }}
-          ></div>
+          <svg
+            width="1396"
+            height="949"
+            viewBox="0 0 1396 949"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute bottom-0 right-0"
+          >
+            <g opacity="0.67" filter="url(#filter0_f_19_9943)">
+              <ellipse
+                rx="429.678"
+                ry="167.611"
+                transform="matrix(0.983903 0.178705 -0.518932 0.854815 1347.26 474.466)"
+                fill="#3D17E3"
+              />
+            </g>
+            <g filter="url(#filter1_f_19_9943)">
+              <ellipse
+                rx="391.751"
+                ry="91.462"
+                transform="matrix(0.981996 0.188901 -0.49729 0.867585 688.181 529.758)"
+                fill="#420A8D"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_19_9943"
+                x="603.751"
+                y="0.0730896"
+                width="1487.02"
+                height="948.786"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="155.903"
+                  result="effect1_foregroundBlur_19_9943"
+                />
+              </filter>
+              <filter
+                id="filter1_f_19_9943"
+                x="0.766113"
+                y="121.254"
+                width="1374.83"
+                height="817.007"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="150"
+                  result="effect1_foregroundBlur_19_9943"
+                />
+              </filter>
+            </defs>
+          </svg>
         </section>
       </main>
 
-      <footer className="text-[16px] leading-[19px] text-center pt-[38px] pb-[35px] bg-zinc-900">
-        <div className="container mx-auto">
+      <div className="border-top-linear"></div>
+      <footer className="text-[16px] leading-[19px] text-center pt-[38px] pb-[33px] bg-white-blur-008 relative">
+        <div
+          style={{
+            position: "absolute",
+            width: "1010px",
+            height: "425px",
+            left: "-505px",
+            bottom: "96px",
+            background: "rgba(240, 63, 255, 0.37)",
+            filter: "blur(200px)",
+          }}
+        ></div>
+        <div className="container mx-auto relative z-10">
           <Link href="/">
             <a className="inline-block mb-[14px]">
               <svg
@@ -2256,13 +2842,12 @@ export default function Home() {
             </a>
           </Link>
           <h2 className="text-[24px] leading-[29px] mb-[27px]">VILIK</h2>
-          <p className="text-gradient mb-[23px]">
+          <p className="text-gradient text-[18px] leading0[27px] mb-[15px] font-semibold">
             A new native blockchain. Powered by users.
           </p>
 
-          <div className="flex justify-between text-zinc-500">
-            <span>Copyright © 2022 Vilik</span>
-            <span>All rights reserved</span>
+          <div className="text-center text-zinc-500">
+            Copyright © 2022 Vilik All rights reserved
           </div>
         </div>
       </footer>
