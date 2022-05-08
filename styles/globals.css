@@ -19,6 +19,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  background-repeat: repeat;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -38,6 +42,31 @@ a {
   background: linear-gradient(216.64deg, #47FFFF 52.79%, #5179FF 119.07%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue-01 {
+  background: linear-gradient(214.09deg, #C4D2FF 52.1%, #5179FF 94.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text-menu:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(214.09deg, #C4D2FF 52.1%, #5179FF 94.34%);
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  opacity: 0;
+  transition: bottom .35s ease, opacity .35s ease;
+}
+
+.text-menu.active:after {
+  bottom: -3px;
+  opacity: 1;
 }
 
 .box-gradient {
@@ -122,4 +151,47 @@ a {
   border-image: linear-gradient(90deg, #301B50 0%, #EAC2FF 92.4%, #1E1822 98.32%);
   -webkit-border-image-slice: 2;
   border-image-slice: 2;
+}
+
+.line {
+  display: block;
+  will-change: opacity, transform;
+  opacity: 0;
+  transform: translateY(100%) translateZ(0);
+  animation: 0s cubic-bezier(0.430, 0.195, 0.020, 1.000) 0s forwards line_leave;
+}
+
+.is-ready .line {
+  transform: translateY(-10%) translateZ(0);
+  animation: 2s cubic-bezier(0.430, 0.195, 0.020, 1.000) 0s forwards line_enter;
+}
+
+.scrolling {
+  transition: all .35s ease;
+  background: #18181B;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes line_enter {
+  from {
+    opacity: 0;
+    transform: translateY(100%) rotate(3deg) translateZ(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(-15%) translateZ(0);
+  }
+}
+
+@keyframes line_leave {
+  from {
+    opacity: 1;
+    transform: translateY(-15%) translateZ(0)
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-100%) translateZ(0);
+  }
 }

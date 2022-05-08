@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+
+import FadeIn from "../animation/FadeIn";
+import FadeZoomIn from "../animation/FadeZoomIn";
+import Moving from "../animation/Moving";
+import Mask from "../animation/Mask";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,6 +21,9 @@ import "swiper/css/scrollbar";
 
 export default function Home() {
   const [active, setActive] = useState("problem");
+  const [scrollY, setScrollY] = useState(0);
+  const [isReady, setIsReady] = useState(false);
+  const [section, setSection] = useState(false);
 
   const tokenomicsData = [
     {
@@ -122,6 +130,57 @@ export default function Home() {
     }
   };
 
+  const onScroll = (event) => {
+    const { pageYOffset } = window;
+    setScrollY(pageYOffset);
+
+    if (pageYOffset >= document.getElementById("whitepaper").offsetTop - 72) {
+      setSection("whitepaper");
+    } else if (
+      pageYOffset >=
+      document.getElementById("people").offsetTop - 72
+    ) {
+      setSection("people");
+    } else if (
+      pageYOffset >=
+      document.getElementById("partners").offsetTop - 72
+    ) {
+      setSection("partners");
+    } else if (
+      pageYOffset >=
+      document.getElementById("roadmap").offsetTop - 72
+    ) {
+      setSection("roadmap");
+    } else if (pageYOffset >= document.getElementById("eco").offsetTop - 72) {
+      setSection("eco");
+    } else if (
+      pageYOffset >=
+      document.getElementById("values").offsetTop - 72
+    ) {
+      setSection("values");
+    } else if (
+      pageYOffset >=
+      document.getElementById("features").offsetTop - 72
+    ) {
+      setSection("features");
+    } else if (
+      pageYOffset >=
+      document.getElementById("about-us").offsetTop - 72
+    ) {
+      setSection("about-us");
+    } else {
+      setSection("");
+    }
+  };
+
+  useEffect(() => {
+    setScrollY(window.pageYOffset);
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    // remove event on unmount to prevent a memory leak
+    () => window.removeEventListener("scroll", onScroll, { passive: true });
+  }, []);
+
   return (
     <div>
       <Head>
@@ -130,151 +189,295 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className="h-[72px] py-[16px] fixed top-0 w-full z-20">
-        <div className="container mx-auto">
-          <div className="flex items-center justify-between">
-            <Link href="/">
-              <a className="text-white">
-                <svg
-                  width="77"
-                  height="40"
-                  viewBox="0 0 77 40"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M24.2667 20.7333L33.4 40L0 20.7333H24.2667ZM33.4 0L0 19.2667H24.2667L33.4 0ZM29 20C29 16.2667 31.2 13.0667 34.3333 11.5333V1.46667L25.5333 20L34.2667 38.5333V28.4667C31.2 26.9333 29 23.7333 29 20ZM38.3333 12.1333C37.4 12.1333 36.5333 12.2667 35.7333 12.6C35.2 12.8 34.7333 13 34.2667 13.2667C31.9333 14.6667 30.4 17.2 30.4 20.0667C30.4 22.9333 31.9333 25.4667 34.2667 26.8667C34.7333 27.1333 35.2 27.3333 35.7333 27.5333C36.5333 27.8 37.4 28 38.3333 28C39.2667 28 40.1333 27.8667 40.9333 27.5333C41.4667 27.3333 41.9333 27.1333 42.4 26.8667C44.7333 25.4667 46.2667 22.9333 46.2667 20.0667C46.2667 17.2 44.7333 14.6667 42.4 13.2667C41.9333 13 41.4667 12.8 40.9333 12.6C40.1333 12.2667 39.2667 12.1333 38.3333 12.1333ZM52.4667 20.7333H76.7333L43.3333 40L52.4667 20.7333ZM76.7333 19.2667L43.3333 0L52.4 19.2667H76.7333ZM47.7333 20C47.7333 23.7333 45.5333 26.9333 42.4 28.4667V38.6L51.2 20L42.4 1.46667V11.6C45.5333 13.0667 47.7333 16.2667 47.7333 20Z"
-                    fill="url(#paint0_linear_211_1134)"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_211_1134"
-                      x1="92"
-                      y1="43.5"
-                      x2="-26"
-                      y2="44.5"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#05DAC5" />
-                      <stop offset="0.277086" stop-color="#4354F2" />
-                      <stop offset="0.710545" stop-color="#F526FF" />
-                      <stop offset="1" stop-color="#FC176F" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </a>
-            </Link>
+      <FadeIn delay={1.2} y={-50} duration={1.5}>
+        <header
+          className={`h-[72px] py-[16px] fixed top-0 w-full z-20 ${
+            scrollY > 50 ? "scrolling" : ""
+          }`}
+        >
+          <div className="container mx-auto">
+            <div className="flex items-center justify-between">
+              <Link href="/">
+                <a className="text-white">
+                  <svg
+                    width="77"
+                    height="40"
+                    viewBox="0 0 77 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M24.2667 20.7333L33.4 40L0 20.7333H24.2667ZM33.4 0L0 19.2667H24.2667L33.4 0ZM29 20C29 16.2667 31.2 13.0667 34.3333 11.5333V1.46667L25.5333 20L34.2667 38.5333V28.4667C31.2 26.9333 29 23.7333 29 20ZM38.3333 12.1333C37.4 12.1333 36.5333 12.2667 35.7333 12.6C35.2 12.8 34.7333 13 34.2667 13.2667C31.9333 14.6667 30.4 17.2 30.4 20.0667C30.4 22.9333 31.9333 25.4667 34.2667 26.8667C34.7333 27.1333 35.2 27.3333 35.7333 27.5333C36.5333 27.8 37.4 28 38.3333 28C39.2667 28 40.1333 27.8667 40.9333 27.5333C41.4667 27.3333 41.9333 27.1333 42.4 26.8667C44.7333 25.4667 46.2667 22.9333 46.2667 20.0667C46.2667 17.2 44.7333 14.6667 42.4 13.2667C41.9333 13 41.4667 12.8 40.9333 12.6C40.1333 12.2667 39.2667 12.1333 38.3333 12.1333ZM52.4667 20.7333H76.7333L43.3333 40L52.4667 20.7333ZM76.7333 19.2667L43.3333 0L52.4 19.2667H76.7333ZM47.7333 20C47.7333 23.7333 45.5333 26.9333 42.4 28.4667V38.6L51.2 20L42.4 1.46667V11.6C45.5333 13.0667 47.7333 16.2667 47.7333 20Z"
+                      fill="url(#paint0_linear_211_1134)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_211_1134"
+                        x1="92"
+                        y1="43.5"
+                        x2="-26"
+                        y2="44.5"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#05DAC5" />
+                        <stop offset="0.277086" stop-color="#4354F2" />
+                        <stop offset="0.710545" stop-color="#F526FF" />
+                        <stop offset="1" stop-color="#FC176F" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </a>
+              </Link>
 
-            <ul className="flex space-x-[33px] text-[14px] leading-[21px]">
-              <li>
-                <a
-                  href="#about-us"
-                  title="About us"
-                  className="text-white"
-                  onClick={(e) => scrollToElement(e, "about-us")}
-                >
-                  About us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#features"
-                  title="Features"
-                  className="text-white"
-                  onClick={(e) => scrollToElement(e, "features")}
-                >
-                  Features
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#values"
-                  title="Values"
-                  className="text-white"
-                  onClick={(e) => scrollToElement(e, "values")}
-                >
-                  Values
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#eco"
-                  title="Ecosystem &amp; Tokenomics"
-                  className="text-white"
-                  onClick={(e) => scrollToElement(e, "eco")}
-                >
-                  Ecosystem &amp; Tokenomics
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#roadmoap"
-                  title="Roadmap"
-                  className="text-white"
-                  onClick={(e) => scrollToElement(e, "roadmoap")}
-                >
-                  Roadmap
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#partners"
-                  title="Partners"
-                  className="text-white"
-                  onClick={(e) => scrollToElement(e, "partners")}
-                >
-                  Partners
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#people"
-                  title="People"
-                  className="text-white"
-                  onClick={(e) => scrollToElement(e, "people")}
-                >
-                  People
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#whitepaper"
-                  title="Whitepaper"
-                  className="text-white"
-                  onClick={(e) => scrollToElement(e, "whitepaper")}
-                >
-                  Whitepaper
-                </a>
-              </li>
-            </ul>
+              <ul className="flex space-x-[33px] text-[14px] leading-[21px] font-medium">
+                <li>
+                  <a
+                    href="#about-us"
+                    title="About us"
+                    className={`text-white transition-all	text-menu relative ${
+                      section === "about-us"
+                        ? "text-gradient-blue-01 active"
+                        : ""
+                    }`}
+                    onClick={(e) => scrollToElement(e, "about-us")}
+                  >
+                    About us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#features"
+                    title="Features"
+                    className={`text-white transition-all	text-menu relative ${
+                      section === "features"
+                        ? "text-gradient-blue-01 active"
+                        : ""
+                    }`}
+                    onClick={(e) => scrollToElement(e, "features")}
+                  >
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#values"
+                    title="Values"
+                    className={`text-white transition-all	text-menu relative ${
+                      section === "values" ? "text-gradient-blue-01 active" : ""
+                    }`}
+                    onClick={(e) => scrollToElement(e, "values")}
+                  >
+                    Values
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#eco"
+                    title="Ecosystem &amp; Tokenomics"
+                    className={`text-white transition-all	text-menu relative ${
+                      section === "eco" ? "text-gradient-blue-01 active" : ""
+                    }`}
+                    onClick={(e) => scrollToElement(e, "eco")}
+                  >
+                    Ecosystem &amp; Tokenomics
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#roadmap"
+                    title="Roadmap"
+                    className={`text-white transition-all	text-menu relative ${
+                      section === "roadmap"
+                        ? "text-gradient-blue-01 active"
+                        : ""
+                    }`}
+                    onClick={(e) => scrollToElement(e, "roadmap")}
+                  >
+                    Roadmap
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#partners"
+                    title="Partners"
+                    className={`text-white transition-all	text-menu relative ${
+                      section === "partners"
+                        ? "text-gradient-blue-01 active"
+                        : ""
+                    }`}
+                    onClick={(e) => scrollToElement(e, "partners")}
+                  >
+                    Partners
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#people"
+                    title="People"
+                    className={`text-white transition-all	text-menu relative ${
+                      section === "people" ? "text-gradient-blue-01 active" : ""
+                    }`}
+                    onClick={(e) => scrollToElement(e, "people")}
+                  >
+                    People
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#whitepaper"
+                    title="Whitepaper"
+                    className={`text-white transition-all	text-menu relative ${
+                      section === "whitepaper"
+                        ? "text-gradient-blue-01 active"
+                        : ""
+                    }`}
+                    onClick={(e) => scrollToElement(e, "whitepaper")}
+                  >
+                    Whitepaper
+                  </a>
+                </li>
+              </ul>
 
-            <button
-              type="button"
-              className="h-[37px]  px-[16px] rounded-[19px] text-white inline-flex items-center border border-zinc-500"
-            >
-              Contact us
-            </button>
+              <button
+                type="button"
+                className="h-[37px]  px-[16px] rounded-[19px] text-white inline-flex items-center border border-zinc-500"
+              >
+                Contact us
+              </button>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </FadeIn>
 
-      <main className="relative z-10 pt-[72px]">
+      <Mask
+        callback={() => {
+          setIsReady(true);
+        }}
+      />
+
+      <main
+        className={`relative z-10 pt-[72px] ${isReady ? "is-ready" : ""}`}
+        style={{
+          backgroundImage: "url(/bg-dot.png)",
+        }}
+      >
         <section className="text-center pt-[57px] relative">
-          <img src="/banner.png" className="w-full h-auto" />
+          <FadeZoomIn delay={0.7} y={100} duration={2}>
+            <div className="relative">
+              {/* Icons */}
+              <div className="absolute h-auto w-[125px] left-[192px] top-[256px]">
+                <Moving yFrom={10} yTo={-10} duration={5}>
+                  <img
+                    src="/hero-banner/icon-1.png"
+                    className="h-auto w-full"
+                  />
+                </Moving>
+              </div>
+
+              <div className="absolute h-auto w-[160px] left-[257px] top-[372px]">
+                <Moving yFrom={-10} yTo={10} duration={3}>
+                  <img
+                    src="/hero-banner/icon-2.png"
+                    className="h-auto w-full"
+                  />
+                </Moving>
+              </div>
+
+              <div className="absolute h-auto w-[120px] left-[125px] top-[526px]">
+                <Moving xFrom={-10} xTo={10} yFrom={-10} yTo={10} duration={7}>
+                  <img
+                    src="/hero-banner/icon-3.png"
+                    className="h-auto w-full"
+                  />
+                </Moving>
+              </div>
+
+              <div className="absolute h-auto w-[586px] left-[186px] top-[435px]">
+                <Moving
+                  xFrom={0}
+                  xTo={30}
+                  yFrom={0}
+                  yTo={10}
+                  duration={5}
+                  rotateFrom={1}
+                  rotateTo={-1}
+                >
+                  <img
+                    src="/hero-banner/icon-4.png"
+                    className="h-auto w-full"
+                  />
+                </Moving>
+              </div>
+
+              <div className="absolute h-auto w-[120px] left-[870px] top-[756px]">
+                <Moving xFrom={-20} xTo={-20} yFrom={10} yTo={-20} duration={3}>
+                  <img
+                    src="/hero-banner/icon-5.png"
+                    className="h-auto w-full"
+                  />
+                </Moving>
+              </div>
+
+              <div className="absolute h-auto w-[255px] right-[132px] top-[643px]">
+                {/* <Moving xFrom={-10} xTo={10} yFrom={-10} yTo={10} duration={7}> */}
+                <img src="/hero-banner/icon-6.png" className="h-auto w-full" />
+                {/* </Moving> */}
+              </div>
+
+              <div className="absolute h-auto w-[120px] right-[313px] top-[552px]">
+                <Moving xFrom={-10} xTo={10} yFrom={-10} yTo={10} duration={4}>
+                  <img
+                    src="/hero-banner/icon-7.png"
+                    className="h-auto w-full"
+                  />
+                </Moving>
+              </div>
+
+              <div className="absolute h-auto w-[160px] right-[96px] top-[472px]">
+                <Moving yFrom={-20} yTo={20} duration={7}>
+                  <img
+                    src="/hero-banner/icon-8.png"
+                    className="h-auto w-full"
+                  />
+                </Moving>
+              </div>
+
+              <div className="absolute h-auto w-[85px] right-[308px] top-[364px]">
+                <Moving xFrom={-10} xTo={10} yFrom={-10} yTo={10} duration={5}>
+                  <img
+                    src="/hero-banner/icon-9.png"
+                    className="h-auto w-full"
+                  />
+                </Moving>
+              </div>
+              {/* End of Icons */}
+              <img
+                src="/hero-banner/earth-grid.png"
+                className="w-[1425px] h-auto max-w-[1425px] max-auto"
+              />
+            </div>
+          </FadeZoomIn>
+
           <div className="absolute z-10 top-[57px] left-0 w-full">
             <div className="container mx-auto">
-              <h1 className="text-[56px] leading-[67px] mb-[24px] font-semibold">
-                VILIK
-              </h1>
-              <h3 className="text-[40px] mb-[8px] leading-[48px] font-medium">
-                Fast. Seamless. Unconventional <br />
-                streaming and earning platform
-              </h3>
-              <p className="max-w-[588px] mx-auto text-zinc-100">
-                Where you can stream and earn as a streamer, a viewer, a gamer,
-                a seller, an educator, or any combination—all you need is Vilik
-                and the rest is up to you.
-              </p>
+              <div className="overflow-hidden mb-[24px]">
+                <h1 className="text-[56px] leading-[67px] font-semibold line">
+                  VILIK
+                </h1>
+              </div>
+              <div className="overflow-hidden mb-[8px] line">
+                <h3 className="text-[40px] leading-[48px] font-medium">
+                  Fast. Seamless. Unconventional <br />
+                  streaming and earning platform
+                </h3>
+              </div>
+              <div className="overflow-hidden line">
+                <p className="max-w-[588px] mx-auto text-zinc-100">
+                  Where you can stream and earn as a streamer, a viewer, a
+                  gamer, a seller, an educator, or any combination—all you need
+                  is Vilik and the rest is up to you.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -1170,7 +1373,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-[96px]">
+        <section className="mb-[96px]" id="roadmap">
           <div className="container max-container">
             <h5 className="text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
               Roadmap
