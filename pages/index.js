@@ -25,6 +25,20 @@ export default function Home() {
   const [isReady, setIsReady] = useState(false);
   const [section, setSection] = useState(false);
 
+  // Active animate section once time
+  const [animatedAboutUs, setAnimateAboutUs] = useState(false);
+  const [animatedNetwork, setAnimateNetwork] = useState(false);
+  const [animatedFeatures, setAnimateFeatures] = useState(false);
+  const [animatedValues, setAnimateValues] = useState(false);
+  const [animatedEco, setAnimateEco] = useState(false);
+  const [animatedMonetaryFlow, setAnimateMonetaryFlow] = useState(false);
+  const [animatedTokenomics, setAnimateTokenomics] = useState(false);
+  const [animatedChart, setAnimateChart] = useState(false);
+  const [animatedRoadmap, setAnimateRoadmap] = useState(false);
+  const [animatedPartners, setAnimatePartners] = useState(false);
+  const [animatedPeople, setAnimatePeople] = useState(false);
+  const [animatedWhitepaper, setAnimateWhitepaper] = useState(false);
+
   const tokenomicsData = [
     {
       stage: "SEED ROUND",
@@ -130,6 +144,19 @@ export default function Home() {
     }
   };
 
+  const isElementXPercentInViewport = function (el, percentVisible) {
+    let rect = el.getBoundingClientRect(),
+      windowHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+
+    return !(
+      Math.floor(100 - ((rect.top >= 0 ? 0 : rect.top) / +-rect.height) * 100) <
+        percentVisible ||
+      Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) <
+        percentVisible
+    );
+  };
+
   const onScroll = (event) => {
     const { pageYOffset } = window;
     setScrollY(pageYOffset);
@@ -138,38 +165,107 @@ export default function Home() {
       setSection("whitepaper");
     } else if (
       pageYOffset >=
-      document.getElementById("people").offsetTop - 72
+      document.getElementById("people").offsetTop - 150
     ) {
       setSection("people");
     } else if (
       pageYOffset >=
-      document.getElementById("partners").offsetTop - 72
+      document.getElementById("partners").offsetTop - 150
     ) {
       setSection("partners");
     } else if (
       pageYOffset >=
-      document.getElementById("roadmap").offsetTop - 72
+      document.getElementById("roadmap").offsetTop - 150
     ) {
       setSection("roadmap");
-    } else if (pageYOffset >= document.getElementById("eco").offsetTop - 72) {
+    } else if (
+      pageYOffset >=
+      document.getElementById("chart").offsetTop - 150
+    ) {
+      setSection("chart");
+    } else if (
+      pageYOffset >=
+      document.getElementById("tokenomics").offsetTop - 150
+    ) {
+      setSection("tokenomics");
+    } else if (
+      pageYOffset >=
+      document.getElementById("monetary-flow").offsetTop - 150
+    ) {
+      setSection("monetary-flow");
+    } else if (pageYOffset >= document.getElementById("eco").offsetTop - 150) {
       setSection("eco");
     } else if (
       pageYOffset >=
-      document.getElementById("values").offsetTop - 72
+      document.getElementById("values").offsetTop - 150
     ) {
       setSection("values");
     } else if (
       pageYOffset >=
-      document.getElementById("features").offsetTop - 72
+      document.getElementById("features").offsetTop - 150
     ) {
       setSection("features");
     } else if (
       pageYOffset >=
-      document.getElementById("about-us").offsetTop - 72
+      document.getElementById("about-us").offsetTop - 150
     ) {
       setSection("about-us");
     } else {
       setSection("");
+    }
+
+    if (isElementXPercentInViewport(document.getElementById("about-us"), 30)) {
+      setAnimateAboutUs(true);
+    }
+
+    if (isElementXPercentInViewport(document.getElementById("network"), 30)) {
+      setAnimateNetwork(true);
+    }
+
+    if (isElementXPercentInViewport(document.getElementById("features"), 30)) {
+      setAnimateFeatures(true);
+    }
+
+    if (isElementXPercentInViewport(document.getElementById("values"), 30)) {
+      setAnimateValues(true);
+    }
+
+    if (isElementXPercentInViewport(document.getElementById("eco"), 30)) {
+      setAnimateEco(true);
+    }
+
+    if (
+      isElementXPercentInViewport(document.getElementById("monetary-flow"), 30)
+    ) {
+      setAnimateMonetaryFlow(true);
+    }
+
+    if (
+      isElementXPercentInViewport(document.getElementById("tokenomics"), 30)
+    ) {
+      setAnimateTokenomics(true);
+    }
+
+    if (isElementXPercentInViewport(document.getElementById("chart"), 30)) {
+      setAnimateChart(true);
+    }
+
+    if (isElementXPercentInViewport(document.getElementById("roadmap"), 30)) {
+      setAnimateRoadmap(true);
+    }
+
+    if (isElementXPercentInViewport(document.getElementById("partners"), 30)) {
+      setAnimatePartners(true);
+    }
+
+    if (isElementXPercentInViewport(document.getElementById("people"), 30)) {
+      setAnimatePeople(true);
+    }
+
+    if (
+      isElementXPercentInViewport(document.getElementById("whitepaper"), 30)
+    ) {
+      setAnimateWhitepaper(true);
     }
   };
 
@@ -484,18 +580,22 @@ export default function Home() {
 
         <section
           id="about-us"
-          className="text-[16px] leading-[24px] relative text-zinc-300 relative"
+          className={`text-[16px] leading-[24px] relative text-zinc-300 relative ${
+            animatedAboutUs ? "in-view" : ""
+          }`}
         >
           <div className="container relative z-10 mx-auto">
             <div className="flex items-center gap-[32px] h-[777px]">
               <div className="w-6/12">
-                <h4 className="rounded-[38px] h-[35px] bg-[#27272A] border border-[#AF5FFF] inline-flex items-center justify-center px-[18px] mb-[8px]">
-                  ABOUT US
+                <h4 className="btn-animate rounded-[38px] h-[35px] inline-flex items-center justify-center px-[18px] mb-[8px]">
+                  <span className="circle"></span>
+                  <span className="layer"></span>
+                  <span className="txt whitespace-nowrap">ABOUT US</span>
                 </h4>
-                <h5 className="text-gradient-blue text-[40px] mb-[32px] leading-[48px]">
+                <h5 className="text-animate text-gradient-blue text-[40px] mb-[32px] leading-[48px]">
                   Cutting-edge multi-purpose SocialFi streaming platform
                 </h5>
-                <p className="text-zinc-300">
+                <p className="desc-animate text-zinc-300">
                   In the era of high interaction, edutainment and a combination
                   between entertainment and earning, Vilik proudly introduces a
                   high-end video streaming platform built on the BSC network.
@@ -504,7 +604,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="w-6/12">
+              <div className="box w-6/12">
                 <Image
                   src="/about-us.png"
                   alt="About us"
@@ -615,9 +715,14 @@ export default function Home() {
           </svg> */}
         </section>
 
-        <section className="text-[16px] leading-[24px] relative text-zinc-300 mb-[48px]">
+        <section
+          id="network"
+          className={`text-[16px] leading-[24px] relative text-zinc-300 mb-[48px] ${
+            animatedNetwork ? "in-view" : ""
+          }`}
+        >
           <div className="container relative z-10 mx-auto">
-            <h5 className="text-gradient-blue text-[40px] mb-[32px] leading-[48px]">
+            <h5 className="text-animate text-gradient-blue text-[40px] mb-[32px] leading-[48px]">
               What is Vilik's network
             </h5>
             <div className="bg-white-blur-003  p-[20px]">
@@ -626,14 +731,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="features" className="mb-[72px]">
+        <section
+          id="features"
+          className={`mb-[72px] relative ${animatedFeatures ? "in-view" : ""}`}
+        >
           <div className="container mx-auto">
             <div className="flex items-center gap-[32px] mb-[32px]">
               <div className="w-8/12">
-                <h5 className="text-gradient-blue text-[40px] leading-[48px] mb-[24px]">
+                <h5 className="text-animate text-gradient-blue text-[40px] leading-[48px] mb-[24px]">
                   Features
                 </h5>
-                <p className="text-zinc-300">
+                <p className="desc-animate text-zinc-300">
                   Nowadays, other's platforms with central data network (CDN) is
                   based on centralized structures for delivery video, video
                   storage, traffic and routing are concentrated at the CDN
@@ -651,7 +759,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="w-4/12">
+              <div className="box w-4/12">
                 <img src="/features.png" alt="Features" />
               </div>
             </div>
@@ -966,11 +1074,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="values" className="mb-[96px]">
+        <section
+          id="values"
+          className={`mb-[96px] relative ${animatedValues ? "in-view" : ""}`}
+        >
           <div className="container mx-auto">
             <div className="text-center">
-              <h4 className="rounded-[38px] h-[35px] bg-[#27272A] border border-[#AF5FFF] inline-flex items-center justify-center px-[18px] mb-[24px]">
-                VALUE
+              <h4 className="btn-animate rounded-[38px] h-[35px] inline-flex items-center justify-center px-[18px] mb-[24px]">
+                <span className="circle"></span>
+                <span className="layer"></span>
+                <span className="txt whitespace-nowrap">VALUE</span>
               </h4>
             </div>
 
@@ -1152,18 +1265,25 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="eco" className="mb-[56px]">
+        <section
+          id="eco"
+          className={`mb-[56px] relative ${animatedEco ? "in-view" : ""}`}
+        >
           <div className="container mx-auto relative">
             <div className="text-center">
-              <h4 className="rounded-[38px] h-[35px] bg-[#27272A] border border-[#AF5FFF] inline-flex items-center justify-center px-[18px] mb-[8px] relative z-10">
-                Ecosystem &amp; Tokenomics
+              <h4 className="btn-animate large rounded-[38px] h-[35px] inline-flex items-center justify-center px-[18px] mb-[8px] relative z-10">
+                <span className="circle"></span>
+                <span className="layer"></span>
+                <span className="txt whitespace-nowrap">
+                  Ecosystem &amp; Tokenomics
+                </span>
               </h4>
             </div>
-            <h5 className="text-center text-gradient-blue text-[40px] mb-[48px] leading-[48px] relative z-10">
+            <h5 className="text-animate text-center text-gradient-blue text-[40px] mb-[48px] leading-[48px] relative z-10">
               Impressed users by our exceptional features
             </h5>
 
-            <div className="text-center bg-white-blur px-[80px] py-[40px] relative z-10">
+            <div className="box text-center bg-white-blur px-[80px] py-[40px] relative z-10">
               <img
                 src="/eco-system.png"
                 alt="Impressed users by our exceptional features"
@@ -1223,13 +1343,18 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-[56px]">
+        <section
+          id="monetary-flow"
+          className={`mb-[56px] relative ${
+            animatedMonetaryFlow ? "in-view" : ""
+          }`}
+        >
           <div className="container mx-auto relative">
-            <h5 className="text-center text-gradient-blue text-[40px] mb-[48px] leading-[48px] relative z-10">
+            <h5 className="text-animate text-center text-gradient-blue text-[40px] mb-[48px] leading-[48px] relative z-10">
               Monetary flow
             </h5>
 
-            <div className="text-center bg-white-blur px-[80px] py-[40px] relative z-10">
+            <div className="box text-center bg-white-blur px-[80px] py-[40px] relative z-10">
               <img
                 src="/monetary-flow.png"
                 alt="Impressed users by our exceptional features"
@@ -1239,13 +1364,18 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-[96px]">
+        <section
+          id="tokenomics"
+          className={`mb-[96px] relative ${
+            animatedTokenomics ? "in-view" : ""
+          }`}
+        >
           <div className="container mx-auto relative">
-            <h5 className="text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
+            <h5 className="text-animate text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
               Tokenomics
             </h5>
 
-            <div className="text-[16px] leading-[24px] border-linear">
+            <div className="box text-[16px] leading-[24px] border-linear">
               <div className="flex text-light-blue text-[18px] leading-[27px] bg-white-blur-015 divide-x divide-white/20 font-bold">
                 <div className="w-[156px] py-[8px] text-center">STAGE</div>
                 <div className="w-[156px] py-[8px] text-center">
@@ -1308,7 +1438,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-[96px]">
+        <section
+          id="chart"
+          className={`mb-[96px] relative ${animatedChart ? "in-view" : ""}`}
+        >
           <div className="container mx-auto">
             <div className="grid grid-cols-12">
               <div className="col-span-4">
@@ -1361,7 +1494,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-span-8">
+              <div className="box col-span-8">
                 <div className="text-right">
                   <img
                     className="inline-block w-full max-w-[682px] h-auto"
@@ -1373,13 +1506,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-[96px]" id="roadmap">
+        <section
+          id="roadmap"
+          className={`mb-[96px] relative ${animatedRoadmap ? "in-view" : ""}`}
+        >
           <div className="container max-container">
-            <h5 className="text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
+            <h5 className="text-animate text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
               Roadmap
             </h5>
 
-            <div className="max-w-[1095px] mx-auto relative">
+            <div className="box max-w-[1095px] mx-auto relative">
               <div className="line-linear absolute top-[52px] w-full left-2/4 -translate-x-2/4"></div>
               <Swiper
                 modules={[Navigation]}
@@ -1638,13 +1774,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="partners" className="mb-[120px]">
+        <section
+          id="partners"
+          className={`mb-[120px] relative ${animatedPartners ? "in-view" : ""}`}
+        >
           <div className="container mx-auto">
-            <h5 className="text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
+            <h5 className="text-animate text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
               Trust by
             </h5>
 
-            <div className="flex flex-wrap justify-center items-center space-x-[137px] space-y-[32px]">
+            <div className="box flex flex-wrap justify-center items-center space-x-[137px] space-y-[32px]">
               <svg
                 width="228"
                 height="115"
@@ -1885,13 +2024,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="people">
+        <section
+          id="people"
+          className={`relative ${animatedPeople ? "in-view" : ""}`}
+        >
           <div className="container mx-auto">
-            <h5 className="text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
+            <h5 className="text-animate text-center text-gradient-blue text-[40px] mb-[32px] leading-[48px] relative z-10">
               Our Team
             </h5>
 
-            <div className="grid grid-cols-3 gap-x-[32px]">
+            <div className="box grid grid-cols-3 gap-x-[32px]">
               <div>
                 <div className="mb-[16px] border-linear">
                   <img
@@ -1958,10 +2100,12 @@ export default function Home() {
 
         <section
           id="whitepaper"
-          className="text-center min-h-[455px] relative flex items-center justify-center overflow-hidden"
+          className={`text-center min-h-[455px] relative flex items-center justify-center overflow-hidden ${
+            animatedWhitepaper ? "in-view" : ""
+          }`}
         >
           <div className="container mx-auto">
-            <h3 className="text-[40px] mb-[15px] leading-[48px] font-medium text-shadow-white-51">
+            <h3 className="text-animate text-[40px] mb-[15px] leading-[48px] font-medium text-shadow-white-51">
               Learn more about VILIK World
             </h3>
 
