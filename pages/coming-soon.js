@@ -361,6 +361,7 @@ export default function ComingSoon() {
       <video
         autoPlay
         muted
+        playsInline
         loop
         id="video"
         className="fixed top-0 object-cover w-screen h-screen transform rotate-180 lef-0"
