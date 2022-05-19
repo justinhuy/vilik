@@ -407,13 +407,83 @@ export default function Home() {
       {/* navigation */}
       <div className="nav text-[14px] leading-[21px] font-kanit text-[#FAFAFA] uppercase z-50">
         <div className="nav__offset-container">
-          <div className="nav__low-container space-x-[32px]">
-            <div className="whitespace-normal">Introduce</div>
-            <div className="whitespace-normal">About us</div>
-            <div className="whitespace-normal">Features</div>
-            <div className="whitespace-normal">Values</div>
-            <div className="whitespace-normal">Ecosystem & Tokenomics</div>
-            <div className="whitespace-normal">Roadmap</div>
+          <div className="nav__low-container">
+            <div
+              className={`nav__item whitespace-nowrap mx-[16px] ${
+                activeSection === 0 ? "active" : ""
+              }`}
+              onClick={() => scrollTo(0)}
+            >
+              Introduce
+            </div>
+            <div
+              className={`nav__item whitespace-nowrap mx-[16px] ${
+                activeSection === 1 ? "active" : ""
+              }`}
+              onClick={() => scrollTo(1)}
+            >
+              About us
+            </div>
+            <div
+              className={`nav__item whitespace-nowrap mx-[16px] ${
+                activeSection === 2 || activeSection === 3 ? "active" : ""
+              }`}
+              onClick={() => scrollTo(2)}
+            >
+              Features
+            </div>
+            <div
+              className={`nav__item whitespace-nowrap mx-[16px] ${
+                activeSection === 4 ? "active" : ""
+              }`}
+              onClick={() => scrollTo(4)}
+            >
+              Values
+            </div>
+            <div
+              className={`nav__item whitespace-nowrap mx-[16px] ${
+                activeSection === 5 ||
+                activeSection === 6 ||
+                activeSection === 7
+                  ? "active"
+                  : ""
+              }`}
+              onClick={() => scrollTo(5)}
+            >
+              Ecosystem &amp; Tokenomics
+            </div>
+            <div
+              className={`nav__item whitespace-nowrap mx-[16px] ${
+                activeSection === 8 || activeSection === 9 ? "active" : ""
+              }`}
+              onClick={() => scrollTo(8)}
+            >
+              Roadmap
+            </div>
+            <div
+              className={`nav__item whitespace-nowrap mx-[16px] ${
+                activeSection === 10 ? "active" : ""
+              }`}
+              onClick={() => scrollTo(10)}
+            >
+              Partners
+            </div>
+            <div
+              className={`nav__item whitespace-nowrap mx-[16px] ${
+                activeSection === 11 || activeSection === 12 ? "active" : ""
+              }`}
+              onClick={() => scrollTo(11)}
+            >
+              People
+            </div>
+            <div
+              className={`nav__item whitespace-nowrap mx-[16px] ${
+                activeSection === 13 ? "active" : ""
+              }`}
+              onClick={() => scrollTo(13)}
+            >
+              Whitepaper
+            </div>
           </div>
         </div>
       </div>
