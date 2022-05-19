@@ -42,6 +42,9 @@ module.exports = {
       animation: {
         "spin-slow": "spin 3s linear infinite",
       },
+      fontFamily: {
+        kanit: ["Kanit", "sans-serif"],
+      },
     },
     container: {
       screens: {
