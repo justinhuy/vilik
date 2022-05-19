@@ -660,7 +660,7 @@ export default function Home() {
           >
             <div className="screen__container relative z-10">
               <h5 className="sub-heading text-gradient-blue text-[40px] mb-[32px] leading-[48px] text-center">
-                What is Vilik's network
+                What is Vilik&apos;s network
               </h5>
 
               <div className="box bg-white-blur-003 px-[26px] pt-[13px] pb-[21px] max-w-[1224px] mx-auto">
@@ -681,10 +681,10 @@ export default function Home() {
                     Features
                   </h5>
                   <p className="desc text-[16px] leading-[24px] mb-[40px] text-zinc-300 text-zinc-300">
-                    Nowadays, other's platforms with a central data network are
-                    based on centralised structures for the delivery of videos,
-                    video storage, traffic, and routing are concentrated at the
-                    central data network center. Besides that, these are
+                    Nowadays, other&apos;s platforms with a central data network
+                    are based on centralised structures for the delivery of
+                    videos, video storage, traffic, and routing are concentrated
+                    at the central data network center. Besides that, these are
                     problems such as bandwidth issues on high traffic affecting
                     video quality and high cost of maintenance. To solve these
                     problems, Vilik Network is created to adopt a decentralized
