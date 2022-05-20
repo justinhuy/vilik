@@ -114,6 +114,7 @@ const TOKENOMICS_DATA = [
 
 export default function Home() {
   const el = useRef();
+  const elNav = useRef();
 
   const [active, setActive] = useState("problem");
 
@@ -126,6 +127,16 @@ export default function Home() {
     setIsAnimating(true);
     setStep(idx);
     setActiveSection(-1);
+
+    const navItem = document.getElementById(`section-${idx}`);
+    if (navItem) {
+      const animNav = gsap.to(elNav.current, {
+        x: (976 - navItem.offsetLeft) / 2,
+        y: 0,
+        z: 0,
+        duration: 0.5,
+      });
+    }
 
     const anim = gsap.to(el.current, {
       x: 0,
@@ -406,13 +417,14 @@ export default function Home() {
 
       {/* navigation */}
       <div className="nav text-[14px] leading-[21px] font-kanit text-[#FAFAFA] uppercase z-50">
-        <div className="nav__offset-container">
+        <div className="nav__offset-container" ref={elNav}>
           <div className="nav__low-container">
             <div
               className={`nav__item whitespace-nowrap mx-[16px] ${
                 activeSection === 0 ? "active" : ""
               }`}
               onClick={() => scrollTo(0)}
+              id="section-0"
             >
               Introduce
             </div>
@@ -421,6 +433,7 @@ export default function Home() {
                 activeSection === 1 ? "active" : ""
               }`}
               onClick={() => scrollTo(1)}
+              id="section-1"
             >
               About us
             </div>
@@ -429,6 +442,7 @@ export default function Home() {
                 activeSection === 2 || activeSection === 3 ? "active" : ""
               }`}
               onClick={() => scrollTo(2)}
+              id="section-2"
             >
               Features
             </div>
@@ -437,6 +451,7 @@ export default function Home() {
                 activeSection === 4 ? "active" : ""
               }`}
               onClick={() => scrollTo(4)}
+              id="section-4"
             >
               Values
             </div>
@@ -449,6 +464,7 @@ export default function Home() {
                   : ""
               }`}
               onClick={() => scrollTo(5)}
+              id="section-5"
             >
               Ecosystem &amp; Tokenomics
             </div>
@@ -457,6 +473,7 @@ export default function Home() {
                 activeSection === 8 || activeSection === 9 ? "active" : ""
               }`}
               onClick={() => scrollTo(8)}
+              id="section-8"
             >
               Roadmap
             </div>
@@ -465,6 +482,7 @@ export default function Home() {
                 activeSection === 10 ? "active" : ""
               }`}
               onClick={() => scrollTo(10)}
+              id="section-10"
             >
               Partners
             </div>
@@ -473,6 +491,7 @@ export default function Home() {
                 activeSection === 11 || activeSection === 12 ? "active" : ""
               }`}
               onClick={() => scrollTo(11)}
+              id="section-11"
             >
               People
             </div>
@@ -481,6 +500,7 @@ export default function Home() {
                 activeSection === 13 ? "active" : ""
               }`}
               onClick={() => scrollTo(13)}
+              id="section-13"
             >
               Whitepaper
             </div>
