@@ -493,7 +493,7 @@ export default function Home() {
               onClick={() => scrollTo(11)}
               id="section-11"
             >
-              People
+              Our Team
             </div>
             <div
               className={`nav__item whitespace-nowrap mx-[16px] ${
@@ -526,13 +526,27 @@ export default function Home() {
                     <span className="text-gradient-blue-01">Livestream</span>
                     <span className="text-gradient-blue-01">Blockchain</span>
                   </h1>
-                  <p className="text-fadein text-[28px] leading-[34px] mb-[29px] text-white font-kanit">
+                  <p className="text-fadein text-[28px] leading-[34px] mb-[26px] text-white font-kanit">
                     Fast. Seamless. Unconventional streaming and earning
                     platform
                   </p>
 
-                  <button className="text-fadein bg-gradient-purple text-[16px] leading-[19px] px-[24px] py-[16px] rounded-[30px]">
-                    About us
+                  <button
+                    type="button"
+                    className="text-fadein relative group cursor-pointer overflow-hidden p-[3px] rounded-[30px]"
+                  >
+                    <span className="box bg-gradient-purple text-[16px] leading-[19px] h-[51px] px-[24px] rounded-[26px] inline-flex items-center relative z-10">
+                      About us
+                    </span>
+                    <div className="absolute w-[275px] h-[275px] top-1/2 left-0 linear-custom transform translate-y-[-50%]">
+                      <div
+                        style={{
+                          background:
+                            "linear-gradient(178.93deg, #F499FF 31.95%, #4453F2 71.55%)",
+                        }}
+                        className="w-full h-full duration-200 opacity-0 lg:group-hover:animate-spin-slow lg:group-hover:opacity-100"
+                      ></div>
+                    </div>
                   </button>
                 </div>
               </div>
@@ -1678,85 +1692,96 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative h-screen w-full flex flex-wrap items-center justify-center py-[87px] px-[7.5vw] ${
+            className={`screen relative h-screen w-full flex items-center justify-center py-[87px] px-[7.5vw] ${
               activeSection === 7 ? "active" : ""
             }`}
           >
-            <div className="screen__container relative z-10">
+            <div className="screen__container relative z-10 flex w-full h-full flex-col items-stretch">
               <h5 className="sub-heading text-gradient-blue text-[40px] mb-[32px] leading-[48px] text-center">
                 Tokenomics
               </h5>
 
-              <div className="box text-[16px] leading-[24px] border-linear relative">
-                <div className="absolute top-[-162px] right-[-173px] z-10">
-                  <Moving yFrom={-10} yTo={10} duration={5}>
-                    <Image
-                      src="/shape3@2x.png"
-                      alt="Tokenomics"
-                      width={277}
-                      height={216}
-                    />
-                  </Moving>
-                </div>
-                <div className="flex text-light-blue text-[18px] leading-[27px] bg-white-blur-015 divide-x divide-white/20 font-bold">
-                  <div className="w-[156px] py-[8px] text-center">STAGE</div>
-                  <div className="w-[156px] py-[8px] text-center">
-                    % OF TOTAL SUPPLY
+              <div className="flex-1">
+                <div className="box text-[16px] leading-[24px] border-linear relative">
+                  <div className="absolute top-[-162px] right-[-173px] z-10">
+                    <Moving yFrom={-10} yTo={10} duration={5}>
+                      <Image
+                        src="/shape3@2x.png"
+                        alt="Tokenomics"
+                        width={277}
+                        height={216}
+                      />
+                    </Moving>
                   </div>
-                  <div className="w-[156px] py-[8px] text-center">QUANTITY</div>
-                  <div className="w-[156px] py-[8px] text-center">PRICE</div>
-                  <div className="w-[156px] py-[8px] text-center">
-                    TOTAL SOLD
-                  </div>
-                  <div className="flex-1 py-[8px] text-center">
-                    VESTING PERIOD
-                  </div>
-                </div>
 
-                <div className="divide-y divide-zinc-600">
-                  {TOKENOMICS_DATA.map((item) => (
-                    <div className="group" key={item.stage}>
-                      <div className="flex transition-all group-hover:bg-zinc-800 divide-x divide-white/20">
-                        <div className="w-[156px] py-[15px] text-center text-light-blue">
-                          {item.stage}
-                        </div>
-                        <div className="w-[156px] py-[15px] text-center text-center">
-                          <span className="inline-block rounded-[16px] py-[2px] px-[20px] border border-zinc-400 bg-zinc-800 text-[14px leading-[21px] font-medium">
-                            {item.total}
-                          </span>
-                        </div>
-                        <div className="w-[156px] py-[15px] text-center">
-                          {item.quantity}
-                        </div>
-                        <div className="w-[156px] py-[15px] text-center">
-                          {item.price}
-                        </div>
-                        <div className="w-[156px] py-[15px] text-center">
-                          {item.totalSold}
-                        </div>
-                        <div className="flex-1 py-[15px] px-[20px]">
-                          {item.vestingPeriod}
-                        </div>
+                  <div className="relative h-full pt-[70px] pb-[51px]">
+                    <div className="flex text-light-blue text-[18px] leading-[27px] bg-white-blur-015 divide-x divide-white/20 font-bold absolute top-0 left-0 w-full">
+                      <div className="w-[156px] py-[8px] text-center">
+                        STAGE
+                      </div>
+                      <div className="w-[156px] py-[8px] text-center">
+                        % OF TOTAL SUPPLY
+                      </div>
+                      <div className="w-[156px] py-[8px] text-center">
+                        QUANTITY
+                      </div>
+                      <div className="w-[156px] py-[8px] text-center">
+                        PRICE
+                      </div>
+                      <div className="w-[156px] py-[8px] text-center">
+                        TOTAL SOLD
+                      </div>
+                      <div className="flex-1 py-[8px] text-center">
+                        VESTING PERIOD
                       </div>
                     </div>
-                  ))}
-                </div>
 
-                <div className="flex text-[18px] leading-[27px] bg-white-blur-015 divide-x divide-white/20">
-                  <div className="w-[156px] py-[8px] text-center font-bold">
-                    TOTAL
+                    <div className="flex-1 divide-y divide-zinc-600">
+                      {TOKENOMICS_DATA.map((item) => (
+                        <div className="group" key={item.stage}>
+                          <div className="flex transition-all group-hover:bg-zinc-800 divide-x divide-white/20">
+                            <div className="w-[156px] py-[15px] text-center text-light-blue">
+                              {item.stage}
+                            </div>
+                            <div className="w-[156px] py-[15px] text-center text-center">
+                              <span className="inline-block rounded-[16px] py-[2px] px-[20px] border border-zinc-400 bg-zinc-800 text-[14px leading-[21px] font-medium">
+                                {item.total}
+                              </span>
+                            </div>
+                            <div className="w-[156px] py-[15px] text-center">
+                              {item.quantity}
+                            </div>
+                            <div className="w-[156px] py-[15px] text-center">
+                              {item.price}
+                            </div>
+                            <div className="w-[156px] py-[15px] text-center">
+                              {item.totalSold}
+                            </div>
+                            <div className="flex-1 py-[15px] px-[20px]">
+                              {item.vestingPeriod}
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="flex text-[18px] leading-[27px] bg-white-blur-015 divide-x divide-white/20 absolute bottom-0 left-0 w-full">
+                      <div className="w-[156px] py-[8px] text-center font-bold">
+                        TOTAL
+                      </div>
+                      <div className="w-[156px] py-[8px] text-center text-center">
+                        <span className="inline-block py-[4px] px-[24px] rounded-[16px] text-center bg-gradient-pink-200">
+                          100%
+                        </span>
+                      </div>
+                      <div className="w-[156px] py-[8px] text-center text-light-blue">
+                        100,000,000
+                      </div>
+                      <div className="w-[156px] py-[15px] text-center"></div>
+                      <div className="w-[156px] py-[15px] text-center"></div>
+                      <div className="flex-1 py-[15px] text-center"></div>
+                    </div>
                   </div>
-                  <div className="w-[156px] py-[8px] text-center text-center">
-                    <span className="inline-block py-[4px] px-[24px] rounded-[16px] text-center bg-gradient-pink-200">
-                      100%
-                    </span>
-                  </div>
-                  <div className="w-[156px] py-[8px] text-center text-light-blue">
-                    100,000,000
-                  </div>
-                  <div className="w-[156px] py-[15px] text-center"></div>
-                  <div className="w-[156px] py-[15px] text-center"></div>
-                  <div className="flex-1 py-[15px] text-center"></div>
                 </div>
               </div>
             </div>
@@ -1884,37 +1909,37 @@ export default function Home() {
                         className="absolute top-[22px] right-0"
                       >
                         <path
-                          d="M2 1.90039L14 13.9004L2 25.9004"
-                          stroke="url(#paint0_linear_19_1499)"
-                          strokeWidth="4"
+                          d="M2 2L14 14L2 26"
+                          stroke="url(#paint0_radial_874_5120)"
+                          stroke-width="4"
                         />
                         <path
-                          d="M14.8 1.90039L26.8 13.9004L14.8 25.9004"
-                          stroke="url(#paint1_linear_19_1499)"
-                          strokeWidth="4"
+                          d="M14.8008 2L26.8008 14L14.8008 26"
+                          stroke="url(#paint1_linear_874_5120)"
+                          stroke-width="4"
                         />
                         <defs>
+                          <radialGradient
+                            id="paint0_radial_874_5120"
+                            cx="0"
+                            cy="0"
+                            r="1"
+                            gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(7.9102 14.3623) rotate(-10.1836) scale(11.1106 21.7002)"
+                          >
+                            <stop stop-color="#FEFAFF" />
+                            <stop offset="1" stop-color="#87ACF3" />
+                          </radialGradient>
                           <linearGradient
-                            id="paint0_linear_19_1499"
-                            x1="8"
-                            y1="1.90039"
-                            x2="8"
-                            y2="25.9004"
+                            id="paint1_linear_874_5120"
+                            x1="20.8008"
+                            y1="2"
+                            x2="20.8008"
+                            y2="26"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stopColor="#7F6499" />
-                            <stop offset="1" stopColor="#5B4273" />
-                          </linearGradient>
-                          <linearGradient
-                            id="paint1_linear_19_1499"
-                            x1="20.8"
-                            y1="1.90039"
-                            x2="20.8"
-                            y2="25.9004"
-                            gradientUnits="userSpaceOnUse"
-                          >
-                            <stop stopColor="#7F6499" />
-                            <stop offset="1" stopColor="#5B4273" />
+                            <stop stop-color="#7F6499" />
+                            <stop offset="1" stop-color="#5B4273" />
                           </linearGradient>
                         </defs>
                       </svg>
@@ -1948,37 +1973,37 @@ export default function Home() {
                         className="absolute top-[22px] right-0"
                       >
                         <path
-                          d="M2 1.90039L14 13.9004L2 25.9004"
-                          stroke="url(#paint0_linear_19_1490)"
-                          strokeWidth="4"
+                          d="M2 2L14 14L2 26"
+                          stroke="url(#paint0_radial_874_5120)"
+                          stroke-width="4"
                         />
                         <path
-                          d="M14.7998 1.90039L26.7998 13.9004L14.7998 25.9004"
-                          stroke="url(#paint1_linear_19_1490)"
-                          strokeWidth="4"
+                          d="M14.8008 2L26.8008 14L14.8008 26"
+                          stroke="url(#paint1_linear_874_5120)"
+                          stroke-width="4"
                         />
                         <defs>
+                          <radialGradient
+                            id="paint0_radial_874_5120"
+                            cx="0"
+                            cy="0"
+                            r="1"
+                            gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(7.9102 14.3623) rotate(-10.1836) scale(11.1106 21.7002)"
+                          >
+                            <stop stop-color="#FEFAFF" />
+                            <stop offset="1" stop-color="#87ACF3" />
+                          </radialGradient>
                           <linearGradient
-                            id="paint0_linear_19_1490"
-                            x1="8"
-                            y1="1.90039"
-                            x2="8"
-                            y2="25.9004"
+                            id="paint1_linear_874_5120"
+                            x1="20.8008"
+                            y1="2"
+                            x2="20.8008"
+                            y2="26"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stopColor="#E7BFFB" />
-                            <stop offset="1" stopColor="#5B4273" />
-                          </linearGradient>
-                          <linearGradient
-                            id="paint1_linear_19_1490"
-                            x1="20.7998"
-                            y1="1.90039"
-                            x2="20.7998"
-                            y2="25.9004"
-                            gradientUnits="userSpaceOnUse"
-                          >
-                            <stop stopColor="#E7BFFB" />
-                            <stop offset="1" stopColor="#5B4273" />
+                            <stop stop-color="#7F6499" />
+                            <stop offset="1" stop-color="#5B4273" />
                           </linearGradient>
                         </defs>
                       </svg>
@@ -2016,37 +2041,37 @@ export default function Home() {
                         className="absolute top-[22px] right-0"
                       >
                         <path
-                          d="M2 1.90039L14 13.9004L2 25.9004"
-                          stroke="url(#paint0_linear_19_1493)"
-                          strokeWidth="4"
+                          d="M2 2L14 14L2 26"
+                          stroke="url(#paint0_radial_874_5120)"
+                          stroke-width="4"
                         />
                         <path
-                          d="M14.7998 1.90039L26.7998 13.9004L14.7998 25.9004"
-                          stroke="url(#paint1_linear_19_1493)"
-                          strokeWidth="4"
+                          d="M14.8008 2L26.8008 14L14.8008 26"
+                          stroke="url(#paint1_linear_874_5120)"
+                          stroke-width="4"
                         />
                         <defs>
+                          <radialGradient
+                            id="paint0_radial_874_5120"
+                            cx="0"
+                            cy="0"
+                            r="1"
+                            gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(7.9102 14.3623) rotate(-10.1836) scale(11.1106 21.7002)"
+                          >
+                            <stop stop-color="#FEFAFF" />
+                            <stop offset="1" stop-color="#87ACF3" />
+                          </radialGradient>
                           <linearGradient
-                            id="paint0_linear_19_1493"
-                            x1="8"
-                            y1="1.90039"
-                            x2="8"
-                            y2="25.9004"
+                            id="paint1_linear_874_5120"
+                            x1="20.8008"
+                            y1="2"
+                            x2="20.8008"
+                            y2="26"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stopColor="#E7BFFB" />
-                            <stop offset="1" stopColor="#5B4273" />
-                          </linearGradient>
-                          <linearGradient
-                            id="paint1_linear_19_1493"
-                            x1="20.7998"
-                            y1="1.90039"
-                            x2="20.7998"
-                            y2="25.9004"
-                            gradientUnits="userSpaceOnUse"
-                          >
-                            <stop stopColor="#E7BFFB" />
-                            <stop offset="1" stopColor="#5B4273" />
+                            <stop stop-color="#7F6499" />
+                            <stop offset="1" stop-color="#5B4273" />
                           </linearGradient>
                         </defs>
                       </svg>
@@ -2081,15 +2106,39 @@ export default function Home() {
                         className="absolute top-[22px] right-0"
                       >
                         <path
-                          d="M2 1.90039L14 13.9004L2 25.9004"
-                          stroke="#E8C1FE"
-                          strokeWidth="4"
+                          d="M2 2L14 14L2 26"
+                          stroke="url(#paint0_radial_874_5120)"
+                          stroke-width="4"
                         />
                         <path
-                          d="M14.7998 1.90039L26.7998 13.9004L14.7998 25.9004"
-                          stroke="#E8C1FE"
-                          strokeWidth="4"
+                          d="M14.8008 2L26.8008 14L14.8008 26"
+                          stroke="url(#paint1_linear_874_5120)"
+                          stroke-width="4"
                         />
+                        <defs>
+                          <radialGradient
+                            id="paint0_radial_874_5120"
+                            cx="0"
+                            cy="0"
+                            r="1"
+                            gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(7.9102 14.3623) rotate(-10.1836) scale(11.1106 21.7002)"
+                          >
+                            <stop stop-color="#FEFAFF" />
+                            <stop offset="1" stop-color="#87ACF3" />
+                          </radialGradient>
+                          <linearGradient
+                            id="paint1_linear_874_5120"
+                            x1="20.8008"
+                            y1="2"
+                            x2="20.8008"
+                            y2="26"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#7F6499" />
+                            <stop offset="1" stop-color="#5B4273" />
+                          </linearGradient>
+                        </defs>
                       </svg>
                     </div>
                   </SwiperSlide>
@@ -2122,15 +2171,39 @@ export default function Home() {
                         className="absolute top-[22px] right-0"
                       >
                         <path
-                          d="M2 1.90039L14 13.9004L2 25.9004"
-                          stroke="#E8C1FE"
-                          strokeWidth="4"
+                          d="M2 2L14 14L2 26"
+                          stroke="url(#paint0_radial_874_5120)"
+                          stroke-width="4"
                         />
                         <path
-                          d="M14.7998 1.90039L26.7998 13.9004L14.7998 25.9004"
-                          stroke="#E8C1FE"
-                          strokeWidth="4"
+                          d="M14.8008 2L26.8008 14L14.8008 26"
+                          stroke="url(#paint1_linear_874_5120)"
+                          stroke-width="4"
                         />
+                        <defs>
+                          <radialGradient
+                            id="paint0_radial_874_5120"
+                            cx="0"
+                            cy="0"
+                            r="1"
+                            gradientUnits="userSpaceOnUse"
+                            gradientTransform="translate(7.9102 14.3623) rotate(-10.1836) scale(11.1106 21.7002)"
+                          >
+                            <stop stop-color="#FEFAFF" />
+                            <stop offset="1" stop-color="#87ACF3" />
+                          </radialGradient>
+                          <linearGradient
+                            id="paint1_linear_874_5120"
+                            x1="20.8008"
+                            y1="2"
+                            x2="20.8008"
+                            y2="26"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#7F6499" />
+                            <stop offset="1" stop-color="#5B4273" />
+                          </linearGradient>
+                        </defs>
                       </svg>
                     </div>
                   </SwiperSlide>
@@ -2786,62 +2859,237 @@ export default function Home() {
           >
             <div className="flex-1 flex items-center justify-center text-center px-[7.5vw]">
               <div>
-                <h3 className="sub-heading text-[40px] mb-[15px] leading-[48px] font-medium text-shadow-white-51">
+                <h3 className="sub-heading text-[40px] mb-[29px] leading-[48px] font-medium text-shadow-white-51">
                   Learn more about VILIK World
                 </h3>
 
                 <button
                   type="button"
-                  className="bg-gradient-purple text-[16px] leading-[19px] h-[51px] px-[24px] rounded-[26px]"
+                  className="relative group cursor-pointer overflow-hidden p-[3px] rounded-[30px]"
                 >
-                  Whitepaper
+                  <span className="box bg-gradient-purple text-[16px] leading-[19px] h-[51px] px-[24px] rounded-[26px] inline-flex items-center relative z-10">
+                    Whitepaper
+                  </span>
+                  <div className="absolute w-[275px] h-[275px] top-1/2 left-0 linear-custom transform translate-y-[-50%]">
+                    <div
+                      style={{
+                        background:
+                          "linear-gradient(178.93deg, #F499FF 31.95%, #4453F2 71.55%)",
+                      }}
+                      className="w-full h-full duration-200 opacity-0 lg:group-hover:animate-spin-slow lg:group-hover:opacity-100"
+                    ></div>
+                  </div>
                 </button>
               </div>
             </div>
             <div className="h-[318px] w-full flex items-center justify-center text-center bg-white-blur-008 px-[7.5vw]">
               <div>
                 <Link href="/">
-                  <a className="inline-block mb-[14px]">
+                  <a className="inline-block mb-[27px]">
                     <svg
                       width="107"
-                      height="56"
-                      viewBox="0 0 107 56"
+                      height="89"
+                      viewBox="0 0 107 89"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g clipPath="url(#clip0_4_1125)">
-                        <path
-                          d="M33.7214 28.6079L46.4131 55.0996L0.00012207 28.6079H33.7214ZM46.4131 0.0996094L0.00012207 26.5913H33.7214L46.4131 0.0996094ZM40.2988 27.5996C40.2988 22.4663 43.356 18.0663 47.71 15.9579V2.11628L35.4815 27.5996L47.6175 53.0829V39.2413C43.356 37.1329 40.2988 32.7329 40.2988 27.5996ZM53.2685 16.7829C51.9716 16.7829 50.7672 16.9663 49.6555 17.4246C48.9144 17.6996 48.2659 17.9746 47.6175 18.3413C44.375 20.2663 42.2443 23.7496 42.2443 27.6913C42.2443 31.6329 44.375 35.1163 47.6175 37.0413C48.2659 37.4079 48.9144 37.6829 49.6555 37.9579C50.7672 38.3246 51.9716 38.5996 53.2685 38.5996C54.5655 38.5996 55.7698 38.4163 56.8815 37.9579C57.6227 37.6829 58.2711 37.4079 58.9196 37.0413C62.162 35.1163 64.2928 31.6329 64.2928 27.6913C64.2928 23.7496 62.162 20.2663 58.9196 18.3413C58.2711 17.9746 57.6227 17.6996 56.8815 17.4246C55.7698 16.9663 54.5655 16.7829 53.2685 16.7829ZM72.9084 28.6079H106.63L60.2165 55.0996L72.9084 28.6079ZM106.63 26.5913L60.2165 0.0996094L72.8157 26.5913H106.63ZM66.3308 27.5996C66.3308 32.7329 63.2737 37.1329 58.9196 39.2413V53.1746L71.1482 27.5996L58.9196 2.11628V16.0496C63.2737 18.0663 66.3308 22.4663 66.3308 27.5996Z"
-                          fill="url(#paint0_linear_4_1125)"
-                        />
-                      </g>
+                      <path
+                        d="M33.8382 29.0259L46.5741 55.9989L0 29.0259H33.8382ZM46.5741 0L0 26.9729H33.8382L46.5741 0ZM40.4384 27.9994C40.4384 22.773 43.5057 18.2924 47.875 16.1466V2.05299L35.6047 27.9994L47.7825 53.9459V39.8534C43.5068 37.7064 40.4384 33.2258 40.4384 27.9994ZM53.4538 16.9864C52.1518 16.9864 50.9434 17.1731 49.8285 17.6394C49.0845 17.919 48.4341 18.1996 47.7836 18.5731C44.5304 20.5333 42.3919 24.0802 42.3919 28.0934C42.3919 32.1065 44.5304 35.6534 47.7836 37.6136C48.4341 37.9871 49.0856 38.2667 49.8285 38.5473C50.9445 38.9208 52.1529 39.2003 53.4538 39.2003C54.7558 39.2003 55.9642 39.0136 57.0791 38.5473C57.8231 38.2678 58.4735 37.9871 59.1239 37.6136C62.3772 35.6534 64.5156 32.1065 64.5156 28.0934C64.5156 24.0802 62.3772 20.5333 59.1239 18.5731C58.4735 18.1996 57.8219 17.9201 57.0791 17.6394C55.9631 17.1731 54.7546 16.9864 53.4538 16.9864ZM73.1618 29.0259H107L60.4259 56L73.1618 29.0259ZM107 26.9729L60.4259 0L73.0693 26.9729H107ZM66.5616 27.9994C66.5616 33.2258 63.4943 37.7064 59.1251 39.8522V54.0387L71.3953 27.9994L59.1239 2.05299V16.2394C63.4932 18.2936 66.5616 22.773 66.5616 27.9994Z"
+                        fill="url(#paint0_linear_1231_9131)"
+                      />
+                      <path
+                        d="M20.7423 70.002H23.3673C23.5529 70.002 23.7649 70.1343 23.8445 70.3195L28.9885 81.4367C29.0946 81.6484 29.2006 81.7543 29.3066 81.7543C29.4126 81.7543 29.5187 81.6484 29.6247 81.4367L34.7422 70.3195C34.8218 70.1343 35.0338 70.002 35.2459 70.002H37.8444C38.0565 70.002 38.136 70.1343 38.0565 70.3195L29.6777 88.5574C29.5982 88.7162 29.4656 88.7956 29.3066 88.7956C29.1476 88.7956 28.9885 88.7162 28.909 88.5574L20.5302 70.3195C20.4507 70.1343 20.5302 70.002 20.7423 70.002Z"
+                        fill="url(#paint1_linear_1231_9131)"
+                      />
+                      <path
+                        d="M41.1602 70.346C41.1602 70.1343 41.2927 70.002 41.5047 70.002H43.9973C44.2093 70.002 44.3418 70.1343 44.3418 70.346V72.6225C44.3418 72.8342 44.2093 72.9665 43.9973 72.9665H41.5047C41.2927 72.9665 41.1602 72.8342 41.1602 72.6225V70.346Z"
+                        fill="url(#paint2_linear_1231_9131)"
+                      />
+                      <path
+                        d="M41.5047 75.5342H43.9973C44.2093 75.5342 44.3418 75.6665 44.3418 75.8782V88.187C44.3418 88.3987 44.2093 88.531 43.9973 88.531H41.5047C41.2927 88.531 41.1602 88.3987 41.1602 88.187V75.8782C41.1602 75.6665 41.2927 75.5342 41.5047 75.5342Z"
+                        fill="url(#paint3_linear_1231_9131)"
+                      />
+                      <path
+                        d="M63.3535 70.346C63.3535 70.1343 63.4861 70.002 63.6981 70.002H66.1906C66.4027 70.002 66.5352 70.1343 66.5352 70.346V72.6225C66.5352 72.8342 66.4027 72.9665 66.1906 72.9665H63.6981C63.4861 72.9665 63.3535 72.8342 63.3535 72.6225V70.346Z"
+                        fill="url(#paint4_linear_1231_9131)"
+                      />
+                      <path
+                        d="M51.5528 70.346C51.5528 70.1343 51.4202 70.002 51.2082 70.002H48.7157C48.5036 70.002 48.3711 70.1343 48.3711 70.346V82.5992H51.5528V70.346Z"
+                        fill="url(#paint5_linear_1231_9131)"
+                      />
+                      <path
+                        d="M60.0376 85.5656H52.295C52.2729 85.5656 52.2508 85.5648 52.2296 85.563H48.3711V88.1862C48.3711 88.3979 48.5036 88.5302 48.7157 88.5302H60.0376C60.2496 88.5302 60.3822 88.3979 60.3822 88.1862V85.9096C60.3822 85.6988 60.2496 85.5656 60.0376 85.5656Z"
+                        fill="url(#paint6_linear_1231_9131)"
+                      />
+                      <path
+                        d="M63.6981 75.5342H66.1906C66.4027 75.5342 66.5352 75.6665 66.5352 75.8782V88.187C66.5352 88.3987 66.4027 88.531 66.1906 88.531H63.6981C63.4861 88.531 63.3535 88.3987 63.3535 88.187V75.8782C63.3535 75.6665 63.4861 75.5342 63.6981 75.5342Z"
+                        fill="url(#paint7_linear_1231_9131)"
+                      />
+                      <path
+                        d="M84.0076 70.2655L82.1512 72.5906L82.1503 72.5914L78.1628 77.5714L75.855 80.4522C75.8223 80.4839 75.7914 80.5201 75.7605 80.5624L75.4256 80.9885L74.2222 82.5206C73.9297 82.8654 73.7451 83.3947 73.7451 83.8445V88.1859C73.7451 88.3976 73.6125 88.5299 73.3996 88.5299H70.9071C70.695 88.5299 70.5625 88.3976 70.5625 88.1859V70.3458C70.5625 70.1332 70.695 70.0009 70.9071 70.0009H73.3996C73.6125 70.0009 73.7451 70.1332 73.7451 70.3458V77.6773C73.7451 77.9419 73.7972 78.0477 73.9041 78.0477C73.9836 78.0477 74.0897 77.9948 74.2222 77.836L74.512 77.4753L78.374 72.6602L79.6349 71.0884L80.2949 70.2646C80.4274 70.1058 80.6395 70 80.8524 70H83.875C84.0871 70.0009 84.1401 70.1076 84.0076 70.2655Z"
+                        fill="url(#paint8_linear_1231_9131)"
+                      />
+                      <path
+                        d="M75.4277 80.9895L75.8571 80.4541C75.8244 80.4859 75.7926 80.522 75.7626 80.5635L75.4277 80.9895Z"
+                        fill="#D3AEF4"
+                      />
+                      <path
+                        d="M86.4468 88.2663L79.3696 79.1187L78.0884 80.7037L77.416 81.5354L82.6007 88.2672C82.7333 88.4259 82.9453 88.5318 83.1574 88.5318H86.286C86.4999 88.5309 86.5529 88.4251 86.4468 88.2663Z"
+                        fill="url(#paint9_linear_1231_9131)"
+                      />
                       <defs>
                         <linearGradient
-                          id="paint0_linear_4_1125"
-                          x1="127.844"
-                          y1="59.9121"
-                          x2="-36.1295"
-                          y2="61.3165"
+                          id="paint0_linear_1231_9131"
+                          x1="0"
+                          y1="27.9997"
+                          x2="107"
+                          y2="27.9997"
                           gradientUnits="userSpaceOnUse"
                         >
-                          <stop stopColor="#05DAC5" />
-                          <stop offset="0.277086" stopColor="#4354F2" />
-                          <stop offset="0.710545" stopColor="#F526FF" />
-                          <stop offset="1" stopColor="#FC176F" />
+                          <stop stop-color="#05DAC5" />
+                          <stop offset="0.3585" stop-color="#5C6AF3" />
+                          <stop offset="0.499" stop-color="#8F74D9" />
+                          <stop offset="0.6491" stop-color="#CC42D3" />
+                          <stop offset="1" stop-color="#FC176F" />
                         </linearGradient>
-                        <clipPath id="clip0_4_1125">
-                          <rect
-                            width="107"
-                            height="55"
-                            fill="white"
-                            transform="translate(0.00012207 0.0996094)"
-                          />
-                        </clipPath>
+                        <linearGradient
+                          id="paint1_linear_1231_9131"
+                          x1="29.2936"
+                          y1="70.0015"
+                          x2="29.2936"
+                          y2="88.7954"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0.1711" stop-color="#BC79AD" />
+                          <stop offset="0.7698" stop-color="#8BE3F7" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint2_linear_1231_9131"
+                          x1="41.0641"
+                          y1="69.9538"
+                          x2="43.4154"
+                          y2="72.0939"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="white" />
+                          <stop offset="0.0269" stop-color="#EEF8FA" />
+                          <stop offset="0.1345" stop-color="#ADDCE6" />
+                          <stop offset="0.2372" stop-color="#77C5D5" />
+                          <stop offset="0.332" stop-color="#4DB3C8" />
+                          <stop offset="0.4173" stop-color="#2FA6BF" />
+                          <stop offset="0.4902" stop-color="#1D9EB9" />
+                          <stop offset="0.5419" stop-color="#169BB7" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint3_linear_1231_9131"
+                          x1="42.751"
+                          y1="88.5307"
+                          x2="42.751"
+                          y2="75.5339"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#8BE3F7" />
+                          <stop offset="0.322" stop-color="#89E2F6" />
+                          <stop offset="0.4942" stop-color="#81DDF1" />
+                          <stop offset="0.6308" stop-color="#73D4EA" />
+                          <stop offset="0.7488" stop-color="#60C8DF" />
+                          <stop offset="0.8548" stop-color="#47B9D2" />
+                          <stop offset="0.9508" stop-color="#29A7C1" />
+                          <stop offset="1" stop-color="#169BB7" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint4_linear_1231_9131"
+                          x1="64.9443"
+                          y1="72.9662"
+                          x2="64.9443"
+                          y2="70.0015"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#4F5BBD" />
+                          <stop offset="0.3755" stop-color="#515CBD" />
+                          <stop offset="0.5414" stop-color="#5862BF" />
+                          <stop offset="0.6661" stop-color="#656BC1" />
+                          <stop offset="0.7701" stop-color="#7777C5" />
+                          <stop offset="0.8612" stop-color="#8E88C9" />
+                          <stop offset="0.942" stop-color="#AA9CCF" />
+                          <stop offset="1" stop-color="#C4AED4" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint5_linear_1231_9131"
+                          x1="53.8652"
+                          y1="72.4957"
+                          x2="46.0711"
+                          y2="80.3032"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#4F84BD" />
+                          <stop offset="0.4162" stop-color="#4F5BBD" />
+                          <stop offset="1" stop-color="#8BE3F7" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint6_linear_1231_9131"
+                          x1="48.3705"
+                          y1="87.0471"
+                          x2="60.3821"
+                          y2="87.0471"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop offset="0.0027933" stop-color="#8BE3F7" />
+                          <stop offset="1" stop-color="#8BE3F7" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint7_linear_1231_9131"
+                          x1="64.9443"
+                          y1="75.5339"
+                          x2="64.9443"
+                          y2="88.5307"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#4F5BBD" />
+                          <stop offset="0.0774" stop-color="#576DC5" />
+                          <stop offset="0.2827" stop-color="#6997D7" />
+                          <stop offset="0.4824" stop-color="#78B8E5" />
+                          <stop offset="0.6728" stop-color="#83D0EF" />
+                          <stop offset="0.8497" stop-color="#89DEF5" />
+                          <stop offset="1" stop-color="#8BE3F7" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint8_linear_1231_9131"
+                          x1="73.6601"
+                          y1="85.1845"
+                          x2="77.2329"
+                          y2="70.526"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#8BE3F7" />
+                          <stop offset="0.4332" stop-color="#4F5BBD" />
+                          <stop offset="0.5039" stop-color="#545FBE" />
+                          <stop offset="0.5874" stop-color="#6269C1" />
+                          <stop offset="0.6774" stop-color="#7A7AC5" />
+                          <stop offset="0.7717" stop-color="#9B91CC" />
+                          <stop offset="0.866" stop-color="#C4AED4" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint9_linear_1231_9131"
+                          x1="81.9588"
+                          y1="88.5306"
+                          x2="81.9588"
+                          y2="79.118"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#8BE3F7" />
+                          <stop offset="0.3812" stop-color="#8AE1F5" />
+                          <stop offset="0.5496" stop-color="#88DAEE" />
+                          <stop offset="0.6761" stop-color="#83CFE1" />
+                          <stop offset="0.7817" stop-color="#7DBECF" />
+                          <stop offset="0.8742" stop-color="#75A8B8" />
+                          <stop offset="0.9562" stop-color="#6B8E9B" />
+                          <stop offset="1" stop-color="#647D89" />
+                        </linearGradient>
                       </defs>
                     </svg>
                   </a>
                 </Link>
-                <h2 className="text-[24px] leading-[29px] mb-[27px]">VILIK</h2>
                 <ul className="flex items-center justify-center	space-x-[16px] mb-[15px]">
                   <li>
                     <a href="" title="">
@@ -3112,12 +3360,12 @@ export default function Home() {
         </svg>
       </div>
       {/* overlay */}
-      <div className="overlay-circle overlay-circle-1  absolute w-[35.069vw] h-[35.069vw] bg-blur-1 rounded top-[-3.88vw] left-[-9.58vw]"></div>
+      {/* <div className="overlay-circle overlay-circle-1  absolute w-[35.069vw] h-[35.069vw] bg-blur-1 rounded top-[-3.88vw] left-[-9.58vw]"></div>
       <div className="overlay-circle overlay-circle-2 absolute w-[49.02vw] h-[46.31vw] bg-blur-2 rounded bottom-[-39.23vw] left-[-19.09vw]"></div>
       <div className="overlay-circle overlay-circle-3 absolute w-[47.57vw] h-[24.16vw] bg-blur-3 rounded bottom-[-18.47vw] right-[6.73vw]"></div>
       <div className="overlay-circle overlay-circle-4 absolute w-[49.30vw] h-[30.55vw] bg-blur-4 rounded top-[-21.18vw] right-[-18.88vw]"></div>
 
-      <div className="overlay-circle overlay-circle-5 absolute w-[50.14vw] h-[55.21vw] bg-blur-5 rounded bottom-[-17.57vw] right-[-14.17vw]"></div>
+      <div className="overlay-circle overlay-circle-5 absolute w-[50.14vw] h-[55.21vw] bg-blur-5 rounded bottom-[-17.57vw] right-[-14.17vw]"></div> */}
       {/* end of overlay */}
     </main>
   );
