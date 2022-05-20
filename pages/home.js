@@ -3025,7 +3025,7 @@ export default function Home() {
 
       <div className="full-video">
         <video autoPlay playsInline muted loop>
-          <source src="/iStockVideoHD_1306271041_min.mov" type="video/mp4" />
+          <source src="/20220520-112541-839.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
       </div>
