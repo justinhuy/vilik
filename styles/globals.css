@@ -508,10 +508,11 @@ a {
   top: 100%;
   background: radial-gradient(118.36% 118.36% at 39.65% 120.62%, rgba(200, 45, 244, 0.71) 7.56%, #1F1298 50.1%, #621EA2 100%);
   transform: translateY(-50%) matrix(-0.26, 0.96, -0.97, -0.26, 0, 0) scale(1);
+  overflow: hidden;
 }
 
 .overlay-circle-0 .pl-1 {
-  position: absolute;
+  /* position: absolute;
   width: 562px;
   height: 370px;
   background: #041128;
@@ -519,7 +520,20 @@ a {
   filter: blur(187.853px);
   transform: matrix(-0.26, 0.97, -0.97, -0.26, 0, 0);
   top: -33px;
+  right: -38px; */
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -33px;
   right: -38px;
+}
+
+.overlay-circle-0 .pl-1 {
+  position: absolute;
+  width: 153.57%;
+  height: auto;
+  bottom: -94px;
+  left: -143px;
 }
 
 .overlay-circle svg {

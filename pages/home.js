@@ -3030,7 +3030,86 @@ export default function Home() {
         </video>
       </div>
       <div className="overlay overlay-circle-0">
-        <div className="pl-1"></div>
+        <svg
+          width="704"
+          height="807"
+          viewBox="0 0 704 807"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="pl-1"
+        >
+          <g filter="url(#filter0_f_20_267)">
+            <ellipse
+              rx="281.459"
+              ry="185.433"
+              transform="matrix(-0.261096 0.965313 -0.965527 -0.260302 382.086 342.566)"
+              fill="#041128"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_20_267"
+              x="0.647675"
+              y="-121.284"
+              width="762.877"
+              height="927.699"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="93.9263"
+                result="effect1_foregroundBlur_20_267"
+              />
+            </filter>
+          </defs>
+        </svg>
+        <svg
+          width="1090"
+          height="952"
+          viewBox="0 0 1090 952"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="pl-2"
+        >
+          <g filter="url(#filter0_f_20_267)">
+            <ellipse
+              rx="281.459"
+              ry="361.144"
+              transform="matrix(-0.261096 0.965313 -0.965527 -0.260302 545.183 475.703)"
+              fill="#041128"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_20_267"
+              x="0.903168"
+              y="0.272125"
+              width="1088.56"
+              height="950.861"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="93.9263"
+                result="effect1_foregroundBlur_20_267"
+              />
+            </filter>
+          </defs>
+        </svg>
       </div>
       {/* overlay */}
       <div className="overlay-circle overlay-circle-1  absolute w-[35.069vw] h-[35.069vw] bg-blur-1 rounded top-[-3.88vw] left-[-9.58vw]"></div>
