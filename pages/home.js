@@ -1552,7 +1552,7 @@ export default function Home() {
                   className="box features-slider"
                 >
                   <SwiperSlide>
-                    <div className="h-full bg-white-blur p-[32px] lg:border-r-blur">
+                    <div className="h-full bg-white-blur p-[32px] border-r-blur">
                       <div className="w-[56px] h-[56px] mb-[24px] flex items-center justify-center relative">
                         <svg
                           width="58"
@@ -1606,7 +1606,7 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="h-full bg-white-blur p-[32px] lg:border-r-blur">
+                    <div className="h-full bg-white-blur p-[32px] border-r-blur">
                       <div className="w-[56px] h-[56px] mb-[24px] flex items-center justify-center relative">
                         <svg
                           width="58"
@@ -1661,7 +1661,7 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="h-full bg-white-blur p-[32px] lg:border-r-blur">
+                    <div className="h-full bg-white-blur p-[32px] border-r-blur">
                       <div className="w-[56px] h-[56px] mb-[24px] flex items-center justify-center relative">
                         <svg
                           width="58"
@@ -1715,7 +1715,7 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="h-full bg-white-blur p-[32px] lg:border-r-blur">
+                    <div className="h-full bg-white-blur p-[32px] border-r-blur">
                       <div className="w-[56px] h-[56px] mb-[24px] flex items-center justify-center relative">
                         <svg
                           width="58"
@@ -1770,7 +1770,7 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="h-full bg-white-blur p-[32px] lg:border-r-blur">
+                    <div className="h-full bg-white-blur p-[32px] border-r-blur">
                       <div className="w-[56px] h-[56px] mb-[24px] flex items-center justify-center relative">
                         <svg
                           width="58"
