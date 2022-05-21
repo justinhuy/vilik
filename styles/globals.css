@@ -469,8 +469,8 @@ a {
 
 /* Home */
 .full-video {
-  width: 83.95%;
-  height: 83.95%;
+  width: 73.95%;
+  height: 73.95%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
