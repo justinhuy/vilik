@@ -261,7 +261,7 @@ export default function Home() {
       }
     });
 
-    () => {
+    return () => {
       if (window) {
         window.removeEventListener("scroll", onScroll, { passive: true });
         window.removeEventListener("wheel");
