@@ -582,7 +582,13 @@ export default function Home() {
           </svg>
         </a>
 
-        <button className="hidden lg:block fixed top-[1.66666667vw] right-[7.5vw] z-50 text-[14px] leading-[21px] font-medium border border-zinc-100 px-[16px] py-[8px] rounded-[30px]">
+        <button className="hidden lg:block fixed top-[1.66666667vw] right-[7.5vw] z-50 text-[14px] leading-[21px] font-medium border border-zinc-100 px-[16px] py-[8px] rounded-[30px]" onClick={() => {
+          if (el?.current?.clientWidth > 1023) {
+            scrollTo(12);
+          } else {
+            scrollToElement('whitepaper');
+          }
+        }}>
           Contact us
         </button>
 
@@ -666,7 +672,7 @@ export default function Home() {
                   activeSection === 10 || activeSection === 11 ? "active" : ""
                 }`}
                 onClick={() => scrollTo(10)}
-                id="section-11"
+                id="section-10"
               >
                 Our Team
               </div>
@@ -675,7 +681,7 @@ export default function Home() {
                   activeSection === 12 ? "active" : ""
                 }`}
                 onClick={() => scrollTo(12)}
-                id="section-13"
+                id="section-12"
               >
                 Whitepaper
               </div>
@@ -779,6 +785,13 @@ export default function Home() {
                   <button
                     type="button"
                     className="text-fadein relative group cursor-pointer overflow-hidden p-[3px] rounded-[30px]"
+                    onClick={() => {
+                      if (el?.current?.clientWidth > 1023) {
+                        scrollTo(1);
+                      } else {
+                        scrollToElement('about-us');
+                      }
+                    }}
                   >
                     <span className="box bg-gradient-purple text-[16px] leading-[19px] h-[40px] lg:h-[51px] px-[24px] rounded-[26px] inline-flex items-center relative z-10">
                       About us
@@ -946,7 +959,7 @@ export default function Home() {
                   cy="122"
                   r="190"
                   fill="#742A9A"
-                  fill-opacity="0.51"
+                  fillOpacity="0.51"
                 />
               </g>
               <defs>
@@ -957,9 +970,9 @@ export default function Home() {
                   width="580"
                   height="580"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -999,9 +1012,9 @@ export default function Home() {
                   width="505.711"
                   height="436.276"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1092,9 +1105,9 @@ export default function Home() {
                   width="897.38"
                   height="794.955"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1113,9 +1126,9 @@ export default function Home() {
                   width="659.043"
                   height="778.071"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1137,11 +1150,11 @@ export default function Home() {
                 >
                   <stop
                     offset="0.0755871"
-                    stop-color="#C82DF4"
-                    stop-opacity="0.71"
+                    stopColor="#C82DF4"
+                    stopOpacity="0.71"
                   />
-                  <stop offset="0.500996" stop-color="#1F1298" />
-                  <stop offset="1" stop-color="#621EA2" />
+                  <stop offset="0.500996" stopColor="#1F1298" />
+                  <stop offset="1" stopColor="#621EA2" />
                 </radialGradient>
               </defs>
             </svg>
@@ -1191,7 +1204,7 @@ export default function Home() {
                   ry="136.816"
                   transform="matrix(0.998958 -0.0456498 0.0248309 0.999692 -21.6253 204.303)"
                   fill="#3D17E3"
-                  fill-opacity="0.44"
+                  fillOpacity="0.44"
                 />
               </g>
               <defs>
@@ -1202,9 +1215,9 @@ export default function Home() {
                   width="503.938"
                   height="586.804"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1223,9 +1236,9 @@ export default function Home() {
                   width="413.818"
                   height="393.667"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1261,7 +1274,7 @@ export default function Home() {
                   ry="105.759"
                   transform="matrix(0.769241 0.638959 -0.140829 0.990034 236.885 159.849)"
                   fill="#3D17E3"
-                  fill-opacity="0.1"
+                  fillOpacity="0.1"
                 />
               </g>
               <g opacity="0.4" filter="url(#filter2_f_33_348)">
@@ -1278,7 +1291,7 @@ export default function Home() {
                   ry="67.5031"
                   transform="matrix(0.74809 0.663598 -0.434308 0.900765 193.284 251.805)"
                   fill="#842A9A"
-                  fill-opacity="0.53"
+                  fillOpacity="0.53"
                 />
               </g>
               <g filter="url(#filter4_f_33_348)">
@@ -1299,9 +1312,9 @@ export default function Home() {
                   width="235.897"
                   height="287.001"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1320,9 +1333,9 @@ export default function Home() {
                   width="221.042"
                   height="321.806"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1341,9 +1354,9 @@ export default function Home() {
                   width="218.398"
                   height="287.991"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1362,9 +1375,9 @@ export default function Home() {
                   width="199.642"
                   height="237.825"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1383,9 +1396,9 @@ export default function Home() {
                   width="608.1"
                   height="633.774"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1437,9 +1450,9 @@ export default function Home() {
                   width="897.38"
                   height="794.955"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1458,9 +1471,9 @@ export default function Home() {
                   width="659.043"
                   height="778.072"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -1482,11 +1495,11 @@ export default function Home() {
                 >
                   <stop
                     offset="0.0755871"
-                    stop-color="#C82DF4"
-                    stop-opacity="0.71"
+                    stopColor="#C82DF4"
+                    stopOpacity="0.71"
                   />
-                  <stop offset="0.500996" stop-color="#1F1298" />
-                  <stop offset="1" stop-color="#621EA2" />
+                  <stop offset="0.500996" stopColor="#1F1298" />
+                  <stop offset="1" stopColor="#621EA2" />
                 </radialGradient>
               </defs>
             </svg>
@@ -1910,9 +1923,9 @@ export default function Home() {
                     width="1044.35"
                     height="925.15"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                       mode="normal"
                       in="SourceGraphic"
@@ -1931,9 +1944,9 @@ export default function Home() {
                     width="766.978"
                     height="905.501"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                       mode="normal"
                       in="SourceGraphic"
@@ -1955,11 +1968,11 @@ export default function Home() {
                   >
                     <stop
                       offset="0.0755871"
-                      stop-color="#C82DF4"
-                      stop-opacity="0.71"
+                      stopColor="#C82DF4"
+                      stopOpacity="0.71"
                     />
-                    <stop offset="0.500996" stop-color="#1F1298" />
-                    <stop offset="1" stop-color="#621EA2" />
+                    <stop offset="0.500996" stopColor="#1F1298" />
+                    <stop offset="1" stopColor="#621EA2" />
                   </radialGradient>
                 </defs>
               </svg>
@@ -1989,9 +2002,9 @@ export default function Home() {
                     width="855.178"
                     height="891.283"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feBlend
                       mode="normal"
                       in="SourceGraphic"
@@ -2482,9 +2495,9 @@ export default function Home() {
                   width="897.38"
                   height="794.955"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -2503,9 +2516,9 @@ export default function Home() {
                   width="659.043"
                   height="778.072"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -2527,11 +2540,11 @@ export default function Home() {
                 >
                   <stop
                     offset="0.0755871"
-                    stop-color="#C82DF4"
-                    stop-opacity="0.71"
+                    stopColor="#C82DF4"
+                    stopOpacity="0.71"
                   />
-                  <stop offset="0.500996" stop-color="#1F1298" />
-                  <stop offset="1" stop-color="#621EA2" />
+                  <stop offset="0.500996" stopColor="#1F1298" />
+                  <stop offset="1" stopColor="#621EA2" />
                 </radialGradient>
               </defs>
             </svg>
@@ -2561,9 +2574,9 @@ export default function Home() {
                   width="855.178"
                   height="891.283"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -2655,9 +2668,9 @@ export default function Home() {
                   width="897.38"
                   height="794.955"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -2676,9 +2689,9 @@ export default function Home() {
                   width="659.043"
                   height="778.072"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -2700,11 +2713,11 @@ export default function Home() {
                 >
                   <stop
                     offset="0.0755871"
-                    stop-color="#C82DF4"
-                    stop-opacity="0.71"
+                    stopColor="#C82DF4"
+                    stopOpacity="0.71"
                   />
-                  <stop offset="0.500996" stop-color="#1F1298" />
-                  <stop offset="1" stop-color="#621EA2" />
+                  <stop offset="0.500996" stopColor="#1F1298" />
+                  <stop offset="1" stopColor="#621EA2" />
                 </radialGradient>
               </defs>
             </svg>
@@ -2730,7 +2743,7 @@ export default function Home() {
                   ry="52.9176"
                   transform="matrix(0.999758 -0.0219991 0.0515146 0.998672 -2.53032 284.971)"
                   fill="#00F0FF"
-                  fill-opacity="0.44"
+                  fillOpacity="0.44"
                 />
               </g>
               <g filter="url(#filter2_f_36_459)">
@@ -2741,7 +2754,7 @@ export default function Home() {
                   ry="123.245"
                   transform="rotate(18.3691 40.9948 195.064)"
                   fill="#3D17E3"
-                  fill-opacity="0.41"
+                  fillOpacity="0.41"
                 />
               </g>
               <defs>
@@ -2752,9 +2765,9 @@ export default function Home() {
                   width="497.124"
                   height="371.43"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -2773,9 +2786,9 @@ export default function Home() {
                   width="358.336"
                   height="216.625"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -2794,9 +2807,9 @@ export default function Home() {
                   width="554.941"
                   height="543.451"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -2824,7 +2837,7 @@ export default function Home() {
                   ry="117.127"
                   transform="matrix(0.919621 0.392807 -0.707569 0.706644 242.463 238.168)"
                   fill="#76269F"
-                  fill-opacity="0.71"
+                  fillOpacity="0.71"
                 />
               </g>
               <g filter="url(#filter1_f_36_464)">
@@ -2833,7 +2846,7 @@ export default function Home() {
                   ry="117.127"
                   transform="matrix(0.919621 0.392807 -0.707569 0.706644 383.72 180.004)"
                   fill="#76269F"
-                  fill-opacity="0.59"
+                  fillOpacity="0.59"
                 />
               </g>
               <defs>
@@ -2844,9 +2857,9 @@ export default function Home() {
                   width="484.138"
                   height="398.359"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -2865,9 +2878,9 @@ export default function Home() {
                   width="445.607"
                   height="359.828"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -2966,9 +2979,9 @@ export default function Home() {
                   width="897.38"
                   height="794.955"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -2987,9 +3000,9 @@ export default function Home() {
                   width="659.043"
                   height="778.072"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -3011,11 +3024,11 @@ export default function Home() {
                 >
                   <stop
                     offset="0.0755871"
-                    stop-color="#C82DF4"
-                    stop-opacity="0.71"
+                    stopColor="#C82DF4"
+                    stopOpacity="0.71"
                   />
-                  <stop offset="0.500996" stop-color="#1F1298" />
-                  <stop offset="1" stop-color="#621EA2" />
+                  <stop offset="0.500996" stopColor="#1F1298" />
+                  <stop offset="1" stopColor="#621EA2" />
                 </radialGradient>
               </defs>
             </svg>
@@ -3041,7 +3054,7 @@ export default function Home() {
                   ry="52.9176"
                   transform="matrix(0.999758 -0.0219991 0.0515146 0.998672 -2.53032 284.971)"
                   fill="#00F0FF"
-                  fill-opacity="0.44"
+                  fillOpacity="0.44"
                 />
               </g>
               <g filter="url(#filter2_f_36_459)">
@@ -3052,7 +3065,7 @@ export default function Home() {
                   ry="123.245"
                   transform="rotate(18.3691 40.9948 195.064)"
                   fill="#3D17E3"
-                  fill-opacity="0.41"
+                  fillOpacity="0.41"
                 />
               </g>
               <defs>
@@ -3063,9 +3076,9 @@ export default function Home() {
                   width="497.124"
                   height="371.43"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -3084,9 +3097,9 @@ export default function Home() {
                   width="358.336"
                   height="216.625"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -3105,9 +3118,9 @@ export default function Home() {
                   width="554.941"
                   height="543.451"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -3135,7 +3148,7 @@ export default function Home() {
                   ry="117.127"
                   transform="matrix(0.919621 0.392807 -0.707569 0.706644 242.463 238.168)"
                   fill="#76269F"
-                  fill-opacity="0.71"
+                  fillOpacity="0.71"
                 />
               </g>
               <g filter="url(#filter1_f_36_464)">
@@ -3144,7 +3157,7 @@ export default function Home() {
                   ry="117.127"
                   transform="matrix(0.919621 0.392807 -0.707569 0.706644 383.72 180.004)"
                   fill="#76269F"
-                  fill-opacity="0.59"
+                  fillOpacity="0.59"
                 />
               </g>
               <defs>
@@ -3155,9 +3168,9 @@ export default function Home() {
                   width="484.138"
                   height="398.359"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -3176,9 +3189,9 @@ export default function Home() {
                   width="445.607"
                   height="359.828"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -3384,7 +3397,7 @@ export default function Home() {
                   ry="52.9176"
                   transform="matrix(0.999758 -0.0219991 0.0515146 0.998672 -2.53032 284.971)"
                   fill="#00F0FF"
-                  fill-opacity="0.44"
+                  fillOpacity="0.44"
                 />
               </g>
               <g filter="url(#filter2_f_36_459)">
@@ -3395,7 +3408,7 @@ export default function Home() {
                   ry="123.245"
                   transform="rotate(18.3691 40.9948 195.064)"
                   fill="#3D17E3"
-                  fill-opacity="0.41"
+                  fillOpacity="0.41"
                 />
               </g>
               <defs>
@@ -3406,9 +3419,9 @@ export default function Home() {
                   width="497.124"
                   height="371.43"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -3427,9 +3440,9 @@ export default function Home() {
                   width="358.336"
                   height="216.625"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -3448,9 +3461,9 @@ export default function Home() {
                   width="554.941"
                   height="543.451"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -3478,7 +3491,7 @@ export default function Home() {
                   ry="117.127"
                   transform="matrix(0.919621 0.392807 -0.707569 0.706644 242.463 238.168)"
                   fill="#76269F"
-                  fill-opacity="0.71"
+                  fillOpacity="0.71"
                 />
               </g>
               <g filter="url(#filter1_f_36_464)">
@@ -3487,7 +3500,7 @@ export default function Home() {
                   ry="117.127"
                   transform="matrix(0.919621 0.392807 -0.707569 0.706644 383.72 180.004)"
                   fill="#76269F"
-                  fill-opacity="0.59"
+                  fillOpacity="0.59"
                 />
               </g>
               <defs>
@@ -3498,9 +3511,9 @@ export default function Home() {
                   width="484.138"
                   height="398.359"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -3519,9 +3532,9 @@ export default function Home() {
                   width="445.607"
                   height="359.828"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -3987,7 +4000,7 @@ export default function Home() {
                     ry="100.948"
                     transform="rotate(66.7216 -2.06127 159.023)"
                     fill="#6900EE"
-                    fill-opacity="0.5"
+                    fillOpacity="0.5"
                   />
                 </g>
                 <g opacity="0.67" filter="url(#filter1_f_1220_8226)">
@@ -4012,7 +4025,7 @@ export default function Home() {
                     ry="82.8799"
                     transform="matrix(-0.0172168 0.999852 -0.98878 0.149378 29.2922 379.247)"
                     fill="#00F0FF"
-                    fill-opacity="0.44"
+                    fillOpacity="0.44"
                   />
                 </g>
                 <g opacity="0.7">
@@ -4024,7 +4037,7 @@ export default function Home() {
                       ry="93.2011"
                       transform="rotate(66.7216 40.3538 272.069)"
                       fill="#E84DFC"
-                      fill-opacity="0.71"
+                      fillOpacity="0.71"
                     />
                   </g>
                   <g filter="url(#filter5_f_1220_8226)">
@@ -4033,7 +4046,7 @@ export default function Home() {
                       ry="118.908"
                       transform="matrix(0.652511 0.757779 -0.783038 0.621973 45.7418 269.952)"
                       fill="#E84DFC"
-                      fill-opacity="0.2"
+                      fillOpacity="0.2"
                     />
                   </g>
                   <g filter="url(#filter6_f_1220_8226)">
@@ -4044,7 +4057,7 @@ export default function Home() {
                       ry="50.7071"
                       transform="rotate(66.7216 40.5296 272.29)"
                       fill="#FDE2FC"
-                      fill-opacity="0.71"
+                      fillOpacity="0.71"
                     />
                   </g>
                 </g>
@@ -4057,9 +4070,9 @@ export default function Home() {
                   width="393.719"
                   height="398.85"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4078,9 +4091,9 @@ export default function Home() {
                   width="627.944"
                   height="698.574"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4099,9 +4112,9 @@ export default function Home() {
                   width="516.105"
                   height="671.23"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4120,9 +4133,9 @@ export default function Home() {
                   width="362.264"
                   height="404.912"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4141,9 +4154,9 @@ export default function Home() {
                   width="315.646"
                   height="301.687"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4162,9 +4175,9 @@ export default function Home() {
                   width="718.992"
                   height="736.172"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4183,9 +4196,9 @@ export default function Home() {
                   width="203.843"
                   height="187.35"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4214,7 +4227,7 @@ export default function Home() {
                   r="97.5742"
                   transform="rotate(33.1841 266.785 348.577)"
                   fill="#9021AC"
-                  fill-opacity="0.75"
+                  fillOpacity="0.75"
                 />
               </g>
               <g filter="url(#filter1_f_1220_8235)">
@@ -4225,7 +4238,7 @@ export default function Home() {
                   ry="153.135"
                   transform="rotate(33.1841 425.683 256.977)"
                   fill="#3D17E3"
-                  fill-opacity="0.35"
+                  fillOpacity="0.35"
                 />
               </g>
               <defs>
@@ -4236,9 +4249,9 @@ export default function Home() {
                   width="576.676"
                   height="576.675"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4257,9 +4270,9 @@ export default function Home() {
                   width="513.465"
                   height="513.465"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4629,7 +4642,7 @@ export default function Home() {
                     ry="100.948"
                     transform="rotate(66.7216 -2.06127 159.023)"
                     fill="#6900EE"
-                    fill-opacity="0.5"
+                    fillOpacity="0.5"
                   />
                 </g>
                 <g opacity="0.67" filter="url(#filter1_f_1220_8226)">
@@ -4654,7 +4667,7 @@ export default function Home() {
                     ry="82.8799"
                     transform="matrix(-0.0172168 0.999852 -0.98878 0.149378 29.2922 379.247)"
                     fill="#00F0FF"
-                    fill-opacity="0.44"
+                    fillOpacity="0.44"
                   />
                 </g>
                 <g opacity="0.7">
@@ -4666,7 +4679,7 @@ export default function Home() {
                       ry="93.2011"
                       transform="rotate(66.7216 40.3538 272.069)"
                       fill="#E84DFC"
-                      fill-opacity="0.71"
+                      fillOpacity="0.71"
                     />
                   </g>
                   <g filter="url(#filter5_f_1220_8226)">
@@ -4675,7 +4688,7 @@ export default function Home() {
                       ry="118.908"
                       transform="matrix(0.652511 0.757779 -0.783038 0.621973 45.7418 269.952)"
                       fill="#E84DFC"
-                      fill-opacity="0.2"
+                      fillOpacity="0.2"
                     />
                   </g>
                   <g filter="url(#filter6_f_1220_8226)">
@@ -4686,7 +4699,7 @@ export default function Home() {
                       ry="50.7071"
                       transform="rotate(66.7216 40.5296 272.29)"
                       fill="#FDE2FC"
-                      fill-opacity="0.71"
+                      fillOpacity="0.71"
                     />
                   </g>
                 </g>
@@ -4699,9 +4712,9 @@ export default function Home() {
                   width="393.719"
                   height="398.85"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4720,9 +4733,9 @@ export default function Home() {
                   width="627.944"
                   height="698.574"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4741,9 +4754,9 @@ export default function Home() {
                   width="516.105"
                   height="671.23"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4762,9 +4775,9 @@ export default function Home() {
                   width="362.264"
                   height="404.912"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4783,9 +4796,9 @@ export default function Home() {
                   width="315.646"
                   height="301.687"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4804,9 +4817,9 @@ export default function Home() {
                   width="718.992"
                   height="736.172"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4825,9 +4838,9 @@ export default function Home() {
                   width="203.843"
                   height="187.35"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4856,7 +4869,7 @@ export default function Home() {
                   r="97.5742"
                   transform="rotate(33.1841 266.785 348.577)"
                   fill="#9021AC"
-                  fill-opacity="0.75"
+                  fillOpacity="0.75"
                 />
               </g>
               <g filter="url(#filter1_f_1220_8235)">
@@ -4867,7 +4880,7 @@ export default function Home() {
                   ry="153.135"
                   transform="rotate(33.1841 425.683 256.977)"
                   fill="#3D17E3"
-                  fill-opacity="0.35"
+                  fillOpacity="0.35"
                 />
               </g>
               <defs>
@@ -4878,9 +4891,9 @@ export default function Home() {
                   width="576.676"
                   height="576.675"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -4899,9 +4912,9 @@ export default function Home() {
                   width="513.465"
                   height="513.465"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5184,7 +5197,7 @@ export default function Home() {
                     ry="100.948"
                     transform="rotate(66.7216 -2.06127 159.023)"
                     fill="#6900EE"
-                    fill-opacity="0.5"
+                    fillOpacity="0.5"
                   />
                 </g>
                 <g opacity="0.67" filter="url(#filter1_f_1220_8226)">
@@ -5209,7 +5222,7 @@ export default function Home() {
                     ry="82.8799"
                     transform="matrix(-0.0172168 0.999852 -0.98878 0.149378 29.2922 379.247)"
                     fill="#00F0FF"
-                    fill-opacity="0.44"
+                    fillOpacity="0.44"
                   />
                 </g>
                 <g opacity="0.7">
@@ -5221,7 +5234,7 @@ export default function Home() {
                       ry="93.2011"
                       transform="rotate(66.7216 40.3538 272.069)"
                       fill="#E84DFC"
-                      fill-opacity="0.71"
+                      fillOpacity="0.71"
                     />
                   </g>
                   <g filter="url(#filter5_f_1220_8226)">
@@ -5230,7 +5243,7 @@ export default function Home() {
                       ry="118.908"
                       transform="matrix(0.652511 0.757779 -0.783038 0.621973 45.7418 269.952)"
                       fill="#E84DFC"
-                      fill-opacity="0.2"
+                      fillOpacity="0.2"
                     />
                   </g>
                   <g filter="url(#filter6_f_1220_8226)">
@@ -5241,7 +5254,7 @@ export default function Home() {
                       ry="50.7071"
                       transform="rotate(66.7216 40.5296 272.29)"
                       fill="#FDE2FC"
-                      fill-opacity="0.71"
+                      fillOpacity="0.71"
                     />
                   </g>
                 </g>
@@ -5254,9 +5267,9 @@ export default function Home() {
                   width="393.719"
                   height="398.85"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5275,9 +5288,9 @@ export default function Home() {
                   width="627.944"
                   height="698.574"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5296,9 +5309,9 @@ export default function Home() {
                   width="516.105"
                   height="671.23"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5317,9 +5330,9 @@ export default function Home() {
                   width="362.264"
                   height="404.912"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5338,9 +5351,9 @@ export default function Home() {
                   width="315.646"
                   height="301.687"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5359,9 +5372,9 @@ export default function Home() {
                   width="718.992"
                   height="736.172"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5380,9 +5393,9 @@ export default function Home() {
                   width="203.843"
                   height="187.35"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5411,7 +5424,7 @@ export default function Home() {
                   r="97.5742"
                   transform="rotate(33.1841 266.785 348.577)"
                   fill="#9021AC"
-                  fill-opacity="0.75"
+                  fillOpacity="0.75"
                 />
               </g>
               <g filter="url(#filter1_f_1220_8235)">
@@ -5422,7 +5435,7 @@ export default function Home() {
                   ry="153.135"
                   transform="rotate(33.1841 425.683 256.977)"
                   fill="#3D17E3"
-                  fill-opacity="0.35"
+                  fillOpacity="0.35"
                 />
               </g>
               <defs>
@@ -5433,9 +5446,9 @@ export default function Home() {
                   width="576.676"
                   height="576.675"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5454,9 +5467,9 @@ export default function Home() {
                   width="513.465"
                   height="513.465"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5868,7 +5881,7 @@ export default function Home() {
                     ry="100.948"
                     transform="rotate(66.7216 -2.06127 159.023)"
                     fill="#6900EE"
-                    fill-opacity="0.5"
+                    fillOpacity="0.5"
                   />
                 </g>
                 <g opacity="0.67" filter="url(#filter1_f_1220_8226)">
@@ -5893,7 +5906,7 @@ export default function Home() {
                     ry="82.8799"
                     transform="matrix(-0.0172168 0.999852 -0.98878 0.149378 29.2922 379.247)"
                     fill="#00F0FF"
-                    fill-opacity="0.44"
+                    fillOpacity="0.44"
                   />
                 </g>
                 <g opacity="0.7">
@@ -5905,7 +5918,7 @@ export default function Home() {
                       ry="93.2011"
                       transform="rotate(66.7216 40.3538 272.069)"
                       fill="#E84DFC"
-                      fill-opacity="0.71"
+                      fillOpacity="0.71"
                     />
                   </g>
                   <g filter="url(#filter5_f_1220_8226)">
@@ -5914,7 +5927,7 @@ export default function Home() {
                       ry="118.908"
                       transform="matrix(0.652511 0.757779 -0.783038 0.621973 45.7418 269.952)"
                       fill="#E84DFC"
-                      fill-opacity="0.2"
+                      fillOpacity="0.2"
                     />
                   </g>
                   <g filter="url(#filter6_f_1220_8226)">
@@ -5925,7 +5938,7 @@ export default function Home() {
                       ry="50.7071"
                       transform="rotate(66.7216 40.5296 272.29)"
                       fill="#FDE2FC"
-                      fill-opacity="0.71"
+                      fillOpacity="0.71"
                     />
                   </g>
                 </g>
@@ -5938,9 +5951,9 @@ export default function Home() {
                   width="393.719"
                   height="398.85"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5959,9 +5972,9 @@ export default function Home() {
                   width="627.944"
                   height="698.574"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -5980,9 +5993,9 @@ export default function Home() {
                   width="516.105"
                   height="671.23"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -6001,9 +6014,9 @@ export default function Home() {
                   width="362.264"
                   height="404.912"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -6022,9 +6035,9 @@ export default function Home() {
                   width="315.646"
                   height="301.687"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -6043,9 +6056,9 @@ export default function Home() {
                   width="718.992"
                   height="736.172"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -6064,9 +6077,9 @@ export default function Home() {
                   width="203.843"
                   height="187.35"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -6095,7 +6108,7 @@ export default function Home() {
                   r="97.5742"
                   transform="rotate(33.1841 266.785 348.577)"
                   fill="#9021AC"
-                  fill-opacity="0.75"
+                  fillOpacity="0.75"
                 />
               </g>
               <g filter="url(#filter1_f_1220_8235)">
@@ -6106,7 +6119,7 @@ export default function Home() {
                   ry="153.135"
                   transform="rotate(33.1841 425.683 256.977)"
                   fill="#3D17E3"
-                  fill-opacity="0.35"
+                  fillOpacity="0.35"
                 />
               </g>
               <defs>
@@ -6117,9 +6130,9 @@ export default function Home() {
                   width="576.676"
                   height="576.675"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
@@ -6138,9 +6151,9 @@ export default function Home() {
                   width="513.465"
                   height="513.465"
                   filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
+                  colorInterpolationFilters="sRGB"
                 >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
                   <feBlend
                     mode="normal"
                     in="SourceGraphic"
