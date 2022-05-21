@@ -859,7 +859,11 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="" title="">
+                <a
+                  href="https://www.facebook.com/VILIK-107781338574941"
+                  title="Facebook"
+                  target="_blank"
+                >
                   <svg
                     width="24"
                     height="24"
@@ -888,7 +892,11 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="" title="">
+                <a
+                  href="https://www.tiktok.com/@vilik.official"
+                  title="Tiktok"
+                  target="_blank"
+                >
                   <svg
                     width="24"
                     height="24"
@@ -5766,7 +5774,11 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a href="" title="">
+                    <a
+                      href="https://www.facebook.com/VILIK-107781338574941"
+                      title="Facebook"
+                      target="_blank"
+                    >
                       <svg
                         width="24"
                         height="24"
@@ -5795,7 +5807,11 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a href="" title="">
+                    <a
+                      href="https://www.tiktok.com/@vilik.official"
+                      title="Tiktok"
+                      target="_blank"
+                    >
                       <svg
                         width="24"
                         height="24"
