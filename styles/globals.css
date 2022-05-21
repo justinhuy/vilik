@@ -492,8 +492,6 @@ a {
 .overlay-circle-0 {
   width: 48.61vw;
   height: 48.61vw;
-  /* max-width: 700px;
-  max-height: 700px; */
   position: absolute;
   right: 7.5vw;
   mix-blend-mode: screen;
@@ -512,15 +510,6 @@ a {
 }
 
 .overlay-circle-0 .pl-1 {
-  /* position: absolute;
-  width: 562px;
-  height: 370px;
-  background: #041128;
-  mix-blend-mode: normal;
-  filter: blur(187.853px);
-  transform: matrix(-0.26, 0.97, -0.97, -0.26, 0, 0);
-  top: -33px;
-  right: -38px; */
   position: absolute;
   width: 100%;
   height: auto;
@@ -633,17 +622,13 @@ a {
   perspective: 1000;
 }
 
-.overlay-circle-5 {
-  opacity: 0;
+.step-0 .overlay-circle-1 {
+  opacity: 1;
 }
 
-.step-1 .overlay-circle-1 {
-  opacity: 0;
-}
-
-.step-1 .overlay-circle-2,
-.step-1 .overlay-circle-3 {
-  opacity: 0;
+.step-0 .overlay-circle-2,
+.step-0 .overlay-circle-3 {
+  opacity: 1;
 }
 
 .step-1 .overlay-circle-4 {
@@ -655,8 +640,35 @@ a {
   opacity: 1;
 }
 
-.step-8 .overlay-circle {
-  opacity: 0;
+.step-2 .overlay-circle-6,
+.step-3 .overlay-circle-6,
+.step-4 .overlay-circle-6,
+.step-5 .overlay-circle-6,
+.step-6 .overlay-circle-6 {
+  opacity: 1;
+}
+
+.step-6 .overlay-circle-7 {
+  opacity: 1;
+}
+
+.step-7 .overlay-circle-8,
+.step-8 .overlay-circle-8 {
+  opacity: 1;
+}
+
+.step-9 .overlay-circle-9,
+.step-9 .overlay-circle-10,
+.step-10 .overlay-circle-9,
+.step-10 .overlay-circle-10,
+.step-11 .overlay-circle-9,
+.step-11 .overlay-circle-10 {
+  opacity: 1;
+}
+
+.step-12 .overlay-circle-11,
+.step-12 .overlay-circle-12 {
+  opacity: 1;
 }
 
 :root {
@@ -759,7 +771,12 @@ a {
 }
 
 .roadmap-slider {
-  width: calc(100vw - 124px);
+  /* width: calc(100vw - 124px); */
+  padding: 0 62px !important;
+}
+
+.line-linear {
+  width: calc(100% - 124px);
   margin: 0 auto;
 }
 
@@ -778,7 +795,7 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(30px);
   background-repeat: no-repeat;
@@ -815,7 +832,7 @@ a {
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-image: url("data:image/svg+xml,%0A%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 16C0 7.16344 7.16344 0 16 0V0C24.8366 0 32 7.16344 32 16V16C32 24.8366 24.8366 32 16 32V32C7.16344 32 0 24.8366 0 16V16Z' fill='white' fill-opacity='0.1'/%3E%3Cpath d='M16 31C7.71573 31 1 24.2843 1 16H-1C-1 25.3888 6.61116 33 16 33V31ZM31 16C31 24.2843 24.2843 31 16 31V33C25.3888 33 33 25.3888 33 16H31ZM16 1C24.2843 1 31 7.71573 31 16H33C33 6.61116 25.3888 -1 16 -1V1ZM16 -1C6.61116 -1 -1 6.61116 -1 16H1C1 7.71573 7.71573 1 16 1V-1Z' fill='url(%23paint0_linear_9_1453)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_9_1453' x1='-2.59007e-07' y1='11.0623' x2='31.2139' y2='20.4312' gradientUnits='userSpaceOnUse'%3E%3Cstop stopColor='%231E1822'/%3E%3Cstop offset='0.462674' stopColor='%23EAC2FF'/%3E%3Cstop offset='0.764757' stopColor='%231945D9'/%3E%3Cstop offset='1' stopColor='%231E1822'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  /* background-image: url("data:image/svg+xml,%0A%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 16C0 7.16344 7.16344 0 16 0V0C24.8366 0 32 7.16344 32 16V16C32 24.8366 24.8366 32 16 32V32C7.16344 32 0 24.8366 0 16V16Z' fill='white' fillOpacity='0.1'/%3E%3Cpath d='M16 31C7.71573 31 1 24.2843 1 16H-1C-1 25.3888 6.61116 33 16 33V31ZM31 16C31 24.2843 24.2843 31 16 31V33C25.3888 33 33 25.3888 33 16H31ZM16 1C24.2843 1 31 7.71573 31 16H33C33 6.61116 25.3888 -1 16 -1V1ZM16 -1C6.61116 -1 -1 6.61116 -1 16H1C1 7.71573 7.71573 1 16 1V-1Z' fill='url(%23paint0_linear_9_1453)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_9_1453' x1='-2.59007e-07' y1='11.0623' x2='31.2139' y2='20.4312' gradientUnits='userSpaceOnUse'%3E%3Cstop stopColor='%231E1822'/%3E%3Cstop offset='0.462674' stopColor='%23EAC2FF'/%3E%3Cstop offset='0.764757' stopColor='%231945D9'/%3E%3Cstop offset='1' stopColor='%231E1822'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A"); */
   z-index: 1;
 }
 
