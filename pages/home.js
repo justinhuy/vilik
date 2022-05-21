@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
 // import Swiper core and required modules
 import { Navigation } from "swiper";
@@ -12,11 +13,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Moving from "../animation/Moving";
-import Script from "next/script";
-
-
-
-
 
 const SECTIONS_COUNT = 14;
 
@@ -255,7 +251,7 @@ export default function Home() {
     if (e.deltaY > 0) {
       setScrollDirection("down");
     }
-  }
+  };
 
   useEffect(() => {
     setScrollY(window.pageYOffset);
@@ -318,10 +314,10 @@ export default function Home() {
       </Head>
 
       <Script
-            id="fb-pixel-1"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
+        id="fb-pixel-1"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -332,13 +328,13 @@ export default function Home() {
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '549953909900657');
           `,
-            }}
-          />
-          <Script
-            id="fb-pixel-2"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
+        }}
+      />
+      <Script
+        id="fb-pixel-2"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -349,13 +345,13 @@ export default function Home() {
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1003590666958129');
           `,
-            }}
-          />
-          <Script
-            id="fb-pixel-3"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
+        }}
+      />
+      <Script
+        id="fb-pixel-3"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -366,8 +362,8 @@ export default function Home() {
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '982879232391261');
           `,
-            }}
-          />
+        }}
+      />
 
       <header
         className={`header ${
@@ -584,13 +580,16 @@ export default function Home() {
           </svg>
         </a>
 
-        <button className="hidden lg:block fixed top-[1.66666667vw] right-[7.5vw] z-50 text-[14px] leading-[21px] font-medium border border-zinc-100 px-[16px] py-[8px] rounded-[30px]" onClick={() => {
-          if (el?.current?.clientWidth > 1023) {
-            scrollTo(12);
-          } else {
-            scrollToElement('whitepaper');
-          }
-        }}>
+        <button
+          className="hidden lg:block fixed top-[1.66666667vw] right-[7.5vw] z-50 text-[14px] leading-[21px] font-medium border border-zinc-100 px-[16px] py-[8px] rounded-[30px]"
+          onClick={() => {
+            if (el?.current?.clientWidth > 1023) {
+              scrollTo(12);
+            } else {
+              scrollToElement("whitepaper");
+            }
+          }}
+        >
           Contact us
         </button>
 
@@ -762,7 +761,7 @@ export default function Home() {
       </header>
 
       <div
-        className="screens relative z-20 lg:h-screen lg:max-h-screen lg:overflow-hidden"
+        className="relative z-20 screens lg:h-screen lg:max-h-screen lg:overflow-hidden"
         onWheel={(e) => handleOnWheel(e)}
       >
         <div className="screens__wrapper" ref={el}>
@@ -773,7 +772,7 @@ export default function Home() {
             id="intro"
           >
             <div className="screen__container relative z-10 pt-[75px] lg:pt-0">
-              <div className="text-center lg:text-left lg:grid grid-cols-2">
+              <div className="grid-cols-2 text-center lg:text-left lg:grid">
                 <div>
                   <h1 className="heading flex flex-col text-[48px] leading-[48px] lg:text-[102px] lg:leading-[106px] mb-[16px] font-semibold">
                     <span className="text-gradient-blue-01">Livestream</span>
@@ -791,7 +790,7 @@ export default function Home() {
                       if (el?.current?.clientWidth > 1023) {
                         scrollTo(1);
                       } else {
-                        scrollToElement('about-us');
+                        scrollToElement("about-us");
                       }
                     }}
                   >
@@ -913,10 +912,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  title="Twitter"
-                >
+                <a href="#" title="Twitter">
                   <svg
                     width="24"
                     height="24"
@@ -958,7 +954,7 @@ export default function Home() {
               viewBox="0 0 342 412"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden left-0 top-0 absolute"
+              className="absolute top-0 left-0 lg:hidden"
             >
               <g filter="url(#filter0_f_1199_5672)">
                 <circle
@@ -1045,14 +1041,14 @@ export default function Home() {
             }`}
             id="about-us"
           >
-            <div className="screen__container relative z-10">
+            <div className="relative z-10 screen__container">
               <img
                 className="w-full max-w-[200px] mx-auto mb-[110px] lg:hidden"
                 src="/cube.png"
               />
 
               <div className="lg:grid lg:grid-cols-12">
-                <div className="col-start-7 col-span-6">
+                <div className="col-span-6 col-start-7">
                   <h4 className="btn-animate rounded-[38px] text-[12px] leading-[14px] lg:text-[14px] lg:leading-[17px] h-[22px] lg:h-[35px] inline-flex items-center justify-center px-[12px] lg:px-[18px] mb-[8px]">
                     <span className="circle"></span>
                     <span className="layer"></span>
@@ -1080,7 +1076,7 @@ export default function Home() {
               viewBox="0 0 375 606"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden w-full h-auto absolute left-0 bottom-0"
+              className="absolute bottom-0 left-0 w-full h-auto lg:hidden"
             >
               <g opacity="0.66">
                 <path
@@ -1175,7 +1171,7 @@ export default function Home() {
             }`}
             id="network"
           >
-            <div className="screen__container relative z-10">
+            <div className="relative z-10 screen__container">
               <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:mb-[32px] text-center">
                 What is Vilik&apos;s network
               </h5>
@@ -1195,7 +1191,7 @@ export default function Home() {
               viewBox="0 0 339 427"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute top-0 left-0"
+              className="absolute top-0 left-0 lg:hidden"
             >
               <g opacity="0.5" filter="url(#filter0_f_33_345)">
                 <ellipse
@@ -1265,7 +1261,7 @@ export default function Home() {
               viewBox="0 0 300 662"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute right-0 top-0"
+              className="absolute top-0 right-0 lg:hidden"
             >
               <g opacity="0.64" filter="url(#filter0_f_33_348)">
                 <ellipse
@@ -1425,7 +1421,7 @@ export default function Home() {
               viewBox="0 0 931 900"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute bottom-0 w-full h-auto left-2/4 -translate-x-2/4"
+              className="absolute bottom-0 w-full h-auto lg:hidden left-2/4 -translate-x-2/4"
             >
               <g opacity="0.66">
                 <path
@@ -1520,7 +1516,7 @@ export default function Home() {
             }`}
             id="features"
           >
-            <div className="screen__container relative z-10 w-full">
+            <div className="relative z-10 w-full screen__container">
               <div className="lg:grid lg:grid-cols-12 relative px-[16px] lg:px-[7.5vw]">
                 <div className="col-span-8">
                   <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:mb-[20px]">
@@ -1567,7 +1563,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                         >
                           <rect
                             x="0.5"
@@ -1621,7 +1617,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                         >
                           <rect
                             x="0.5"
@@ -1676,7 +1672,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                         >
                           <rect
                             x="0.5"
@@ -1730,7 +1726,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                         >
                           <rect
                             x="0.5"
@@ -1785,7 +1781,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                         >
                           <rect
                             x="0.5"
@@ -1839,7 +1835,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                         >
                           <rect
                             x="0.5"
@@ -1898,7 +1894,7 @@ export default function Home() {
                 viewBox="0 0 375 667"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="lg:hidden absolute left-0 bottom-0 w-full h-auto"
+                className="absolute bottom-0 left-0 w-full h-auto lg:hidden"
               >
                 <g opacity="0.66">
                   <path
@@ -1989,7 +1985,7 @@ export default function Home() {
                 viewBox="0 0 375 560"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="lg:hidden absolute bottom-0 right-0"
+                className="absolute bottom-0 right-0 lg:hidden"
               >
                 <g filter="url(#filter0_f_35_215)">
                   <ellipse
@@ -2036,7 +2032,7 @@ export default function Home() {
             }`}
             id="value"
           >
-            <div className="screen__container relative z-10 w-full">
+            <div className="relative z-10 w-full screen__container">
               <div className="px-[16px] lg:px-0">
                 <div
                   className="flex space-x-[40px] p-[4px] lg:p-[8px] bg-white-blur-007 rounded-[30px] mb-[24px] max-w-[1002px] mx-auto"
@@ -2103,7 +2099,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                             >
                               <rect
                                 x="0.5"
@@ -2159,7 +2155,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                             >
                               <rect
                                 x="0.5"
@@ -2215,7 +2211,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                             >
                               <rect
                                 x="0.5"
@@ -2299,7 +2295,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                             >
                               <rect
                                 x="0.5"
@@ -2354,7 +2350,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                             >
                               <rect
                                 x="0.5"
@@ -2410,7 +2406,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="w-full h-auto absolute top-0 left-0 animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
                             >
                               <rect
                                 x="0.5"
@@ -2470,7 +2466,7 @@ export default function Home() {
               viewBox="0 0 375 667"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute w-full h-auto top-2/4 left-2/4 -translate-x-2/4	-translate-y-2/4"
+              className="absolute w-full h-auto lg:hidden top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"
             >
               <g opacity="0.66">
                 <path
@@ -2561,7 +2557,7 @@ export default function Home() {
               viewBox="0 0 375 560"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute bottom-0 right-0"
+              className="absolute bottom-0 right-0 lg:hidden"
             >
               <g filter="url(#filter0_f_36_307)">
                 <ellipse
@@ -2606,7 +2602,7 @@ export default function Home() {
             }`}
             id="eco"
           >
-            <div className="screen__container relative z-10">
+            <div className="relative z-10 screen__container">
               <div className="text-center">
                 <h4 className="btn-animate large rounded-[38px] h-[35px] inline-flex items-center justify-center px-[18px] mb-[8px] relative z-10">
                   <span className="circle"></span>
@@ -2643,7 +2639,7 @@ export default function Home() {
               viewBox="0 0 375 639"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute top-0 lef-0 w-full h-auto"
+              className="absolute top-0 w-full h-auto lg:hidden lef-0"
             >
               <g opacity="0.66">
                 <path
@@ -2910,7 +2906,7 @@ export default function Home() {
             }`}
             id="monetary-flow"
           >
-            <div className="screen__container relative z-10">
+            <div className="relative z-10 screen__container">
               <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] mb-[16px] lg:mb-[32px] lg:leading-[48px] text-center">
                 Monetary flow
               </h5>
@@ -2954,7 +2950,7 @@ export default function Home() {
               viewBox="0 0 375 639"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute top-0 lef-0 w-full h-auto"
+              className="absolute top-0 w-full h-auto lg:hidden lef-0"
             >
               <g opacity="0.66">
                 <path
@@ -3221,7 +3217,7 @@ export default function Home() {
             }`}
             id="tokenomics"
           >
-            <div className="screen__container relative z-10 flex w-full h-full flex-col items-stretch">
+            <div className="relative z-10 flex flex-col items-stretch w-full h-full screen__container">
               <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] mb-[16px] lg:mb-[32px] lg:leading-[48px] text-center">
                 Tokenomics
               </h5>
@@ -3264,7 +3260,7 @@ export default function Home() {
                     <div className="flex-1 divide-y divide-zinc-600">
                       {TOKENOMICS_DATA.map((item) => (
                         <div className="group" key={item.stage}>
-                          <div className="flex transition-all group-hover:bg-zinc-800 divide-x divide-white/20">
+                          <div className="flex transition-all divide-x group-hover:bg-zinc-800 divide-white/20">
                             <div className="w-[156px] py-[15px] text-center text-light-blue">
                               {item.stage}
                             </div>
@@ -3318,10 +3314,10 @@ export default function Home() {
             }`}
             id="chart"
           >
-            <div className="screen__container z-10">
+            <div className="z-10 screen__container">
               <div className="grid grid-cols-12">
                 <div className="sub-heading col-span-12 order-2 mt-[23px] lg-[mt-0] lg:order-1 lg:col-span-4">
-                  <div className="flex h-full items-center">
+                  <div className="flex items-center h-full">
                     <div className="w-full grid grid-cols-2 gap-y-[20px]">
                       <div className="flex items-center space-x-[16px]">
                         <span className="inline-block w-[20px] h-[20px] bg-linear-1"></span>
@@ -3370,7 +3366,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="desc col-span-12 order-1 lg:order-2 lg:col-span-8">
+                <div className="order-1 col-span-12 desc lg:order-2 lg:col-span-8">
                   <div className="text-right">
                     <img
                       className="inline-block w-full max-w-[682px] h-auto"
@@ -3564,14 +3560,14 @@ export default function Home() {
             }`}
             id="roadmap"
           >
-            <div className="screen__container relative z-10 lg:static">
+            <div className="relative z-10 screen__container lg:static">
               <h5 className="sub-heading text-center text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] mb-[43px] lg:mb-[54px] lg:leading-[48px] relative z-10">
                 Roadmap
               </h5>
 
               <img
                 src="/network-line.png"
-                className="hidden lg:block absolute w-full left-2/4 top-2/4 -translate-y-2/4 -translate-x-2/4"
+                className="absolute hidden w-full lg:block left-2/4 top-2/4 -translate-y-2/4 -translate-x-2/4"
               />
 
               <div className="box relative max-w-[1224px] mx-auto">
@@ -3590,10 +3586,10 @@ export default function Home() {
                   }}
                 >
                   <SwiperSlide>
-                    <div className="flex flex-wrap justify-center items-center group relative">
+                    <div className="relative flex flex-wrap items-center justify-center group">
                       <div className="w-[72px] h-[72px] relative">
                         <img
-                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10"
+                          className="absolute z-10 top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4"
                           src="/earth-white.png"
                         />
                       </div>
@@ -3655,10 +3651,10 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="flex flex-wrap justify-center items-center group relative">
+                    <div className="relative flex flex-wrap items-center justify-center group">
                       <div className="w-[72px] h-[72px] relative">
                         <img
-                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10"
+                          className="absolute z-10 top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4"
                           src="/earth-white.png"
                         />
                       </div>
@@ -3723,10 +3719,10 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="flex flex-wrap justify-center items-center group relative">
+                    <div className="relative flex flex-wrap items-center justify-center group">
                       <div className="w-[72px] h-[72px] relative">
                         <img
-                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10"
+                          className="absolute z-10 top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4"
                           src="/earth-white.png"
                         />
                       </div>
@@ -3791,10 +3787,10 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="flex flex-wrap justify-center items-center group relative">
+                    <div className="relative flex flex-wrap items-center justify-center group">
                       <div className="w-[72px] h-[72px] relative">
                         <img
-                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10"
+                          className="absolute z-10 top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4"
                           src="/earth-white.png"
                         />
                       </div>
@@ -3856,10 +3852,10 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="flex flex-wrap justify-center items-center group relative">
+                    <div className="relative flex flex-wrap items-center justify-center group">
                       <div className="w-[72px] h-[72px] relative">
                         <img
-                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10"
+                          className="absolute z-10 top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4"
                           src="/earth-white.png"
                         />
                       </div>
@@ -3921,10 +3917,10 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="flex flex-wrap justify-center items-center group relative">
+                    <div className="relative flex flex-wrap items-center justify-center group">
                       <div className="w-[72px] h-[72px] relative">
                         <img
-                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10"
+                          className="absolute z-10 top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4"
                           src="/earth-white.png"
                         />
                       </div>
@@ -3965,10 +3961,10 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="flex flex-wrap justify-center items-center group relative">
+                    <div className="relative flex flex-wrap items-center justify-center group">
                       <div className="w-[72px] h-[72px] relative">
                         <img
-                          className="absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 z-10"
+                          className="absolute z-10 top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4"
                           src="/earth-white.png"
                         />
                       </div>
@@ -3996,7 +3992,7 @@ export default function Home() {
               viewBox="0 0 375 667"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute top-0 left-0"
+              className="absolute top-0 left-0 lg:hidden"
             >
               <g opacity="0.83">
                 <g filter="url(#filter0_f_1220_8226)">
@@ -4225,7 +4221,7 @@ export default function Home() {
               viewBox="0 0 375 484"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute bottom-0 right-0"
+              className="absolute bottom-0 right-0 lg:hidden"
             >
               <g filter="url(#filter0_f_1220_8235)">
                 <circle
@@ -4302,7 +4298,7 @@ export default function Home() {
             }`}
             id="partners"
           >
-            <div className="screen__container z-10">
+            <div className="z-10 screen__container">
               <h5 className="sub-heading text-center text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:mb-[32px] lg:leading-[48px] relative z-10">
                 Trust by
               </h5>
@@ -4535,7 +4531,7 @@ export default function Home() {
             }`}
             id="our-team"
           >
-            <div className="screen__container z-10 w-full">
+            <div className="z-10 w-full screen__container">
               <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[29px] lg:mb-[32px] lg:leading-[48px] text-center lg:text-left relative z-10">
                 Our Team
               </h5>
@@ -4557,8 +4553,7 @@ export default function Home() {
                         </p>
                         <p className="lg:mb-[33px]">TBA</p>
                       </div>
-                      <p className="text-[12px] leading-[18px]">
-                      </p>
+                      <p className="text-[12px] leading-[18px]"></p>
                     </div>
                   </div>
                 </div>
@@ -4581,8 +4576,7 @@ export default function Home() {
                         </p>
                         <p className="lg:mb-[33px]">TBA</p>
                       </div>
-                      <p className="text-[12px] leading-[18px]">
-                      </p>
+                      <p className="text-[12px] leading-[18px]"></p>
                     </div>
                   </div>
                 </div>
@@ -4596,8 +4590,7 @@ export default function Home() {
                         </p>
                         <p className="lg:mb-[33px]">TBA</p>
                       </div>
-                      <p className="text-[12px] leading-[18px]">
-                      </p>
+                      <p className="text-[12px] leading-[18px]"></p>
                     </div>
                   </div>
                 </div>
@@ -4611,7 +4604,7 @@ export default function Home() {
               viewBox="0 0 375 667"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute top-0 left-0"
+              className="absolute top-0 left-0 lg:hidden"
             >
               <g opacity="0.83">
                 <g filter="url(#filter0_f_1220_8226)">
@@ -4840,7 +4833,7 @@ export default function Home() {
               viewBox="0 0 375 484"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute bottom-0 right-0"
+              className="absolute bottom-0 right-0 lg:hidden"
             >
               <g filter="url(#filter0_f_1220_8235)">
                 <circle
@@ -4916,7 +4909,7 @@ export default function Home() {
               activeSection === 11 ? "active" : ""
             }`}
           >
-            <div className="screen__container z-10 w-full">
+            <div className="z-10 w-full screen__container">
               <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[29px] lg:mb-[32px] lg:leading-[48px] text-center lg:text-left relative z-10">
                 Our Team
               </h5>
@@ -5166,7 +5159,7 @@ export default function Home() {
               viewBox="0 0 375 667"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute top-0 left-0"
+              className="absolute top-0 left-0 lg:hidden"
             >
               <g opacity="0.83">
                 <g filter="url(#filter0_f_1220_8226)">
@@ -5395,7 +5388,7 @@ export default function Home() {
               viewBox="0 0 375 484"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute bottom-0 right-0"
+              className="absolute bottom-0 right-0 lg:hidden"
             >
               <g filter="url(#filter0_f_1220_8235)">
                 <circle
@@ -5806,10 +5799,7 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      title="Twitter"
-                    >
+                    <a href="#" title="Twitter">
                       <svg
                         width="24"
                         height="24"
@@ -5855,7 +5845,7 @@ export default function Home() {
               viewBox="0 0 375 667"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute top-0 left-0"
+              className="absolute top-0 left-0 lg:hidden"
             >
               <g opacity="0.83">
                 <g filter="url(#filter0_f_1220_8226)">
@@ -6084,7 +6074,7 @@ export default function Home() {
               viewBox="0 0 375 484"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:hidden absolute bottom-0 right-0"
+              className="absolute bottom-0 right-0 lg:hidden"
             >
               <g filter="url(#filter0_f_1220_8235)">
                 <circle
@@ -6261,7 +6251,7 @@ export default function Home() {
         viewBox="0 0 1440 810"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="overlay-circle overlay-circle-6 absolute w-full h-auto top-2/4  left-2/4 -translate-x-2/4 -translate-y-2/4 z-10 opacity-0"
+        className="absolute z-10 w-full h-auto opacity-0 overlay-circle overlay-circle-6 top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"
       >
         <g opacity="0.5" filter="url(#filter0_f_28_92)">
           <ellipse
