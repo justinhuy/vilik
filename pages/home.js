@@ -1,21 +1,22 @@
-import { useState, useEffect, useCallback, useRef } from "react";
 import { gsap } from "gsap";
-
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useEffect, useRef, useState } from "react";
 // import Swiper core and required modules
 import { Navigation } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import Moving from "../animation/Moving";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Moving from "../animation/Moving";
+import Script from "next/script";
+
+
+
+
 
 const SECTIONS_COUNT = 14;
 
@@ -315,6 +316,58 @@ export default function Home() {
 
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
+
+      <Script
+            id="fb-pixel-1"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '549953909900657');
+          `,
+            }}
+          />
+          <Script
+            id="fb-pixel-2"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1003590666958129');
+          `,
+            }}
+          />
+          <Script
+            id="fb-pixel-3"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '982879232391261');
+          `,
+            }}
+          />
 
       <header
         className={`header ${
