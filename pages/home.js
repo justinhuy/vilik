@@ -123,6 +123,7 @@ export default function Home() {
 
   const [step, setStep] = useState(0);
   const [scrollY, setScrollY] = useState(0);
+  const [scrollDirection, setScrollDirection] = useState();
   const [isOpen, setIsOpen] = useState(false);
 
   const ids = [
@@ -241,7 +242,7 @@ export default function Home() {
     }
   };
 
-  const onScroll = () => {
+  const onScroll = (e) => {
     const { pageYOffset } = window;
     setScrollY(pageYOffset);
 
@@ -304,7 +305,19 @@ export default function Home() {
 
     window.addEventListener("scroll", onScroll, { passive: true });
     // remove event on unmount to prevent a memory leak
-    () => window.removeEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("wheel", function (e) {
+      if (e.deltaY < 0) {
+        setScrollDirection("up");
+      }
+      if (e.deltaY > 0) {
+        setScrollDirection("down");
+      }
+    });
+
+    () => {
+      window.removeEventListener("scroll", onScroll, { passive: true });
+      window.removeEventListener("wheel");
+    };
   }, []);
 
   return (
@@ -354,11 +367,15 @@ export default function Home() {
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
 
-      <header className={`header ${scrollY > 10 ? "header-sticky" : ""}`}>
+      <header
+        className={`header ${
+          scrollY > 10 ? "header-sticky" : ""
+        } scrolling-${scrollDirection}`}
+      >
         <a
           href="#"
           title="Vilik"
-          className="fixed top-[16px] left-[16px] lg:top-[1.66666667vw] lg:left-[7.5vw] z-50"
+          className="absolute lg:fixed top-[16px] left-[16px] lg:top-[1.66666667vw] lg:left-[7.5vw] z-50"
         >
           <svg
             width="157"
@@ -669,7 +686,7 @@ export default function Home() {
 
         {/* hamburger */}
         <button
-          className="inline-flex lg:hidden items-center space-x-[8px] top-[16px] fixed right-[16px] text-[14px] leading-[21px] z-50"
+          className="inline-flex lg:hidden items-center space-x-[8px] top-[16px] absolute right-[16px] text-[14px] leading-[21px] z-50"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
