@@ -245,59 +245,6 @@ export default function Home() {
   const onScroll = (e) => {
     const { pageYOffset } = window;
     setScrollY(pageYOffset);
-
-    // if (pageYOffset >= document.getElementById("whitepaper").offsetTop - 72) {
-    //   setSection("whitepaper");
-    // } else if (
-    //   pageYOffset >=
-    //   document.getElementById("people").offsetTop - 150
-    // ) {
-    //   setSection("people");
-    // } else if (
-    //   pageYOffset >=
-    //   document.getElementById("partners").offsetTop - 150
-    // ) {
-    //   setSection("partners");
-    // } else if (
-    //   pageYOffset >=
-    //   document.getElementById("roadmap").offsetTop - 150
-    // ) {
-    //   setSection("roadmap");
-    // } else if (
-    //   pageYOffset >=
-    //   document.getElementById("chart").offsetTop - 150
-    // ) {
-    //   setSection("chart");
-    // } else if (
-    //   pageYOffset >=
-    //   document.getElementById("tokenomics").offsetTop - 150
-    // ) {
-    //   setSection("tokenomics");
-    // } else if (
-    //   pageYOffset >=
-    //   document.getElementById("monetary-flow").offsetTop - 150
-    // ) {
-    //   setSection("monetary-flow");
-    // } else if (pageYOffset >= document.getElementById("eco").offsetTop - 150) {
-    //   setSection("eco");
-    // } else if (
-    //   pageYOffset >=
-    //   document.getElementById("values").offsetTop - 150
-    // ) {
-    //   setSection("values");
-    // } else if (
-    //   pageYOffset >=
-    //   document.getElementById("features").offsetTop - 150
-    // ) {
-    //   setSection("features");
-    // } else if (
-    //   pageYOffset >=
-    //   document.getElementById("about-us").offsetTop - 150
-    // ) {
-    //   setSection("about-us");
-    // } else {
-    //   setSection("");
-    // }
   };
 
   useEffect(() => {
@@ -315,8 +262,10 @@ export default function Home() {
     });
 
     () => {
-      window.removeEventListener("scroll", onScroll, { passive: true });
-      window.removeEventListener("wheel");
+      if (window) {
+        window.removeEventListener("scroll", onScroll, { passive: true });
+        window.removeEventListener("wheel");
+      }
     };
   }, []);
 
