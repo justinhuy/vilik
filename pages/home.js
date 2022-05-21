@@ -260,12 +260,12 @@ export default function Home() {
     setScrollY(window.pageYOffset);
 
     window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("wheel", onWheel, { passive: true });
+    // window.addEventListener("wheel", onWheel, { passive: true });
     // remove event on unmount to prevent a memory leak
 
     return () => {
       window.removeEventListener("scroll", onScroll, { passive: true });
-      window.removeEventListener("wheel", onWheel, { passive: true });
+      // window.removeEventListener("wheel", onWheel, { passive: true });
     };
   }, []);
 
