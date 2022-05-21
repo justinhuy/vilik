@@ -119,7 +119,7 @@ export default function Home() {
   const [active, setActive] = useState("problem");
 
   const [isAnimating, setIsAnimating] = useState(false);
-  const [activeSection, setActiveSection] = useState(-1);
+  const [activeSection, setActiveSection] = useState(0);
 
   const [step, setStep] = useState(-1);
   const [scrollY, setScrollY] = useState(0);
@@ -165,7 +165,6 @@ export default function Home() {
   ];
 
   const scrollTo = (idx, direction) => {
-    console.log(idx);
     if (el?.current?.clientWidth > 1023) {
       setIsAnimating(true);
       setStep(idx);
@@ -185,12 +184,17 @@ export default function Home() {
         x: 0,
         y: `${-idx * 100}vh`,
         z: 0,
-        duration: 1.5,
+        duration: 1,
         onComplete: function () {
-          setActiveSection(idx);
+          // setActiveSection(idx);
           setTimeout(() => {
             setIsAnimating(false);
           }, 350);
+        },
+        onUpdate: () => {
+          if (anim.time() > 0.75) {
+            setActiveSection(idx);
+          }
         },
       });
     } else {
@@ -227,10 +231,6 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
-    setActiveSection(0);
-  }, []);
-
   const scrollToElement = (id) => {
     const ele = document.getElementById(id);
     if (ele) {
@@ -241,7 +241,7 @@ export default function Home() {
     }
   };
 
-  const onScroll = (event) => {
+  const onScroll = () => {
     const { pageYOffset } = window;
     setScrollY(pageYOffset);
 
@@ -364,7 +364,7 @@ export default function Home() {
         <a
           href="#"
           title="Vilik"
-          className="fixed top-[16px] left-[16px] lg:top-[1.66666667vw] lg:left-[1.66666667vw] z-50"
+          className="fixed top-[16px] left-[16px] lg:top-[1.66666667vw] lg:left-[7.5vw] z-50"
         >
           <svg
             width="157"
@@ -571,7 +571,7 @@ export default function Home() {
           </svg>
         </a>
 
-        <button className="hidden lg:block fixed top-[1.66666667vw] right-[1.66666667vw] z-50 text-[14px] leading-[21px] font-medium border border-zinc-100 px-[16px] py-[8px] rounded-[30px]">
+        <button className="hidden lg:block fixed top-[1.66666667vw] right-[7.5vw] z-50 text-[14px] leading-[21px] font-medium border border-zinc-100 px-[16px] py-[8px] rounded-[30px]">
           Contact us
         </button>
 
@@ -641,7 +641,7 @@ export default function Home() {
               >
                 Roadmap
               </div>
-              <div
+              {/* <div
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
                   activeSection === 10 ? "active" : ""
                 }`}
@@ -649,21 +649,21 @@ export default function Home() {
                 id="section-10"
               >
                 Partners
-              </div>
+              </div> */}
               <div
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 11 || activeSection === 12 ? "active" : ""
+                  activeSection === 10 || activeSection === 11 ? "active" : ""
                 }`}
-                onClick={() => scrollTo(11)}
+                onClick={() => scrollTo(10)}
                 id="section-11"
               >
                 Our Team
               </div>
               <div
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 13 ? "active" : ""
+                  activeSection === 12 ? "active" : ""
                 }`}
-                onClick={() => scrollTo(13)}
+                onClick={() => scrollTo(12)}
                 id="section-13"
               >
                 Whitepaper
@@ -905,54 +905,6 @@ export default function Home() {
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="" title="">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M9.83545 11.9372C9.83545 11.3594 10.2512 10.8857 10.7779 10.8857C11.3045 10.8857 11.7295 11.3594 11.7203 11.9372C11.7203 12.515 11.3045 12.9886 10.7779 12.9886C10.2605 12.9886 9.83545 12.515 9.83545 11.9372ZM13.2072 11.9372C13.2072 11.3594 13.623 10.8857 14.1497 10.8857C14.6763 10.8857 15.0921 11.3594 15.0921 11.9372C15.0921 12.515 14.6763 12.9886 14.1497 12.9886C13.6322 12.9886 13.2072 12.515 13.2072 11.9372Z"
-                      fill="url(#paint0_linear_890_4490)"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M5.96187 3H18.4411C19.4934 3 20.3502 3.84642 20.3502 4.89524V21.4004L18.348 19.6524L17.2211 18.6219L16.0291 17.5271L16.5226 19.2291H5.96187C4.90952 19.2291 4.05273 18.3827 4.05273 17.3339V4.89524C4.05273 3.84642 4.90952 3 5.96187 3ZM14.2317 14.2699C14.5111 14.6196 14.8464 15.0152 14.8464 15.0152C16.9045 14.9508 17.6961 13.6167 17.6961 13.6167C17.6961 10.6543 16.3551 8.25302 16.3551 8.25302C15.014 7.2594 13.7381 7.287 13.7381 7.287L13.6078 7.4342C15.191 7.91261 15.9267 8.60263 15.9267 8.60263C14.9581 8.07821 14.0082 7.82061 13.1235 7.71941C12.453 7.64581 11.8104 7.66421 11.2423 7.73781C11.1935 7.73781 11.1518 7.74482 11.1049 7.75272C11.098 7.75387 11.0911 7.75504 11.084 7.75621C10.758 7.78381 9.96644 7.90341 8.96997 8.33582C8.62539 8.49222 8.42051 8.60263 8.42051 8.60263C8.42051 8.60263 9.19347 7.87581 10.8698 7.3974L10.7767 7.287C10.7767 7.287 9.5008 7.2594 8.15975 8.25302C8.15975 8.25302 6.8187 10.6543 6.8187 13.6167C6.8187 13.6167 7.60098 14.9508 9.65912 15.0152C9.65912 15.0152 10.0037 14.6012 10.2831 14.2515C9.10035 13.9019 8.65333 13.1659 8.65333 13.1659C8.65333 13.1659 8.74646 13.2303 8.91409 13.3223C8.9234 13.3315 8.93271 13.3407 8.95134 13.3499C8.96531 13.3591 8.97928 13.366 8.99325 13.3729C9.00722 13.3798 9.02119 13.3867 9.03516 13.3959C9.26798 13.5247 9.5008 13.6259 9.71499 13.7087C10.0968 13.8559 10.5532 14.0031 11.084 14.1043C11.7824 14.2331 12.602 14.2791 13.496 14.1135C13.9337 14.0399 14.3807 13.9111 14.8464 13.7179C15.1723 13.5983 15.5355 13.4235 15.9174 13.1751C15.9174 13.1751 15.4517 13.9295 14.2317 14.2699Z"
-                      fill="url(#paint1_linear_890_4490)"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_890_4490"
-                        x1="11.4083"
-                        y1="11.7255"
-                        x2="11.5401"
-                        y2="13.0786"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stopColor="#EAC2FF" />
-                        <stop offset="1" stopColor="#1945D9" />
-                      </linearGradient>
-                      <linearGradient
-                        id="paint1_linear_890_4490"
-                        x1="8.92902"
-                        y1="10.348"
-                        x2="11.9846"
-                        y2="21.46"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stopColor="#EAC2FF" />
-                        <stop offset="1" stopColor="#1945D9" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </a>
-              </li>
             </ul>
 
             <img
@@ -1173,7 +1125,7 @@ export default function Home() {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="h-full bg-white-blur p-[32px]">
+                    <div className="h-full bg-white-blur p-[32px] border-r-blur">
                       <div className="w-[56px] h-[56px] mb-[24px] flex items-center justify-center relative">
                         <svg
                           width="58"
@@ -1910,7 +1862,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* TODO */}
           <div
             className={`screen relative lg:h-screen w-full hidden lg:flex items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
               activeSection === 7 ? "active" : ""
@@ -2510,7 +2461,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div
+          {/* <div
             className={`screen relative lg:h-screen w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
               activeSection === 10 ? "active" : ""
             }`}
@@ -2741,18 +2692,12 @@ export default function Home() {
                 </svg>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div
             className={`screen relative lg:h-screen w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-              activeSection === 11 ? "active" : ""
+              activeSection === 10 ? "active" : ""
             }`}
-            style={{
-              backgroundImage: "url(/bg-people.png)",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "100% auto",
-              backgroundPosition: "bottom center",
-            }}
             id="our-team"
           >
             <div className="screen__container z-10 w-full">
@@ -2854,14 +2799,8 @@ export default function Home() {
 
           <div
             className={`screen relative lg:h-screen w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-              activeSection === 12 ? "active" : ""
+              activeSection === 11 ? "active" : ""
             }`}
-            style={{
-              backgroundImage: "url(/bg-people.png)",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "100% auto",
-              backgroundPosition: "bottom center",
-            }}
           >
             <div className="screen__container z-10 w-full">
               <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[29px] lg:mb-[32px] lg:leading-[48px] text-center lg:text-left relative z-10">
@@ -3109,7 +3048,7 @@ export default function Home() {
 
           <div
             className={`screen relative lg:h-screen w-full flex flex-col items-center justify-center ${
-              activeSection === 13 ? "active" : ""
+              activeSection === 12 ? "active" : ""
             }`}
             id="whitepaper"
           >
@@ -3456,54 +3395,6 @@ export default function Home() {
                             y1="10.4901"
                             x2="9.8872"
                             y2="19.8679"
-                            gradientUnits="userSpaceOnUse"
-                          >
-                            <stop stopColor="#EAC2FF" />
-                            <stop offset="1" stopColor="#1945D9" />
-                          </linearGradient>
-                        </defs>
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" title="">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M9.83545 11.9372C9.83545 11.3594 10.2512 10.8857 10.7779 10.8857C11.3045 10.8857 11.7295 11.3594 11.7203 11.9372C11.7203 12.515 11.3045 12.9886 10.7779 12.9886C10.2605 12.9886 9.83545 12.515 9.83545 11.9372ZM13.2072 11.9372C13.2072 11.3594 13.623 10.8857 14.1497 10.8857C14.6763 10.8857 15.0921 11.3594 15.0921 11.9372C15.0921 12.515 14.6763 12.9886 14.1497 12.9886C13.6322 12.9886 13.2072 12.515 13.2072 11.9372Z"
-                          fill="url(#paint0_linear_890_4490)"
-                        />
-                        <path
-                          fillRule="evenodd"
-                          clipRule="evenodd"
-                          d="M5.96187 3H18.4411C19.4934 3 20.3502 3.84642 20.3502 4.89524V21.4004L18.348 19.6524L17.2211 18.6219L16.0291 17.5271L16.5226 19.2291H5.96187C4.90952 19.2291 4.05273 18.3827 4.05273 17.3339V4.89524C4.05273 3.84642 4.90952 3 5.96187 3ZM14.2317 14.2699C14.5111 14.6196 14.8464 15.0152 14.8464 15.0152C16.9045 14.9508 17.6961 13.6167 17.6961 13.6167C17.6961 10.6543 16.3551 8.25302 16.3551 8.25302C15.014 7.2594 13.7381 7.287 13.7381 7.287L13.6078 7.4342C15.191 7.91261 15.9267 8.60263 15.9267 8.60263C14.9581 8.07821 14.0082 7.82061 13.1235 7.71941C12.453 7.64581 11.8104 7.66421 11.2423 7.73781C11.1935 7.73781 11.1518 7.74482 11.1049 7.75272C11.098 7.75387 11.0911 7.75504 11.084 7.75621C10.758 7.78381 9.96644 7.90341 8.96997 8.33582C8.62539 8.49222 8.42051 8.60263 8.42051 8.60263C8.42051 8.60263 9.19347 7.87581 10.8698 7.3974L10.7767 7.287C10.7767 7.287 9.5008 7.2594 8.15975 8.25302C8.15975 8.25302 6.8187 10.6543 6.8187 13.6167C6.8187 13.6167 7.60098 14.9508 9.65912 15.0152C9.65912 15.0152 10.0037 14.6012 10.2831 14.2515C9.10035 13.9019 8.65333 13.1659 8.65333 13.1659C8.65333 13.1659 8.74646 13.2303 8.91409 13.3223C8.9234 13.3315 8.93271 13.3407 8.95134 13.3499C8.96531 13.3591 8.97928 13.366 8.99325 13.3729C9.00722 13.3798 9.02119 13.3867 9.03516 13.3959C9.26798 13.5247 9.5008 13.6259 9.71499 13.7087C10.0968 13.8559 10.5532 14.0031 11.084 14.1043C11.7824 14.2331 12.602 14.2791 13.496 14.1135C13.9337 14.0399 14.3807 13.9111 14.8464 13.7179C15.1723 13.5983 15.5355 13.4235 15.9174 13.1751C15.9174 13.1751 15.4517 13.9295 14.2317 14.2699Z"
-                          fill="url(#paint1_linear_890_4490)"
-                        />
-                        <defs>
-                          <linearGradient
-                            id="paint0_linear_890_4490"
-                            x1="11.4083"
-                            y1="11.7255"
-                            x2="11.5401"
-                            y2="13.0786"
-                            gradientUnits="userSpaceOnUse"
-                          >
-                            <stop stopColor="#EAC2FF" />
-                            <stop offset="1" stopColor="#1945D9" />
-                          </linearGradient>
-                          <linearGradient
-                            id="paint1_linear_890_4490"
-                            x1="8.92902"
-                            y1="10.348"
-                            x2="11.9846"
-                            y2="21.46"
                             gradientUnits="userSpaceOnUse"
                           >
                             <stop stopColor="#EAC2FF" />
