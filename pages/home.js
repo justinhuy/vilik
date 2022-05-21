@@ -312,6 +312,7 @@ export default function Home() {
 
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
+
       <Script
         id="tiktok-pixel"
         strategy="afterInteractive"
