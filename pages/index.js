@@ -3229,13 +3229,13 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative lg:h-screen w-full hidden lg:flex items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
+            className={`screen relative lg:h-screen w-full hidden lg:flex items-center justify-center py-[50px] lg:py-[62px] px-[16px] lg:px-[7.5vw] ${
               activeSection === 7 ? "active" : ""
             }`}
             id="tokenomics"
           >
             <div className="relative z-10 flex flex-col items-stretch w-full h-full screen__container">
-              <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] mb-[16px] lg:mb-[32px] lg:leading-[48px] text-center">
+              <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] mb-[16px] lg:mb-[24px] lg:leading-[48px] text-center">
                 Tokenomics
               </h5>
 
@@ -3252,12 +3252,12 @@ export default function Home() {
                     </Moving>
                   </div>
 
-                  <div className="relative h-full pt-[70px] pb-[51px]">
-                    <div className="flex text-light-blue text-[18px] leading-[27px] bg-white-blur-015 divide-x divide-white/20 font-bold absolute top-0 left-0 w-full">
+                  <div className="relative h-full pt-[40px] pb-[51px]">
+                    <div className="flex text-light-blue text-[16px] leading-[24px] bg-white-blur-015 divide-x divide-white/20 font-bold absolute top-0 left-0 w-full">
                       <div className="w-[156px] py-[8px] text-center">
                         STAGE
                       </div>
-                      <div className="w-[156px] py-[8px] text-center">
+                      <div className="w-[178px] py-[8px] text-center">
                         % OF TOTAL SUPPLY
                       </div>
                       <div className="w-[156px] py-[8px] text-center">
@@ -3274,28 +3274,28 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <div className="flex-1 divide-y divide-zinc-600">
+                    <div className="flex-1 divide-y divide-zinc-600 text-[14px] leading-[21px] tokenomics-tbl">
                       {TOKENOMICS_DATA.map((item) => (
                         <div className="group" key={item.stage}>
                           <div className="flex transition-all divide-x group-hover:bg-zinc-800 divide-white/20">
-                            <div className="w-[156px] py-[15px] text-center text-light-blue">
+                            <div className="w-[156px] py-[11px] text-center text-light-blue text-[16px] leading-[24px]">
                               {item.stage}
                             </div>
-                            <div className="w-[156px] py-[15px] text-center text-center">
+                            <div className="w-[178px] py-[11px] text-center text-center">
                               <span className="inline-block rounded-[16px] py-[2px] px-[20px] border border-zinc-400 bg-zinc-800 text-[14px leading-[21px] font-medium">
                                 {item.total}
                               </span>
                             </div>
-                            <div className="w-[156px] py-[15px] text-center">
+                            <div className="w-[156px] py-[11px] text-center">
                               {item.quantity}
                             </div>
-                            <div className="w-[156px] py-[15px] text-center">
+                            <div className="w-[156px] py-[11px] text-center">
                               {item.price}
                             </div>
-                            <div className="w-[156px] py-[15px] text-center">
+                            <div className="w-[156px] py-[11px] text-center">
                               {item.totalSold}
                             </div>
-                            <div className="flex-1 py-[15px] px-[20px]">
+                            <div className="flex-1 py-[11px] px-[20px]">
                               {item.vestingPeriod}
                             </div>
                           </div>
@@ -3307,7 +3307,7 @@ export default function Home() {
                       <div className="w-[156px] py-[8px] text-center font-bold">
                         TOTAL
                       </div>
-                      <div className="w-[156px] py-[8px] text-center text-center">
+                      <div className="w-[178px] py-[8px] text-center text-center">
                         <span className="inline-block py-[4px] px-[24px] rounded-[16px] text-center bg-gradient-pink-200">
                           100%
                         </span>
