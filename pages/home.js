@@ -247,25 +247,25 @@ export default function Home() {
     setScrollY(pageYOffset);
   };
 
+  const onWheel = (e) => {
+    if (e.deltaY < 0) {
+      setScrollDirection("up");
+    }
+    if (e.deltaY > 0) {
+      setScrollDirection("down");
+    }
+  }
+
   useEffect(() => {
     setScrollY(window.pageYOffset);
 
     window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("wheel", onWheel, { passive: true });
     // remove event on unmount to prevent a memory leak
-    window.addEventListener("wheel", function (e) {
-      if (e.deltaY < 0) {
-        setScrollDirection("up");
-      }
-      if (e.deltaY > 0) {
-        setScrollDirection("down");
-      }
-    });
 
     return () => {
-      if (window) {
-        window.removeEventListener("scroll", onScroll, { passive: true });
-        window.removeEventListener("wheel");
-      }
+      window.removeEventListener("scroll", onScroll, { passive: true });
+      window.removeEventListener("wheel", onScroll, { passive: true });
     };
   }, []);
 
@@ -761,7 +761,12 @@ export default function Home() {
 
             <ul className="hidden lg:flex flex-col items-center justify-center absolute right-[1.11vw] top-2/4 -translate-y-2/4	space-y-[21px]">
               <li>
-                <a href="" title="">
+                <a
+                  href="https://www.tiktok.com/@vilik.official"
+                  title="Tiktok"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <svg
                     width="24"
                     height="24"
@@ -792,7 +797,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="" title="">
+                <a href="#" title="Telegram">
                   <svg
                     width="24"
                     height="24"
@@ -856,10 +861,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://www.tiktok.com/@vilik.official"
-                  title="Tiktok"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="#"
+                  title="Twitter"
                 >
                   <svg
                     width="24"
@@ -5651,7 +5654,12 @@ export default function Home() {
                 </Link>
                 <ul className="flex items-center justify-center	space-x-[16px] mb-[15px]">
                   <li>
-                    <a href="" title="">
+                    <a
+                      href="https://www.tiktok.com/@vilik.official"
+                      title="Tiktok"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <svg
                         width="24"
                         height="24"
@@ -5682,7 +5690,7 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a href="" title="">
+                    <a href="#" title="Telegram">
                       <svg
                         width="24"
                         height="24"
@@ -5746,10 +5754,8 @@ export default function Home() {
                   </li>
                   <li>
                     <a
-                      href="https://www.tiktok.com/@vilik.official"
-                      title="Tiktok"
-                      target="_blank"
-                      rel="noreferrer"
+                      href="#"
+                      title="Twitter"
                     >
                       <svg
                         width="24"
