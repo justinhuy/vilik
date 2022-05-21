@@ -17,7 +17,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const SECTIONS_COUNT = 14;
+const SECTIONS_COUNT = 13;
 
 const TOKENOMICS_DATA = [
   {
