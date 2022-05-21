@@ -265,7 +265,7 @@ export default function Home() {
 
     return () => {
       window.removeEventListener("scroll", onScroll, { passive: true });
-      window.removeEventListener("wheel", onScroll, { passive: true });
+      window.removeEventListener("wheel", onWheel, { passive: true });
     };
   }, []);
 
