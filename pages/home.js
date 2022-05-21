@@ -3557,14 +3557,14 @@ export default function Home() {
             }`}
             id="roadmap"
           >
-            <div className="screen__container z-10">
+            <div className="screen__container relative z-10 lg:static">
               <h5 className="sub-heading text-center text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] mb-[43px] lg:mb-[54px] lg:leading-[48px] relative z-10">
                 Roadmap
               </h5>
 
               <img
                 src="/network-line.png"
-                className="absolute w-full left-2/4 top-2/4 -translate-y-2/4 -translate-x-2/4"
+                className="hidden lg:block absolute w-full left-2/4 top-2/4 -translate-y-2/4 -translate-x-2/4"
               />
 
               <div className="box relative max-w-[1224px] mx-auto">
@@ -3572,7 +3572,7 @@ export default function Home() {
                 <Swiper
                   modules={[Navigation]}
                   spaceBetween={8}
-                  slidesPerView={3}
+                  slidesPerView={1}
                   navigation
                   className="roadmap-slider"
                   breakpoints={{
@@ -4551,15 +4551,6 @@ export default function Home() {
                         <p className="lg:mb-[33px]">TBA</p>
                       </div>
                       <p className="text-[12px] leading-[18px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Eget dictumst sit in amet, neque nibh viverra augue. Leo
-                        amet iaculis vitae vestibulum dui a molestie dignissim.
-                        Nibh ultrices maecenas quam rutrum. Nisi aliquam id odio
-                        fringilla duis nibh sit. Integer varius nisi, et lectus
-                        neque. Lectus in tellus sagittis elit pretium leo
-                        adipiscing non. Aliquam magna lorem tincidunt senectus
-                        lacus ipsum donec. Id elementum suspendisse nec laoreet.
-                        A parturient tellus urna suspendisse mus
                       </p>
                     </div>
                   </div>
@@ -4584,15 +4575,6 @@ export default function Home() {
                         <p className="lg:mb-[33px]">TBA</p>
                       </div>
                       <p className="text-[12px] leading-[18px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Eget dictumst sit in amet, neque nibh viverra augue. Leo
-                        amet iaculis vitae vestibulum dui a molestie dignissim.
-                        Nibh ultrices maecenas quam rutrum. Nisi aliquam id odio
-                        fringilla duis nibh sit. Integer varius nisi, et lectus
-                        neque. Lectus in tellus sagittis elit pretium leo
-                        adipiscing non. Aliquam magna lorem tincidunt senectus
-                        lacus ipsum donec. Id elementum suspendisse nec laoreet.
-                        A parturient tellus urna suspendisse mus
                       </p>
                     </div>
                   </div>
@@ -4608,15 +4590,6 @@ export default function Home() {
                         <p className="lg:mb-[33px]">TBA</p>
                       </div>
                       <p className="text-[12px] leading-[18px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Eget dictumst sit in amet, neque nibh viverra augue. Leo
-                        amet iaculis vitae vestibulum dui a molestie dignissim.
-                        Nibh ultrices maecenas quam rutrum. Nisi aliquam id odio
-                        fringilla duis nibh sit. Integer varius nisi, et lectus
-                        neque. Lectus in tellus sagittis elit pretium leo
-                        adipiscing non. Aliquam magna lorem tincidunt senectus
-                        lacus ipsum donec. Id elementum suspendisse nec laoreet.
-                        A parturient tellus urna suspendisse mus
                       </p>
                     </div>
                   </div>

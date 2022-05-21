@@ -873,7 +873,8 @@ a {
     width: 100vh;
     height: 74px;
     transform: translate3d(-50%, -50%, 0) rotate(-90deg);
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow: auto;
     z-index: 999;
   }
 
@@ -1099,5 +1100,9 @@ a {
 
   .value-slider .swiper-slide img {
     transform: scale(0.53);
+  }
+
+  .line-linear {
+    width: calc(100% - 32px);
   }
 }
