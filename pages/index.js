@@ -992,10 +992,10 @@ export default function Home() {
             id="about-us"
           >
             <div className="screen__container relative z-10">
-              <img
+              {/* <img
                 className="w-full max-w-[200px] mx-auto mb-[110px] lg:hidden"
                 src="/cube.png"
-              />
+              /> */}
 
               <div className="lg:grid lg:grid-cols-12">
                 <div className="col-start-7 col-span-6">
