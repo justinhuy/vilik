@@ -1,5 +1,4 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 export default class MyDocument extends Document {
   render() {
@@ -70,70 +69,6 @@ export default class MyDocument extends Document {
           <meta name="twitter:url" content="https://vilik.io" />
 
           <link rel="shortcut icon" href="/favicon.ico" />
-          <Script
-            id="fb-pixel-1"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '549953909900657');
-          `,
-            }}
-          />
-          <Script
-            id="fb-pixel-2"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1003590666958129');
-          `,
-            }}
-          />
-          <Script
-            id="fb-pixel-3"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '982879232391261');
-          `,
-            }}
-          />
-          <Script
-            id="tiktok-pixel-1"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-          !function (w, d, t) {
-            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t][];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t][],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js%22;ttq._i=ttq._i%7C%7C%7B%7D,ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t%7C%7C%7B%7D,ttq._t[e]=+new Date,ttq._o=ttq._o{},ttq._o[e]=n{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
-            ttq.load('CA3RKNJC77UCBHFR6LG0');
-            ttq.page();
-          }(window, document, 'ttq');
-          `,
-            }}
-          />
         </Head>
         <body>
           <Main />
