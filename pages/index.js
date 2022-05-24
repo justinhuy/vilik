@@ -18,7 +18,7 @@ import Moving from "../animation/Moving";
 
 
 
-const SECTIONS_COUNT = 13;
+const SECTIONS_COUNT = 11;
 
 const TOKENOMICS_DATA = [
   {
@@ -600,7 +600,7 @@ export default function Home() {
 
         <button className="hidden lg:block fixed top-[1.66666667vw] right-[7.5vw] z-50 text-[14px] leading-[21px] font-medium border border-zinc-100 px-[16px] py-[8px] rounded-[30px]" onClick={() => {
           if (el?.current?.clientWidth > 1023) {
-            scrollTo(12);
+            scrollTo(10);
           } else {
             scrollToElement('whitepaper');
           }
@@ -683,7 +683,7 @@ export default function Home() {
               >
                 Partners
               </div> */}
-              <div
+              {/* <div
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
                   activeSection === 10 || activeSection === 11 ? "active" : ""
                 }`}
@@ -691,13 +691,13 @@ export default function Home() {
                 id="section-10"
               >
                 Our Team
-              </div>
+              </div> */}
               <div
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 12 ? "active" : ""
+                  activeSection === 10 ? "active" : ""
                 }`}
-                onClick={() => scrollTo(12)}
-                id="section-12"
+                onClick={() => scrollTo(10)}
+                id="section-10"
               >
                 Whitepaper
               </div>
@@ -4542,7 +4542,7 @@ export default function Home() {
             </div>
           </div> */}
 
-          <div
+          {/* <div
             className={`screen relative lg:h-screen w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
               activeSection === 10 ? "active" : ""
             }`}
@@ -4617,8 +4617,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* section overlay */}
-            {/* <svg
+            <svg
               width="375"
               height="667"
               viewBox="0 0 375 667"
@@ -4920,11 +4919,10 @@ export default function Home() {
                   />
                 </filter>
               </defs>
-            </svg> */}
-            {/* end of section overlay */}
-          </div>
+            </svg>
+          </div> */}
 
-          <div
+          {/* <div
             className={`screen relative lg:h-screen w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
               activeSection === 11 ? "active" : ""
             }`}
@@ -5172,8 +5170,7 @@ export default function Home() {
               </Swiper>
             </div>
 
-            {/* section overlay */}
-            {/* <svg
+            <svg
               width="375"
               height="667"
               viewBox="0 0 375 667"
@@ -5475,13 +5472,12 @@ export default function Home() {
                   />
                 </filter>
               </defs>
-            </svg> */}
-            {/* end of section overlay */}
-          </div>
+            </svg>
+          </div> */}
 
           <div
             className={`screen relative lg:h-screen w-full flex flex-col items-center justify-center ${
-              activeSection === 12 ? "active" : ""
+              activeSection === 10 ? "active" : ""
             }`}
             id="whitepaper"
           >
