@@ -313,6 +313,8 @@ export default function Home() {
         />
         <meta name="twitter:domain" content="https://vilik.io" />
         <meta name="twitter:url" content="https://vilik.io" />
+        
+        <meta name="facebook-domain-verification" content="u8nrv87wmxjzbcgri41mru5kyu05yd" />
 
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
