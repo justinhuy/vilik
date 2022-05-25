@@ -1541,7 +1541,7 @@ export default function Home() {
                   <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:mb-[20px]">
                     Features
                   </h5>
-                  <p className="desc text-[12px] leading-[18px] lg:text-[16px] lg:leading-[24px] mb-[40px] text-zinc-300 text-zinc-300">
+                  <p className="hidden lg:block desc text-[12px] leading-[18px] lg:text-[16px] lg:leading-[24px] mb-[40px] text-zinc-300 text-zinc-300">
                     Nowadays, other&apos;s platforms with a central data network
                     are based on centralised structures for the delivery of
                     videos, video storage, traffic, and routing are concentrated
@@ -1556,6 +1556,9 @@ export default function Home() {
                     innovative network architecture improves the quality of
                     stream delivery, and video resolution and reduces network
                     costs for bandwidth dramatically.
+                  </p>
+                  <p className="lg:hidden desc text-[12px] leading-[18px] lg:text-[16px] lg:leading-[24px] mb-[40px] text-zinc-300 text-zinc-300">
+                    Vilik network has created a decentralized peer-to-peer architecture where users can share bandwidth and computing resources with other users. This innovative network design will improve stream delivery quality, increase video resolution, and reduces bandwidth costs for video providers.
                   </p>
                 </div>
 
@@ -1674,11 +1677,7 @@ export default function Home() {
                         Stranger duo
                       </h6>
                       <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
-                        With Vilik&apos;s cryptocurrency wallet, you do not need
-                        passwords or third-party servers to store digital
-                        currency. We ensure high cybersafety and protect users
-                        from DDoS with the PSD2 standard, which is identical to
-                        European security
+                        Video calls between two strangers, sing and dance together, tell stories and interact with each other in unprecedented ways. Furthermore, you can also earn rewards from competing through built-in mini-games in Vilik.
                       </p>
                     </div>
                   </SwiperSlide>
@@ -3753,10 +3752,7 @@ export default function Home() {
                           Vilik Streaming Web Platform Version 2.0 Released
                         </li>
                         <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
-                          Vilik Network(Peer-to-Peer Network)
-                        </li>
-                        <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
-                          Development Begins
+                          Vilik Network(Peer-to-Peer Network) Development Begins
                         </li>
                       </ul>
 
