@@ -5490,7 +5490,7 @@ export default function Home() {
                 </h3>
 
                 <a
-                  href="/Whitepaper.pdf"
+                  href="/whitepaper.pdf"
                   rel="noreferrer"
                   target="_blank"
                   title="Whitepaper"
