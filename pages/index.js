@@ -1060,7 +1060,7 @@ export default function Home() {
             }`}
             id="about-us"
           >
-            <div className="relative z-10 screen__container">
+            <div className="relative z-10 w-full screen__container">
               {/* <img
                 className="w-full max-w-[200px] mx-auto mb-[110px] lg:hidden"
                 src="/cube.png"
@@ -1077,7 +1077,7 @@ export default function Home() {
                     A Cutting-edge <br />
                     multi-purpose SocialFi <br /> streaming platform
                   </h5>
-                  <p className="desc text-[14px] leading-[21px] lg:text-[16px] lg:leading-[24px] text-zinc-300 text-zinc-300">
+                  <p className="desc text-[14px] leading-[21px] lg:text-[16px] lg:leading-[24px] text-zinc-300 text-zinc-300 lg:max-w-[457px]">
                     In the era of high interactivity, edutainment, and a
                     combination between entertainment and earning, Vilik proudly
                     introduces a high-end video streaming platform built on the
@@ -1731,7 +1731,7 @@ export default function Home() {
                       <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
                         Diamond is the real value major unit in Vilik game
                         economy. It can be exchanged from VIK tokens, withdrawn
-                        to the bank account at any time with low fee and fast
+                        to the bank account at any time with a low fee and fast
                         transaction.
                       </p>
                     </div>
@@ -2633,7 +2633,7 @@ export default function Home() {
               </div>
 
               <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] mb-[16px] lg:mb-[32px] lg:leading-[48px] text-center">
-                Impress user wiith exceptional features
+                Impress user with exceptional features
               </h5>
 
               <div className="box bg-white-blur-003 px-[26px] pt-[13px] pb-[21px] max-w-[1209px] mx-auto">
@@ -3315,7 +3315,7 @@ export default function Home() {
                         </span>
                       </div>
                       <div className="w-[156px] py-[8px] text-center text-light-blue">
-                        100,000,000
+                        1,000,000,000
                       </div>
                       <div className="w-[156px] py-[15px] text-center"></div>
                       <div className="w-[156px] py-[15px] text-center"></div>
@@ -3821,7 +3821,7 @@ export default function Home() {
                           Vilik Streaming Web Platform Version 3.0 Released
                         </li>
                         <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
-                          Vilik Network(Peer-to-Peer Network) Testne
+                          Vilik Network(Peer-to-Peer Network) Testnet
                         </li>
                       </ul>
 
@@ -3886,7 +3886,7 @@ export default function Home() {
                           Vilik Streaming Web Platform Version 4.0 Release
                         </li>
                         <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
-                          Vilik Network(Peer-to-Peer Network) Mainest
+                          Vilik Network(Peer-to-Peer Network) Mainnet
                         </li>
                       </ul>
 
@@ -3948,10 +3948,10 @@ export default function Home() {
                       </p>
                       <ul className="text-[12px] leading-[18px] lg:text-[14px] lg:leading-[21px] text-[#DCDCDC] font-light">
                         <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
-                          Vilik Streaming Web Platform Version 5.0 Release
+                          Vilik Streaming Web Platform Version 5.0 release
                         </li>
                         <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
-                          Vilik Network(Peer-to-Peer Network) Finally Update
+                          Vilik Network(Peer-to-Peer Network) Finally upload
                         </li>
                         <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
                           Vilik Streaming Web Platform Phase 1 Closed
@@ -5489,9 +5489,13 @@ export default function Home() {
                   Learn more about VILIK World
                 </h3>
 
-                <button
+                <a
+                  href="/Whitepaper.pdf"
+                  rel="noreferrer"
+                  target="_blank"
+                  title="Whitepaper"
                   type="button"
-                  className="relative group cursor-pointer overflow-hidden p-[3px] rounded-[30px]"
+                  className="relative group cursor-pointer overflow-hidden p-[3px] rounded-[30px] inline-block"
                 >
                   <span className="box bg-gradient-purple text-[16px] leading-[19px] h-[40px] lg:h-[51px] px-[24px] rounded-[26px] inline-flex items-center relative z-10">
                     Whitepaper
@@ -5505,7 +5509,7 @@ export default function Home() {
                       className="w-full h-full duration-200 opacity-0 lg:group-hover:animate-spin-slow lg:group-hover:opacity-100"
                     ></div>
                   </div>
-                </button>
+                </a>
               </div>
             </div>
             <div className="py-[53px] lg:py-0 lg:h-[318px] w-full flex items-center justify-center text-center bg-white-blur-008 px-[16px] lg:px-[7.5vw] relative z-10">
