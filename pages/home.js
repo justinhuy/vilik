@@ -37,10 +37,10 @@ const TOKENOMICS_DATA = [
     stage: "PRIVATE ROUND",
     total: "6%",
     quantity: "60,000,000",
-    price: "$0.025",
-    totalSold: "$1.080.000",
+    price: "$0.03",
+    totalSold: "$1.800.000",
     vestingPeriod:
-      "5% five days after TGE, Cliff 1 Month, then 5% Monthly Unlock",
+      "5% five days after TGE, Cliff 2 Month, then 5% Monthly Unlock",
   },
   {
     stage: "PUBLIC ROUND",
@@ -2403,7 +2403,7 @@ export default function Home() {
                               High quality, smoother video streaming
                             </h6>
                             <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
-                              Our decentralised network allows everyone to
+                              Our decentralized network allows everyone to
                               globally earn streaming revenues. Herein, artists,
                               producers, streamers, and viewers jointly enjoy
                               the most immersive experiences.
@@ -2462,7 +2462,7 @@ export default function Home() {
                               Fewer servers, less bandwidth and no more
                               expensive hosting mean more capital to invest in
                               developing new apps and improving the experience
-                              for users.c
+                              for users.
                             </p>
                           </div>
                         </div>
