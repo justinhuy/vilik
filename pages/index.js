@@ -623,7 +623,7 @@ export default function Home() {
         >
           {/* Contact us */}
           <span className="inline-flex px-[13px] py-[5px] rounded-[16px] items-center relative z-10 btn-txt">
-            About us
+            Contact us
           </span>
           <div className="absolute w-[275px] h-[275px] top-1/2 left-0 linear-custom transform translate-y-[-50%]">
             <div
