@@ -1212,13 +1212,17 @@ export default function Home() {
           >
             <div className="relative z-10 screen__container">
               <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:mb-[32px] text-center">
-                What is Vilik network
+                How does the Vilik Network operate?
               </h5>
 
-              <div className="box bg-white-blur-003 pt-[7px] px-[10px] lg:px-[26px] lg:pt-[13px] lg:pb-[21px] max-w-[1224px] mx-auto">
+              <div className="box bg-white-blur-003 pt-[7px] px-[10px] lg:px-[26px] lg:pt-[13px] lg:pb-[21px] w-full max-w-[1224px] mx-auto relative">
                 <picture>
                   <source media="(min-width: 1024px)" srcSet="network@2x.png" />
-                  <img src="networkmb@2x.png" alt="What is Vilik's network" />
+                  <img
+                    src="networkmb@2x.png"
+                    alt="What is Vilik's network"
+                    className="w-full"
+                  />
                 </picture>
               </div>
             </div>
@@ -2242,7 +2246,7 @@ export default function Home() {
                             <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
                               The demand for online media and entertainment has
                               rapidly increased, which means data needs are
-                              skyrocketing with 4k, 8k and Higher-quality
+                              skyrocketing with 4k, 8k and higher-quality
                               streams are bottlenecked by un-scalable
                               infrastructure.
                             </p>
