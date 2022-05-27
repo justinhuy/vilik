@@ -866,7 +866,10 @@ a {
 }
 
 .tokenomics-tbl {
-  max-height: calc(100vh - 250px);
+  width: 100%;
+  height: 200%;
+  max-height: calc(100vh - 150px);
+  object-fit: contain;
   overflow-y: auto;
 }
 

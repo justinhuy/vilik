@@ -3790,7 +3790,14 @@ export default function Home() {
                 Tokenomics
               </h5>
 
-              <div className="flex-1">
+              <Image
+                src="/tokenomics@2x.png"
+                width={1224}
+                height={586}
+                className="tokenomics-tbl mx-auto"
+              />
+
+              {/* <div className="flex-1">
                 <div className="box text-[16px] leading-[24px] border-linear relative">
                   <div className="hidden lg:block absolute top-[-162px] right-[-173px] z-10">
                     <Moving yFrom={-10} yTo={10} duration={5}>
@@ -3872,7 +3879,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
