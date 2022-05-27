@@ -1111,3 +1111,17 @@ a {
     width: calc(100% - 32px);
   }
 }
+
+.btn-round-white:hover {
+  border-color: transparent;
+}
+
+.btn-round-white .btn-txt {
+  transition: all 0.3s ease;
+}
+
+.btn-round-white:hover .btn-txt {
+  background: linear-gradient(88.45deg, #F79CFF -3.37%, #EB00FF 15.28%, #4A26B7 91.36%, #043698 124.42%);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 5px 13px;
+}
