@@ -4140,10 +4140,10 @@ export default function Home() {
                 Roadmap
               </h5>
 
-              <img
+              {/* <img
                 src="/network-line.png"
                 className="absolute hidden w-full lg:block left-2/4 top-2/4 -translate-y-2/4 -translate-x-2/4"
-              />
+              /> */}
 
               <div className="box relative max-w-[1224px] mx-auto">
                 <div className="line-linear absolute top-[34px] w-full left-2/4 -translate-x-2/4"></div>
