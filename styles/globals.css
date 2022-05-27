@@ -878,8 +878,8 @@ a {
     width: 100vh;
     height: 74px;
     transform: translate3d(-50%, -50%, 0) rotate(-90deg);
-    /* overflow: hidden; */
-    overflow: auto;
+    overflow: hidden;
+    /* overflow: auto; */
     z-index: 999;
   }
 
@@ -936,6 +936,10 @@ a {
 
   .nav__item.active:after {
     opacity: 1;
+  }
+
+  .screen {
+    overflow: hidden;
   }
 }
 

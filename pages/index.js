@@ -1237,7 +1237,7 @@ export default function Home() {
                   />
                 </picture>
                 {/* lines */}
-                <svg
+                {/* <svg
                   width="55"
                   height="37"
                   viewBox="0 0 55 37"
@@ -1295,6 +1295,22 @@ export default function Home() {
                 >
                   <path
                     d="M14.5794 0.272233C15.0098 16.079 10.3195 31.6014 1.20783 44.5249"
+                    stroke="#F4F4F5"
+                    stroke-width="0.332088"
+                    stroke-dasharray="5.98 5.98"
+                    className="path"
+                  />
+                </svg>
+                <svg
+                  width="47"
+                  height="38"
+                  viewBox="0 0 47 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute w-[47px] h-auto left-[519px] top-[153px]"
+                >
+                  <path
+                    d="M0.145018 0.904001C9.95322 3.41605 19.135 7.9319 27.112 14.1671C35.0891 20.4024 41.6886 28.2219 46.4948 37.1332"
                     stroke="#F4F4F5"
                     stroke-width="0.332088"
                     stroke-dasharray="5.98 5.98"
@@ -1723,7 +1739,7 @@ export default function Home() {
                       <stop offset="1" stop-color="#5179FF" />
                     </linearGradient>
                   </defs>
-                </svg>
+                </svg> */}
                 {/* end of lines */}
               </div>
             </div>
