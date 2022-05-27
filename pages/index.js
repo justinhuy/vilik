@@ -639,7 +639,7 @@ export default function Home() {
                 onClick={() => scrollTo(0)}
                 id="section-0"
               >
-                Introduce
+                Introduction
               </div>
               <div
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
@@ -818,7 +818,7 @@ export default function Home() {
                     <span className="text-gradient-blue-01">Blockchain</span>
                   </h1>
                   <p className="text-fadein text-[14px] leading-[17px] lg:text-[28px] lg:leading-[34px] mb-[26px] text-white font-kanit">
-                    Fast. Seamless. Unconventional streaming and earning
+                    Fast. Seamless. An unconventional streaming and earning
                     platform
                   </p>
 
@@ -1093,15 +1093,15 @@ export default function Home() {
                     <span className="txt whitespace-nowrap">ABOUT US</span>
                   </h4>
                   <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:mb-[32px] lg:leading-[48px]">
-                    A Cutting-edge <br />
+                    A cutting-edge <br />
                     multi-purpose SocialFi <br /> streaming platform
                   </h5>
                   <p className="desc text-[14px] leading-[21px] lg:text-[16px] lg:leading-[24px] text-zinc-300 text-zinc-300 lg:max-w-[457px]">
                     In the era of high interactivity, edutainment, and a
                     combination between entertainment and earning, Vilik proudly
                     introduces a high-end video streaming platform built on the
-                    BSC network. Inhere, content creators and consumers can both
-                    play and earn cryptocurrency for their actions.
+                    BSC network. Here, content creators and consumers can play
+                    and earn cryptocurrency for their actions.
                   </p>
                 </div>
               </div>
@@ -1211,7 +1211,7 @@ export default function Home() {
           >
             <div className="relative z-10 screen__container">
               <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:mb-[32px] text-center">
-                What is Vilik&apos;s network
+                What is Vilik network
               </h5>
 
               <div className="box bg-white-blur-003 pt-[7px] px-[10px] lg:px-[26px] lg:pt-[13px] lg:pb-[21px] max-w-[1224px] mx-auto">
@@ -2113,13 +2113,13 @@ export default function Home() {
               {active === "problem" ? (
                 <>
                   <h5 className="sub-heading text-center text-gradient-blue text-[24px] mb-[24px] leading-[29px] lg:leading-[38px]">
-                    THE PROLEM OF LIVEVIDEO STREAMING TODAY
+                    THE PROBLEM OF LIVE VIDEOSTREAMING TODAY
                   </h5>
 
                   <div className="px-[16px] lg:px-0">
                     <img
                       src="/problem@2x.png"
-                      alt="THE PROLEM OF LIVEVIDEO STREAMING TODAY"
+                      alt="THE PROBLEM OF LIVE VIDEOSTREAMING TODAY"
                       className="desc mx-auto w-full max-w-[844px] mb-[25px]"
                     />
                   </div>
@@ -2183,10 +2183,10 @@ export default function Home() {
                               Poor quality video
                             </h6>
                             <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
-                              Due to inconvenience in CDN which causes
-                              re-buffering video and high load times, users
-                              cannot enjoy perfect quality in case of increasing
-                              demand for online video.
+                              Inconvenience in CDN which causes video
+                              re-buffering and high load times, users cannot
+                              enjoy perfect quality in case of increasing demand
+                              for online video.
                             </p>
                           </div>
                         </div>
@@ -2241,8 +2241,9 @@ export default function Home() {
                             <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
                               The demand for online media and entertainment has
                               rapidly increased, which means data needs are
-                              skyrocketing with 4k, 8k and higher quality
-                              streams creating an infrastructure bottleneck.
+                              skyrocketing with 4k, 8k and Higher-quality
+                              streams are bottlenecked by un-scalable
+                              infrastructure.
                             </p>
                           </div>
                         </div>
@@ -2295,8 +2296,8 @@ export default function Home() {
                               A centralized and inefficient system
                             </h6>
                             <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
-                              The centralized nature means less revenue flows
-                              back to content creators and platforms.
+                              A centralized framework means less revenue flows
+                              back to content creators and ecosystem.
                             </p>
                           </div>
                         </div>
@@ -2435,9 +2436,9 @@ export default function Home() {
                             </h6>
                             <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
                               Our decentralized network allows everyone to
-                              globally earn streaming revenues. Herein, artists,
-                              producers, streamers, and viewers jointly enjoy
-                              the most immersive experiences.
+                              globally earn streaming revenues. Therefore,
+                              artists, producers, streamers, and viewers jointly
+                              enjoy the most immersive experiences.
                             </p>
                           </div>
                         </div>
@@ -2487,11 +2488,11 @@ export default function Home() {
                           </div>
                           <div className="pl-[24px] flex-1">
                             <h6 className="text-gradient-blue text-[16px] lg:text-[20px] leading-[24px] mb-[16px] font-semibold">
-                              Reduced cost of delivering video streams
+                              Reduce cost of delivering video streams
                             </h6>
                             <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
                               Fewer servers, less bandwidth and no more
-                              expensive hosting mean more capital to invest in
+                              expensive hosting means more capital to invest in
                               developing new apps and improving the experience
                               for users.
                             </p>
@@ -2659,7 +2660,7 @@ export default function Home() {
               </div>
 
               <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] mb-[16px] lg:mb-[32px] lg:leading-[48px] text-center">
-                Impress user with exceptional features
+                Impress users with exceptional features
               </h5>
 
               <div className="box bg-white-blur-003 px-[26px] pt-[13px] pb-[21px] max-w-[1209px] mx-auto">
