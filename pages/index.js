@@ -672,7 +672,8 @@ export default function Home() {
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
                   activeSection === 5 ||
                   activeSection === 6 ||
-                  activeSection === 7
+                  activeSection === 7 ||
+                  activeSection === 8
                     ? "active"
                     : ""
                 }`}
@@ -683,9 +684,9 @@ export default function Home() {
               </div>
               <div
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 8 || activeSection === 9 ? "active" : ""
+                  activeSection === 9 ? "active" : ""
                 }`}
-                onClick={() => scrollTo(8)}
+                onClick={() => scrollTo(9)}
                 id="section-8"
               >
                 Roadmap
@@ -2094,7 +2095,7 @@ export default function Home() {
                         : ""
                     }`}
                   >
-                    Problem
+                    Problems
                   </button>
                   <button
                     type="button"
@@ -2105,7 +2106,7 @@ export default function Home() {
                         : ""
                     }`}
                   >
-                    Solution
+                    Solutions
                   </button>
                 </div>
               </div>
