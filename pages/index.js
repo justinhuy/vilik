@@ -814,7 +814,7 @@ export default function Home() {
             <div className="screen__container relative z-10 pt-[75px] lg:pt-0">
               <div className="grid-cols-2 text-center lg:text-left lg:grid">
                 <div>
-                  <h1 className="heading flex flex-col text-[48px] leading-[48px] lg:text-[102px] lg:leading-[106px] mb-[16px] font-semibold">
+                  <h1 className="heading flex flex-wrap flex-col text-[48px] leading-[48px] lg:text-[102px] lg:leading-[106px] mb-[16px] font-semibold">
                     <span className="text-gradient-blue-01">Livestream</span>
                     <span className="text-gradient-blue-01">Blockchain</span>
                   </h1>
