@@ -4109,17 +4109,31 @@ export default function Home() {
                         viewBox="0 0 30 28"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute top-[22px] right-0"
+                        className="arrow-flash absolute top-[22px] right-0"
                       >
                         <path
                           d="M2 2L14 14L2 26"
                           stroke="url(#paint0_radial_874_5120)"
                           strokeWidth="4"
+                          className=""
                         />
+                        <path
+                          d="M2 2L14 14L2 26"
+                          stroke="url(#paint1_linear_874_5120)"
+                          strokeWidth="4"
+                          className="path-black"
+                        />
+
                         <path
                           d="M14.8008 2L26.8008 14L14.8008 26"
                           stroke="url(#paint1_linear_874_5120)"
                           strokeWidth="4"
+                        />
+                        <path
+                          d="M14.8008 2L26.8008 14L14.8008 26"
+                          stroke="url(#paint0_radial_874_5120)"
+                          strokeWidth="4"
+                          className="path-white opacity-0"
                         />
                         <defs>
                           <radialGradient
@@ -4177,7 +4191,7 @@ export default function Home() {
                         viewBox="0 0 30 28"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute top-[22px] right-0"
+                        className="arrow-flash absolute top-[22px] right-0"
                       >
                         <path
                           d="M2 2L14 14L2 26"
@@ -4185,9 +4199,22 @@ export default function Home() {
                           strokeWidth="4"
                         />
                         <path
+                          d="M2 2L14 14L2 26"
+                          stroke="url(#paint1_linear_874_5120)"
+                          strokeWidth="4"
+                          className="path-black"
+                        />
+
+                        <path
                           d="M14.8008 2L26.8008 14L14.8008 26"
                           stroke="url(#paint1_linear_874_5120)"
                           strokeWidth="4"
+                        />
+                        <path
+                          d="M14.8008 2L26.8008 14L14.8008 26"
+                          stroke="url(#paint0_radial_874_5120)"
+                          strokeWidth="4"
+                          className="path-white opacity-0"
                         />
                         <defs>
                           <radialGradient
@@ -4242,7 +4269,7 @@ export default function Home() {
                         viewBox="0 0 30 28"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute top-[22px] right-0"
+                        className="arrow-flash absolute top-[22px] right-0"
                       >
                         <path
                           d="M2 2L14 14L2 26"
@@ -4250,9 +4277,22 @@ export default function Home() {
                           strokeWidth="4"
                         />
                         <path
+                          d="M2 2L14 14L2 26"
+                          stroke="url(#paint1_linear_874_5120)"
+                          strokeWidth="4"
+                          className="path-black"
+                        />
+
+                        <path
                           d="M14.8008 2L26.8008 14L14.8008 26"
                           stroke="url(#paint1_linear_874_5120)"
                           strokeWidth="4"
+                        />
+                        <path
+                          d="M14.8008 2L26.8008 14L14.8008 26"
+                          stroke="url(#paint0_radial_874_5120)"
+                          strokeWidth="4"
+                          className="path-white opacity-0"
                         />
                         <defs>
                           <radialGradient
@@ -4307,7 +4347,7 @@ export default function Home() {
                         viewBox="0 0 30 28"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute top-[22px] right-0"
+                        className="arrow-flash absolute top-[22px] right-0"
                       >
                         <path
                           d="M2 2L14 14L2 26"
@@ -4315,9 +4355,22 @@ export default function Home() {
                           strokeWidth="4"
                         />
                         <path
+                          d="M2 2L14 14L2 26"
+                          stroke="url(#paint1_linear_874_5120)"
+                          strokeWidth="4"
+                          className="path-black"
+                        />
+
+                        <path
                           d="M14.8008 2L26.8008 14L14.8008 26"
                           stroke="url(#paint1_linear_874_5120)"
                           strokeWidth="4"
+                        />
+                        <path
+                          d="M14.8008 2L26.8008 14L14.8008 26"
+                          stroke="url(#paint0_radial_874_5120)"
+                          strokeWidth="4"
+                          className="path-white opacity-0"
                         />
                         <defs>
                           <radialGradient
@@ -4372,7 +4425,7 @@ export default function Home() {
                         viewBox="0 0 30 28"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute top-[22px] right-0"
+                        className="arrow-flash absolute top-[22px] right-0"
                       >
                         <path
                           d="M2 2L14 14L2 26"
@@ -4380,9 +4433,22 @@ export default function Home() {
                           strokeWidth="4"
                         />
                         <path
+                          d="M2 2L14 14L2 26"
+                          stroke="url(#paint1_linear_874_5120)"
+                          strokeWidth="4"
+                          className="path-black"
+                        />
+
+                        <path
                           d="M14.8008 2L26.8008 14L14.8008 26"
                           stroke="url(#paint1_linear_874_5120)"
                           strokeWidth="4"
+                        />
+                        <path
+                          d="M14.8008 2L26.8008 14L14.8008 26"
+                          stroke="url(#paint0_radial_874_5120)"
+                          strokeWidth="4"
+                          className="path-white opacity-0"
                         />
                         <defs>
                           <radialGradient
