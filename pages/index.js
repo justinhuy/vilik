@@ -1144,7 +1144,7 @@ export default function Home() {
                   <path
                     d="M0.922249 36.7056C6.78756 27.0214 14.5816 18.8262 23.8131 12.6356C33.0446 6.44499 43.5143 2.3927 54.5628 0.734024"
                     stroke="#F4F4F5"
-                    stroke-width="0.332088"
+                    strokeWidth="0.332088"
                     stroke-dasharray="5.98 5.98"
                     className="path"
                   />
@@ -1160,7 +1160,7 @@ export default function Home() {
                   <path
                     d="M19.1684 49.7527C7.22945 36.1981 0.712962 18.7141 0.867959 0.651966"
                     stroke="#F4F4F5"
-                    stroke-width="0.332088"
+                    strokeWidth="0.332088"
                     stroke-dasharray="5.98 5.98"
                     className="path"
                   />
@@ -1176,7 +1176,7 @@ export default function Home() {
                   <path
                     d="M72.5919 0.340418C61.6978 6.49849 49.4091 9.76632 36.8952 9.83292C24.3813 9.89952 12.0585 6.76268 1.09947 0.720912"
                     stroke="#F4F4F5"
-                    stroke-width="0.332088"
+                    strokeWidth="0.332088"
                     stroke-dasharray="5.98 5.98"
                     className="path"
                   />
@@ -1192,7 +1192,7 @@ export default function Home() {
                   <path
                     d="M14.5794 0.272233C15.0098 16.079 10.3195 31.6014 1.20783 44.5249"
                     stroke="#F4F4F5"
-                    stroke-width="0.332088"
+                    strokeWidth="0.332088"
                     stroke-dasharray="5.98 5.98"
                     className="path"
                   />
@@ -1208,7 +1208,7 @@ export default function Home() {
                   <path
                     d="M0.145018 0.904001C9.95322 3.41605 19.135 7.9319 27.112 14.1671C35.0891 20.4024 41.6886 28.2219 46.4948 37.1332"
                     stroke="#F4F4F5"
-                    stroke-width="0.332088"
+                    strokeWidth="0.332088"
                     stroke-dasharray="5.98 5.98"
                     className="path"
                   />
@@ -1229,7 +1229,7 @@ export default function Home() {
                     height="306.495"
                     rx="9.35394"
                     stroke="url(#paint0_linear_792_3237)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1242,8 +1242,8 @@ export default function Home() {
                       y2="169.926"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1262,7 +1262,7 @@ export default function Home() {
                     height="306.15"
                     rx="9.35394"
                     stroke="url(#paint0_linear_792_3261)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1275,8 +1275,8 @@ export default function Home() {
                       y2="159.629"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1295,7 +1295,7 @@ export default function Home() {
                     height="239.564"
                     rx="9.35394"
                     stroke="url(#paint0_linear_792_3324)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1308,8 +1308,8 @@ export default function Home() {
                       y2="131.453"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1328,7 +1328,7 @@ export default function Home() {
                     height="239.564"
                     rx="9.35394"
                     stroke="url(#paint0_linear_792_3324)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1341,8 +1341,8 @@ export default function Home() {
                       y2="131.453"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1357,7 +1357,7 @@ export default function Home() {
                   <path
                     d="M31.999 1L-0.000976533 0.999997"
                     stroke="url(#paint0_linear_792_3532)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1370,8 +1370,8 @@ export default function Home() {
                       y2="-0.107241"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1386,7 +1386,7 @@ export default function Home() {
                   <path
                     d="M52.999 1H-0.000977159"
                     stroke="url(#paint0_linear_792_3484)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1399,8 +1399,8 @@ export default function Home() {
                       y2="-0.107441"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1415,7 +1415,7 @@ export default function Home() {
                   <path
                     d="M55.9893 1L0.989255 1"
                     stroke="url(#paint0_linear_792_3491)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1428,8 +1428,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1444,7 +1444,7 @@ export default function Home() {
                   <path
                     d="M55.9893 1L0.989255 1"
                     stroke="url(#paint0_linear_792_3491)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1457,8 +1457,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1473,7 +1473,7 @@ export default function Home() {
                   <path
                     d="M55.9893 1L0.989255 1"
                     stroke="url(#paint0_linear_792_3491)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1486,8 +1486,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1502,7 +1502,7 @@ export default function Home() {
                   <path
                     d="M55.9893 1L0.989255 1"
                     stroke="url(#paint0_linear_792_3491)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1515,8 +1515,8 @@ export default function Home() {
                       y2="-0.107448"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1531,7 +1531,7 @@ export default function Home() {
                   <path
                     d="M54.4541 1L0.4541 1"
                     stroke="url(#paint0_linear_792_3514)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1544,8 +1544,8 @@ export default function Home() {
                       y2="-0.107444"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1560,7 +1560,7 @@ export default function Home() {
                   <path
                     d="M54.4541 1L0.4541 1"
                     stroke="url(#paint0_linear_792_3514)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1573,8 +1573,8 @@ export default function Home() {
                       y2="-0.107444"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1589,7 +1589,7 @@ export default function Home() {
                   <path
                     d="M54.4541 1L0.4541 1"
                     stroke="url(#paint0_linear_792_3514)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1602,8 +1602,8 @@ export default function Home() {
                       y2="-0.107444"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -1618,7 +1618,7 @@ export default function Home() {
                   <path
                     d="M54.4541 1L0.4541 1"
                     stroke="url(#paint0_linear_792_3514)"
-                    stroke-width="0.645099"
+                    strokeWidth="0.645099"
                     stroke-dasharray="3.23 3.23"
                     className="path"
                   />
@@ -1631,8 +1631,8 @@ export default function Home() {
                       y2="-0.107444"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#C4D2FF" />
-                      <stop offset="1" stop-color="#5179FF" />
+                      <stop stopColor="#C4D2FF" />
+                      <stop offset="1" stopColor="#5179FF" />
                     </linearGradient>
                   </defs>
                 </svg> */}
@@ -2534,12 +2534,39 @@ export default function Home() {
                     THE PROBLEM OF LIVE VIDEOSTREAMING TODAY
                   </h5>
 
-                  <div className="px-[16px] lg:px-0">
-                    <img
-                      src="/problem@2x.png"
-                      alt="THE PROBLEM OF LIVE VIDEOSTREAMING TODAY"
-                      className="desc mx-auto w-full max-w-[844px] mb-[25px]"
-                    />
+                  <div className="desc text-center  px-[16px] lg:px-0">
+                    <div className="relative inline-block">
+                      <img
+                        src="/problem@2x.png"
+                        alt="THE PROBLEM OF LIVE VIDEOSTREAMING TODAY"
+                        className="mx-auto w-full max-w-[844px] mb-[25px]"
+                      />
+
+                      <div className="w-[16.2322275%] absolute top-[27.3556231%] left-[1px] transition-all duration-300 hover:scale-105">
+                        <Image
+                          src="/content-creator.png"
+                          width={137}
+                          height={130}
+                          className="w-full h-auto"
+                        />
+                      </div>
+                      <div className="w-[15.7582938%] absolute top-[26.7477204%] left-[29.7393365%] transition-all duration-300 hover:scale-105">
+                        <Image
+                          src="/video-platform.png"
+                          width={133.5}
+                          height={133.5}
+                          className="w-full h-auto"
+                        />
+                      </div>
+                      <div className="w-[18.1279621%] absolute top-[27.9635258%] left-[59.0047393%] transition-all duration-300 hover:scale-105">
+                        <Image
+                          src="/cdn.png"
+                          width={153}
+                          height={139}
+                          className="w-full h-auto"
+                        />
+                      </div>
+                    </div>
                   </div>
 
                   <div className="box w-full w-full pl-[16px] lg:pl-0">
@@ -7821,8 +7848,8 @@ export default function Home() {
             <path
               d="M4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24Z"
               fill="white"
-              fill-opacity="0.1"
-              shape-rendering="crispEdges"
+              fillOpacity="0.1"
+              shapeRendering="crispEdges"
             />
             <path
               d="M24 43C13.5066 43 5 34.4934 5 24H3C3 35.598 12.402 45 24 45V43ZM43 24C43 34.4934 34.4934 43 24 43V45C35.598 45 45 35.598 45 24H43ZM24 5C34.4934 5 43 13.5066 43 24H45C45 12.402 35.598 3 24 3V5ZM24 3C12.402 3 3 12.402 3 24H5C5 13.5066 13.5066 5 24 5V3Z"
@@ -7832,16 +7859,16 @@ export default function Home() {
           <path
             d="M24 32.25V15.75"
             stroke="#E7D6F8"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M17.25 22.5L24 15.75L30.75 22.5"
             stroke="#E7D6F8"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <defs>
             <filter
@@ -7851,9 +7878,9 @@ export default function Home() {
               width="100"
               height="100"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feGaussianBlur in="BackgroundImage" stdDeviation="15" />
               <feComposite
                 in2="SourceAlpha"
@@ -7893,10 +7920,10 @@ export default function Home() {
               y2="29.539"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#1E1822" />
-              <stop offset="0.462674" stop-color="#EAC2FF" />
-              <stop offset="0.764757" stop-color="#1945D9" />
-              <stop offset="1" stop-color="#1E1822" />
+              <stop stopColor="#1E1822" />
+              <stop offset="0.462674" stopColor="#EAC2FF" />
+              <stop offset="0.764757" stopColor="#1945D9" />
+              <stop offset="1" stopColor="#1E1822" />
             </linearGradient>
           </defs>
         </svg>
