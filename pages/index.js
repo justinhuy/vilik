@@ -16,99 +16,6 @@ import Moving from "../animation/Moving";
 
 const SECTIONS_COUNT = 11;
 
-const TOKENOMICS_DATA = [
-  {
-    stage: "SEED ROUND",
-    total: "10%",
-    quantity: "100,000,000",
-    price: "$0.025",
-    totalSold: "$2.500.000",
-    vestingPeriod: "Cliff 6 Months, 4% Monthly Unlock",
-  },
-  {
-    stage: "PARTNERSHIP",
-    total: "4%",
-    quantity: "40,000,000",
-    price: "$0.027",
-    totalSold: "$1.080.000",
-    vestingPeriod: "Cliff 6 Months, then 6% Monthly Unlock",
-  },
-  {
-    stage: "PRIVATE ROUND",
-    total: "6%",
-    quantity: "60,000,000",
-    price: "$0.03",
-    totalSold: "$1.800.000",
-    vestingPeriod:
-      "5% five days after TGE, Cliff 2 Month, then 5% Monthly Unlock",
-  },
-  {
-    stage: "PUBLIC ROUND",
-    total: "3%",
-    quantity: "30,000,000",
-    price: "$0.040",
-    totalSold: "$1.200.000",
-    vestingPeriod: "25% five days after TGE, then 25% Monthly Unlock",
-  },
-  {
-    stage: "CORE TEAM",
-    total: "5%",
-    quantity: "50,000,000",
-    price: "",
-    totalSold: "",
-    vestingPeriod: "Cliff 12 Months, 4% Monthly Unlock",
-  },
-  {
-    stage: "ADVISOR TEAM",
-    total: "3%",
-    quantity: "30,000,000",
-    price: "",
-    totalSold: "",
-    vestingPeriod: "3% five days after TGE, Cliff 6 Months, 6% Monthly Unlock",
-  },
-  {
-    stage: "LIQUIDITY",
-    total: "9%",
-    quantity: "90,000,000",
-    price: "",
-    totalSold: "",
-    vestingPeriod: "40% at TGE, 5% Monthly Unlock",
-  },
-  {
-    stage: "MARKETING",
-    total: "28%",
-    quantity: "100,000,000",
-    price: "",
-    totalSold: "",
-    vestingPeriod: "2% Monthly Unlock",
-  },
-  {
-    stage: "REWARD POOL",
-    total: "28%",
-    quantity: "280,000,000",
-    price: "",
-    totalSold: "",
-    vestingPeriod: "Unlocked when P2P releases",
-  },
-  {
-    stage: "STAKING POOL",
-    total: "10%",
-    quantity: "100,000,000",
-    price: "",
-    totalSold: "",
-    vestingPeriod: "At the TGE",
-  },
-  {
-    stage: "RESERVE",
-    total: "12%",
-    quantity: "120,000,000",
-    price: "",
-    totalSold: "",
-    vestingPeriod:
-      "Cliff 6 Months, Unlock only for raising fund, with announcement,",
-  },
-];
-
 export default function Home() {
   const el = useRef();
   const elNav = useRef();
@@ -256,25 +163,14 @@ export default function Home() {
     }
   };
 
-  const onWheel = (e) => {
-    if (e.deltaY < 0) {
-      setScrollDirection("up");
-    }
-    if (e.deltaY > 0) {
-      setScrollDirection("down");
-    }
-  };
-
   useEffect(() => {
     setScrollY(window.pageYOffset);
 
     window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("wheel", onWheel, { passive: true });
     // remove event on unmount to prevent a memory leak
 
     return () => {
       window.removeEventListener("scroll", onScroll, { passive: true });
-      window.removeEventListener("wheel", onWheel, { passive: true });
     };
   }, []);
 
@@ -7905,6 +7801,106 @@ export default function Home() {
       </svg>
 
       {/* end of overlay */}
+
+      <button
+        type="button"
+        className={`fixed w-[24px] h-auto right-[16px] bottom-[16px] lg:w-[40px] lg:right-[36px] lg:bottom-[36px] z-50 ${
+          step > 0 ? "block" : "hidden"
+        }`}
+        onClick={() => scrollTo(0)}
+      >
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-auto"
+        >
+          <g filter="url(#filter0_bd_1398_6421)">
+            <path
+              d="M4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24Z"
+              fill="white"
+              fill-opacity="0.1"
+              shape-rendering="crispEdges"
+            />
+            <path
+              d="M24 43C13.5066 43 5 34.4934 5 24H3C3 35.598 12.402 45 24 45V43ZM43 24C43 34.4934 34.4934 43 24 43V45C35.598 45 45 35.598 45 24H43ZM24 5C34.4934 5 43 13.5066 43 24H45C45 12.402 35.598 3 24 3V5ZM24 3C12.402 3 3 12.402 3 24H5C5 13.5066 13.5066 5 24 5V3Z"
+              fill="url(#paint0_linear_1398_6421)"
+            />
+          </g>
+          <path
+            d="M24 32.25V15.75"
+            stroke="#E7D6F8"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.25 22.5L24 15.75L30.75 22.5"
+            stroke="#E7D6F8"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <defs>
+            <filter
+              id="filter0_bd_1398_6421"
+              x="-26"
+              y="-26"
+              width="100"
+              height="100"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feGaussianBlur in="BackgroundImage" stdDeviation="15" />
+              <feComposite
+                in2="SourceAlpha"
+                operator="in"
+                result="effect1_backgroundBlur_1398_6421"
+              />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feOffset />
+              <feGaussianBlur stdDeviation="2" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="effect1_backgroundBlur_1398_6421"
+                result="effect2_dropShadow_1398_6421"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect2_dropShadow_1398_6421"
+                result="shape"
+              />
+            </filter>
+            <linearGradient
+              id="paint0_linear_1398_6421"
+              x1="4"
+              y1="17.8278"
+              x2="43.0174"
+              y2="29.539"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#1E1822" />
+              <stop offset="0.462674" stop-color="#EAC2FF" />
+              <stop offset="0.764757" stop-color="#1945D9" />
+              <stop offset="1" stop-color="#1E1822" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </button>
     </main>
   );
 }
