@@ -14,7 +14,7 @@ export function fluidSimulation(canvas) {
     SHADING: true,
     COLORFUL: true,
     PAUSED: false,
-    BACK_COLOR: { r: 8, g: 5, b: 31 },
+    BACK_COLOR: { r: 2, g: 0, b: 2 },
     TRANSPARENT: true,
     BLOOM: false,
     BLOOM_ITERATIONS: 8,
