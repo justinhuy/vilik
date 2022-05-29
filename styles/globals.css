@@ -9,11 +9,17 @@ html,
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
   font-family: 'Poppins', sans-serif;
   background-color: #020002;
   color: #FFFFFF;
   font-size: 14px;
   line-height: 21px;
+  overflow: hidden;
+}
+
+#__next {
+  height: 100%;
 }
 
 body {
@@ -873,6 +879,14 @@ a {
   overflow-y: auto;
 }
 
+.screen {
+  overflow: hidden;
+}
+
+.screen::-webkit-scrollbar {
+  display: none;
+}
+
 @media only screen and (min-width: 1024px) {
   .nav {
     position: absolute;
@@ -939,10 +953,6 @@ a {
 
   .nav__item.active:after {
     opacity: 1;
-  }
-
-  .screen {
-    overflow: hidden;
   }
 }
 
@@ -1022,7 +1032,7 @@ a {
   }
 
   .screens__wrapper {
-    transform: none !important;
+    /* transform: none !important; */
   }
 
   .overlay-circle-0,
