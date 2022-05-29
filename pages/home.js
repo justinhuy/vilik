@@ -817,7 +817,7 @@ export default function Home() {
                           background:
                             "linear-gradient(178.93deg, #F499FF 31.95%, #4453F2 71.55%)",
                         }}
-                        className="w-full h-full duration-200 opacity-0 lg:group-hover:animate-spin-slow lg:group-hover:opacity-100"
+                        className="w-full h-full duration-200 opacity-0 lg:group-hover:animate-spin-icon lg:group-hover:opacity-100"
                       ></div>
                     </div>
                   </button>
@@ -1577,7 +1577,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                         >
                           <rect
                             x="0.5"
@@ -1631,7 +1631,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                         >
                           <rect
                             x="0.5"
@@ -1686,7 +1686,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                         >
                           <rect
                             x="0.5"
@@ -1740,7 +1740,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                         >
                           <rect
                             x="0.5"
@@ -1795,7 +1795,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                         >
                           <rect
                             x="0.5"
@@ -1849,7 +1849,7 @@ export default function Home() {
                           viewBox="0 0 58 58"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                          className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                         >
                           <rect
                             x="0.5"
@@ -2113,7 +2113,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                             >
                               <rect
                                 x="0.5"
@@ -2169,7 +2169,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                             >
                               <rect
                                 x="0.5"
@@ -2225,7 +2225,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                             >
                               <rect
                                 x="0.5"
@@ -2309,7 +2309,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                             >
                               <rect
                                 x="0.5"
@@ -2364,7 +2364,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                             >
                               <rect
                                 x="0.5"
@@ -2420,7 +2420,7 @@ export default function Home() {
                               viewBox="0 0 58 58"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                              className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                             >
                               <rect
                                 x="0.5"
@@ -5498,7 +5498,7 @@ export default function Home() {
                         background:
                           "linear-gradient(178.93deg, #F499FF 31.95%, #4453F2 71.55%)",
                       }}
-                      className="w-full h-full duration-200 opacity-0 lg:group-hover:animate-spin-slow lg:group-hover:opacity-100"
+                      className="w-full h-full duration-200 opacity-0 lg:group-hover:animate-spin-icon lg:group-hover:opacity-100"
                     ></div>
                   </div>
                 </button>

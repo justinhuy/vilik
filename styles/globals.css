@@ -772,6 +772,31 @@ a {
   opacity: 1;
 }
 
+.screen.active .animate-spin-icon {
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .features-slider {
   padding-top: 92px !important;
 }
@@ -1136,6 +1161,11 @@ a {
     transform: translateX(-50%);
   }
 
+  .overlay-circle-mb {
+    opacity: 0;
+    visibility: hidden;
+  }
+
   .step-1 .overlay-circle-0 {
     top: 50%;
   }
@@ -1150,6 +1180,19 @@ a {
   .step-5 .overlay-circle-0,
   .step-6 .overlay-circle-0 {
     top: -80px;
+  }
+
+  .step-0 .overlay-circle-mb-1,
+  .step-2 .overlay-circle-mb-2,
+  .step-3 .overlay-circle-mb-3,
+  .step-4 .overlay-circle-mb-3,
+  .step-5 .overlay-circle-mb-5,
+  .step-6 .overlay-circle-mb-5,
+  .step-7 .overlay-circle-mb-7,
+  .step-8 .overlay-circle-mb-7,
+  .step-9 .overlay-circle-mb-9 {
+    opacity: 1;
+    visibility: visible;
   }
 }
 

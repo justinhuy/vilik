@@ -31,7 +31,7 @@ const Introduction = ({ activeSection, onScrollTo }) => {
                     background:
                       "linear-gradient(178.93deg, #F499FF 31.95%, #4453F2 71.55%)",
                   }}
-                  className="w-full h-full duration-200 opacity-0 lg:group-hover:animate-spin-slow lg:group-hover:opacity-100"
+                  className="w-full h-full duration-200 opacity-0 lg:group-hover:animate-spin-icon lg:group-hover:opacity-100"
                 ></div>
               </div>
             </button>
@@ -174,86 +174,6 @@ const Introduction = ({ activeSection, onScrollTo }) => {
         className="w-full max-w-[375px] mx-auto mt-[30px] lg:hidden"
         src="/cube.png"
       />
-
-      {/* section overlay */}
-      <svg
-        width="342"
-        height="412"
-        viewBox="0 0 342 412"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="absolute top-0 left-0 lg:hidden"
-      >
-        <g filter="url(#filter0_f_1199_5672)">
-          <circle cx="52" cy="122" r="190" fill="#742A9A" fillOpacity="0.51" />
-        </g>
-        <defs>
-          <filter
-            id="filter0_f_1199_5672"
-            x="-238"
-            y="-168"
-            width="580"
-            height="580"
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feGaussianBlur
-              stdDeviation="50"
-              result="effect1_foregroundBlur_1199_5672"
-            />
-          </filter>
-        </defs>
-      </svg>
-      <svg
-        width="276"
-        height="360"
-        viewBox="0 0 276 360"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="lg:hidden top-[49px] right-0 absolute"
-      >
-        <g filter="url(#filter0_f_32_493)">
-          <ellipse
-            cx="253.411"
-            cy="141.86"
-            rx="106.352"
-            ry="62.4961"
-            transform="rotate(18.3691 253.411 141.86)"
-            fill="#420A8D"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_f_32_493"
-            x="0.555176"
-            y="-76.2777"
-            width="505.711"
-            height="436.276"
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feGaussianBlur
-              stdDeviation="75"
-              result="effect1_foregroundBlur_32_493"
-            />
-          </filter>
-        </defs>
-      </svg>
-      {/* end of section overlay */}
     </div>
   );
 };

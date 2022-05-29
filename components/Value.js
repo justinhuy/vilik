@@ -106,7 +106,7 @@ const Value = ({ activeSection }) => {
                         viewBox="0 0 58 58"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                        className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                       >
                         <rect
                           x="0.5"
@@ -161,7 +161,7 @@ const Value = ({ activeSection }) => {
                         viewBox="0 0 58 58"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                        className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                       >
                         <rect
                           x="0.5"
@@ -217,7 +217,7 @@ const Value = ({ activeSection }) => {
                         viewBox="0 0 58 58"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                        className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                       >
                         <rect
                           x="0.5"
@@ -301,7 +301,7 @@ const Value = ({ activeSection }) => {
                         viewBox="0 0 58 58"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                        className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                       >
                         <rect
                           x="0.5"
@@ -356,7 +356,7 @@ const Value = ({ activeSection }) => {
                         viewBox="0 0 58 58"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                        className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                       >
                         <rect
                           x="0.5"
@@ -412,7 +412,7 @@ const Value = ({ activeSection }) => {
                         viewBox="0 0 58 58"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute top-0 left-0 w-full h-auto animate-spin-slow"
+                        className="absolute top-0 left-0 w-full h-auto animate-spin-icon"
                       >
                         <rect
                           x="0.5"
@@ -463,51 +463,6 @@ const Value = ({ activeSection }) => {
           </>
         ) : null}
       </div>
-
-      {/* section overlay */}
-      <svg
-        width="375"
-        height="560"
-        viewBox="0 0 375 560"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="absolute bottom-[-50px] right-0 lg:hidden"
-      >
-        <g filter="url(#filter0_f_35_215)">
-          <ellipse
-            cx="380.868"
-            cy="446.312"
-            rx="225.141"
-            ry="247.766"
-            transform="rotate(18.527 380.868 446.312)"
-            fill="#320A70"
-          />
-        </g>
-        <defs>
-          <filter
-            id="filter0_f_35_215"
-            x="-46.7207"
-            y="0.670898"
-            width="855.178"
-            height="891.283"
-            filterUnits="userSpaceOnUse"
-            colorInterpolationFilters="sRGB"
-          >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
-            <feGaussianBlur
-              stdDeviation="100"
-              result="effect1_foregroundBlur_35_215"
-            />
-          </filter>
-        </defs>
-      </svg>
-      {/* end of section overlay */}
     </div>
   );
 };
