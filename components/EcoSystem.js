@@ -22,14 +22,16 @@ const EcoSystem = ({ activeSection }) => {
         </h5>
 
         <div className="box bg-white-blur-003 px-[26px] pt-[13px] pb-[21px] max-w-[1209px] mx-auto">
-          <picture>
-            <source media="(min-width: 1024px)" srcSet="features@2x.png" />
-            <img
-              src="featuresmb@2x.png"
-              alt="ECOSYSTEM &amp; TOKENOMICS"
-              className="w-full max-w-[1000px] mx-auto"
-            />
-          </picture>
+          <div className="inline-block relative">
+            <picture>
+              <source media="(min-width: 1024px)" srcSet="features@2x.png" />
+              <img
+                src="featuresmb@2x.png"
+                alt="ECOSYSTEM &amp; TOKENOMICS"
+                className="w-full max-w-[1000px] mx-auto"
+              />
+            </picture>
+          </div>
         </div>
       </div>
 

@@ -273,12 +273,108 @@ const Value = ({ activeSection }) => {
               VILIK&apos;S SOLUTION
             </h5>
 
-            <div className="desc relative mt-[54px] px-[16px] lg:px-0">
-              <img
-                src="/solution@2x.png"
-                alt="VILIK'S SOLUTION"
-                className="mx-auto w-full max-w-[683px] mb-[29px]"
-              />
+            <div className="desc relative mt-[54px] px-[16px] lg:px-0 text-center">
+              <div className="inline-block relative">
+                <svg
+                  width="437"
+                  height="103"
+                  viewBox="0 0 437 103"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute top-0 left-0 w-[63.9824305%] h-auto"
+                >
+                  <rect
+                    x="436.489"
+                    y="0.484549"
+                    width="101.701"
+                    height="435.621"
+                    rx="12.125"
+                    transform="rotate(90 436.489 0.484549)"
+                    stroke="url(#paint0_linear_46_343)"
+                    stroke-width="0.969099"
+                    stroke-dasharray="5.81 5.81"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_46_343"
+                      x1="467.693"
+                      y1="174.348"
+                      x2="609.403"
+                      y2="311.174"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#EAC2FF" />
+                      <stop offset="1" stop-color="#1945D9" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <svg
+                  width="64"
+                  height="3"
+                  viewBox="0 0 64 3"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute w-[10.031348%] h-auto top-[15.497076%] left-[17.1303075%]"
+                >
+                  <path
+                    d="M0.327148 1.69336L63.3186 1.69336"
+                    stroke="url(#paint0_linear_46_344)"
+                    stroke-width="0.969099"
+                    stroke-dasharray="5.81 5.81"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_46_344"
+                      x1="19.1745"
+                      y1="2.0927"
+                      x2="19.177"
+                      y2="2.74226"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#F07AFF" />
+                      <stop offset="1" stop-color="#1945D9" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <svg
+                  width="61"
+                  height="3"
+                  viewBox="0 0 61 3"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute w-[8.93118594%] h-auto top-[14.619883%] left-[38.2137628%]"
+                >
+                  <path
+                    d="M0.338867 1.81543L60.7897 1.81543"
+                    stroke="url(#paint0_linear_46_345)"
+                    stroke-width="0.969099"
+                    stroke-dasharray="5.81 5.81"
+                    className="path"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_46_345"
+                      x1="18.4261"
+                      y1="2.21477"
+                      x2="18.4287"
+                      y2="2.86433"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#F07AFF" />
+                      <stop offset="1" stop-color="#1945D9" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <img
+                  src="/solution@2x.png"
+                  alt="VILIK'S SOLUTION"
+                  className="mx-auto w-full max-w-[683px] mb-[29px]"
+                />
+              </div>
             </div>
 
             <div className="box w-full pl-[16px] lg:pl-0">
