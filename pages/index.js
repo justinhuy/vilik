@@ -177,7 +177,8 @@ export default function Home() {
   }, []);
 
   const handlers = useSwipeable({
-    onSwiped: ({ deltaY }) => handleOnWheel({ deltaY: deltaY * -1 }),
+    onSwipedUp: () => handleOnWheel({ deltaY: 1 }),
+    onSwipedDown: () => handleOnWheel({ deltaY: -1 }),
   });
 
   return (
