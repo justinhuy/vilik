@@ -494,6 +494,7 @@ a {
   will-change: transform;
   will-change: opacity;
   will-change: left, top, width, height;
+  z-index: 100;
 }
 
 .full-video video {
@@ -641,11 +642,13 @@ a {
 
 .step-0 .overlay-circle-1 {
   opacity: 1;
+  z-index: 100;
 }
 
 .step-0 .overlay-circle-2,
 .step-0 .overlay-circle-3 {
   opacity: 1;
+  z-index: 100;
 }
 
 .step-1 .overlay-circle-4 {

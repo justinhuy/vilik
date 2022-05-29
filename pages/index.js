@@ -16,6 +16,8 @@ import Chart from "../components/Chart";
 import Roadmap from "../components/Roadmap";
 import Whitepaper from "../components/Whitepaper";
 
+import { fluidSimulation } from "../animation/canvas";
+
 const SECTIONS_COUNT = 11;
 
 export default function Home() {
@@ -23,6 +25,7 @@ export default function Home() {
   const elNav = useRef();
 
   const inputRef = useRef();
+  const canvasRef = useRef();
 
   const [active, setActive] = useState("problem");
 
@@ -173,6 +176,8 @@ export default function Home() {
 
   useEffect(() => {
     setScrollY(window.pageYOffset);
+
+    fluidSimulation(canvasRef?.current);
 
     window.addEventListener("scroll", onScroll, { passive: true });
     // remove event on unmount to prevent a memory leak
@@ -721,6 +726,13 @@ export default function Home() {
         <div className="screens__wrapper relative block w-full h-full" ref={el}>
           <div className="relative w-full h-full">
             <Introduction activeSection={activeSection} onScrollTo={scrollTo} />
+            <canvas
+              ref={canvasRef}
+              className="absolute top-0 left-0 w-full h-full z-0"
+              style={{
+                mixBlendMode: "screen",
+              }}
+            />
           </div>
 
           <div className="relative w-full h-full">
@@ -875,8 +887,7 @@ export default function Home() {
 
       <div className="full-video">
         <video autoPlay playsInline muted loop>
-          {/* <source src="/20220520-112541-839.mp4" type="video/mp4" /> */}
-          <source src="/20220525-164303-729.mp4" type="video/mp4" />
+          <source src="/20220520-112541-839.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
       </div>

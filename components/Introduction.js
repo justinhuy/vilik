@@ -4,6 +4,9 @@ const Introduction = ({ activeSection, onScrollTo }) => {
       className={`screen relative h-full w-full flex flex-col flex-wrap justify-center items-center lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
         activeSection === 0 ? "active" : ""
       }`}
+      style={{
+        backgroundImage: "url(/bg-dot.png)",
+      }}
       id="intro"
     >
       <div className="screen__container relative z-10 pt-[75px] lg:pt-0">
