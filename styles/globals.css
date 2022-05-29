@@ -1035,7 +1035,7 @@ a {
     /* transform: none !important; */
   }
 
-  .overlay-circle-0,
+  /* .overlay-circle-0, */
   .overlay-circle,
   .full-video {
     display: none !important;
@@ -1127,6 +1127,30 @@ a {
   .line-linear {
     width: calc(100% - 32px);
   }
+
+  .overlay-circle-0 {
+    width: 513px;
+    height: 513px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .step-1 .overlay-circle-0 {
+    top: 50%;
+  }
+
+  .step-3 .overlay-circle-0 {
+    left: 50%;
+    top: auto;
+    bottom: -75px;
+    transform: translate(-50%, 0);
+  }
+
+  .step-5 .overlay-circle-0,
+  .step-6 .overlay-circle-0 {
+    top: -80px;
+  }
 }
 
 .btn-round-white:hover {
@@ -1213,4 +1237,8 @@ a {
   to {
     opacity: 0;
   }
+}
+
+.screen-overlay {
+  position: absolute;
 }

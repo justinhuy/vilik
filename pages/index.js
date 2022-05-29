@@ -78,6 +78,7 @@ export default function Home() {
     setIsAnimating(true);
     setStep(idx);
     setActiveSection(-1);
+    setIsOpen(false);
 
     const navItem = document.getElementById(`section-${idx}`);
     if (navItem) {
@@ -98,7 +99,7 @@ export default function Home() {
         // setActiveSection(idx);
         setTimeout(() => {
           setIsAnimating(false);
-        }, 350);
+        }, 500);
       },
       onUpdate: () => {
         if (anim.time() > 0.75) {
@@ -741,7 +742,7 @@ export default function Home() {
             <MonetaryFlow activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full h-full">
+          <div className="relative w-full h-full hidden lg:block">
             <Tokenomics activeSection={activeSection} />
           </div>
 

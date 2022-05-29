@@ -465,139 +465,48 @@ const Value = ({ activeSection }) => {
       </div>
 
       {/* section overlay */}
-      {/* <svg
-    width="375"
-    height="667"
-    viewBox="0 0 375 667"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="absolute w-full h-auto lg:hidden top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"
-  >
-    <g opacity="0.66">
-      <path
-        d="M-59.248 264.696C-95.9689 400.869 -14.8935 540.699 121.839 577.014C258.572 613.329 399.184 532.378 435.905 396.205C472.626 260.031 391.55 120.202 254.818 83.8866C118.085 47.5714 -22.527 128.522 -59.248 264.696Z"
-        fill="url(#paint0_radial_36_301)"
-      />
-      <g filter="url(#filter0_f_36_301)">
-        <ellipse
-          rx="205.22"
-          ry="264.219"
-          transform="matrix(-0.262057 0.965052 -0.965784 -0.259346 135.16 395.019)"
-          fill="#041128"
-        />
-      </g>
-      <g filter="url(#filter1_f_36_301)">
-        <ellipse
-          rx="205.22"
-          ry="135.666"
-          transform="matrix(-0.262057 0.965052 -0.965784 -0.259347 287.455 282.887)"
-          fill="#041128"
-        />
-      </g>
-    </g>
-    <defs>
-      <filter
-        id="filter0_f_36_301"
-        x="-313.53"
-        y="-2.45877"
-        width="897.38"
-        height="794.955"
-        filterUnits="userSpaceOnUse"
-        colorInterpolationFilters="sRGB"
+      <svg
+        width="375"
+        height="560"
+        viewBox="0 0 375 560"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="absolute bottom-[-50px] right-0 lg:hidden"
       >
-        <feFlood floodOpacity="0" result="BackgroundImageFix" />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="BackgroundImageFix"
-          result="shape"
-        />
-        <feGaussianBlur
-          stdDeviation="93.9263"
-          result="effect1_foregroundBlur_36_301"
-        />
-      </filter>
-      <filter
-        id="filter1_f_36_301"
-        x="-42.0659"
-        y="-106.149"
-        width="659.043"
-        height="778.072"
-        filterUnits="userSpaceOnUse"
-        colorInterpolationFilters="sRGB"
-      >
-        <feFlood floodOpacity="0" result="BackgroundImageFix" />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="BackgroundImageFix"
-          result="shape"
-        />
-        <feGaussianBlur
-          stdDeviation="93.9263"
-          result="effect1_foregroundBlur_36_301"
-        />
-      </filter>
-      <radialGradient
-        id="paint0_radial_36_301"
-        cx="0"
-        cy="0"
-        r="1"
-        gradientUnits="userSpaceOnUse"
-        gradientTransform="translate(-147.585 186.517) rotate(24.4204) scale(614.505 613.475)"
-      >
-        <stop
-          offset="0.0755871"
-          stopColor="#C82DF4"
-          stopOpacity="0.71"
-        />
-        <stop offset="0.500996" stopColor="#1F1298" />
-        <stop offset="1" stopColor="#621EA2" />
-      </radialGradient>
-    </defs>
-  </svg>
-  <svg
-    width="375"
-    height="560"
-    viewBox="0 0 375 560"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    className="absolute bottom-0 right-0 lg:hidden"
-  >
-    <g filter="url(#filter0_f_36_307)">
-      <ellipse
-        cx="380.868"
-        cy="446.312"
-        rx="225.141"
-        ry="247.766"
-        transform="rotate(18.527 380.868 446.312)"
-        fill="#320A70"
-      />
-    </g>
-    <defs>
-      <filter
-        id="filter0_f_36_307"
-        x="-46.7207"
-        y="0.670898"
-        width="855.178"
-        height="891.283"
-        filterUnits="userSpaceOnUse"
-        colorInterpolationFilters="sRGB"
-      >
-        <feFlood floodOpacity="0" result="BackgroundImageFix" />
-        <feBlend
-          mode="normal"
-          in="SourceGraphic"
-          in2="BackgroundImageFix"
-          result="shape"
-        />
-        <feGaussianBlur
-          stdDeviation="100"
-          result="effect1_foregroundBlur_36_307"
-        />
-      </filter>
-    </defs>
-  </svg> */}
+        <g filter="url(#filter0_f_35_215)">
+          <ellipse
+            cx="380.868"
+            cy="446.312"
+            rx="225.141"
+            ry="247.766"
+            transform="rotate(18.527 380.868 446.312)"
+            fill="#320A70"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_f_35_215"
+            x="-46.7207"
+            y="0.670898"
+            width="855.178"
+            height="891.283"
+            filterUnits="userSpaceOnUse"
+            colorInterpolationFilters="sRGB"
+          >
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            />
+            <feGaussianBlur
+              stdDeviation="100"
+              result="effect1_foregroundBlur_35_215"
+            />
+          </filter>
+        </defs>
+      </svg>
       {/* end of section overlay */}
     </div>
   );
