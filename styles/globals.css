@@ -493,12 +493,17 @@ a {
   will-change: contents;
   will-change: transform;
   will-change: opacity;
-  will-change: left, top;
+  will-change: left, top, width, height;
 }
 
 .full-video video {
   width: 100%;
   height: 100%;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
 }
 
 .overlay-circle-0 {
@@ -1089,8 +1094,7 @@ a {
   .step-1 .full-video {
     width: 100%;
     height: 150px;
-    bottom: auto;
-    top: 10%;
+    bottom: 68%;
     left: 50%;
     transform: translate(-50%, 0);
   }
