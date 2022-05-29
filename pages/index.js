@@ -122,14 +122,17 @@ export default function Home() {
     let idx;
     let direction;
 
+    const MEDIA_SECTIONS_COUNT =
+      el?.current?.clientWidth > 1023 ? SECTIONS_COUNT : SECTIONS_COUNT - 1;
+
     if (e.deltaY < 0) {
       idx = activeSection - 1 > 0 ? activeSection - 1 : 0;
       direction = "up";
     } else if (e.deltaY > 0) {
       idx =
-        activeSection + 1 < SECTIONS_COUNT
+        activeSection + 1 < MEDIA_SECTIONS_COUNT
           ? activeSection + 1
-          : SECTIONS_COUNT - 1;
+          : MEDIA_SECTIONS_COUNT - 1;
       direction = "down";
     }
 
@@ -872,7 +875,8 @@ export default function Home() {
 
       <div className="full-video">
         <video autoPlay playsInline muted loop>
-          <source src="/20220520-112541-839.mp4" type="video/mp4" />
+          {/* <source src="/20220520-112541-839.mp4" type="video/mp4" /> */}
+          <source src="/20220525-164303-729.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
       </div>

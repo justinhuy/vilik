@@ -171,7 +171,7 @@ const Introduction = ({ activeSection, onScrollTo }) => {
       </ul>
 
       <img
-        className="w-full max-w-[375px] mx-auto mt-[30px] lg:hidden"
+        className="w-full max-w-[375px] mx-auto mt-[30px] opacity-0 lg:hidden"
         src="/cube.png"
       />
     </div>

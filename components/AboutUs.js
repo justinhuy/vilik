@@ -7,10 +7,10 @@ const AboutUs = ({ activeSection }) => {
       id="about-us"
     >
       <div className="relative z-10 w-full screen__container">
-        {/* <img
-      className="w-full max-w-[200px] mx-auto mb-[110px] lg:hidden"
-      src="/cube.png"
-    /> */}
+        <img
+          className="w-full max-w-[200px] mx-auto mb-[110px] opacity-0 lg:hidden"
+          src="/cube.png"
+        />
 
         <div className="lg:grid lg:grid-cols-12">
           <div className="col-span-6 col-start-7">
