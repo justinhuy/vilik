@@ -133,6 +133,8 @@ export default function Home() {
       direction = "down";
     }
 
+    setScrollDirection(direction);
+
     if (idx !== activeSection) {
       if (!isAnimating) {
         scrollTo(idx, direction);
@@ -154,11 +156,11 @@ export default function Home() {
   const onScroll = (e) => {
     const { pageYOffset } = window;
 
-    if (inputRef?.current?.value > pageYOffset) {
-      setScrollDirection("up");
-    } else {
-      setScrollDirection("down");
-    }
+    // if (inputRef?.current?.value > pageYOffset) {
+    //   setScrollDirection("up");
+    // } else {
+    //   setScrollDirection("down");
+    // }
 
     setScrollY(pageYOffset);
     if (inputRef.current) {

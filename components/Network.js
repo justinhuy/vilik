@@ -1,7 +1,7 @@
 const Network = ({ activeSection }) => {
   return (
     <div
-      className={`screen relative overflow-x-hidden h-full w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${
+      className={`screen screen-network relative overflow-x-hidden h-full w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${
         activeSection === 2 ? "active" : ""
       }`}
       id="network"
@@ -11,7 +11,7 @@ const Network = ({ activeSection }) => {
           How does the Vilik Network operate?
         </h5>
 
-        <div className="box bg-white-blur-003 pt-[7px] px-[10px] lg:px-[26px] lg:pt-[13px] lg:pb-[21px] w-full max-w-[1224px] mx-auto relative">
+        <div className="box box-network bg-white-blur-003 pt-[7px] px-[10px] lg:px-[26px] lg:pt-[13px] lg:pb-[21px] w-full max-w-[1224px] mx-auto relative">
           <picture>
             <source media="(min-width: 1024px)" srcSet="network@2x.png" />
             <img

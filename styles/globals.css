@@ -1194,6 +1194,24 @@ a {
     opacity: 1;
     visibility: visible;
   }
+
+  .screen-network .screen__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .screen-network .box-network {
+    flex: 1;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .box-network img {
+    height: calc(100% - 70px);
+    object-fit: contain;
+    margin: 0 auto;
+  }
 }
 
 .btn-round-white:hover {
