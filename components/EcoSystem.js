@@ -31,6 +31,113 @@ const EcoSystem = ({ activeSection }) => {
                 className="w-full max-w-[1000px] mx-auto"
               />
             </picture>
+
+            <svg
+              width="192"
+              height="361"
+              viewBox="0 0 192 361"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[19.2%] top-[18.8%] left-0"
+            >
+              <rect
+                x="1"
+                y="1"
+                width="190"
+                height="359"
+                rx="16"
+                stroke="url(#paint0_linear_49_198)"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray="6 6"
+                className="path"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_49_198"
+                  x1="57.8489"
+                  y1="144.363"
+                  x2="-65.532"
+                  y2="240.862"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#C4D2FF" />
+                  <stop offset="1" stopColor="#5179FF" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <svg
+              width="471"
+              height="92"
+              viewBox="0 0 471 92"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[46.2%] h-auto top-[19.9612403%] left-[24%]"
+            >
+              <rect
+                x="470"
+                y="1"
+                width="90"
+                height="469"
+                rx="16"
+                transform="rotate(90 470 1)"
+                stroke="url(#paint0_linear_49_199)"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray="6 6"
+                className="path"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_49_199"
+                  x1="496.928"
+                  y1="188.29"
+                  x2="409.745"
+                  y2="213.014"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#C4D2FF" />
+                  <stop offset="1" stopColor="#5179FF" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <svg
+              width="227"
+              height="176"
+              viewBox="0 0 227 176"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[22.3%] top-[64.3410853%] left-[36%]"
+            >
+              <rect
+                x="226"
+                y="1"
+                width="174"
+                height="225"
+                rx="16"
+                transform="rotate(90 226 1)"
+                stroke="url(#paint0_linear_49_200)"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeDasharray="6 6"
+                className="path"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_49_200"
+                  x1="278.062"
+                  y1="90.8514"
+                  x2="199.092"
+                  y2="181.101"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#C4D2FF" />
+                  <stop offset="1" stopColor="#5179FF" />
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
         </div>
       </div>

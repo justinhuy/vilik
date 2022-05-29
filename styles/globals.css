@@ -441,12 +441,12 @@ a {
 }
 
 .path {
-  stroke-dasharray: 3.23 3.23;
+  strokeDasharray: 3.23 3.23;
   animation: dash 50s linear infinite;
 }
 
 .path.path-1 {
-  stroke-dasharray: 6.06 6.06;
+  strokeDasharray: 6.06 6.06;
 }
 
 @-webkit-keyframes dash {

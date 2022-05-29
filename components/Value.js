@@ -291,8 +291,8 @@ const Value = ({ activeSection }) => {
                     rx="12.125"
                     transform="rotate(90 436.489 0.484549)"
                     stroke="url(#paint0_linear_46_343)"
-                    stroke-width="0.969099"
-                    stroke-dasharray="5.81 5.81"
+                    strokeWidth="0.969099"
+                    strokeDasharray="5.81 5.81"
                     className="path"
                   />
                   <defs>
@@ -304,8 +304,8 @@ const Value = ({ activeSection }) => {
                       y2="311.174"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#EAC2FF" />
-                      <stop offset="1" stop-color="#1945D9" />
+                      <stop stopColor="#EAC2FF" />
+                      <stop offset="1" stopColor="#1945D9" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -320,8 +320,8 @@ const Value = ({ activeSection }) => {
                   <path
                     d="M0.327148 1.69336L63.3186 1.69336"
                     stroke="url(#paint0_linear_46_344)"
-                    stroke-width="0.969099"
-                    stroke-dasharray="5.81 5.81"
+                    strokeWidth="0.969099"
+                    strokeDasharray="5.81 5.81"
                     className="path"
                   />
                   <defs>
@@ -333,8 +333,8 @@ const Value = ({ activeSection }) => {
                       y2="2.74226"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#F07AFF" />
-                      <stop offset="1" stop-color="#1945D9" />
+                      <stop stopColor="#F07AFF" />
+                      <stop offset="1" stopColor="#1945D9" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -350,8 +350,8 @@ const Value = ({ activeSection }) => {
                   <path
                     d="M0.338867 1.81543L60.7897 1.81543"
                     stroke="url(#paint0_linear_46_345)"
-                    stroke-width="0.969099"
-                    stroke-dasharray="5.81 5.81"
+                    strokeWidth="0.969099"
+                    strokeDasharray="5.81 5.81"
                     className="path"
                   />
                   <defs>
@@ -363,8 +363,8 @@ const Value = ({ activeSection }) => {
                       y2="2.86433"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#F07AFF" />
-                      <stop offset="1" stop-color="#1945D9" />
+                      <stop stopColor="#F07AFF" />
+                      <stop offset="1" stopColor="#1945D9" />
                     </linearGradient>
                   </defs>
                 </svg>

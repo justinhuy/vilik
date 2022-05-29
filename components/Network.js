@@ -28,13 +28,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 55 37"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[4.87588652%] h-auto top-[26.7961165%] left-[36.5248227%]"
+              className="absolute hidden lg:block w-[4.87588652%] h-auto top-[26.7961165%] left-[36.5248227%]"
             >
               <path
                 d="M0.922249 36.7056C6.78756 27.0214 14.5816 18.8262 23.8131 12.6356C33.0446 6.44499 43.5143 2.3927 54.5628 0.734024"
                 stroke="#F4F4F5"
                 strokeWidth="0.332088"
-                stroke-dasharray="5.98 5.98"
+                strokeDasharray="5.98 5.98"
                 className="path"
               />
             </svg>
@@ -44,13 +44,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 20 50"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[1.77304965%] h-auto top-[40%] left-[35.9929078%]"
+              className="absolute hidden lg:block w-[1.77304965%] h-auto top-[40%] left-[35.9929078%]"
             >
               <path
                 d="M19.1684 49.7527C7.22945 36.1981 0.712962 18.7141 0.867959 0.651966"
                 stroke="#F4F4F5"
                 strokeWidth="0.332088"
-                stroke-dasharray="5.98 5.98"
+                strokeDasharray="5.98 5.98"
                 className="path"
               />
             </svg>
@@ -60,13 +60,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 73 11"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[6.47163121%] h-auto top-[52.2330097%] left-[39.0070922%]"
+              className="absolute hidden lg:block w-[6.47163121%] h-auto top-[52.2330097%] left-[39.0070922%]"
             >
               <path
                 d="M72.5919 0.340418C61.6978 6.49849 49.4091 9.76632 36.8952 9.83292C24.3813 9.89952 12.0585 6.76268 1.09947 0.720912"
                 stroke="#F4F4F5"
                 strokeWidth="0.332088"
-                stroke-dasharray="5.98 5.98"
+                strokeDasharray="5.98 5.98"
                 className="path"
               />
             </svg>
@@ -76,13 +76,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 15 45"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[1.32978723%] h-auto top-[40.3883495%] left-[47.251773%]"
+              className="absolute hidden lg:block w-[1.32978723%] h-auto top-[40.3883495%] left-[47.251773%]"
             >
               <path
                 d="M14.5794 0.272233C15.0098 16.079 10.3195 31.6014 1.20783 44.5249"
                 stroke="#F4F4F5"
                 strokeWidth="0.332088"
-                stroke-dasharray="5.98 5.98"
+                strokeDasharray="5.98 5.98"
                 className="path"
               />
             </svg>
@@ -92,13 +92,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 47 38"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[4.16666667%] h-auto left-[43.7056738%] top-[27.184466%]"
+              className="absolute hidden lg:block w-[4.16666667%] h-auto left-[43.7056738%] top-[27.184466%]"
             >
               <path
                 d="M0.145018 0.904001C9.95322 3.41605 19.135 7.9319 27.112 14.1671C35.0891 20.4024 41.6886 28.2219 46.4948 37.1332"
                 stroke="#F4F4F5"
                 strokeWidth="0.332088"
-                stroke-dasharray="5.98 5.98"
+                strokeDasharray="5.98 5.98"
                 className="path"
               />
             </svg>
@@ -109,7 +109,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 109 308"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[9.21985816%] h-auto top-[12.2330097%] left-[53.9893617%]"
+              className="absolute hidden lg:block w-[9.21985816%] h-auto top-[12.2330097%] left-[53.9893617%]"
             >
               <rect
                 x="0.733682"
@@ -119,7 +119,7 @@ const Network = ({ activeSection }) => {
                 rx="9.35394"
                 stroke="url(#paint0_linear_792_3237)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -142,7 +142,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 94 308"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[7.9787234%] top-[10.8737864%] left-[67.7304965%]"
+              className="absolute hidden lg:block w-[7.9787234%] top-[12.2330097%] h-auto left-[67.7304965%]"
             >
               <rect
                 x="0.595011"
@@ -152,7 +152,7 @@ const Network = ({ activeSection }) => {
                 rx="9.35394"
                 stroke="url(#paint0_linear_792_3261)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -175,7 +175,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 84 241"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[7.26950355%] h-auto top-[12.2330097%] left-[80.141844%]"
+              className="absolute hidden lg:block w-[7.26950355%] h-auto top-[12.2330097%] left-[80.141844%]"
             >
               <rect
                 x="1.20341"
@@ -185,7 +185,7 @@ const Network = ({ activeSection }) => {
                 rx="9.35394"
                 stroke="url(#paint0_linear_792_3324)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -208,7 +208,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 84 241"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[7.09219858%] h-auto top-[12.2330097%] left-[91.9326241%]"
+              className="absolute hidden lg:block w-[7.09219858%] h-auto top-[12.2330097%] left-[91.9326241%]"
             >
               <rect
                 x="1.20341"
@@ -218,7 +218,7 @@ const Network = ({ activeSection }) => {
                 rx="9.35394"
                 stroke="url(#paint0_linear_792_3324)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -241,13 +241,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 32 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[2.83687943%] h-auto top-[42.3300971%] left-[50.7978723%]"
+              className="absolute hidden lg:block w-[2.83687943%] h-auto top-[42.3300971%] left-[50.7978723%]"
             >
               <path
                 d="M31.999 1L-0.000976533 0.999997"
                 stroke="url(#paint0_linear_792_3532)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -270,13 +270,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 53 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[4.60992908%] h-auto top-[42.9126214%] left-[63.2978723%]"
+              className="absolute hidden lg:block w-[4.60992908%] h-auto top-[42.9126214%] left-[63.2978723%]"
             >
               <path
                 d="M52.999 1H-0.000977159"
                 stroke="url(#paint0_linear_792_3484)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -299,13 +299,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 56 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[4.78723404%] h-auto top-[18.8349515%] left-[75.5319149%]"
+              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[18.8349515%] left-[75.5319149%]"
             >
               <path
                 d="M55.9893 1L0.989255 1"
                 stroke="url(#paint0_linear_792_3491)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -328,13 +328,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 56 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[4.78723404%] h-auto top-[28.9320388%] left-[75.5319149%]"
+              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[28.9320388%] left-[75.5319149%]"
             >
               <path
                 d="M55.9893 1L0.989255 1"
                 stroke="url(#paint0_linear_792_3491)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -357,13 +357,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 56 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[4.78723404%] h-auto top-[38.8349515%] left-[75.4432624%]"
+              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[38.8349515%] left-[75.4432624%]"
             >
               <path
                 d="M55.9893 1L0.989255 1"
                 stroke="url(#paint0_linear_792_3491)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -386,13 +386,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 56 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[4.78723404%] h-auto top-[48.1553398%] left-[75.6205674%]"
+              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[48.1553398%] left-[75.6205674%]"
             >
               <path
                 d="M55.9893 1L0.989255 1"
                 stroke="url(#paint0_linear_792_3491)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -415,13 +415,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 55 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[4.87588652%] h-auto top-[18.8349515%] left-[87.322695%]"
+              className="absolute hidden lg:block w-[4.87588652%] h-auto top-[18.8349515%] left-[87.322695%]"
             >
               <path
                 d="M54.4541 1L0.4541 1"
                 stroke="url(#paint0_linear_792_3514)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -444,13 +444,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 55 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[4.87588652%] h-auto top-[28.1553398%] left-[87.322695%]"
+              className="absolute hidden lg:block w-[4.87588652%] h-auto top-[28.1553398%] left-[87.322695%]"
             >
               <path
                 d="M54.4541 1L0.4541 1"
                 stroke="url(#paint0_linear_792_3514)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -473,13 +473,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 55 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[4.87588652%] h-auto top-[37.6699029%] left-[87.322695%]"
+              className="absolute hidden lg:block w-[4.87588652%] h-auto top-[37.6699029%] left-[87.322695%]"
             >
               <path
                 d="M54.4541 1L0.4541 1"
                 stroke="url(#paint0_linear_792_3514)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
@@ -502,13 +502,13 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 55 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute w-[4.87588652%] h-auto top-[46.9902913%] left-[87.322695%]"
+              className="absolute hidden lg:block w-[4.87588652%] h-auto top-[46.9902913%] left-[87.322695%]"
             >
               <path
                 d="M54.4541 1L0.4541 1"
                 stroke="url(#paint0_linear_792_3514)"
                 strokeWidth="0.645099"
-                stroke-dasharray="3.23 3.23"
+                strokeDasharray="3.23 3.23"
                 className="path"
               />
               <defs>
