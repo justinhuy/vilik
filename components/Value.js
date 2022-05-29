@@ -59,7 +59,7 @@ const Value = ({ activeSection }) => {
                   className="mx-auto w-full max-w-[844px] mb-[25px]"
                 />
 
-                <div className="w-[16.2322275%] absolute top-[27.3556231%] left-[1px] transition-all duration-300 hover:scale-105">
+                <div className="hidden lg:block w-[16.2322275%] absolute top-[27.3556231%] left-[1px] transition-all duration-300 hover:scale-105">
                   <Image
                     src="/content-creator.png"
                     width={137}
@@ -67,7 +67,7 @@ const Value = ({ activeSection }) => {
                     className="w-full h-auto"
                   />
                 </div>
-                <div className="w-[15.7582938%] absolute top-[26.7477204%] left-[29.7393365%] transition-all duration-300 hover:scale-105">
+                <div className="hidden lg:block w-[15.7582938%] absolute top-[26.7477204%] left-[29.7393365%] transition-all duration-300 hover:scale-105">
                   <Image
                     src="/video-platform.png"
                     width={133.5}
@@ -75,7 +75,7 @@ const Value = ({ activeSection }) => {
                     className="w-full h-auto"
                   />
                 </div>
-                <div className="w-[18.1279621%] absolute top-[27.9635258%] left-[59.0047393%] transition-all duration-300 hover:scale-105">
+                <div className="hidden lg:block w-[18.1279621%] absolute top-[27.9635258%] left-[59.0047393%] transition-all duration-300 hover:scale-105">
                   <Image
                     src="/cdn.png"
                     width={153}
