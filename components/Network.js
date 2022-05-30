@@ -1,9 +1,8 @@
 const Network = ({ activeSection }) => {
   return (
     <div
-      className={`screen screen-network relative overflow-x-hidden h-full w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${
-        activeSection === 2 ? "active" : ""
-      }`}
+      className={`screen screen-network relative overflow-x-hidden h-full w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${activeSection === 2 ? "active" : ""
+        }`}
       id="network"
     >
       <div className="relative z-10 screen__container">
@@ -12,7 +11,7 @@ const Network = ({ activeSection }) => {
         </h5>
 
         <div className="box box-network bg-white-blur-003 pt-[7px] px-[10px] lg:px-[26px] lg:pt-[13px] lg:pb-[21px] w-full max-w-[1224px] mx-auto relative">
-          <div className="inline-block relative">
+          <div className="relative inline-block">
             <picture>
               <source media="(min-width: 1024px)" srcSet="network@2x.png" />
               <img
@@ -22,7 +21,7 @@ const Network = ({ activeSection }) => {
               />
             </picture>
             {/* lines */}
-            <svg
+            {/* <svg
               width="55"
               height="37"
               viewBox="0 0 55 37"
@@ -524,7 +523,7 @@ const Network = ({ activeSection }) => {
                   <stop offset="1" stopColor="#5179FF" />
                 </linearGradient>
               </defs>
-            </svg>
+            </svg> */}
             {/* end of lines */}
           </div>
         </div>

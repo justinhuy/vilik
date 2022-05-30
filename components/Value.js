@@ -11,9 +11,8 @@ const Value = ({ activeSection }) => {
   const [active, setActive] = useState("problem");
   return (
     <div
-      className={`screen relative h-full w-full flex flex-wrap items-center pt-[50px] pb-[8px] lg:py-[87px] lg:px-[7.5vw] ${
-        activeSection === 4 ? "active" : ""
-      }`}
+      className={`screen relative h-full w-full flex flex-wrap items-center pt-[50px] pb-[8px] lg:py-[87px] lg:px-[7.5vw] ${activeSection === 4 ? "active" : ""
+        }`}
       id="value"
     >
       <div className="relative z-10 w-full screen__container">
@@ -27,18 +26,16 @@ const Value = ({ activeSection }) => {
             <button
               type="button"
               onClick={() => setActive("problem")}
-              className={`w-6/12 h-[36px] lg:h-[43px] rounded-[22px] flex items-center justify-center ${
-                active === "problem" ? "text-shadow-white-51 bg-white-012" : ""
-              }`}
+              className={`w-6/12 h-[36px] lg:h-[43px] rounded-[22px] flex items-center justify-center ${active === "problem" ? "text-shadow-white-51 bg-white-012" : ""
+                }`}
             >
               Problems
             </button>
             <button
               type="button"
               onClick={() => setActive("solution")}
-              className={`w-6/12 h-[36px] lg:h-[43px] rounded-[22px] flex items-center justify-center ${
-                active === "solution" ? "text-shadow-white-51 bg-white-012" : ""
-              }`}
+              className={`w-6/12 h-[36px] lg:h-[43px] rounded-[22px] flex items-center justify-center ${active === "solution" ? "text-shadow-white-51 bg-white-012" : ""
+                }`}
             >
               Solutions
             </button>
@@ -274,8 +271,8 @@ const Value = ({ activeSection }) => {
             </h5>
 
             <div className="desc relative mt-[54px] px-[16px] lg:px-0 text-center">
-              <div className="inline-block relative">
-                <svg
+              <div className="relative inline-block">
+                {/* <svg
                   width="437"
                   height="103"
                   viewBox="0 0 437 103"
@@ -367,7 +364,7 @@ const Value = ({ activeSection }) => {
                       <stop offset="1" stopColor="#1945D9" />
                     </linearGradient>
                   </defs>
-                </svg>
+                </svg> */}
 
                 <img
                   src="/solution@2x.png"
