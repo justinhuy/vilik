@@ -441,12 +441,12 @@ a {
 }
 
 .path {
-  strokeDasharray: 3.23 3.23;
+  stroke-dasharray: 3.23 3.23;
   animation: dash 50s linear infinite;
 }
 
 .path.path-1 {
-  strokeDasharray: 6.06 6.06;
+  stroke-dasharray: 6.06 6.06;
 }
 
 @-webkit-keyframes dash {
@@ -481,7 +481,7 @@ a {
   top: 50%;
   transform: translateY(-50%);
   left: 30.9%;
-  mix-blend-mode: screen;
+  mix-blend-mode: lighten;
   pointer-events: none;
   transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -512,7 +512,7 @@ a {
   height: 48.61vw;
   position: absolute;
   right: 7.5vw;
-  mix-blend-mode: screen;
+  mix-blend-mode: lighten;
   pointer-events: none;
   transition: all 1s ease;
   -moz-transition: all 1s ease;

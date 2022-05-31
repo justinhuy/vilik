@@ -2,7 +2,7 @@ const Chart = ({ activeSection }) => {
   return (
     <div
       className={`screen relative h-full w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 8 ? "active" : ""
+        activeSection === 7 ? "active" : ""
       }`}
       id="chart"
     >

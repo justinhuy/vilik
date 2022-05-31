@@ -12,7 +12,7 @@ const Features = ({ activeSection }) => {
   return (
     <div
       className={`screen relative h-full w-full flex flex-wrap items-center py-[50px] lg:py-[87px] ${
-        activeSection === 3 ? "active" : ""
+        activeSection === 2 ? "active" : ""
       }`}
       id="features"
     >
@@ -24,7 +24,7 @@ const Features = ({ activeSection }) => {
             </h5>
             <p className="hidden lg:block desc text-[12px] leading-[18px] lg:text-[16px] lg:leading-[24px] mb-[40px] text-zinc-300 text-zinc-300">
               Nowadays, other&apos;s platforms with a central data network are
-              based on centralised structures for the delivery of videos, video
+              based on centralized structures for the delivery of videos, video
               storage, traffic, and routing are concentrated at the central data
               network center. Besides that, these are problems such as bandwidth
               issues on high traffic affecting video quality and high cost of

@@ -1,8 +1,9 @@
 const Network = ({ activeSection }) => {
   return (
     <div
-      className={`screen screen-network relative overflow-x-hidden h-full w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${activeSection === 2 ? "active" : ""
-        }`}
+      className={`screen screen-network relative overflow-x-hidden h-full w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${
+        activeSection === 3 ? "active" : ""
+      }`}
       id="network"
     >
       <div className="relative z-10 screen__container">

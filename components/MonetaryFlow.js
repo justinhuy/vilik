@@ -6,7 +6,7 @@ const MonetaryFlow = ({ activeSection }) => {
   return (
     <div
       className={`screen relative h-full w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 6 ? "active" : ""
+        activeSection === 8 ? "active" : ""
       }`}
       id="monetary-flow"
     >

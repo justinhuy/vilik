@@ -1,4 +1,14 @@
+import { useRef, useEffect } from "react";
+
+import { fluidSimulation } from "../animation/canvas";
+
 const Introduction = ({ activeSection, onScrollTo }) => {
+  const cRef = useRef();
+
+  useEffect(() => {
+    fluidSimulation(cRef?.current);
+  }, []);
+
   return (
     <div
       className={`screen relative h-full w-full flex flex-col flex-wrap justify-center items-center lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
@@ -9,20 +19,20 @@ const Introduction = ({ activeSection, onScrollTo }) => {
       }}
       id="intro"
     >
-      <div className="screen__container relative z-10 pt-[75px] lg:pt-0">
+      <div className="screen__container pt-[75px] lg:pt-0">
         <div className="grid-cols-2 text-center lg:text-left lg:grid">
           <div>
-            <h1 className="heading flex flex-wrap flex-col text-[48px] leading-[48px] lg:text-[102px] lg:leading-[106px] mb-[16px] font-semibold">
+            <h1 className="heading flex flex-wrap flex-col text-[48px] leading-[48px] lg:text-[102px] lg:leading-[106px] mb-[16px] font-semibold pointer-events-none relative">
               <span className="text-gradient-blue-01">Livestream</span>
               <span className="text-gradient-blue-01">Blockchain</span>
             </h1>
-            <p className="text-fadein text-[14px] leading-[17px] lg:text-[28px] lg:leading-[34px] mb-[26px] text-white font-kanit">
+            <p className="text-fadein text-[14px] leading-[17px] lg:text-[28px] lg:leading-[34px] mb-[26px] text-white font-kanit pointer-events-none">
               Fast. Seamless. An unconventional streaming and earning platform
             </p>
 
             <button
               type="button"
-              className="text-fadein relative group cursor-pointer overflow-hidden p-[3px] rounded-[30px]"
+              className="text-fadein relative group cursor-pointer overflow-hidden p-[3px] rounded-[30px] relative z-20"
               onClick={() => onScrollTo(1)}
             >
               <span className="box bg-gradient-purple text-[16px] leading-[19px] h-[40px] lg:h-[51px] px-[24px] rounded-[26px] inline-flex items-center relative z-10">
@@ -42,7 +52,7 @@ const Introduction = ({ activeSection, onScrollTo }) => {
         </div>
       </div>
 
-      <ul className="hidden lg:flex flex-col items-center justify-center absolute right-[1.11vw] top-2/4 -translate-y-2/4	space-y-[21px]">
+      <ul className="hidden lg:flex flex-col items-center justify-center absolute z-20 right-[1.11vw] top-2/4 -translate-y-2/4	space-y-[21px]">
         <li>
           <a
             href="https://www.tiktok.com/@vilik.official"
@@ -176,6 +186,14 @@ const Introduction = ({ activeSection, onScrollTo }) => {
       <img
         className="w-full max-w-[375px] mx-auto mt-[30px] opacity-0 lg:hidden"
         src="/cube.png"
+      />
+
+      <canvas
+        ref={cRef}
+        className="absolute top-0 left-0 w-full h-full z-5"
+        style={{
+          mixBlendMode: "screen",
+        }}
       />
     </div>
   );

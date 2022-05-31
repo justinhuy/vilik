@@ -1035,7 +1035,7 @@ export function fluidSimulation(canvas) {
   }
 
   initFramebuffers();
-  multipleSplats(parseInt(Math.random() * 20) + 5);
+  // multipleSplats(parseInt(Math.random() * 20) + 5);
 
   let lastColorChangeTime = Date.now();
 

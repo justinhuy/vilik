@@ -4,7 +4,7 @@ const Tokenomics = ({ activeSection }) => {
   return (
     <div
       className={`screen relative h-full w-full hidden lg:flex items-center justify-center py-[50px] lg:py-[62px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 7 ? "active" : ""
+        activeSection === 6 ? "active" : ""
       }`}
       id="tokenomics"
     >

@@ -16,8 +16,6 @@ import Chart from "../components/Chart";
 import Roadmap from "../components/Roadmap";
 import Whitepaper from "../components/Whitepaper";
 
-import { fluidSimulation } from "../animation/canvas";
-
 const SECTIONS_COUNT = 11;
 
 export default function Home() {
@@ -25,7 +23,6 @@ export default function Home() {
   const elNav = useRef();
 
   const inputRef = useRef();
-  const canvasRef = useRef();
 
   const [active, setActive] = useState("problem");
 
@@ -162,12 +159,6 @@ export default function Home() {
   const onScroll = (e) => {
     const { pageYOffset } = window;
 
-    // if (inputRef?.current?.value > pageYOffset) {
-    //   setScrollDirection("up");
-    // } else {
-    //   setScrollDirection("down");
-    // }
-
     setScrollY(pageYOffset);
     if (inputRef.current) {
       inputRef.current.value = pageYOffset;
@@ -177,7 +168,7 @@ export default function Home() {
   useEffect(() => {
     setScrollY(window.pageYOffset);
 
-    fluidSimulation(canvasRef?.current);
+    // fluidSimulation(canvasRef?.current);
 
     window.addEventListener("scroll", onScroll, { passive: true });
     // remove event on unmount to prevent a memory leak
@@ -578,28 +569,22 @@ export default function Home() {
               </div>
               <div
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 2 || activeSection === 3 ? "active" : ""
+                  activeSection === 2 ||
+                  activeSection === 3 ||
+                  activeSection === 4
+                    ? "active"
+                    : ""
                 }`}
                 onClick={() => scrollTo(2)}
                 id="section-2"
               >
-                Features
-              </div>
-              <div
-                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 4 ? "active" : ""
-                }`}
-                onClick={() => scrollTo(4)}
-                id="section-4"
-              >
-                Values
+                Features &amp; Values
               </div>
               <div
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
                   activeSection === 5 ||
                   activeSection === 6 ||
-                  activeSection === 7 ||
-                  activeSection === 8
+                  activeSection === 7
                     ? "active"
                     : ""
                 }`}
@@ -610,31 +595,22 @@ export default function Home() {
               </div>
               <div
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
+                  activeSection === 8 ? "active" : ""
+                }`}
+                onClick={() => scrollTo(8)}
+                id="section-8"
+              >
+                Monetary Flow
+              </div>
+              <div
+                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
                   activeSection === 9 ? "active" : ""
                 }`}
                 onClick={() => scrollTo(9)}
-                id="section-8"
+                id="section-9"
               >
                 Roadmap
               </div>
-              {/* <div
-                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 10 ? "active" : ""
-                }`}
-                onClick={() => scrollTo(10)}
-                id="section-10"
-              >
-                Partners
-              </div> */}
-              {/* <div
-                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 10 || activeSection === 11 ? "active" : ""
-                }`}
-                onClick={() => scrollTo(10)}
-                id="section-10"
-              >
-                Our Team
-              </div> */}
               <div
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
                   activeSection === 10 ? "active" : ""
@@ -726,13 +702,6 @@ export default function Home() {
         <div className="screens__wrapper relative block w-full h-full" ref={el}>
           <div className="relative w-full h-full">
             <Introduction activeSection={activeSection} onScrollTo={scrollTo} />
-            <canvas
-              ref={canvasRef}
-              className="absolute top-0 left-0 w-full h-full z-0"
-              style={{
-                mixBlendMode: "screen",
-              }}
-            />
           </div>
 
           <div className="relative w-full h-full">
@@ -740,11 +709,11 @@ export default function Home() {
           </div>
 
           <div className="relative w-full h-full">
-            <Network activeSection={activeSection} />
+            <Features activeSection={activeSection} />
           </div>
 
           <div className="relative w-full h-full">
-            <Features activeSection={activeSection} />
+            <Network activeSection={activeSection} />
           </div>
 
           <div className="relative w-full h-full">
@@ -755,16 +724,16 @@ export default function Home() {
             <EcoSystem activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full h-full">
-            <MonetaryFlow activeSection={activeSection} />
-          </div>
-
           <div className="relative w-full h-full hidden lg:block">
             <Tokenomics activeSection={activeSection} />
           </div>
 
           <div className="relative w-full h-full">
             <Chart activeSection={activeSection} />
+          </div>
+
+          <div className="relative w-full h-full">
+            <MonetaryFlow activeSection={activeSection} />
           </div>
 
           <div className="relative w-full h-full">
