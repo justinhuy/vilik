@@ -380,9 +380,8 @@ export default function Home() {
       />
 
       <header
-        className={`header ${
-          scrollY > 10 ? "header-sticky" : ""
-        } scrolling-${scrollDirection}`}
+        className={`header ${scrollY > 10 ? "header-sticky" : ""
+          } scrolling-${scrollDirection}`}
       >
         <a
           href="#"
@@ -609,65 +608,58 @@ export default function Home() {
 
         {/* navigation */}
         <div
-          className={`nav text-[14px] leading-[21px] font-kanit text-[#FAFAFA] uppercase z-50 ${
-            isOpen ? "opened" : ""
-          }`}
+          className={`nav text-[14px] leading-[21px] font-kanit text-[#FAFAFA] uppercase z-50 ${isOpen ? "opened" : ""
+            }`}
         >
           <div className="nav__offset-container" ref={elNav}>
             <div className="nav__low-container">
               <div
-                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 0 ? "active" : ""
-                }`}
+                className={`nav__item whitespace-nowrap lg:mx-[16px] ${activeSection === 0 ? "active" : ""
+                  }`}
                 onClick={() => scrollTo(0)}
                 id="section-0"
               >
                 Introduce
               </div>
               <div
-                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 1 ? "active" : ""
-                }`}
+                className={`nav__item whitespace-nowrap lg:mx-[16px] ${activeSection === 1 ? "active" : ""
+                  }`}
                 onClick={() => scrollTo(1)}
                 id="section-1"
               >
                 About us
               </div>
               <div
-                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 2 || activeSection === 3 ? "active" : ""
-                }`}
+                className={`nav__item whitespace-nowrap lg:mx-[16px] ${activeSection === 2 || activeSection === 3 ? "active" : ""
+                  }`}
                 onClick={() => scrollTo(2)}
                 id="section-2"
               >
                 Features
               </div>
               <div
-                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 4 ? "active" : ""
-                }`}
+                className={`nav__item whitespace-nowrap lg:mx-[16px] ${activeSection === 4 ? "active" : ""
+                  }`}
                 onClick={() => scrollTo(4)}
                 id="section-4"
               >
                 Values
               </div>
               <div
-                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 5 ||
-                  activeSection === 6 ||
-                  activeSection === 7
+                className={`nav__item whitespace-nowrap lg:mx-[16px] ${activeSection === 5 ||
+                    activeSection === 6 ||
+                    activeSection === 7
                     ? "active"
                     : ""
-                }`}
+                  }`}
                 onClick={() => scrollTo(5)}
                 id="section-5"
               >
                 Ecosystem &amp; Tokenomics
               </div>
               <div
-                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 8 || activeSection === 9 ? "active" : ""
-                }`}
+                className={`nav__item whitespace-nowrap lg:mx-[16px] ${activeSection === 8 || activeSection === 9 ? "active" : ""
+                  }`}
                 onClick={() => scrollTo(8)}
                 id="section-8"
               >
@@ -683,18 +675,16 @@ export default function Home() {
                 Partners
               </div> */}
               <div
-                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 10 || activeSection === 11 ? "active" : ""
-                }`}
+                className={`nav__item whitespace-nowrap lg:mx-[16px] ${activeSection === 10 || activeSection === 11 ? "active" : ""
+                  }`}
                 onClick={() => scrollTo(10)}
                 id="section-10"
               >
                 Our Team
               </div>
               <div
-                className={`nav__item whitespace-nowrap lg:mx-[16px] ${
-                  activeSection === 12 ? "active" : ""
-                }`}
+                className={`nav__item whitespace-nowrap lg:mx-[16px] ${activeSection === 12 ? "active" : ""
+                  }`}
                 onClick={() => scrollTo(12)}
                 id="section-12"
               >
@@ -780,9 +770,8 @@ export default function Home() {
       >
         <div className="screens__wrapper" ref={el}>
           <div
-            className={`screen relative lg:h-screen w-full lg:flex flex-wrap items-center lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-              activeSection === 0 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full lg:flex flex-wrap items-center lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 0 ? "active" : ""
+              }`}
             id="intro"
           >
             <div className="screen__container relative z-10 pt-[75px] lg:pt-0">
@@ -1050,9 +1039,8 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative lg:h-screen w-full flex flex-wrap items-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-              activeSection === 1 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full flex flex-wrap items-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 1 ? "active" : ""
+              }`}
             id="about-us"
           >
             <div className="relative z-10 screen__container">
@@ -1180,9 +1168,8 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative overflow-x-hidden lg:h-screen w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${
-              activeSection === 2 ? "active" : ""
-            }`}
+            className={`screen relative overflow-x-hidden lg:h-screen w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${activeSection === 2 ? "active" : ""
+              }`}
             id="network"
           >
             <div className="relative z-10 screen__container">
@@ -1525,9 +1512,8 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative lg:h-screen w-full flex flex-wrap items-center py-[50px] lg:py-[87px] ${
-              activeSection === 3 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full flex flex-wrap items-center py-[50px] lg:py-[87px] ${activeSection === 3 ? "active" : ""
+              }`}
             id="features"
           >
             <div className="relative z-10 w-full screen__container">
@@ -2041,9 +2027,8 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative lg:h-screen w-full flex flex-wrap items-center pt-[50px] pb-[8px] lg:py-[87px] lg:px-[7.5vw] ${
-              activeSection === 4 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full flex flex-wrap items-center pt-[50px] pb-[8px] lg:py-[87px] lg:px-[7.5vw] ${activeSection === 4 ? "active" : ""
+              }`}
             id="value"
           >
             <div className="relative z-10 w-full screen__container">
@@ -2057,22 +2042,20 @@ export default function Home() {
                   <button
                     type="button"
                     onClick={() => setActive("problem")}
-                    className={`w-6/12 h-[36px] lg:h-[43px] rounded-[22px] flex items-center justify-center ${
-                      active === "problem"
+                    className={`w-6/12 h-[36px] lg:h-[43px] rounded-[22px] flex items-center justify-center ${active === "problem"
                         ? "text-shadow-white-51 bg-white-012"
                         : ""
-                    }`}
+                      }`}
                   >
                     Problem
                   </button>
                   <button
                     type="button"
                     onClick={() => setActive("solution")}
-                    className={`w-6/12 h-[36px] lg:h-[43px] rounded-[22px] flex items-center justify-center ${
-                      active === "solution"
+                    className={`w-6/12 h-[36px] lg:h-[43px] rounded-[22px] flex items-center justify-center ${active === "solution"
                         ? "text-shadow-white-51 bg-white-012"
                         : ""
-                    }`}
+                      }`}
                   >
                     Solution
                   </button>
@@ -2611,9 +2594,8 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative lg:h-screen w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-              activeSection === 5 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 5 ? "active" : ""
+              }`}
             id="eco"
           >
             <div className="relative z-10 screen__container">
@@ -2915,9 +2897,8 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative lg:h-screen w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-              activeSection === 6 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 6 ? "active" : ""
+              }`}
             id="monetary-flow"
           >
             <div className="relative z-10 screen__container">
@@ -3226,9 +3207,8 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative lg:h-screen w-full hidden lg:flex items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-              activeSection === 7 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full hidden lg:flex items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 7 ? "active" : ""
+              }`}
             id="tokenomics"
           >
             <div className="relative z-10 flex flex-col items-stretch w-full h-full screen__container">
@@ -3323,9 +3303,8 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative lg:h-screen w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-              activeSection === 8 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 8 ? "active" : ""
+              }`}
             id="chart"
           >
             <div className="z-10 screen__container">
@@ -3355,7 +3334,7 @@ export default function Home() {
                       </div>
                       <div className="flex items-center space-x-[16px]">
                         <span className="inline-block w-[20px] h-[20px] bg-linear-6"></span>
-                        <span>3% Public Round</span>
+                        <span>3% Advisor Team</span>
                       </div>
                       <div className="flex items-center space-x-[16px]">
                         <span className="inline-block w-[20px] h-[20px] bg-linear-7"></span>
@@ -3569,9 +3548,8 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative lg:h-screen w-full lg:flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-              activeSection === 9 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full lg:flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 9 ? "active" : ""
+              }`}
             id="roadmap"
           >
             <div className="relative z-10 screen__container lg:static">
@@ -4540,9 +4518,8 @@ export default function Home() {
           </div> */}
 
           <div
-            className={`screen relative lg:h-screen w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-              activeSection === 10 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 10 ? "active" : ""
+              }`}
             id="our-team"
           >
             <div className="z-10 w-full screen__container">
@@ -4919,9 +4896,8 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative lg:h-screen w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-              activeSection === 11 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 11 ? "active" : ""
+              }`}
           >
             <div className="z-10 w-full screen__container">
               <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[29px] lg:mb-[32px] lg:leading-[48px] text-center lg:text-left relative z-10">
@@ -5474,9 +5450,8 @@ export default function Home() {
           </div>
 
           <div
-            className={`screen relative lg:h-screen w-full flex flex-col items-center justify-center ${
-              activeSection === 12 ? "active" : ""
-            }`}
+            className={`screen relative lg:h-screen w-full flex flex-col items-center justify-center ${activeSection === 12 ? "active" : ""
+              }`}
             id="whitepaper"
           >
             <div className="flex-1 flex items-center justify-center text-center py-[117px] lg:py-0 px-[16px] lg:px-[7.5vw] relative z-10">
