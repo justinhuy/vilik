@@ -701,7 +701,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 94 308"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[7.9787234%] top-[12.2330097%] h-auto left-[67.7304965%]"
+              className="absolute hidden lg:block w-[7.84982935%] top-[12.2330097%] h-auto left-[67.4061433%]"
             >
               <rect
                 x="0.595011"
@@ -734,7 +734,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 84 241"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[7.26950355%] h-auto top-[12.2330097%] left-[80.141844%]"
+              className="absolute hidden lg:block w-[6.53594771%] h-auto top-[12.2330097%] left-[80.5460751%]"
             >
               <rect
                 x="1.20341"
@@ -829,7 +829,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 53 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[4.60992908%] h-auto top-[42.9126214%] left-[63.2978723%]"
+              className="absolute hidden lg:block w-[4.33006536%] h-auto top-[42.9126214%] left-[63.2978723%]"
             >
               <path
                 d="M52.999 1H-0.000977159"
