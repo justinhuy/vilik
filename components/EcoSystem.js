@@ -1,8 +1,9 @@
 const EcoSystem = ({ activeSection }) => {
   return (
     <div
-      className={`screen relative h-full w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 5 ? "active" : ""
-        }`}
+      className={`screen relative h-full w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
+        activeSection === 5 ? "active" : ""
+      }`}
       id="eco"
     >
       <div className="relative z-10 screen__container">
@@ -31,13 +32,13 @@ const EcoSystem = ({ activeSection }) => {
               />
             </picture>
 
-            {/* <svg
+            <svg
               width="192"
               height="361"
               viewBox="0 0 192 361"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="hidden lg:block absolute w-[19.2%] top-[18.8%] left-0"
+              className="hidden lg:block absolute w-[18.9%] h-auto top-[2.3255814%] left-0"
             >
               <rect
                 x="1"
@@ -108,7 +109,7 @@ const EcoSystem = ({ activeSection }) => {
               viewBox="0 0 227 176"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="hidden lg:block absolute w-[22.3%] top-[64.3410853%] left-[36%]"
+              className="hidden lg:block absolute w-[22.3%] h-auto top-[62.4031008%] left-[36%]"
             >
               <rect
                 x="226"
@@ -136,7 +137,7 @@ const EcoSystem = ({ activeSection }) => {
                   <stop offset="1" stopColor="#5179FF" />
                 </linearGradient>
               </defs>
-            </svg> */}
+            </svg>
           </div>
         </div>
       </div>
