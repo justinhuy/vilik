@@ -1,9 +1,8 @@
 const Chart = ({ activeSection }) => {
   return (
     <div
-      className={`screen relative h-full w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 7 ? "active" : ""
-      }`}
+      className={`screen relative h-full w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 7 ? "active" : ""
+        }`}
       id="chart"
     >
       <div className="z-10 screen__container">
@@ -33,7 +32,7 @@ const Chart = ({ activeSection }) => {
                 </div>
                 <div className="flex items-center space-x-[16px]">
                   <span className="inline-block w-[20px] h-[20px] bg-linear-6"></span>
-                  <span>3% Public Round</span>
+                  <span>3% Advisor Team</span>
                 </div>
                 <div className="flex items-center space-x-[16px]">
                   <span className="inline-block w-[20px] h-[20px] bg-linear-7"></span>
