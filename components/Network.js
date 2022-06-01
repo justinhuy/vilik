@@ -21,8 +21,567 @@ const Network = ({ activeSection }) => {
                 className="w-full"
               />
             </picture>
+
+            <svg
+              width="66"
+              height="12"
+              viewBox="0 0 66 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[5.63139932%] h-auto left-[5.11945392%] top-[45.2336449%]"
+            >
+              <path
+                d="M62 6.01453H3.8147e-06"
+                stroke="url(#paint0_linear_51_596)"
+                strokeWidth="2"
+              />
+              <path
+                d="M65.0176 5.63211L57 0.200806L59.1387 5.86635L57 11.4255L65.0176 5.63211Z"
+                fill="url(#paint1_linear_51_596)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_51_596"
+                  x1="43.4493"
+                  y1="5.61519"
+                  x2="43.457"
+                  y2="4.90705"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#C4D2FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#C4D2FF; #5179FF; #C4D2FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+
+                  <stop offset="100%" stopColor="#5179FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#5179FF; #C4D2FF; #5179FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_51_596"
+                  x1="59.3989"
+                  y1="4.68328"
+                  x2="61.6261"
+                  y2="11.215"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#EAC2FF" />
+                  <stop offset="1" stopColor="#1945D9" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              width="8"
+              height="31"
+              viewBox="0 0 8 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[0.682593857%] h-auto left-[14.5051195%] top-[31.4018692%]"
+            >
+              <path
+                d="M4 28.0146L4 0.0146496"
+                stroke="url(#paint0_linear_51_589)"
+                strokeWidth="2"
+              />
+              <path
+                d="M4.07744 30.1432L7.55078 25.0159L3.92764 26.3836L0.372541 25.0159L4.07744 30.1432Z"
+                fill="url(#paint1_linear_51_589)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_51_589"
+                  x1="4.39934"
+                  y1="19.6369"
+                  x2="8.03524"
+                  y2="-2.80589"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#EAC2FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#EAC2FF; #1945D9; #EAC2FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+
+                  <stop offset="100%" stopColor="#1945D9">
+                    <animate
+                      attributeName="stop-color"
+                      values="#1945D9; #EAC2FF; #1945D9"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_51_589"
+                  x1="4.68422"
+                  y1="26.55"
+                  x2="0.507146"
+                  y2="27.9743"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#EAC2FF" />
+                  <stop offset="1" stopColor="#1945D9" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              width="44"
+              height="12"
+              viewBox="0 0 44 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[3.75426621%] h-auto top-[45.2336449%] left-[19.112628%]"
+            >
+              <path
+                d="M44 6.01465H3"
+                stroke="url(#paint0_linear_51_592)"
+                strokeWidth="2"
+              />
+              <path
+                d="M0.623957 5.99399L8.6416 11.4253L6.50289 5.75975L8.6416 0.200591L0.623957 5.99399Z"
+                fill="url(#paint1_linear_51_592)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_51_592"
+                  x1="31.7326"
+                  y1="5.61531"
+                  x2="17.7625"
+                  y2="5.89103"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#1945D9">
+                    <animate
+                      attributeName="stop-color"
+                      values="#1945D9; #EAC2FF; #1945D9"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+
+                  <stop offset="100%" stopColor="#EAC2FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#EAC2FF; #1945D9; #EAC2FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_51_592"
+                  x1="6.24269"
+                  y1="6.94282"
+                  x2="4.01549"
+                  y2="0.411075"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#EAC2FF" />
+                  <stop offset="1" stopColor="#1945D9" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              width="46"
+              height="15"
+              viewBox="0 0 46 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[3.92491468%] h-auto top-[14.3925234%] left-[28.4129693%]"
+            >
+              <path
+                d="M44 7.01465L2 7.01464"
+                stroke="url(#paint0_linear_51_563)"
+                strokeWidth="2"
+              />
+              <path
+                d="M46 6.78884L37 0.0146484L39.4008 7.08099L37 14.0146L46 6.78884Z"
+                fill="url(#paint1_linear_51_563)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_51_563"
+                  x1="33.1436"
+                  y1="12.9307"
+                  x2="1.39723"
+                  y2="5.50942"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#EAC2FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#EAC2FF; #1945D9; #EAC2FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+
+                  <stop offset="100%" stopColor="#1945D9">
+                    <animate
+                      attributeName="stop-color"
+                      values="#1945D9; #EAC2FF; #1945D9"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_51_563"
+                  x1="39.6928"
+                  y1="5.6054"
+                  x2="42.7057"
+                  y2="13.5578"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#EAC2FF" />
+                  <stop offset="1" stopColor="#1945D9" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              width="9"
+              height="30"
+              viewBox="0 0 9 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[0.767918089%] h-auto left-[24.9146758%] top-[22.2429907%]"
+            >
+              <path
+                d="M4.34473 3.75305L4.34473 29.944"
+                stroke="url(#paint0_linear_55_236)"
+                strokeWidth="2"
+              />
+              <path
+                d="M4.37959 0.940435L0.90625 6.06775L4.52939 4.70004L8.08449 6.06775L4.37959 0.940435Z"
+                fill="url(#paint1_linear_55_236)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_55_236"
+                  x1="3.94539"
+                  y1="11.5895"
+                  x2="3.29588"
+                  y2="11.5956"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#EAC2FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#EAC2FF; #1945D9; #EAC2FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+
+                  <stop offset="100%" stopColor="#1945D9">
+                    <animate
+                      attributeName="stop-color"
+                      values="#1945D9; #EAC2FF; #1945D9"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_55_236"
+                  x1="3.77281"
+                  y1="4.53363"
+                  x2="7.94989"
+                  y2="3.10933"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#EAC2FF" />
+                  <stop offset="1" stopColor="#1945D9" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              width="3"
+              height="27"
+              viewBox="0 0 3 27"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[0.255972696%] h-auto left-[26.2798635%] top-[22.8037383%]"
+            >
+              <path
+                d="M1.74414 0.753052L1.74414 26.944"
+                stroke="url(#paint0_linear_51_557)"
+                strokeWidth="2"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_51_557"
+                  x1="1.3448"
+                  y1="8.58951"
+                  x2="0.695291"
+                  y2="8.59555"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#EAC2FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#EAC2FF; #1945D9; #EAC2FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+
+                  <stop offset="100%" stopColor="#1945D9">
+                    <animate
+                      attributeName="stop-color"
+                      values="#1945D9; #EAC2FF; #1945D9"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              width="3"
+              height="30"
+              viewBox="0 0 3 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[0.255972696%] h-auto left-[25.0853242%] top-[34.5794393%]"
+            >
+              <path
+                d="M1.71289 0.0145264L1.71289 29.0117"
+                stroke="url(#paint0_linear_51_558)"
+                strokeWidth="2"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_51_558"
+                  x1="1.31355"
+                  y1="8.69061"
+                  x2="0.664031"
+                  y2="8.69606"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#EAC2FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#EAC2FF; #1945D9; #EAC2FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+
+                  <stop offset="100%" stopColor="#1945D9">
+                    <animate
+                      attributeName="stop-color"
+                      values="#1945D9; #EAC2FF; #1945D9"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              width="8"
+              height="31"
+              viewBox="0 0 8 31"
+              fill="none"
+              className="hidden lg:block absolute w-[0.682593857%] h-auto left-[25.9385666%] top-[34.5794393%]"
+            >
+              <path
+                d="M4 29.0146L4 0.0146486"
+                stroke="url(#paint0_linear_55_237)"
+                strokeWidth="2"
+              />
+              <path
+                d="M3.96058 30.4961L7.67383 25.0146L3.80044 26.4768L-0.000218868 25.0146L3.96058 30.4961Z"
+                fill="url(#paint1_linear_55_237)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_55_237"
+                  x1="4.39934"
+                  y1="20.3377"
+                  x2="5.04886"
+                  y2="20.3323"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#EAC2FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#EAC2FF; #1945D9; #EAC2FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+
+                  <stop offset="100%" stopColor="#1945D9">
+                    <animate
+                      attributeName="stop-color"
+                      values="#1945D9; #EAC2FF; #1945D9"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_55_237"
+                  x1="4.60928"
+                  y1="26.6547"
+                  x2="0.143684"
+                  y2="28.1774"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#EAC2FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#EAC2FF; #1945D9; #EAC2FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+
+                  <stop offset="100%" stopColor="#1945D9">
+                    <animate
+                      attributeName="stop-color"
+                      values="#1945D9; #EAC2FF; #1945D9"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              width="8"
+              height="46"
+              viewBox="0 0 8 46"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[0.682593857%] h-auto left-[76.7918089%] top-[74.3925234%]"
+            >
+              <path
+                d="M4 43.0146L4 1.01465"
+                stroke="url(#paint0_linear_51_549)"
+                strokeWidth="2"
+                strokeLinecap="square"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M3.96058 45.4961L7.67383 40.0146L3.80044 41.4768L-0.000218868 40.0146L3.96058 45.4961Z"
+                fill="url(#paint1_linear_51_549)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_51_549"
+                  x1="4.39934"
+                  y1="30.4481"
+                  x2="4.11001"
+                  y2="16.1375"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#1945D9">
+                    <animate
+                      attributeName="stop-color"
+                      values="#1945D9; #EAC2FF; #1945D9"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+
+                  <stop offset="100%" stopColor="#EAC2FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#EAC2FF; #1945D9; #EAC2FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_51_549"
+                  x1="4.60928"
+                  y1="41.6547"
+                  x2="0.143684"
+                  y2="43.1774"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#EAC2FF" />
+                  <stop offset="1" stopColor="#1945D9" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <svg
+              width="68"
+              height="8"
+              viewBox="0 0 68 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="hidden lg:block absolute w-[5.80204778%] h-auto left-[68.003413%] top-[88.5981308%]"
+            >
+              <path
+                d="M4 4.01465H68"
+                stroke="url(#paint0_linear_51_560)"
+                strokeWidth="2"
+              />
+              <path
+                d="M-1.63647e-05 3.9762L5.48145 7.68945L4.01926 3.81606L5.48145 0.0154061L-1.63647e-05 3.9762Z"
+                fill="url(#paint1_linear_51_560)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_51_560"
+                  x1="9.48389"
+                  y1="5.92383"
+                  x2="62.8005"
+                  y2="4.87903"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop offset="0%" stopColor="#1945D9">
+                    <animate
+                      attributeName="stop-color"
+                      values="#1945D9; #EAC2FF; #1945D9"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+
+                  <stop offset="100%" stopColor="#EAC2FF">
+                    <animate
+                      attributeName="stop-color"
+                      values="#EAC2FF; #1945D9; #EAC2FF"
+                      dur="2s"
+                      repeatCount="indefinite"
+                    ></animate>
+                  </stop>
+                </linearGradient>
+                <linearGradient
+                  id="paint1_linear_51_560"
+                  x1="3.84137"
+                  y1="4.6249"
+                  x2="2.31869"
+                  y2="0.159309"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="#EAC2FF" />
+                  <stop offset="1" stopColor="#1945D9" />
+                </linearGradient>
+              </defs>
+            </svg>
+
             {/* lines */}
-            {/* <svg
+            <svg
               width="55"
               height="37"
               viewBox="0 0 55 37"
@@ -524,7 +1083,7 @@ const Network = ({ activeSection }) => {
                   <stop offset="1" stopColor="#5179FF" />
                 </linearGradient>
               </defs>
-            </svg> */}
+            </svg>
             {/* end of lines */}
           </div>
         </div>
