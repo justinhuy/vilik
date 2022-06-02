@@ -997,10 +997,10 @@ a {
 
 @media only screen and (max-width: 1023px) {
 
-  .screens {
+  /* .screens {
     max-width: 728px;
     margin: 0 auto;
-  }
+  } */
 
   .btn-animate,
   .btn-animate .circle {

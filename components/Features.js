@@ -46,9 +46,27 @@ const Features = ({ activeSection }) => {
             </p>
           </div>
 
-          <div className="hidden lg:block absolute w-[477px] right-[-28px] top-1/2 -translate-y-2/4">
-            <Moving yFrom={0} yTo={50} duration={10}>
-              <img src="/earth-layer-3.png" className="w-full h-auto" />
+          <div className="hidden lg:block absolute w-[477px] right-[-28px] top-1/2 -translate-y-2/4 z-10">
+            <Moving yFrom={-5} yTo={5} duration={3}>
+              <img
+                src="/earth-layer-3.jpg"
+                className="w-full h-auto opacity-0"
+              />
+
+              <div className="w-[93.2914046%] h-auto absolute top-0 left-[2.51572327%]">
+                <Moving rotateTo={360} duration={60}>
+                  <img src="/e.png" className="w-full h-auo" />
+                </Moving>
+              </div>
+
+              <img
+                src="/line-1.png"
+                className="absolute w-[72.327044%] h-auto top-[22.4719101%] left-[14.6750524%]"
+              />
+              <img
+                src="/line-2.png"
+                className="absolute w-[81.7610063%] h-auto top-[22.4719101%] left-[9.43396226%]"
+              />
             </Moving>
           </div>
         </div>
