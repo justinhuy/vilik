@@ -809,7 +809,7 @@ const Value = ({ activeSection }) => {
                   <path
                     d="M4.9082 33.2949L4.9082 3.54925"
                     stroke="url(#paint0_linear_65_335)"
-                    stroke-width="1.91908"
+                    strokeWidth="1.91908"
                   />
                   <path
                     d="M5.03245 0.669588L0.110352 7.93555L5.24473 5.99735L10.2827 7.93555L5.03245 0.669588Z"
@@ -881,7 +881,7 @@ const Value = ({ activeSection }) => {
                   <path
                     d="M1.9082 0.572694V30.3184H100.741"
                     stroke="url(#paint0_linear_65_346)"
-                    stroke-width="1.91908"
+                    strokeWidth="1.91908"
                   />
                   <path
                     d="M104.168 30.4426L96.9023 25.5205L98.8405 30.6549L96.9023 35.6929L104.168 30.4426Z"
@@ -938,7 +938,7 @@ const Value = ({ activeSection }) => {
                   <path
                     d="M4.80078 5.18945H180.208"
                     stroke="url(#paint0_linear_65_331)"
-                    stroke-width="1.91908"
+                    strokeWidth="1.91908"
                   />
                   <path
                     d="M0.922518 5.5945L8.18848 10.5166L6.25028 5.38222L8.18848 0.344259L0.922518 5.5945Z"
@@ -995,7 +995,7 @@ const Value = ({ activeSection }) => {
                   <path
                     d="M0.58417 38.3174L91.7402 38.3174L91.7402 1.85495"
                     stroke="url(#paint0_linear_65_349)"
-                    stroke-width="1.91908"
+                    strokeWidth="1.91908"
                   />
                   <path
                     d="M91.8518 0.895174L86.9297 8.16113L92.0641 6.22294L97.102 8.16113L91.8518 0.895174Z"
@@ -1052,7 +1052,7 @@ const Value = ({ activeSection }) => {
                   <path
                     d="M4.46484 5.82324H134.324"
                     stroke="url(#paint0_linear_65_327)"
-                    stroke-width="1.91908"
+                    strokeWidth="1.91908"
                   />
                   <path
                     d="M139.652 5.89964L132.386 0.977539L134.324 6.11192L132.386 11.1499L139.652 5.89964Z"
