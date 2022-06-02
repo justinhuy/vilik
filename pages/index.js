@@ -304,7 +304,7 @@ export default function Home() {
       <header
         className={`header ${
           scrollY > 10 ? "header-sticky" : ""
-        } scrolling-${scrollDirection}`}
+        } scrolling-${scrollDirection} ${isOpen ? "opened" : ""}`}
       >
         <a
           href="#"
@@ -602,7 +602,9 @@ export default function Home() {
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
                   activeSection === 8 ? "active" : ""
                 }`}
-                onClick={() => scrollTo(8)}
+                onClick={() =>
+                  scrollTo(el?.current?.clientWidth > 1023 ? 8 : 7)
+                }
                 id="section-8"
               >
                 Monetary Flow
@@ -611,7 +613,9 @@ export default function Home() {
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
                   activeSection === 9 ? "active" : ""
                 }`}
-                onClick={() => scrollTo(9)}
+                onClick={() =>
+                  scrollTo(el?.current?.clientWidth > 1023 ? 9 : 8)
+                }
                 id="section-9"
               >
                 Roadmap
@@ -620,7 +624,9 @@ export default function Home() {
                 className={`nav__item whitespace-nowrap lg:mx-[16px] ${
                   activeSection === 10 ? "active" : ""
                 }`}
-                onClick={() => scrollTo(10)}
+                onClick={() =>
+                  scrollTo(el?.current?.clientWidth > 1023 ? 10 : 9)
+                }
                 id="section-10"
               >
                 Whitepaper

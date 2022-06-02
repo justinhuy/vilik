@@ -3,8 +3,8 @@ export function fluidSimulation(canvas) {
   canvas.height = canvas.clientHeight;
 
   let config = {
-    SIM_RESOLUTION: 200,
-    DYE_RESOLUTION: 512,
+    SIM_RESOLUTION: 50,
+    DYE_RESOLUTION: 412,
     DENSITY_DISSIPATION: 0.95,
     VELOCITY_DISSIPATION: 0.95,
     PRESSURE_DISSIPATION: 0.8,

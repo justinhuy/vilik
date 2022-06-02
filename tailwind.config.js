@@ -23,7 +23,7 @@ module.exports = {
         "linear-2":
           "linear-gradient(101.02deg, #9CA3B7 11.48%, #D6D6D6 87.91%);",
         "linear-3":
-          "linear-gradient(101.02deg, #9CA3B7 11.48%, #D6D6D6 87.91%);",
+          "linear-gradient(160.49deg, #00FFA3 -32.96%, #00D1FF 104.67%)",
         "linear-4": "linear-gradient(92.19deg, #22274E 7.39%, #858ABD 227.97%)",
         "linear-5":
           "linear-gradient(167.24deg, #0075FF -40.01%, #00D1FF 94.06%)",
@@ -37,7 +37,7 @@ module.exports = {
         "linear-10":
           "linear-gradient(89.05deg, #6389FB 4.08%, #6B56EF 49.35%, #5A3CF4 99.16%)",
         "linear-11":
-          "linear-gradient(85.6deg, #1E1822 -60.11%, #EAC2FF 133.11%, #1945D9 259.27%, #1E1822 357.51%)",
+          "linear-gradient(85.6deg, #1E1822 -60.11%, #EAC2FF 133.11%, #1945D9 259.27%, #1E1822 357.51%);",
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",

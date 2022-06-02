@@ -638,6 +638,7 @@ a {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   perspective: 1000;
+  pointer-events: none;
 }
 
 .step-0 .overlay-circle-1 {
@@ -926,6 +927,11 @@ a {
   display: none;
 }
 
+
+.animation-duration-10s {
+  animation-duration: 10s;
+}
+
 @media only screen and (min-width: 1024px) {
   .nav {
     position: absolute;
@@ -1170,6 +1176,13 @@ a {
     width: 100%;
     height: 55px;
     transition: top .5s ease;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(30px);
+  }
+
+  .header.opened {
+    background: none;
+    backdrop-filter: unset;
   }
 
   .header.scrolling-down {

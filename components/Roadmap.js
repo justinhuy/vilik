@@ -47,7 +47,7 @@ const Roadmap = ({ activeSection }) => {
                   />
                 </div>
                 <p className="w-full text-zinc-50 text-[18px]  leading-[22px] mb-[8px] lg:text-[28px] lg:leading-[34px] lg:mb-[16px] font-bold text-center font-kanit">
-                  Q1 - 2022
+                  Q2 - 2022
                 </p>
                 <ul className="text-[12px] leading-[18px] lg:text-[14px] lg:leading-[21px] text-[#DCDCDC] font-light">
                   <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
@@ -367,7 +367,7 @@ const Roadmap = ({ activeSection }) => {
                 </p>
                 <ul className="text-[12px] leading-[18px] lg:text-[14px] lg:leading-[21px] text-[#DCDCDC] font-light">
                   <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
-                    Vilik Streaming Web Platform Version 4.0 Release
+                    Vilik Streaming Web Platform Version 4.0 Released
                   </li>
                   <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
                     Vilik Network(Peer-to-Peer Network) Mainnet
@@ -445,10 +445,10 @@ const Roadmap = ({ activeSection }) => {
                 </p>
                 <ul className="text-[12px] leading-[18px] lg:text-[14px] lg:leading-[21px] text-[#DCDCDC] font-light">
                   <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
-                    Vilik Streaming Web Platform Version 5.0 release
+                    Vilik Streaming Web Platform Version 5.0 Released
                   </li>
                   <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
-                    Vilik Network(Peer-to-Peer Network) Finally upload
+                    Vilik Network(Peer-to-Peer Network) Final Updated
                   </li>
                   <li className="relative pl-[10px] before:block before:absolute before:content-[''] before:w-[4px] before:h-[4px] before:rounded-full before:bg-[#DCDCDC] before:top-[7px] before:left-0">
                     Vilik Streaming Web Platform Phase 1 Closed

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Network = ({ activeSection }) => {
   return (
     <div
@@ -21,6 +23,15 @@ const Network = ({ activeSection }) => {
                 className="w-full"
               />
             </picture>
+
+            <div className="hidden lg:block absolute w-[16.2969283%] top-[22.4299065%] left-[34.0443686%] animate-spin animation-duration-10s leading-[0px]">
+              <Image
+                src="resource@2x.png"
+                width={191}
+                height={191}
+                className="w-full h-auto"
+              />
+            </div>
 
             <svg
               width="66"
