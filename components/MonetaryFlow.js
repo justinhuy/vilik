@@ -11,7 +11,7 @@ const MonetaryFlow = ({ activeSection }) => {
       id="monetary-flow"
     >
       <div className="relative z-10 screen__container">
-        <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[16px] lg:mb-[32px] lg:leading-[48px] text-center">
+        <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[16px] lg:mb-[32px] lg:leading-[48px] text-center uppercase">
           Monetary flow
         </h5>
 

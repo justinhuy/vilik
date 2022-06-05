@@ -431,9 +431,9 @@ const Value = ({ activeSection }) => {
                         Poor quality video
                       </h6>
                       <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
-                        Inconvenience in CDN which causes video re-buffering and
-                        high load times, users cannot enjoy perfect quality in
-                        case of increasing demand for online video.
+                        Inconveniences in CDN causes video-buffering and high
+                        load times, users can&apos;t enjoy perfect quality in
+                        the case of increasing demand for online video.
                       </p>
                     </div>
                   </div>
@@ -487,8 +487,8 @@ const Value = ({ activeSection }) => {
                       </h6>
                       <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
                         The demand for online media and entertainment has
-                        rapidly increased, which means data needs are
-                        skyrocketing with 4k, 8k and higher-quality streams are
+                        rapidly increased, which means skyrocketing data needs
+                        such as 4K, 8K, and higher-quality streams are
                         bottlenecked by un-scalable infrastructure.
                       </p>
                     </div>
@@ -543,7 +543,7 @@ const Value = ({ activeSection }) => {
                       </h6>
                       <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">
                         A centralized framework means less revenue flows back to
-                        content creators and ecosystem.
+                        content the ecosystem.
                       </p>
                     </div>
                   </div>
