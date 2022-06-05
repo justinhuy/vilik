@@ -165,16 +165,44 @@ export default function Home() {
     }
   };
 
+  const onKeyPress = (e) => {
+    if (e.keyCode === 33) {
+      // up
+      scrollTo(activeSection + 1);
+    }
+
+    if (e.keyCode === 34) {
+      // down
+      scrollTo(activeSection - 1);
+    }
+
+    if (e.keyCode === 35) {
+      // end
+      if (el?.current?.clientWidth > 1023) {
+        scrollTo(10);
+      } else {
+        scrollToElement("whitepaper");
+      }
+    }
+
+    if (e.keyCode === 36) {
+      // home
+      scrollTo(0);
+    }
+  };
+
   useEffect(() => {
     setScrollY(window.pageYOffset);
-
     // fluidSimulation(canvasRef?.current);
 
     window.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("keypress", onKeyPress);
+
     // remove event on unmount to prevent a memory leak
 
     return () => {
       window.removeEventListener("scroll", onScroll, { passive: true });
+      document.removeEventListener("keypress", onKeyPress);
     };
   }, []);
 

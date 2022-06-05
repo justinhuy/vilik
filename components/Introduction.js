@@ -52,7 +52,7 @@ const Introduction = ({ activeSection, onScrollTo }) => {
         </div>
       </div>
 
-      <ul className="hidden lg:flex flex-col items-center justify-center absolute z-20 right-[1.11vw] top-2/4 -translate-y-2/4	space-y-[21px]">
+      <ul className="flex flex-col items-center justify-center fixed lg:absolute z-20 bottom-[26px] right-[19px] lg:right-[1.11vw] lg:bottom-auto lg:top-2/4 lg:-translate-y-2/4	space-y-[21px]">
         <li>
           <a
             href="https://www.tiktok.com/@vilik.official"
@@ -90,7 +90,12 @@ const Introduction = ({ activeSection, onScrollTo }) => {
           </a>
         </li>
         <li>
-          <a href="#" title="Telegram">
+          <a
+            href="https://t.me/vilikofficialannouncement"
+            title="Telegram"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               width="24"
               height="24"
@@ -120,7 +125,7 @@ const Introduction = ({ activeSection, onScrollTo }) => {
         </li>
         <li>
           <a
-            href="https://www.facebook.com/VILIK-107781338574941"
+            href="https://www.facebook.com/Vision-Link-102588599101133"
             title="Facebook"
             target="_blank"
             rel="noreferrer"
@@ -153,7 +158,12 @@ const Introduction = ({ activeSection, onScrollTo }) => {
           </a>
         </li>
         <li>
-          <a href="#" title="Twitter">
+          <a
+            href="https://twitter.com/VilikOfficial"
+            title="Twitter"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               width="24"
               height="24"

@@ -283,7 +283,12 @@ const Whitepaper = ({ activeSection }) => {
               </a>
             </li>
             <li>
-              <a href="#" title="Telegram">
+              <a
+                href="https://t.me/vilikofficialannouncement"
+                title="Telegram"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -313,7 +318,7 @@ const Whitepaper = ({ activeSection }) => {
             </li>
             <li>
               <a
-                href="https://www.facebook.com/VILIK-107781338574941"
+                href="https://www.facebook.com/Vision-Link-102588599101133"
                 title="Facebook"
                 target="_blank"
                 rel="noreferrer"
@@ -346,7 +351,12 @@ const Whitepaper = ({ activeSection }) => {
               </a>
             </li>
             <li>
-              <a href="#" title="Twitter">
+              <a
+                href="https://twitter.com/VilikOfficial"
+                title="Twitter"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <svg
                   width="24"
                   height="24"
