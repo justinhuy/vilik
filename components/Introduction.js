@@ -200,7 +200,7 @@ const Introduction = ({ activeSection, onScrollTo }) => {
 
       <canvas
         ref={cRef}
-        className="absolute top-0 left-0 w-full h-full z-5"
+        className="hidden lg:block absolute top-0 left-0 w-full h-full z-5"
         style={{
           mixBlendMode: "screen",
         }}
