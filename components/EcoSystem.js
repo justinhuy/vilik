@@ -1,8 +1,14 @@
+import { useState } from "react";
+import { InView } from "react-intersection-observer";
 const EcoSystem = ({ activeSection }) => {
+  const [inView, setInView] = useState(false);
   return (
-    <div
+    <InView
+      as="div"
+      // triggerOnce
+      onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 5 ? "active" : ""
+        activeSection === 5 || inView ? "active" : ""
       }`}
       id="eco"
     >
@@ -145,7 +151,7 @@ const EcoSystem = ({ activeSection }) => {
       {/* section overlay */}
 
       {/* end of section overlay */}
-    </div>
+    </InView>
   );
 };
 

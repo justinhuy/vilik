@@ -440,7 +440,7 @@ a {
   border-image-slice: 2;
 }
 
-.path {
+.screen.active .path {
   stroke-dasharray: 3.23 3.23;
   animation: dash 50s linear infinite;
 }
@@ -477,10 +477,10 @@ a {
 .full-video {
   width: 73.95%;
   height: 73.95%;
-  position: absolute;
+  position: fixed;
   top: 50%;
-  transform: translateY(-50%);
-  left: 30.9%;
+  left: 0;
+  transform: translate(30.9%, -50%);
   mix-blend-mode: lighten;
   pointer-events: none;
   transition: all 1s ease-in-out;
@@ -553,7 +553,7 @@ a {
 }
 
 .step-1 .full-video {
-  left: -14.5%;
+  transform: translate(-14.5%, -50%);
 }
 
 .step-1 .overlay-circle-0 {
@@ -573,8 +573,9 @@ a {
 .step-11 .full-video,
 .step-12 .full-video,
 .step-13 .full-video {
-  left: -14.5%;
+  transform: translate(-14.5%, -50%);
   opacity: 0;
+  visibility: hidden;
 }
 
 .step-2 .overlay-circle-0 {
@@ -932,9 +933,53 @@ a {
   animation-duration: 10s;
 }
 
+/* Scroll auto */
+@media only screen and (max-width: 1280px) {
+
+  html,
+  body {
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+  .screens__wrapper {
+    transform: translate(0, 0) !important;
+    height: auto;
+  }
+
+  .screen {
+    min-height: 810px;
+  }
+
+  .screen--intro {
+    min-height: 100vh;
+  }
+
+  .full-video {
+    /* position: fixed; */
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .screen {
+    min-height: 0;
+  }
+
+  .screen--intro {
+    min-height: 667px;
+    background-image: none !important;
+  }
+
+  .overlay-circle-0 {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
+
   .nav {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 1.66666667%;
     width: 100vh;
@@ -1094,8 +1139,8 @@ a {
   .full-video {
     width: 140%;
     height: 295px;
-    top: auto;
-    bottom: 5%;
+    top: 320px;
+    bottom: auto;
     left: 50%;
     transform: translate(-50%, 0);
   }
@@ -1277,7 +1322,7 @@ a {
   padding: 5px 13px;
 }
 
-.arrow-flash path.path-black {
+.screen.active .arrow-flash path.path-black {
   transition: opacity .5s ease;
   -webkit-animation: lighten 1.5s infinite;
   animation: lighten 1.5s infinite
@@ -1313,7 +1358,7 @@ a {
   }
 }
 
-.arrow-flash path.path-white {
+.screen.active .arrow-flash path.path-white {
   transition: opacity .5s ease;
   -webkit-animation: lighten 1.5s infinite;
   animation: lighten 1.5s infinite

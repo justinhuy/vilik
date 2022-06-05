@@ -1,10 +1,16 @@
+import { useState } from "react";
 import Image from "next/image";
+import { InView } from "react-intersection-observer";
 
 const Network = ({ activeSection }) => {
+  const [inView, setInView] = useState(false);
   return (
-    <div
+    <InView
+      as="div"
+      // triggerOnce
+      onChange={(inView) => setInView(inView)}
       className={`screen screen-network relative overflow-x-hidden h-full w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${
-        activeSection === 3 ? "active" : ""
+        activeSection === 3 || inView ? "active" : ""
       }`}
       id="network"
     >
@@ -1099,7 +1105,7 @@ const Network = ({ activeSection }) => {
           </div>
         </div>
       </div>
-    </div>
+    </InView>
   );
 };
 

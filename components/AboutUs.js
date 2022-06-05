@@ -1,18 +1,31 @@
-const AboutUs = ({ activeSection }) => {
+import { useState } from "react";
+import { InView } from "react-intersection-observer";
+
+const AboutUs = ({ activeSection, onChangeInView }) => {
+  const [inView, setInView] = useState(false);
+
   return (
-    <div
+    <InView
+      as="div"
+      // triggerOnce
+      onChange={(inView) => {
+        setInView(inView);
+        // console.log(inView);
+        // if (onChangeInView) onChangeInView(inView);
+      }}
+      rootMargin="100px"
       className={`screen relative h-full w-full flex flex-wrap items-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 1 ? "active" : ""
+        activeSection === 1 || inView ? "active" : ""
       }`}
       id="about-us"
     >
       <div className="relative z-10 w-full screen__container">
-        <img
+        {/* <img
           className="w-full max-w-[200px] mx-auto mb-[110px] opacity-0 lg:hidden"
           src="/cube.png"
-        />
+        /> */}
 
-        <div className="lg:grid lg:grid-cols-12">
+        <div className="xl:grid xl:grid-cols-12">
           <div className="col-span-6 col-start-7">
             <h4 className="btn-animate rounded-[38px] text-[12px] leading-[14px] lg:text-[14px] lg:leading-[17px] h-[22px] lg:h-[35px] inline-flex items-center justify-center px-[12px] lg:px-[18px] mb-[8px]">
               <span className="circle"></span>
@@ -33,7 +46,7 @@ const AboutUs = ({ activeSection }) => {
           </div>
         </div>
       </div>
-    </div>
+    </InView>
   );
 };
 

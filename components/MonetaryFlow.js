@@ -1,12 +1,18 @@
+import { useState } from "react";
+import { InView } from "react-intersection-observer";
 import Image from "next/image";
 
 import Moving from "../animation/Moving";
 
 const MonetaryFlow = ({ activeSection }) => {
+  const [inView, setInView] = useState(false);
   return (
-    <div
+    <InView
+      as="div"
+      // triggerOnce
+      onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 8 ? "active" : ""
+        activeSection === 8 || inView ? "active" : ""
       }`}
       id="monetary-flow"
     >
@@ -17,14 +23,16 @@ const MonetaryFlow = ({ activeSection }) => {
 
         <div className="box bg-white-blur-003 p-[32px] lg:px-[143px] lg:py-[57px] w-full relative max-w-[1223px] mx-auto">
           <div className="hidden lg:block absolute top-[-58px] left-[-19px]">
-            <Moving yFrom={10} yTo={-10} duration={5}>
-              <Image
-                src="/shape1@2x.png"
-                alt="NFT marketplace"
-                width={133}
-                height={133}
-              />
-            </Moving>
+            {activeSection === 8 || inView ? (
+              <Moving yFrom={10} yTo={-10} duration={5}>
+                <Image
+                  src="/shape1@2x.png"
+                  alt="NFT marketplace"
+                  width={133}
+                  height={133}
+                />
+              </Moving>
+            ) : null}
           </div>
 
           <picture>
@@ -33,18 +41,20 @@ const MonetaryFlow = ({ activeSection }) => {
           </picture>
 
           <div className="hidden lg:block absolute bottom-[-131px] right-[-182px]">
-            <Moving yFrom={-10} yTo={10} duration={5}>
-              <Image
-                src="/shape2@2x.png"
-                alt="NFT marketplace"
-                width={277}
-                height={216}
-              />
-            </Moving>
+            {activeSection === 8 || inView ? (
+              <Moving yFrom={-10} yTo={10} duration={5}>
+                <Image
+                  src="/shape2@2x.png"
+                  alt="NFT marketplace"
+                  width={277}
+                  height={216}
+                />
+              </Moving>
+            ) : null}
           </div>
         </div>
       </div>
-    </div>
+    </InView>
   );
 };
 

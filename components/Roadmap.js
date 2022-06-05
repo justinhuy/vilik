@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { InView } from "react-intersection-observer";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -6,10 +8,14 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Roadmap = ({ activeSection }) => {
+  const [inView, setInView] = useState(false);
   return (
-    <div
+    <InView
+      as="div"
+      // triggerOnce
+      onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 9 ? "active" : ""
+        activeSection === 9 || inView ? "active" : ""
       }`}
       id="roadmap"
     >
@@ -500,7 +506,7 @@ const Roadmap = ({ activeSection }) => {
           </Swiper>
         </div>
       </div>
-    </div>
+    </InView>
   );
 };
 

@@ -1,10 +1,16 @@
+import { useState } from "react";
+import { InView } from "react-intersection-observer";
 import Link from "next/link";
 
 const Whitepaper = ({ activeSection }) => {
+  const [inView, setInView] = useState(false);
   return (
-    <div
+    <InView
+      as="div"
+      // triggerOnce
+      onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex flex-col items-center justify-center ${
-        activeSection === 10 ? "active" : ""
+        activeSection === 10 || inView ? "active" : ""
       }`}
       id="whitepaper"
     >
@@ -394,7 +400,7 @@ const Whitepaper = ({ activeSection }) => {
           </div>
         </div>
       </div>
-    </div>
+    </InView>
   );
 };
 

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Image from "next/image";
 import { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -5,14 +6,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { InView } from "react-intersection-observer";
 
 import Moving from "../animation/Moving";
 
 const Features = ({ activeSection }) => {
+  const [inView, setInView] = useState(false);
   return (
-    <div
+    <InView
+      as="div"
+      // triggerOnce
+      onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex flex-wrap items-center py-[50px] lg:py-[87px] ${
-        activeSection === 2 ? "active" : ""
+        activeSection === 2 || inView ? "active" : ""
       }`}
       id="features"
     >
@@ -46,27 +52,30 @@ const Features = ({ activeSection }) => {
           </div>
 
           <div className="hidden lg:block absolute w-[477px] right-[-28px] top-1/2 -translate-y-2/4 z-10">
-            <Moving yFrom={-5} yTo={5} duration={3}>
-              <img
-                src="/earth-layer-3.jpg"
-                className="w-full h-auto opacity-0"
-              />
+            {activeSection === 2 ||
+              (inView ? (
+                <Moving yFrom={-5} yTo={5} duration={3}>
+                  <img
+                    src="/earth-layer-3.jpg"
+                    className="w-full h-auto opacity-0"
+                  />
 
-              <div className="w-[93.2914046%] h-auto absolute top-0 left-[2.51572327%]">
-                <Moving rotateTo={360} duration={60}>
-                  <img src="/e.png" className="w-full h-auo" />
+                  <div className="w-[93.2914046%] h-auto absolute top-0 left-[2.51572327%]">
+                    <Moving rotateTo={360} duration={60}>
+                      <img src="/e.png" className="w-full h-auo" />
+                    </Moving>
+                  </div>
+
+                  <img
+                    src="/line-1.png"
+                    className="absolute w-[72.327044%] h-auto top-[22.4719101%] left-[14.6750524%]"
+                  />
+                  <img
+                    src="/line-2.png"
+                    className="absolute w-[81.7610063%] h-auto top-[22.4719101%] left-[9.43396226%]"
+                  />
                 </Moving>
-              </div>
-
-              <img
-                src="/line-1.png"
-                className="absolute w-[72.327044%] h-auto top-[22.4719101%] left-[14.6750524%]"
-              />
-              <img
-                src="/line-2.png"
-                className="absolute w-[81.7610063%] h-auto top-[22.4719101%] left-[9.43396226%]"
-              />
-            </Moving>
+              ) : null)}
           </div>
         </div>
 
@@ -401,32 +410,34 @@ const Features = ({ activeSection }) => {
           </Swiper>
         </div>
         <div className="relative text-center  lg:hidden">
-          <div className="w-[250px] inline-block">
-            <Moving yFrom={-5} yTo={5} duration={3}>
-              <img
-                src="/earth-layer-3.jpg"
-                className="w-full h-auto opacity-0"
-              />
+          <div className="w-[250px] h-[233px] inline-block">
+            {activeSection === 2 || inView ? (
+              <Moving yFrom={-5} yTo={5} duration={3}>
+                <img
+                  src="/earth-layer-3.jpg"
+                  className="w-full h-auto opacity-0"
+                />
 
-              <div className="w-[93.2914046%] h-auto absolute top-0 left-[2.51572327%]">
-                <Moving rotateTo={360} duration={60}>
-                  <img src="/e.png" className="w-full h-auo" />
-                </Moving>
-              </div>
+                <div className="w-[93.2914046%] h-auto absolute top-0 left-[2.51572327%]">
+                  <Moving rotateTo={360} duration={60}>
+                    <img src="/e.png" className="w-full h-auo" />
+                  </Moving>
+                </div>
 
-              <img
-                src="/line-1.png"
-                className="absolute w-[72.327044%] h-auto top-[22.4719101%] left-[14.6750524%]"
-              />
-              <img
-                src="/line-2.png"
-                className="absolute w-[81.7610063%] h-auto top-[22.4719101%] left-[9.43396226%]"
-              />
-            </Moving>
+                <img
+                  src="/line-1.png"
+                  className="absolute w-[72.327044%] h-auto top-[22.4719101%] left-[14.6750524%]"
+                />
+                <img
+                  src="/line-2.png"
+                  className="absolute w-[81.7610063%] h-auto top-[22.4719101%] left-[9.43396226%]"
+                />
+              </Moving>
+            ) : null}
           </div>
         </div>
       </div>
-    </div>
+    </InView>
   );
 };
 

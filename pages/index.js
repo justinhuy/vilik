@@ -18,6 +18,8 @@ import Whitepaper from "../components/Whitepaper";
 
 const SECTIONS_COUNT = 11;
 
+const BREAKPOINT = 1280;
+
 export default function Home() {
   const el = useRef();
   const elNav = useRef();
@@ -33,6 +35,8 @@ export default function Home() {
   const [scrollY, setScrollY] = useState(0);
   const [scrollDirection, setScrollDirection] = useState();
   const [isOpen, setIsOpen] = useState(false);
+
+  const [isAboutInView, setIsAboutInView] = useState(false);
 
   const ids = [
     {
@@ -74,7 +78,7 @@ export default function Home() {
   ];
 
   const scrollTo = (idx, direction) => {
-    // if (el?.current?.clientWidth > 1023) {
+    // if (el?.current?.clientWidth > (BREAKPOINT - 1)) {
     setIsAnimating(true);
     setStep(idx);
     setActiveSection(-1);
@@ -118,32 +122,34 @@ export default function Home() {
   };
 
   const handleOnWheel = (e) => {
-    // if (el?.current?.clientWidth > 1023) {
-    let idx;
-    let direction;
+    if (el?.current?.clientWidth > BREAKPOINT - 1) {
+      let idx;
+      let direction;
 
-    const MEDIA_SECTIONS_COUNT =
-      el?.current?.clientWidth > 1023 ? SECTIONS_COUNT : SECTIONS_COUNT - 1;
+      const MEDIA_SECTIONS_COUNT =
+        el?.current?.clientWidth > BREAKPOINT - 1
+          ? SECTIONS_COUNT
+          : SECTIONS_COUNT - 1;
 
-    if (e.deltaY < 0) {
-      idx = activeSection - 1 > 0 ? activeSection - 1 : 0;
-      direction = "up";
-    } else if (e.deltaY > 0) {
-      idx =
-        activeSection + 1 < MEDIA_SECTIONS_COUNT
-          ? activeSection + 1
-          : MEDIA_SECTIONS_COUNT - 1;
-      direction = "down";
-    }
+      if (e.deltaY < 0) {
+        idx = activeSection - 1 > 0 ? activeSection - 1 : 0;
+        direction = "up";
+      } else if (e.deltaY > 0) {
+        idx =
+          activeSection + 1 < MEDIA_SECTIONS_COUNT
+            ? activeSection + 1
+            : MEDIA_SECTIONS_COUNT - 1;
+        direction = "down";
+      }
 
-    setScrollDirection(direction);
+      setScrollDirection(direction);
 
-    if (idx !== activeSection) {
-      if (!isAnimating) {
-        scrollTo(idx, direction);
+      if (idx !== activeSection) {
+        if (!isAnimating) {
+          scrollTo(idx, direction);
+        }
       }
     }
-    // }
   };
 
   const scrollToElement = (id) => {
@@ -178,7 +184,7 @@ export default function Home() {
 
     if (e.keyCode === 35) {
       // end
-      if (el?.current?.clientWidth > 1023) {
+      if (el?.current?.clientWidth > BREAKPOINT - 1) {
         scrollTo(10);
       } else {
         scrollToElement("whitepaper");
@@ -193,13 +199,11 @@ export default function Home() {
 
   useEffect(() => {
     setScrollY(window.pageYOffset);
-    // fluidSimulation(canvasRef?.current);
 
     window.addEventListener("scroll", onScroll, { passive: true });
     document.addEventListener("keypress", onKeyPress);
 
     // remove event on unmount to prevent a memory leak
-
     return () => {
       window.removeEventListener("scroll", onScroll, { passive: true });
       document.removeEventListener("keypress", onKeyPress);
@@ -211,9 +215,15 @@ export default function Home() {
     onSwipedDown: () => handleOnWheel({ deltaY: -1 }),
   });
 
+  const handleChangeInView = (inView) => {
+    setIsAboutInView(inView);
+  };
+
   return (
     <main
-      className={`relative w-full h-full overflow-hidden step-${step}`}
+      className={`relative w-full xl:h-full xl:overflow-hidden step-${step} ${
+        isAboutInView ? "step-2-mb" : ""
+      }`}
       style={{
         backgroundImage: "url(/bg-dot.png)",
       }}
@@ -547,7 +557,7 @@ export default function Home() {
         <button
           className="hidden lg:block fixed top-[1.66666667vw] right-[7.5vw] z-50 text-[14px] leading-[21px] font-medium border border-zinc-100 p-[2px] rounded-[30px] group overflow-hidden btn-round-white"
           onClick={() => {
-            if (el?.current?.clientWidth > 1023) {
+            if (el?.current?.clientWidth > BREAKPOINT - 1) {
               scrollTo(10);
             } else {
               scrollToElement("whitepaper");
@@ -631,7 +641,7 @@ export default function Home() {
                   activeSection === 8 ? "active" : ""
                 }`}
                 onClick={() =>
-                  scrollTo(el?.current?.clientWidth > 1023 ? 8 : 7)
+                  scrollTo(el?.current?.clientWidth > BREAKPOINT - 1 ? 8 : 7)
                 }
                 id="section-8"
               >
@@ -642,7 +652,7 @@ export default function Home() {
                   activeSection === 9 ? "active" : ""
                 }`}
                 onClick={() =>
-                  scrollTo(el?.current?.clientWidth > 1023 ? 9 : 8)
+                  scrollTo(el?.current?.clientWidth > BREAKPOINT - 1 ? 9 : 8)
                 }
                 id="section-9"
               >
@@ -653,7 +663,7 @@ export default function Home() {
                   activeSection === 10 ? "active" : ""
                 }`}
                 onClick={() =>
-                  scrollTo(el?.current?.clientWidth > 1023 ? 10 : 9)
+                  scrollTo(el?.current?.clientWidth > BREAKPOINT - 1 ? 10 : 9)
                 }
                 id="section-10"
               >
@@ -734,52 +744,58 @@ export default function Home() {
       </header>
 
       <div
-        className="screens relative z-20 w-full h-full overflow-hidden"
+        className="screens relative z-20 w-full xl:h-full xl:overflow-hidden"
         onWheel={(e) => handleOnWheel(e)}
         {...handlers}
       >
-        <div className="screens__wrapper relative block w-full h-full" ref={el}>
-          <div className="relative w-full h-full">
+        <div
+          className="screens__wrapper relative block w-full xl:h-full"
+          ref={el}
+        >
+          <div className="relative w-full xl:h-full">
             <Introduction activeSection={activeSection} onScrollTo={scrollTo} />
           </div>
 
-          <div className="relative w-full h-full">
-            <AboutUs activeSection={activeSection} />
+          <div className="relative w-full xl:h-full">
+            <AboutUs
+              activeSection={activeSection}
+              onChangeInView={handleChangeInView}
+            />
           </div>
 
-          <div className="relative w-full h-full">
+          <div className="relative w-full xl:h-full">
             <Features activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full h-full">
+          <div className="relative w-full xl:h-full">
             <Network activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full h-full">
+          <div className="relative w-full xl:h-full">
             <Value activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full h-full">
+          <div className="relative w-full xl:h-full">
             <EcoSystem activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full h-full hidden lg:block">
+          <div className="relative w-full xl:h-full hidden lg:block">
             <Tokenomics activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full h-full">
+          <div className="relative w-full xl:h-full">
             <Chart activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full h-full">
+          <div className="relative w-full xl:h-full">
             <MonetaryFlow activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full h-full">
+          <div className="relative w-full xl:h-full">
             <Roadmap activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full h-full">
+          <div className="relative w-full xl:h-full">
             <Whitepaper activeSection={activeSection} />
           </div>
         </div>

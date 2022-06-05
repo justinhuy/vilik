@@ -6,13 +6,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { InView } from "react-intersection-observer";
 
 const Value = ({ activeSection }) => {
   const [active, setActive] = useState("problem");
+  const [inView, setInView] = useState(false);
   return (
-    <div
+    <InView
+      as="div"
+      // triggerOnce
+      onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex flex-wrap items-center pt-[50px] pb-[8px] lg:py-[87px] lg:px-[7.5vw] ${
-        activeSection === 4 ? "active" : ""
+        activeSection === 4 || inView ? "active" : ""
       }`}
       id="value"
     >
@@ -1304,7 +1309,7 @@ const Value = ({ activeSection }) => {
           </>
         ) : null}
       </div>
-    </div>
+    </InView>
   );
 };
 

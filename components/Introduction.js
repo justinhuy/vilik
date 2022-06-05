@@ -1,8 +1,9 @@
 import { useRef, useEffect } from "react";
+import { InView } from "react-intersection-observer";
 
 import { fluidSimulation } from "../animation/canvas";
 
-const Introduction = ({ activeSection, onScrollTo }) => {
+const Introduction = ({ activeSection, onScrollTo, inView }) => {
   const cRef = useRef();
 
   useEffect(() => {
@@ -10,15 +11,19 @@ const Introduction = ({ activeSection, onScrollTo }) => {
   }, []);
 
   return (
-    <div
-      className={`screen relative h-full w-full flex flex-col flex-wrap justify-center items-center lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 0 ? "active" : ""
+    <InView
+      as="div"
+      // triggerOnce
+      onChange={(inView, entry) => console.log("Inview:", inView)}
+      className={`screen screen--intro relative xl:h-full xl:w-full flex flex-col flex-wrap justify-center items-center lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
+        activeSection === 0 || inView ? "active" : ""
       }`}
       style={{
         backgroundImage: "url(/bg-dot.png)",
       }}
       id="intro"
     >
+      {inView}
       <div className="screen__container pt-[75px] lg:pt-0">
         <div className="grid-cols-2 text-center lg:text-left lg:grid">
           <div>
@@ -52,7 +57,7 @@ const Introduction = ({ activeSection, onScrollTo }) => {
         </div>
       </div>
 
-      <ul className="flex flex-col items-center justify-center fixed lg:absolute z-20 bottom-[26px] right-[19px] lg:right-[1.11vw] lg:bottom-auto lg:top-2/4 lg:-translate-y-2/4	space-y-[21px]">
+      <ul className="flex flex-col items-center justify-center absolute z-20 bottom-[26px] right-[19px] lg:right-[1.11vw] lg:bottom-auto lg:top-2/4 lg:-translate-y-2/4	space-y-[21px]">
         <li>
           <a
             href="https://www.tiktok.com/@vilik.official"
@@ -205,7 +210,7 @@ const Introduction = ({ activeSection, onScrollTo }) => {
           mixBlendMode: "screen",
         }}
       />
-    </div>
+    </InView>
   );
 };
 
