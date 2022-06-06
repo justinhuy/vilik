@@ -8,16 +8,10 @@ const AboutUs = ({ activeSection, onChangeInView }) => {
     <InView
       as="div"
       // triggerOnce
-      onChange={(inView) => {
-        setInView(inView);
-        // console.log(inView);
-        // if (onChangeInView) onChangeInView(inView);
-      }}
-      rootMargin="100px"
-      className={`screen relative h-full w-full flex flex-wrap items-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
+      onChange={(inView) => setInView(inView)}
+      className={`screen screen--about-us relative h-full w-full flex flex-wrap items-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
         activeSection === 1 || inView ? "active" : ""
       }`}
-      id="about-us"
     >
       <div className="relative z-10 w-full screen__container">
         {/* <img
@@ -36,7 +30,7 @@ const AboutUs = ({ activeSection, onChangeInView }) => {
               A cutting-edge <br />
               multi-purpose SocialFi <br /> streaming platform
             </h5>
-            <p className="desc text-[14px] leading-[21px] lg:text-[16px] lg:leading-[24px] text-zinc-300 text-zinc-300 lg:max-w-[457px]">
+            <p className="desc text-[14px] leading-[21px] lg:text-[16px] lg:leading-[24px] text-zinc-300 text-zinc-300 xl:max-w-[457px]">
               In the era of high interactivity, edutainment, and a combination
               between entertainment and earning, Vilik proudly introduces a
               high-end video streaming platform built on the BSC network. Here,

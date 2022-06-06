@@ -12,7 +12,6 @@ const Network = ({ activeSection }) => {
       className={`screen screen-network relative overflow-x-hidden h-full w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${
         activeSection === 3 || inView ? "active" : ""
       }`}
-      id="network"
     >
       <div className="relative z-10 screen__container">
         <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:leading-[48px] lg:mb-[32px] text-center">

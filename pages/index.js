@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import Head from "next/head";
 import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
-import { useSwipeable } from "react-swipeable";
+// import { useSwipeable } from "react-swipeable";
 
 import Introduction from "../components/Introduction";
 import AboutUs from "../components/AboutUs";
@@ -52,12 +52,20 @@ export default function Home() {
       id: "features",
     },
     {
+      idx: 3,
+      id: "network",
+    },
+    {
       idx: 4,
       id: "value",
     },
     {
       idx: 5,
       id: "eco",
+    },
+    {
+      idx: 7,
+      id: "monetary-flow",
     },
     {
       idx: 8,
@@ -78,47 +86,47 @@ export default function Home() {
   ];
 
   const scrollTo = (idx, direction) => {
-    // if (el?.current?.clientWidth > (BREAKPOINT - 1)) {
-    setIsAnimating(true);
-    setStep(idx);
-    setActiveSection(-1);
-    setIsOpen(false);
+    if (el?.current?.clientWidth > BREAKPOINT - 1) {
+      setIsAnimating(true);
+      setStep(idx);
+      setActiveSection(-1);
+      setIsOpen(false);
 
-    const navItem = document.getElementById(`section-${idx}`);
-    if (navItem) {
-      const animNav = gsap.to(elNav.current, {
-        x: (976 - navItem.offsetLeft) / 2,
-        y: 0,
+      const navItem = document.getElementById(`section-${idx}`);
+      if (navItem) {
+        const animNav = gsap.to(elNav.current, {
+          x: (976 - navItem.offsetLeft) / 2,
+          y: 0,
+          z: 0,
+          duration: 0.5,
+        });
+      }
+
+      const anim = gsap.to(el.current, {
+        x: 0,
+        y: `${-idx * 100}%`,
         z: 0,
-        duration: 0.5,
+        duration: 1,
+        onComplete: function () {
+          // setActiveSection(idx);
+          setTimeout(() => {
+            setIsAnimating(false);
+          }, 500);
+        },
+        onUpdate: () => {
+          if (anim.time() > 0.75) {
+            setActiveSection(idx);
+          }
+        },
       });
+    } else {
+      setIsOpen(false);
+      const id = ids.find((item) => item.idx === idx)?.id || "";
+      if (id) {
+        setActiveSection(idx);
+        scrollToElement(id);
+      }
     }
-
-    const anim = gsap.to(el.current, {
-      x: 0,
-      y: `${-idx * 100}%`,
-      z: 0,
-      duration: 1,
-      onComplete: function () {
-        // setActiveSection(idx);
-        setTimeout(() => {
-          setIsAnimating(false);
-        }, 500);
-      },
-      onUpdate: () => {
-        if (anim.time() > 0.75) {
-          setActiveSection(idx);
-        }
-      },
-    });
-    // } else {
-    //   setIsOpen(false);
-    //   const id = ids.find((item) => item.idx === idx)?.id || "";
-    //   if (id) {
-    //     setActiveSection(idx);
-    //     scrollToElement(id);
-    //   }
-    // }
   };
 
   const handleOnWheel = (e) => {
@@ -142,8 +150,6 @@ export default function Home() {
         direction = "down";
       }
 
-      setScrollDirection(direction);
-
       if (idx !== activeSection) {
         if (!isAnimating) {
           scrollTo(idx, direction);
@@ -155,6 +161,9 @@ export default function Home() {
   const scrollToElement = (id) => {
     const ele = document.getElementById(id);
     if (ele) {
+      var offset = ele.getBoundingClientRect();
+
+      console.log(offset?.top);
       window.scrollTo({
         top: ele.offsetTop - 72,
         behavior: "smooth",
@@ -166,9 +175,22 @@ export default function Home() {
     const { pageYOffset } = window;
 
     setScrollY(pageYOffset);
+
+    if (pageYOffset > inputRef?.current?.value) {
+      setScrollDirection("down");
+    } else {
+      setScrollDirection("up");
+    }
+
     if (inputRef.current) {
       inputRef.current.value = pageYOffset;
     }
+
+    // console.log(pageYOffset, document.getElementById("about-us").offsetTop);
+
+    // if (pageYOffset > document.getElementById("about-us").offsetTop) {
+    //   setActiveSection(1);
+    // }
   };
 
   const onKeyPress = (e) => {
@@ -210,10 +232,10 @@ export default function Home() {
     };
   }, []);
 
-  const handlers = useSwipeable({
-    onSwipedUp: () => handleOnWheel({ deltaY: 1 }),
-    onSwipedDown: () => handleOnWheel({ deltaY: -1 }),
-  });
+  // const handlers = useSwipeable({
+  //   onSwipedUp: () => handleOnWheel({ deltaY: 1 }),
+  //   onSwipedDown: () => handleOnWheel({ deltaY: -1 }),
+  // });
 
   const handleChangeInView = (inView) => {
     setIsAboutInView(inView);
@@ -222,7 +244,7 @@ export default function Home() {
   return (
     <main
       className={`relative w-full xl:h-full xl:overflow-hidden step-${step} ${
-        isAboutInView ? "step-2-mb" : ""
+        isAboutInView ? "step-1" : ""
       }`}
       style={{
         backgroundImage: "url(/bg-dot.png)",
@@ -746,56 +768,59 @@ export default function Home() {
       <div
         className="screens relative z-20 w-full xl:h-full xl:overflow-hidden"
         onWheel={(e) => handleOnWheel(e)}
-        {...handlers}
+        // {...handlers}
       >
         <div
           className="screens__wrapper relative block w-full xl:h-full"
           ref={el}
         >
-          <div className="relative w-full xl:h-full">
+          <div className="relative w-full xl:h-full" id="intro">
             <Introduction activeSection={activeSection} onScrollTo={scrollTo} />
           </div>
 
-          <div className="relative w-full xl:h-full">
+          <div className="relative w-full xl:h-full" id="about-us">
             <AboutUs
               activeSection={activeSection}
               onChangeInView={handleChangeInView}
             />
           </div>
 
-          <div className="relative w-full xl:h-full">
+          <div className="relative w-full xl:h-full" id="features">
             <Features activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full xl:h-full">
+          <div className="relative w-full xl:h-full" id="network">
             <Network activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full xl:h-full">
+          <div className="relative w-full xl:h-full" id="value">
             <Value activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full xl:h-full">
+          <div className="relative w-full xl:h-full" id="eco">
             <EcoSystem activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full xl:h-full hidden lg:block">
+          <div
+            className="relative w-full xl:h-full hidden lg:block"
+            id="tokenomics"
+          >
             <Tokenomics activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full xl:h-full">
+          <div className="relative w-full xl:h-full" id="chart">
             <Chart activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full xl:h-full">
+          <div className="relative w-full xl:h-full" id="monetary-flow">
             <MonetaryFlow activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full xl:h-full">
+          <div className="relative w-full xl:h-full" id="roadmap">
             <Roadmap activeSection={activeSection} />
           </div>
 
-          <div className="relative w-full xl:h-full">
+          <div className="relative w-full xl:h-full" id="whitepaper">
             <Whitepaper activeSection={activeSection} />
           </div>
         </div>
@@ -811,11 +836,43 @@ export default function Home() {
 
       <button
         type="button"
-        className={`fixed w-[24px] h-auto right-[16px] bottom-[16px] lg:w-[40px] lg:right-[36px] lg:bottom-[36px] z-50 ${
-          step > 0 ? "block" : "hidden"
+        className={`fixed w-[30px] h-auto right-[16px] bottom-[16px] lg:w-[40px] lg:right-[36px] lg:bottom-[36px] z-50 ${
+          step > 0 || inputRef?.current?.value > 50 ? "block" : "hidden"
         }`}
         onClick={() => scrollTo(0)}
       >
+        <svg
+          width="58"
+          height="58"
+          viewBox="0 0 58 58"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="absolute top-0 left-0 w-full h-auto"
+        >
+          <rect
+            x="0.5"
+            y="0.5"
+            width="57"
+            height="57"
+            rx="28.5"
+            stroke="url(#paint0_linear_13_423)"
+          ></rect>
+          <defs>
+            <linearGradient
+              id="paint0_linear_13_423"
+              x1="1"
+              y1="20.3589"
+              x2="55.6244"
+              y2="36.7546"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#1E1822"></stop>
+              <stop offset="0.462674" stop-color="#EAC2FF"></stop>
+              <stop offset="0.764757" stop-color="#1945D9"></stop>
+              <stop offset="1" stop-color="#1E1822"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
         <svg
           width="48"
           height="48"
@@ -824,18 +881,6 @@ export default function Home() {
           xmlns="http://www.w3.org/2000/svg"
           className="w-full h-auto"
         >
-          <g filter="url(#filter0_bd_1398_6421)">
-            <path
-              d="M4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24Z"
-              fill="white"
-              fillOpacity="0.1"
-              shapeRendering="crispEdges"
-            />
-            <path
-              d="M24 43C13.5066 43 5 34.4934 5 24H3C3 35.598 12.402 45 24 45V43ZM43 24C43 34.4934 34.4934 43 24 43V45C35.598 45 45 35.598 45 24H43ZM24 5C34.4934 5 43 13.5066 43 24H45C45 12.402 35.598 3 24 3V5ZM24 3C12.402 3 3 12.402 3 24H5C5 13.5066 13.5066 5 24 5V3Z"
-              fill="url(#paint0_linear_1398_6421)"
-            />
-          </g>
           <path
             d="M24 32.25V15.75"
             stroke="#E7D6F8"

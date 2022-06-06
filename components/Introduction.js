@@ -21,7 +21,6 @@ const Introduction = ({ activeSection, onScrollTo, inView }) => {
       style={{
         backgroundImage: "url(/bg-dot.png)",
       }}
-      id="intro"
     >
       {inView}
       <div className="screen__container pt-[75px] lg:pt-0">

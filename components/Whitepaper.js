@@ -12,7 +12,6 @@ const Whitepaper = ({ activeSection }) => {
       className={`screen relative h-full w-full flex flex-col items-center justify-center ${
         activeSection === 10 || inView ? "active" : ""
       }`}
-      id="whitepaper"
     >
       <div className="flex-1 flex items-center justify-center text-center py-[117px] lg:py-0 px-[16px] lg:px-[7.5vw] relative z-10">
         <div>

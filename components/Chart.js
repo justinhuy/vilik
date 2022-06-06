@@ -1,9 +1,16 @@
+import { useState } from "react";
+import { InView } from "react-intersection-observer";
+
 const Chart = ({ activeSection }) => {
+  const [inView, setInView] = useState(false);
   return (
-    <div
-      className={`screen relative h-full w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${activeSection === 7 ? "active" : ""
-        }`}
-      id="chart"
+    <InView
+      as="div"
+      // triggerOnce
+      onChange={(inView) => setInView(inView)}
+      className={`screen relative h-full w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
+        activeSection === 7 || inView ? "active" : ""
+      }`}
     >
       <div className="z-10 screen__container">
         <div className="grid grid-cols-12">
@@ -67,7 +74,7 @@ const Chart = ({ activeSection }) => {
           </div>
         </div>
       </div>
-    </div>
+    </InView>
   );
 };
 

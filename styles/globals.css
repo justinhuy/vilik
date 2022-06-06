@@ -9,13 +9,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  height: 100%;
   font-family: 'Poppins', sans-serif;
   background-color: #020002;
   color: #FFFFFF;
   font-size: 14px;
   line-height: 21px;
-  overflow: hidden;
 }
 
 #__next {
@@ -920,10 +918,6 @@ a {
   overflow-y: auto;
 }
 
-.screen {
-  overflow: hidden;
-}
-
 .screen::-webkit-scrollbar {
   display: none;
 }
@@ -933,12 +927,24 @@ a {
   animation-duration: 10s;
 }
 
+@media only screen and (min-width: 1280px) {
+
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .screen {
+    overflow: hidden;
+  }
+}
+
 /* Scroll auto */
 @media only screen and (max-width: 1280px) {
 
   html,
   body {
-    overflow: auto;
     overflow-x: hidden;
   }
 
@@ -955,8 +961,28 @@ a {
     min-height: 100vh;
   }
 
+  .screen--about-us {
+    min-height: 0;
+  }
+
+  .screen--about-us h5 br {
+    display: none;
+  }
+
   .full-video {
-    /* position: fixed; */
+    width: 73.95vw;
+    height: 73.95vh;
+    position: absolute;
+    top: 55vh;
+    transform: translate(30.9vw, -50vh);
+  }
+
+  .overlay-circle-0,
+  .overlay-circle-3,
+  .overlay-circle-5,
+  .overlay-circle-mb-3,
+  .overlay-circle {
+    display: none;
   }
 }
 
@@ -1143,6 +1169,7 @@ a {
     bottom: auto;
     left: 50%;
     transform: translate(-50%, 0);
+    position: absolute;
   }
 
   .step-1 .full-video {
