@@ -984,9 +984,13 @@ a {
   .overlay-circle {
     display: none;
   }
+
+  .nav {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   .screen {
     min-height: 0;
   }
@@ -999,6 +1003,10 @@ a {
   .overlay-circle-0 {
     display: none;
     visibility: hidden;
+  }
+
+  .nav {
+    display: block;
   }
 }
 

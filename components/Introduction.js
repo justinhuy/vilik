@@ -1,9 +1,10 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { InView } from "react-intersection-observer";
 
 import { fluidSimulation } from "../animation/canvas";
 
-const Introduction = ({ activeSection, onScrollTo, inView }) => {
+const Introduction = ({ activeSection, onScrollTo, onChangeInView }) => {
+  const [inView, setInView] = useState(false);
   const cRef = useRef();
 
   useEffect(() => {
@@ -14,7 +15,10 @@ const Introduction = ({ activeSection, onScrollTo, inView }) => {
     <InView
       as="div"
       // triggerOnce
-      onChange={(inView, entry) => console.log("Inview:", inView)}
+      onChange={(inView) => {
+        setInView(inView);
+        onChangeInView(inView);
+      }}
       className={`screen screen--intro relative xl:h-full xl:w-full flex flex-col flex-wrap justify-center items-center lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
         activeSection === 0 || inView ? "active" : ""
       }`}
@@ -22,7 +26,6 @@ const Introduction = ({ activeSection, onScrollTo, inView }) => {
         backgroundImage: "url(/bg-dot.png)",
       }}
     >
-      {inView}
       <div className="screen__container pt-[75px] lg:pt-0">
         <div className="grid-cols-2 text-center lg:text-left lg:grid">
           <div>

@@ -8,7 +8,10 @@ const AboutUs = ({ activeSection, onChangeInView }) => {
     <InView
       as="div"
       // triggerOnce
-      onChange={(inView) => setInView(inView)}
+      onChange={(inView) => {
+        setInView(inView);
+        onChangeInView(inView);
+      }}
       className={`screen screen--about-us relative h-full w-full flex flex-wrap items-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
         activeSection === 1 || inView ? "active" : ""
       }`}

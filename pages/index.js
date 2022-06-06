@@ -80,7 +80,7 @@ export default function Home() {
       id: "our-team",
     },
     {
-      idx: 13,
+      idx: 9,
       id: "whitepaper",
     },
   ];
@@ -185,12 +185,6 @@ export default function Home() {
     if (inputRef.current) {
       inputRef.current.value = pageYOffset;
     }
-
-    // console.log(pageYOffset, document.getElementById("about-us").offsetTop);
-
-    // if (pageYOffset > document.getElementById("about-us").offsetTop) {
-    //   setActiveSection(1);
-    // }
   };
 
   const onKeyPress = (e) => {
@@ -237,8 +231,10 @@ export default function Home() {
   //   onSwipedDown: () => handleOnWheel({ deltaY: -1 }),
   // });
 
-  const handleChangeInView = (inView) => {
-    setIsAboutInView(inView);
+  const handleChangeInView = (inView, idx) => {
+    // if (inView) {
+    //   setActiveSection(idx);
+    // }
   };
 
   return (
@@ -775,18 +771,25 @@ export default function Home() {
           ref={el}
         >
           <div className="relative w-full xl:h-full" id="intro">
-            <Introduction activeSection={activeSection} onScrollTo={scrollTo} />
+            <Introduction
+              activeSection={activeSection}
+              onScrollTo={scrollTo}
+              onChangeInView={(value) => handleChangeInView(value, 0)}
+            />
           </div>
 
           <div className="relative w-full xl:h-full" id="about-us">
             <AboutUs
               activeSection={activeSection}
-              onChangeInView={handleChangeInView}
+              onChangeInView={(value) => handleChangeInView(value, 1)}
             />
           </div>
 
           <div className="relative w-full xl:h-full" id="features">
-            <Features activeSection={activeSection} />
+            <Features
+              activeSection={activeSection}
+              onChangeInView={(value) => handleChangeInView(value, 2)}
+            />
           </div>
 
           <div className="relative w-full xl:h-full" id="network">
@@ -794,34 +797,55 @@ export default function Home() {
           </div>
 
           <div className="relative w-full xl:h-full" id="value">
-            <Value activeSection={activeSection} />
+            <Value
+              activeSection={activeSection}
+              onChangeInView={(value) => handleChangeInView(value, 3)}
+            />
           </div>
 
           <div className="relative w-full xl:h-full" id="eco">
-            <EcoSystem activeSection={activeSection} />
+            <EcoSystem
+              activeSection={activeSection}
+              onChangeInView={(value) => handleChangeInView(value, 4)}
+            />
           </div>
 
           <div
             className="relative w-full xl:h-full hidden lg:block"
             id="tokenomics"
           >
-            <Tokenomics activeSection={activeSection} />
+            <Tokenomics
+              activeSection={activeSection}
+              onChangeInView={(value) => handleChangeInView(value, 5)}
+            />
           </div>
 
           <div className="relative w-full xl:h-full" id="chart">
-            <Chart activeSection={activeSection} />
+            <Chart
+              activeSection={activeSection}
+              onChangeInView={(value) => handleChangeInView(value, 6)}
+            />
           </div>
 
           <div className="relative w-full xl:h-full" id="monetary-flow">
-            <MonetaryFlow activeSection={activeSection} />
+            <MonetaryFlow
+              activeSection={activeSection}
+              onChangeInView={(value) => handleChangeInView(value, 7)}
+            />
           </div>
 
           <div className="relative w-full xl:h-full" id="roadmap">
-            <Roadmap activeSection={activeSection} />
+            <Roadmap
+              activeSection={activeSection}
+              onChangeInView={(value) => handleChangeInView(value, 8)}
+            />
           </div>
 
           <div className="relative w-full xl:h-full" id="whitepaper">
-            <Whitepaper activeSection={activeSection} />
+            <Whitepaper
+              activeSection={activeSection}
+              onChangeInView={(value) => handleChangeInView(value, 9)}
+            />
           </div>
         </div>
 
@@ -847,7 +871,7 @@ export default function Home() {
           viewBox="0 0 58 58"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="absolute top-0 left-0 w-full h-auto"
+          className="absolute top-0 left-0 w-full h-auto"
         >
           <rect
             x="0.5"
@@ -866,10 +890,10 @@ export default function Home() {
               y2="36.7546"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#1E1822"></stop>
-              <stop offset="0.462674" stop-color="#EAC2FF"></stop>
-              <stop offset="0.764757" stop-color="#1945D9"></stop>
-              <stop offset="1" stop-color="#1E1822"></stop>
+              <stop stopColor="#1E1822"></stop>
+              <stop offset="0.462674" stopColor="#EAC2FF"></stop>
+              <stop offset="0.764757" stopColor="#1945D9"></stop>
+              <stop offset="1" stopColor="#1E1822"></stop>
             </linearGradient>
           </defs>
         </svg>
