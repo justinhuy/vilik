@@ -559,11 +559,11 @@ const Value = ({ activeSection }) => {
 
         {active === "solution" ? (
           <>
-            <h5 className="sub-heading text-center text-gradient-blue text-[24px] mb-[24px] leading-[38px]">
+            <h5 className="sub-heading text-center text-gradient-blue text-[24px] mb-[24px] leading-[38px] font-kanit">
               VILIK&apos;S SOLUTION
             </h5>
 
-            <div className="desc relative mt-[54px] px-[16px] lg:px-0 text-center">
+            <div className="desc relative mt-[24px] px-[16px] lg:px-0 text-center">
               <div className="relative inline-block mb-[29px]">
                 <svg
                   width="437"
