@@ -661,10 +661,10 @@ a {
   opacity: 1;
 }
 
-.step-2 .overlay-circle-6,
+.step-2 .overlay-circle-7,
 .step-3 .overlay-circle-6,
-.step-4 .overlay-circle-6,
-.step-5 .overlay-circle-6,
+.step-4 .overlay-circle-7,
+.step-5 .overlay-circle-7,
 .step-6 .overlay-circle-6 {
   opacity: 1;
 }
@@ -674,14 +674,13 @@ a {
 }
 
 .step-7 .overlay-circle-8,
-.step-8 .overlay-circle-8 {
+.step-8 .overlay-circle-8-1 {
   opacity: 1;
 }
 
 .step-9 .overlay-circle-9,
 .step-9 .overlay-circle-10,
-.step-10 .overlay-circle-9,
-.step-10 .overlay-circle-10,
+.step-10 .overlay-circle-10-1,
 .step-11 .overlay-circle-9,
 .step-11 .overlay-circle-10 {
   opacity: 1;
