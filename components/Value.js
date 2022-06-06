@@ -17,7 +17,7 @@ const Value = ({ activeSection }) => {
       // triggerOnce
       onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex flex-wrap items-center pt-[50px] pb-[8px] lg:py-[87px] lg:px-[7.5vw] ${
-        activeSection === 4 || inView ? "active" : ""
+        activeSection === 3 || inView ? "active" : ""
       }`}
     >
       <div className="relative z-10 w-full screen__container">
@@ -51,7 +51,7 @@ const Value = ({ activeSection }) => {
 
         {active === "problem" ? (
           <>
-            <h5 className="sub-heading text-center text-gradient-blue text-[24px] mb-[24px] leading-[29px] lg:leading-[38px]">
+            <h5 className="sub-heading text-center text-gradient-blue text-[24px] mb-[24px] leading-[29px] lg:leading-[38px] font-semibold font-kanit">
               THE PROBLEM OF LIVE VIDEOSTREAMING TODAY
             </h5>
 
@@ -431,7 +431,7 @@ const Value = ({ activeSection }) => {
                       />
                     </div>
                     <div className="pl-[24px] flex-1">
-                      <h6 className="text-gradient-blue text-[16px] lg:text-[20px] leading-[24px] mb-[16px] font-semibold">
+                      <h6 className="text-gradient-blue text-[16px] lg:text-[20px] leading-[24px] mb-[16px] font-semibold font-fanit">
                         Poor quality video
                       </h6>
                       <p className="text-[12px] leading-[18px] lg:text-[14px] leading-[21px] text-[#DCDCDC]">

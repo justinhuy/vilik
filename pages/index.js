@@ -53,11 +53,11 @@ export default function Home() {
     },
     {
       idx: 3,
-      id: "network",
+      id: "value",
     },
     {
       idx: 4,
-      id: "value",
+      id: "network",
     },
     {
       idx: 5,
@@ -792,15 +792,15 @@ export default function Home() {
             />
           </div>
 
-          <div className="relative w-full xl:h-full" id="network">
-            <Network activeSection={activeSection} />
-          </div>
-
           <div className="relative w-full xl:h-full" id="value">
             <Value
               activeSection={activeSection}
               onChangeInView={(value) => handleChangeInView(value, 3)}
             />
+          </div>
+
+          <div className="relative w-full xl:h-full" id="network">
+            <Network activeSection={activeSection} />
           </div>
 
           <div className="relative w-full xl:h-full" id="eco">

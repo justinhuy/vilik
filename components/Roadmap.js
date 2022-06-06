@@ -19,7 +19,7 @@ const Roadmap = ({ activeSection }) => {
       }`}
     >
       <div className="screen__container relative z-10 w-full lg:static">
-        <h5 className="sub-heading text-center text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[43px] lg:mb-[54px] lg:leading-[48px] relative z-10  uppercase">
+        <h5 className="sub-heading text-center text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[43px] lg:mb-[54px] lg:leading-[48px] relative z-10  uppercase font-semibold lg:font-normal font-kanit">
           ROADMAP
         </h5>
 

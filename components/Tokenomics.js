@@ -14,7 +14,7 @@ const Tokenomics = ({ activeSection }) => {
       }`}
     >
       <div className="relative z-10 flex flex-col items-stretch w-full h-full screen__container">
-        <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[16px] lg:mb-[24px] lg:leading-[48px] text-center">
+        <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[16px] lg:mb-[24px] lg:leading-[48px] text-center font-semibold lg:font-medium font-kanit">
           Tokenomics
         </h5>
 

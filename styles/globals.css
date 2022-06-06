@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Palette+Mosaic&display=swap');
 
 @tailwind base;
@@ -1177,8 +1177,10 @@ a {
     top: 320px;
     bottom: auto;
     left: 50%;
-    transform: translate(-50%, 0);
     position: absolute;
+    opacity: 1 !important;
+    transform: translate(-50%, 0) !important;
+    visibility: visible !important;
   }
 
   .step-1 .full-video {

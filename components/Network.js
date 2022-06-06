@@ -10,11 +10,11 @@ const Network = ({ activeSection }) => {
       // triggerOnce
       onChange={(inView) => setInView(inView)}
       className={`screen screen-network relative overflow-x-hidden h-full w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${
-        activeSection === 3 || inView ? "active" : ""
+        activeSection === 4 || inView ? "active" : ""
       }`}
     >
       <div className="relative z-10 screen__container">
-        <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:leading-[48px] lg:mb-[32px] text-center">
+        <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:leading-[48px] lg:mb-[32px] text-center font-medium lg:font-normal font-kanit">
           How does the Vilik Network operate?
         </h5>
 
@@ -161,21 +161,21 @@ const Network = ({ activeSection }) => {
               className="hidden lg:block absolute w-[3.75426621%] h-auto top-[45.2336449%] left-[19.112628%]"
             >
               <path
-                d="M44 6.01465H3"
-                stroke="url(#paint0_linear_51_592)"
+                d="M0.624023 5.61072L41.624 5.61071"
+                stroke="url(#paint0_linear_5_598)"
                 strokeWidth="2"
               />
               <path
-                d="M0.623957 5.99399L8.6416 11.4253L6.50289 5.75975L8.6416 0.200591L0.623957 5.99399Z"
-                fill="url(#paint1_linear_51_592)"
+                d="M44.0001 5.63138L35.9824 0.200073L38.1211 5.86562L35.9824 11.4248L44.0001 5.63138Z"
+                fill="url(#paint1_linear_5_598)"
               />
               <defs>
                 <linearGradient
-                  id="paint0_linear_51_592"
-                  x1="31.7326"
-                  y1="5.61531"
-                  x2="17.7625"
-                  y2="5.89103"
+                  id="paint0_linear_5_598"
+                  x1="12.8914"
+                  y1="6.01006"
+                  x2="26.8615"
+                  y2="5.73433"
                   gradientUnits="userSpaceOnUse"
                 >
                   <stop offset="0%" stopColor="#1945D9">
@@ -197,11 +197,11 @@ const Network = ({ activeSection }) => {
                   </stop>
                 </linearGradient>
                 <linearGradient
-                  id="paint1_linear_51_592"
-                  x1="6.24269"
-                  y1="6.94282"
-                  x2="4.01549"
-                  y2="0.411075"
+                  id="paint1_linear_5_598"
+                  x1="38.3813"
+                  y1="4.68254"
+                  x2="40.6085"
+                  y2="11.2143"
                   gradientUnits="userSpaceOnUse"
                 >
                   <stop stopColor="#EAC2FF" />
