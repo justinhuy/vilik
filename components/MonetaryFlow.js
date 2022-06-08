@@ -12,8 +12,8 @@ const MonetaryFlow = ({ activeSection }) => {
       // triggerOnce
       onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 8 || inView ? "active" : ""
-      }`}
+        activeSection === 8 ? "active" : ""
+      } ${inView ? "in-view" : ""}`}
     >
       <div className="relative z-10 screen__container">
         <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[16px] lg:mb-[32px] lg:leading-[48px] text-center uppercase font-semibold lg:font-normal font-kanit">

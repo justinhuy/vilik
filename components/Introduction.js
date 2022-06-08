@@ -20,8 +20,8 @@ const Introduction = ({ activeSection, onScrollTo, onChangeInView }) => {
         onChangeInView(inView);
       }}
       className={`screen screen--intro relative xl:h-full xl:w-full flex flex-col flex-wrap justify-center items-center lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 0 || inView ? "active" : ""
-      }`}
+        activeSection === 0 ? "active" : ""
+      } ${inView ? "in-view" : ""}`}
       style={{
         backgroundImage: "url(/bg-dot.png)",
       }}

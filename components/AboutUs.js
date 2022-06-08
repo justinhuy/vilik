@@ -13,8 +13,8 @@ const AboutUs = ({ activeSection, onChangeInView }) => {
         onChangeInView(inView);
       }}
       className={`screen screen--about-us relative h-full w-full flex flex-wrap items-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 1 || inView ? "active" : ""
-      }`}
+        activeSection === 1 ? "active" : ""
+      } ${inView ? "in-view" : ""}`}
     >
       <div className="relative z-10 w-full screen__container">
         {/* <img

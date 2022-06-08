@@ -23,6 +23,7 @@ const BREAKPOINT = 1280;
 export default function Home() {
   const el = useRef();
   const elNav = useRef();
+  const circleRef = useRef();
 
   const inputRef = useRef();
 
@@ -104,9 +105,10 @@ export default function Home() {
 
       const anim = gsap.to(el.current, {
         x: 0,
-        y: `${-idx * 100}%`,
+        y: `${-idx * 100}vh`,
         z: 0,
         duration: 1,
+        ease: "power2.inOut",
         onComplete: function () {
           // setActiveSection(idx);
           setTimeout(() => {
@@ -118,6 +120,70 @@ export default function Home() {
             setActiveSection(idx);
           }
         },
+      });
+
+      const options = {};
+      if (idx === 0) {
+        options = {
+          y: 0,
+          opacity: 0,
+        };
+      }
+      if (idx === 1) {
+        options = {
+          y: "-50%",
+          x: "0",
+          opacity: 1,
+          scale: 1,
+        };
+      }
+      if (idx === 2) {
+        options = {
+          y: "-50%",
+          x: "-35%",
+          scale: 1.1,
+        };
+      }
+      if (idx === 3) {
+        options = {
+          y: "-25%",
+          x: "35%",
+          scale: 1.1,
+        };
+      }
+      if (idx === 4) {
+        options = {
+          y: "-50%",
+          x: "-35%",
+          scale: 1.1,
+        };
+      }
+      if (idx === 5) {
+        options = {
+          y: "-85%",
+          x: "-40%",
+          scale: 1.34,
+        };
+      }
+      if (idx === 6) {
+        options = {
+          y: "-150%",
+          x: "-40%",
+          scale: 1.34,
+        };
+      }
+      if (idx === 7) {
+        options = {
+          y: "-200%",
+          x: "-40%",
+          scale: 1.34,
+        };
+      }
+
+      const animCircle = gsap.to(circleRef.current, {
+        ease: "sine.ease",
+        duration: 1,
+        ...options,
       });
     } else {
       setIsOpen(false);
@@ -979,13 +1045,19 @@ export default function Home() {
       </button>
 
       <div className="full-video">
-        <video autoPlay playsInline muted loop>
-          <source src="/20220520-112541-839.mp4" type="video/mp4" />
+        <video
+          autoPlay
+          playsInline
+          muted
+          loop
+          poster="/20220608-165528-552.jpg"
+        >
+          <source src="/20220608-165528-552.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
       </div>
 
-      <div className="overlay overlay-circle-0">
+      <div className="overlay overlay-circle-0" ref={circleRef}>
         <svg
           width="704"
           height="807"

@@ -15,8 +15,8 @@ const Roadmap = ({ activeSection }) => {
       // triggerOnce
       onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 9 || inView ? "active" : ""
-      }`}
+        activeSection === 9 ? "active" : ""
+      } ${inView ? "in-view" : ""}`}
     >
       <div className="screen__container relative z-10 w-full lg:static">
         <h5 className="sub-heading text-center text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[43px] lg:mb-[54px] lg:leading-[48px] relative z-10  uppercase font-semibold lg:font-normal font-kanit">

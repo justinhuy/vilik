@@ -10,8 +10,8 @@ const Tokenomics = ({ activeSection }) => {
       // triggerOnce
       onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full hidden lg:flex items-center justify-center py-[50px] lg:py-[62px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 6 || inView ? "active" : ""
-      }`}
+        activeSection === 6 ? "active" : ""
+      } ${inView ? "in-view" : ""}`}
     >
       <div className="relative z-10 flex flex-col items-stretch w-full h-full screen__container">
         <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[16px] lg:mb-[24px] lg:leading-[48px] text-center font-semibold lg:font-medium font-kanit">

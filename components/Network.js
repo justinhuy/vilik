@@ -10,8 +10,8 @@ const Network = ({ activeSection }) => {
       // triggerOnce
       onChange={(inView) => setInView(inView)}
       className={`screen screen-network relative overflow-x-hidden h-full w-full flex flex-wrap items-center justify-center pt-[50px] lg:py-[87px] lg:px-[7.5vw] ${
-        activeSection === 3 || inView ? "active" : ""
-      }`}
+        activeSection === 3 ? "active" : ""
+      } ${inView ? "in-view" : ""}`}
     >
       <div className="relative z-10 screen__container">
         <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:leading-[48px] lg:mb-[32px] text-center font-medium lg:font-normal font-kanit">
@@ -750,7 +750,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 84 241"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[6.53594771%] h-auto top-[12.2330097%] left-[80.5460751%]"
+              className="absolute hidden lg:block w-[7.09219858%] h-auto top-[12.2330097%] left-[80.141844%]"
             >
               <rect
                 x="1.20341"
@@ -845,7 +845,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 53 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[4.33006536%] h-auto top-[42.9126214%] left-[63.2978723%]"
+              className="absolute hidden lg:block w-[4.07801418%] h-auto top-[42.9126214%] left-[63.2978723%]"
             >
               <path
                 d="M52.999 1H-0.000977159"
@@ -874,7 +874,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 56 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[18.8349515%] left-[75.5319149%]"
+              className="absolute hidden lg:block w-[4.96453901%] h-auto top-[18.8349515%] left-[75.2659574%]"
             >
               <path
                 d="M55.9893 1L0.989255 1"
@@ -903,7 +903,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 56 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[28.9320388%] left-[75.5319149%]"
+              className="absolute hidden lg:block w-[4.96453901%] h-auto top-[28.9320388%] left-[75.2659574%]"
             >
               <path
                 d="M55.9893 1L0.989255 1"
@@ -932,7 +932,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 56 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[38.8349515%] left-[75.4432624%]"
+              className="absolute hidden lg:block w-[4.96453901%] h-auto top-[38.8349515%] left-[75.4432624%]"
             >
               <path
                 d="M55.9893 1L0.989255 1"
@@ -961,7 +961,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 56 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[48.1553398%] left-[75.6205674%]"
+              className="absolute hidden lg:block w-[4.96453901%] h-auto top-[48.1553398%] left-[75.2659574%]"
             >
               <path
                 d="M55.9893 1L0.989255 1"
@@ -990,7 +990,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 55 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[4.87588652%] h-auto top-[18.8349515%] left-[87.322695%]"
+              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[18.8349515%] left-[87.322695%]"
             >
               <path
                 d="M54.4541 1L0.4541 1"
@@ -1019,7 +1019,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 55 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[4.87588652%] h-auto top-[28.1553398%] left-[87.322695%]"
+              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[28.1553398%] left-[87.322695%]"
             >
               <path
                 d="M54.4541 1L0.4541 1"
@@ -1048,7 +1048,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 55 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[4.87588652%] h-auto top-[37.6699029%] left-[87.322695%]"
+              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[37.6699029%] left-[87.322695%]"
             >
               <path
                 d="M54.4541 1L0.4541 1"
@@ -1077,7 +1077,7 @@ const Network = ({ activeSection }) => {
               viewBox="0 0 55 2"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute hidden lg:block w-[4.87588652%] h-auto top-[46.9902913%] left-[87.322695%]"
+              className="absolute hidden lg:block w-[4.78723404%] h-auto top-[46.9902913%] left-[87.322695%]"
             >
               <path
                 d="M54.4541 1L0.4541 1"
