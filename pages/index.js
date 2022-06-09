@@ -162,21 +162,21 @@ export default function Home() {
         options = {
           y: "-85%",
           x: "-40%",
-          scale: 1.34,
+          scale: 1.24,
         };
       }
       if (idx === 6) {
         options = {
           y: "-150%",
           x: "-40%",
-          scale: 1.34,
+          scale: 1.24,
         };
       }
       if (idx === 7) {
         options = {
           y: "-200%",
           x: "-40%",
-          scale: 1.34,
+          scale: 1.24,
         };
       }
 
@@ -1045,13 +1045,7 @@ export default function Home() {
       </button>
 
       <div className="full-video z-50">
-        <video
-          autoPlay
-          playsInline
-          muted
-          loop
-          poster="/20220608-165528-552.jpg"
-        >
+        <video autoPlay playsInline muted loop poster="/cover.jpg">
           <source src="/20220608-165528-552.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>

@@ -262,6 +262,7 @@ a {
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  transition-delay: 0.5s;
 }
 
 .is-ready .in-view .box {
