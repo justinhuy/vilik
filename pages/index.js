@@ -110,7 +110,6 @@ export default function Home() {
         duration: 1,
         ease: "power2.inOut",
         onComplete: function () {
-          // setActiveSection(idx);
           setTimeout(() => {
             setIsAnimating(false);
           }, 500);
