@@ -18,12 +18,14 @@ const Tokenomics = ({ activeSection }) => {
           Tokenomics
         </h5>
 
-        <Image
-          src="/tokenomics@2x.png"
-          width={1224}
-          height={586}
-          className="tokenomics-tbl mx-auto"
-        />
+        <div className="box w-full text-center">
+          <Image
+            src="/tokenomics@2x.png"
+            width={1224}
+            height={586}
+            className="tokenomics-tbl mx-auto"
+          />
+        </div>
 
         {/* <div className="flex-1">
       <div className="box text-[16px] leading-[24px] border-linear relative">
