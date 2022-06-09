@@ -59,7 +59,7 @@ const Features = ({ activeSection }) => {
                 />
 
                 <div className="w-[93.2914046%] h-auto absolute top-0 left-[2.51572327%]">
-                  <Moving rotateTo={360} duration={60}>
+                  <Moving rotateTo={35} duration={10}>
                     <img src="/e.png" className="w-full h-auo" />
                   </Moving>
                 </div>

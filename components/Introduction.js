@@ -212,6 +212,15 @@ const Introduction = ({ activeSection, onScrollTo, onChangeInView }) => {
           mixBlendMode: "screen",
         }}
       />
+
+      {activeSection === 0 ? (
+        <>
+          <div className="hidden lg:block absolute w-[35.069vw] h-[35.069vw] bg-blur-1 rounded top-[-3.88vw] left-[-9.58vw]"></div>
+          <div className="hidden lg:block absolute w-[49.02vw] h-[46.31vw] bg-blur-2 rounded bottom-[-39.23vw] left-[-19.09vw]"></div>
+          <div className="hidden lg:block absolute w-[47.57vw] h-[24.16vw] bg-blur-3 rounded bottom-[-18.47vw] right-[6.73vw]"></div>
+          <div className="hidden lg:block absolute w-[49.30vw] h-[30.55vw] bg-blur-4 rounded top-[-21.18vw] right-[-18.88vw]"></div>
+        </>
+      ) : null}
     </InView>
   );
 };
