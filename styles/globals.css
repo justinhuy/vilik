@@ -481,7 +481,7 @@ a {
   left: 0;
   transform: translate(45%, -50%);
   /* transform: translate(30.9%, -50%); */
-  mix-blend-mode: screen;
+  mix-blend-mode: lighten;
   pointer-events: none;
   transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
