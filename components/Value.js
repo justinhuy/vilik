@@ -17,8 +17,8 @@ const Value = ({ activeSection }) => {
       // triggerOnce
       onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex flex-wrap items-center pt-[50px] pb-[8px] lg:py-[87px] lg:px-[7.5vw] ${
-        activeSection === 4 || inView ? "active" : ""
-      }`}
+        activeSection === 4 ? "active" : ""
+      } ${inView ? "in-view" : ""}`}
     >
       <div className="relative z-10 w-full screen__container">
         <div className="px-[16px] lg:px-0">

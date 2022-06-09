@@ -18,8 +18,8 @@ const Features = ({ activeSection }) => {
       // triggerOnce
       onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex flex-wrap items-center py-[50px] lg:py-[87px] ${
-        activeSection === 2 || inView ? "active" : ""
-      }`}
+        activeSection === 2 ? "active" : ""
+      } ${inView ? "in-view" : ""}`}
     >
       <div className="relative z-10 w-full screen__container">
         <div className="lg:grid lg:grid-cols-12 relative px-[16px] lg:px-[7.5vw]">
@@ -59,7 +59,7 @@ const Features = ({ activeSection }) => {
                 />
 
                 <div className="w-[93.2914046%] h-auto absolute top-0 left-[2.51572327%]">
-                  <Moving rotateTo={360} duration={60}>
+                  <Moving rotateTo={35} duration={10}>
                     <img src="/e.png" className="w-full h-auo" />
                   </Moving>
                 </div>

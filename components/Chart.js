@@ -9,8 +9,8 @@ const Chart = ({ activeSection }) => {
       // triggerOnce
       onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex  items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 7 || inView ? "active" : ""
-      }`}
+        activeSection === 7 ? "active" : ""
+      } ${inView ? "in-view" : ""}`}
     >
       <div className="z-10 screen__container">
         <div className="grid grid-cols-12">

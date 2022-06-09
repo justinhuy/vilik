@@ -8,8 +8,8 @@ const EcoSystem = ({ activeSection }) => {
       // triggerOnce
       onChange={(inView) => setInView(inView)}
       className={`screen relative h-full w-full flex flex-wrap items-center justify-center py-[50px] lg:py-[87px] px-[16px] lg:px-[7.5vw] ${
-        activeSection === 5 || inView ? "active" : ""
-      }`}
+        activeSection === 5 ? "active" : ""
+      } ${inView ? "in-view" : ""}`}
     >
       <div className="relative z-10 screen__container">
         <div className="text-center">

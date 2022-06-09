@@ -27,6 +27,7 @@ const Moving = ({
       ease: "Sine.easeInOut",
       repeat: -1,
       yoyo: true,
+      transformOrigin: "50% 50%",
       onComplete: function () {
         if (callback) {
           callback();
