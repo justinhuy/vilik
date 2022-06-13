@@ -538,6 +538,16 @@ a {
   left: -143px;
 }
 
+.overlay-circle-0 .pl-2 {
+  /* display: none; */
+  position: absolute;
+  width: 250%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .overlay-circle svg {
   width: 100%;
   height: 100%;
@@ -864,25 +874,25 @@ a {
     display: none;
   }
 
-  .screen.in-view .heading {
+  .screen .heading {
     opacity: 1;
   }
 
-  .screen.in-view .heading span {
+  .screen .heading span {
     transform: translateZ(0);
   }
 
-  .screen.in-view .text-fadein {
+  .screen .text-fadein {
     opacity: 1;
   }
 
-  .screen.in-view .sub-heading {
+  .screen .sub-heading {
     transform: translateZ(0);
     opacity: 1;
   }
 
-  .screen.in-view .desc,
-  .screen.in-view .box {
+  .screen .desc,
+  .screen .box {
     transform: translateZ(0);
     opacity: 1;
   }
@@ -892,21 +902,21 @@ a {
     animation: spin 3s linear infinite;
   }
 
-  .screen.in-view .btn-animate .circle {
+  .screen .btn-animate .circle {
     transform: scale(1, 1);
   }
 
-  .screen.in-view .btn-animate {
+  .screen .btn-animate {
     transition-delay: 0.5s;
     width: 120px;
   }
 
-  .screen.in-view .btn-animate.large {
+  .screen .btn-animate.large {
     transition-delay: 0.5s;
     width: 210px;
   }
 
-  .screen.in-view .btn-animate .txt {
+  .screen .btn-animate .txt {
     transition-delay: 1s;
     opacity: 1;
   }
