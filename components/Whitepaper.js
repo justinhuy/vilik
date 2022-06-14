@@ -15,7 +15,7 @@ const Whitepaper = ({ activeSection }) => {
     >
       <div className="flex-1 flex items-center justify-center text-center py-[117px] lg:py-0 px-[16px] lg:px-[7.5vw] relative z-10">
         <div>
-          <h3 className="sub-heading text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[24px] lg:mb-[29px] lg:leading-[48px] font-medium text-shadow-white-51 font-medium font-kanit">
+          <h3 className="sub-heading text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[24px] lg:mb-[29px] lg:leading-[48px] font-medium text-shadow-white-51 font-medium font-kanit uppercase">
             Learn more about VILIK World
           </h3>
 

@@ -14,7 +14,7 @@ const Network = ({ activeSection }) => {
       } ${inView ? "in-view" : ""}`}
     >
       <div className="relative z-10 screen__container">
-        <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:leading-[48px] lg:mb-[32px] text-center font-medium lg:font-normal font-kanit">
+        <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:leading-[48px] lg:mb-[32px] text-center font-medium lg:font-normal font-kanit uppercase">
           How does the Vilik Network operate?
         </h5>
 

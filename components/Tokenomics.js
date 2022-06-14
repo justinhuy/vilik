@@ -16,7 +16,7 @@ const Tokenomics = ({ activeSection }) => {
       } ${inView ? "in-view" : ""}`}
     >
       <div className="relative z-10 flex flex-col items-stretch w-full h-full screen__container justify-center">
-        <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[16px] lg:mb-[24px] lg:leading-[48px] text-center font-semibold lg:font-medium font-kanit">
+        <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] lg:text-[40px] lg:leading-[48px] mb-[16px] lg:mb-[24px] lg:leading-[48px] text-center font-semibold lg:font-medium font-kanit uppercase">
           Tokenomics
         </h5>
 

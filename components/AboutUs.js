@@ -30,7 +30,7 @@ const AboutUs = ({ activeSection, onChangeInView }) => {
                 <span className="layer"></span>
                 <span className="txt whitespace-nowrap">ABOUT US</span>
               </h4>
-              <h5 className="sub-heading text-gradient-blue text-[20px] leading-[29px] mb-[16px] lg:text-[40px] lg:leading-[48px] lg:mb-[32px] lg:leading-[48px] font-medium lg:font-normal font-kanit">
+              <h5 className="sub-heading text-gradient-blue text-[20px] leading-[29px] mb-[16px] lg:text-[40px] lg:leading-[48px] lg:mb-[32px] lg:leading-[48px] font-medium lg:font-normal font-kanit uppercase">
                 A cutting-edge <br />
                 multi-purpose SocialFi <br /> streaming platform
               </h5>
