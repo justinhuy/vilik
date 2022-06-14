@@ -24,7 +24,7 @@ const Features = ({ activeSection }) => {
       <div className="relative z-10 w-full screen__container">
         <div className="lg:grid lg:grid-cols-12 relative px-[16px] lg:px-[7.5vw]">
           <div className="col-span-8">
-            <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:leading-[48px] lg:mb-[20px] font-kanit">
+            <h5 className="sub-heading text-gradient-blue text-[24px] leading-[29px] mb-[16px] lg:text-[40px] lg:leading-[48px] lg:mb-[20px] font-kanit uppercase">
               Features
             </h5>
             <p className="hidden lg:block desc text-[12px] leading-[18px] lg:text-[16px] lg:leading-[24px] mb-[40px] text-zinc-300 text-zinc-300 font-medium lg:font-normal">
