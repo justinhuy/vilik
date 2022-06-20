@@ -352,6 +352,7 @@ export default function Home() {
           name="facebook-domain-verification"
           content="u8nrv87wmxjzbcgri41mru5kyu05yd"
         />
+        <meta name="google-site-verification" content="RxcZjY4TJVuYUDDLeuG_2i6hO6pDhbZy6CfwvfMSx6c" />
 
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
