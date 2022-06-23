@@ -1,0 +1,28 @@
+---
+label: 'Our Team'
+hide_body: false
+fields:
+  -
+    type: text
+    label: Tên
+    name: name
+    description:
+    default:
+    config:
+      required: true
+      min:
+      max:
+    hidden: false
+    showOnly:
+      field:
+      value:
+    syncTranslate: false
+    code: 5trdcxwq3
+cmsCreatedAt: 1655982432
+cmsUpdatedAt: 1655982432
+cmsCreatedBy:
+  email: hello@jamstackvietnam.com
+  name: 'JAMstack Vietnam'
+cmsUpdatedBy:
+  email: hello@jamstackvietnam.com
+  name: 'JAMstack Vietnam'
