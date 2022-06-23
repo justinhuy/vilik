@@ -1,5 +1,11 @@
 ---
-sections: {  }
+sections:
+  -
+    type: document
+    cmscode: ixv6h3pzo
+    path: our-team.md
+    label: 'Our Team'
+    template: our-team.yml
 locales:
   - en
 analytics_url:
