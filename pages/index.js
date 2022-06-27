@@ -4,16 +4,16 @@ import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
 // import { useSwipeable } from "react-swipeable";
 
-import Introduction from "../components/Introduction";
 import AboutUs from "../components/AboutUs";
-import Network from "../components/Network";
-import Features from "../components/Features";
-import Value from "../components/Value";
-import EcoSystem from "../components/EcoSystem";
-import MonetaryFlow from "../components/MonetaryFlow";
-import Tokenomics from "../components/Tokenomics";
 import Chart from "../components/Chart";
+import EcoSystem from "../components/EcoSystem";
+import Features from "../components/Features";
+import Introduction from "../components/Introduction";
+import MonetaryFlow from "../components/MonetaryFlow";
+import Network from "../components/Network";
 import Roadmap from "../components/Roadmap";
+import Tokenomics from "../components/Tokenomics";
+import Value from "../components/Value";
 import Whitepaper from "../components/Whitepaper";
 
 const SECTIONS_COUNT = 11;
@@ -352,12 +352,15 @@ export default function Home() {
           name="facebook-domain-verification"
           content="u8nrv87wmxjzbcgri41mru5kyu05yd"
         />
-        <meta name="google-site-verification" content="RxcZjY4TJVuYUDDLeuG_2i6hO6pDhbZy6CfwvfMSx6c" />
+        <meta
+          name="google-site-verification"
+          content="RxcZjY4TJVuYUDDLeuG_2i6hO6pDhbZy6CfwvfMSx6c"
+        />
 
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
 
-      <Script
+      {/* <Script
         id="tiktok-pixel"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -370,7 +373,7 @@ export default function Home() {
             }(window, document, 'ttq');
           `,
         }}
-      />
+      /> */}
       <Script
         id="fb-pixel-1"
         strategy="afterInteractive"
@@ -828,12 +831,12 @@ export default function Home() {
       </header>
 
       <div
-        className="screens relative z-20 w-full xl:h-full xl:overflow-hidden"
+        className="relative z-20 w-full screens xl:h-full xl:overflow-hidden"
         onWheel={(e) => handleOnWheel(e)}
         // {...handlers}
       >
         <div
-          className="screens__wrapper relative block w-full xl:h-full"
+          className="relative block w-full screens__wrapper xl:h-full"
           ref={el}
         >
           <div className="relative w-full xl:h-full" id="intro">
@@ -877,7 +880,7 @@ export default function Home() {
           </div>
 
           <div
-            className="relative w-full xl:h-full hidden lg:block"
+            className="relative hidden w-full xl:h-full lg:block"
             id="tokenomics"
           >
             <Tokenomics
@@ -1044,7 +1047,7 @@ export default function Home() {
         </svg>
       </button>
 
-      <div className="full-video z-50">
+      <div className="z-50 full-video">
         <video autoPlay playsInline muted loop poster="/cover.jpg">
           <source src="/20220608-165528-552.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
@@ -1418,7 +1421,7 @@ export default function Home() {
         viewBox="0 0 359 383"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="xl:hidden fixed bottom-0 right-0"
+        className="fixed bottom-0 right-0 xl:hidden"
       >
         <g filter="url(#filter0_f_21_836)">
           <ellipse
