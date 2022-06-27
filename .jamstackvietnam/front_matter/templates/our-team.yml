@@ -18,6 +18,21 @@ fields:
       value:
     syncTranslate: false
     code: 5trdcxwq3
+    useAsSlug: true
+  -
+    type: file
+    label: Avatar
+    name: avatar
+    description:
+    default: {  }
+    config:
+      required: true
+      maxSize: 10
+    showOnly:
+      field:
+      value:
+    syncTranslate: true
+    code: b895v7m3z
 cmsCreatedAt: 1655982432
 cmsUpdatedAt: 1655982432
 cmsCreatedBy:
