@@ -18,7 +18,7 @@ fields:
       value:
     syncTranslate: false
     code: 5trdcxwq3
-    useAsSlug: true
+    useAsSlug: false
   -
     type: file
     label: Avatar
