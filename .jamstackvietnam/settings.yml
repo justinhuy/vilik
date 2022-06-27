@@ -1,9 +1,9 @@
 ---
 sections:
   -
-    type: document
-    cmscode: ixv6h3pzo
-    path: content/our-team.md
+    type: directory
+    cmscode: kopaqcmgb
+    path: content/our-team
     label: 'Our Team'
     template: our-team.yml
 locales:
