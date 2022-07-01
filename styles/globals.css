@@ -16,6 +16,12 @@ body {
   line-height: 21px;
 }
 
+@media (min-resolution: 2ddpx) {
+  svg {
+    shape-rendering: optimizeSpeed;
+  }
+}
+
 #__next {
   height: 100%;
 }

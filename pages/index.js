@@ -1054,7 +1054,7 @@ export default function Home() {
         </video>
       </div>
 
-      <div className="overlay overlay-circle-0" ref={circleRef}>
+      {/* <div className="overlay overlay-circle-0" ref={circleRef}>
         <svg
           width="704"
           height="807"
@@ -1485,7 +1485,7 @@ export default function Home() {
             />
           </filter>
         </defs>
-      </svg>
+      </svg> */}
     </main>
   );
 }
