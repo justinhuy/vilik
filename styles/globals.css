@@ -515,7 +515,7 @@ a {
 
 .overlay-circle-0 {
   width: 48.61vw;
-  height: 48.61vw;
+  aspect-ratio: 1 / 1;
   position: fixed;
   mix-blend-mode: lighten;
   pointer-events: none;
@@ -524,8 +524,36 @@ a {
   top: 50%;
   left: 43.89vw;
   background: radial-gradient(118.36% 118.36% at 39.65% 120.62%, rgba(200, 45, 244, 0.71) 7.56%, #1F1298 50.1%, #621EA2 100%);
-  transform: matrix(-0.26, 0.96, -0.97, -0.26, 0, 0);
-  overflow: hidden;
+  transform: matrix(-0.26, 0.96, -0.97, -0.26, 0, 0) rotate(74.8459deg);
+  opacity: 0.66 !important;
+}
+
+.overlay-circle-0::before {
+  content: "";
+  position: absolute;
+  width: 80.2857143%;
+  height: 103.142857%;
+  left: -143px;
+  bottom: -94px;
+  background: #041128;
+  mix-blend-mode: normal;
+  filter: blur(187.853px);
+  transform: matrix(-0.26, 0.97, -0.97, -0.26, 0, 0);
+  opacity: 0.8;
+}
+
+.overlay-circle-0::after {
+  content: "";
+  position: absolute;
+  width: 562.92px;
+  height: 370.87px;
+  top: -33px;
+  right: -38px;
+  background: #041128;
+  mix-blend-mode: normal;
+  filter: blur(187.853px);
+  transform: matrix(-0.26, 0.97, -0.97, -0.26, 0, 0);
+  opacity: 0.8;
 }
 
 .overlay-circle-0 .pl-1 {

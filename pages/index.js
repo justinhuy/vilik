@@ -3,6 +3,7 @@ import Head from "next/head";
 import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
 // import { useSwipeable } from "react-swipeable";
+import Image from "next/image";
 
 import AboutUs from "../components/AboutUs";
 import Chart from "../components/Chart";
@@ -1052,6 +1053,9 @@ export default function Home() {
           <source src="/20220608-165528-552.mp4" type="video/mp4" />
           Your browser does not support HTML5 video.
         </video>
+      </div>
+
+      <div className="overlay overlay-circle-0" ref={circleRef}>
       </div>
 
       {/* <div className="overlay overlay-circle-0" ref={circleRef}>
