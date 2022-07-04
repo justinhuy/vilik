@@ -285,6 +285,12 @@ export default function Home() {
     window.addEventListener("scroll", onScroll, { passive: true });
     document.addEventListener("keypress", onKeyPress);
 
+    // var canvas = document.getElementById("canvas");
+    // var ctx = canvas.getContext("2d");
+    // var img = document.getElementById("aaa");
+    // console.log('🚀 ~ file: index.js ~ line 291 ~ useEffect ~ img', img);
+    // ctx.drawImage(img, 10, 10);
+
     // remove event on unmount to prevent a memory leak
     return () => {
       window.removeEventListener("scroll", onScroll, { passive: true });
@@ -1055,7 +1061,16 @@ export default function Home() {
         </video>
       </div>
 
+      <img
+        className="hidden"
+        id="aaa"
+        width="220"
+        height="277"
+        src="Frame 3465942.png"
+        alt="The Scream"
+      />
       <div className="overlay overlay-circle-0" ref={circleRef}>
+        <Image src="Frame 3465942.png" layout="fill" />
       </div>
 
       {/* <div className="overlay overlay-circle-0" ref={circleRef}>
