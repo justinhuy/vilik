@@ -1069,8 +1069,26 @@ export default function Home() {
         src="Frame 3465942.png"
         alt="The Scream"
       />
-      <div className="overlay overlay-circle-0" ref={circleRef}>
-        <Image src="Frame 3465942.png" layout="fill" />
+
+      <div
+        className="overlay overlay-circle-0 pointer-events-none"
+        ref={circleRef}
+      >
+        <img src="Frame 3465942.png" layout="fill" />
+      </div>
+
+      <div className="fixed left-0 top-[34px] xl:top-0 w-[375px] xl:w-[71.1111111%] pointer-events-none">
+        <picture>
+          <source media="(min-width:  1280px)" srcSet="overlay-3.png" />
+          <img src="overlay-3-mb.png" className="w-full" />
+        </picture>
+      </div>
+
+      <div className="fixed right-0  bottom-[14px] xl:bottom-0 w-[359px] xl:w-[65.6944444%] pointer-events-none">
+        <picture>
+          <source media="(min-width:  1280px)" srcSet="overlay-4.png" />
+          <img src="overlay-4-mb.png" className="w-full" />
+        </picture>
       </div>
 
       {/* <div className="overlay overlay-circle-0" ref={circleRef}>

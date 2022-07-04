@@ -528,6 +528,16 @@ a {
   will-change: transform;
 }
 
+.overlay-circle-0 img {
+  position: absolute;
+  width: 1135px;
+  max-width: unset;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* .overlay-circle-0::before {
   content: "";
   position: absolute;
