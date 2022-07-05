@@ -3,6 +3,7 @@ import Head from "next/head";
 import Script from "next/script";
 import { useEffect, useRef, useState } from "react";
 // import { useSwipeable } from "react-swipeable";
+import Image from "next/image";
 
 import AboutUs from "../components/AboutUs";
 import Chart from "../components/Chart";
@@ -283,6 +284,12 @@ export default function Home() {
 
     window.addEventListener("scroll", onScroll, { passive: true });
     document.addEventListener("keypress", onKeyPress);
+
+    // var canvas = document.getElementById("canvas");
+    // var ctx = canvas.getContext("2d");
+    // var img = document.getElementById("aaa");
+    // console.log('🚀 ~ file: index.js ~ line 291 ~ useEffect ~ img', img);
+    // ctx.drawImage(img, 10, 10);
 
     // remove event on unmount to prevent a memory leak
     return () => {
@@ -1054,7 +1061,37 @@ export default function Home() {
         </video>
       </div>
 
-      <div className="overlay overlay-circle-0" ref={circleRef}>
+      <img
+        className="hidden"
+        id="aaa"
+        width="220"
+        height="277"
+        src="Frame 3465942.png"
+        alt="The Scream"
+      />
+
+      <div
+        className="overlay overlay-circle-0 pointer-events-none"
+        ref={circleRef}
+      >
+        <img src="Frame 3465942.png" layout="fill" />
+      </div>
+
+      <div className="fixed left-0 top-[34px] xl:top-0 w-[375px] xl:w-[71.1111111%] pointer-events-none">
+        <picture>
+          <source media="(min-width:  1280px)" srcSet="overlay-3.png" />
+          <img src="overlay-3-mb.png" className="w-full" />
+        </picture>
+      </div>
+
+      <div className="fixed right-0  bottom-[14px] xl:bottom-0 w-[359px] xl:w-[65.6944444%] pointer-events-none">
+        <picture>
+          <source media="(min-width:  1280px)" srcSet="overlay-4.png" />
+          <img src="overlay-4-mb.png" className="w-full" />
+        </picture>
+      </div>
+
+      {/* <div className="overlay overlay-circle-0" ref={circleRef}>
         <svg
           width="704"
           height="807"
@@ -1485,7 +1522,7 @@ export default function Home() {
             />
           </filter>
         </defs>
-      </svg>
+      </svg> */}
     </main>
   );
 }
